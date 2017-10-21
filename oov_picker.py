@@ -3,6 +3,10 @@ from collections import defaultdict
 from nltk.tokenize import TweetTokenizer, sent_tokenize
 
 
+def is_valid(word):
+    return (word.isalnum() and not word.isdigit())
+
+
 class OOVpicker(object):
 
     def __init__(self, tweets):
@@ -12,7 +16,6 @@ class OOVpicker(object):
         tokenized = defaultdict(dict)
         # split tweets by tweet separator
         for tweet_id, tweet_text in tweets.items():
-            # '318706266279145473'
             # separate tweet sentences
             sents = sent_tokenize(tweet_text)
             # tokenize each sentence
@@ -21,8 +24,7 @@ class OOVpicker(object):
                 # enumerate sent to know word's position
                 e = enumerate(sent)
                 # list of (word, pos) where word is alphanumeric and not digit
-                wp_list = [(word, pos) for pos, word in e
-                            if (word.isalnum() and not word.isdigit())]
+                wp_list = [(word, pos) for pos, word in e if is_valid(word)]
                 tokenized[tweet_id][j] = wp_list
                 for word, pos in wp_list:
                     # check if word is In Vocabulary
@@ -30,5 +32,8 @@ class OOVpicker(object):
                         # add (word, pos) to j-th sent
                         # of tweet with id = tweet_id
                         OOV[tweet_id][j].append((word, pos))
+        n = len(OOV)
+        print('Tweets to correct:', n)
+        self.n = n
         self.tokenized = dict(tokenized)
         self.OOV = dict(OOV)
