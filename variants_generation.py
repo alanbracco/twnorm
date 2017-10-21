@@ -11,12 +11,12 @@ class PrimaryCandidates(object):
 
     def upper_lower(self, word):
         """
-            return a list that contains (in given order)
+            return a set that contains
             lowercase word,
             uppercase word,
             titlecase word.
         """
-        return [word.lower(), word.upper(), word.title()]
+        return {word.lower(), word.upper(), word.title()}
 
     def accent_mark(self, word):
         """
@@ -55,7 +55,7 @@ class PrimaryCandidates(object):
         # 1 for a o u next letter cases, 2 for e i next letter cases
         # 3 for c or s previous to h
         change = {'v': ['b'], 'b': ['v'], 'c1': ['k'], 'c2': ['s', 'z'],
-                  's1': ['z'], 's2': ['c', 'z'], 'z1': ['s'], 'z2' : ['c', 's'],
+                  's1': ['z'], 's2': ['c', 'z'], 'z1': ['s'], 'z2': ['c', 's'],
                   'll': ['y', 'sh'], 'y': ['ll', 'sh'], 'sh': ['ll', 'y'],
                   'x': ['ch'], 'h3': [''], 'k1': ['c'], 'k2': ['qu'],
                   'qu': ['k'], 'j': ['g'], 'g': ['j']}
@@ -117,7 +117,7 @@ class PrimaryCandidates(object):
         """
         result = ''
         regex = r"(\b([a-z]{2,}?)\2+\b)"
-        pattern = re.findall(regex, word, re.X|re.I)
+        pattern = re.findall(regex, word, re.X | re.I)
         if pattern != []:
             result = pattern[0][1]
         return result
@@ -188,23 +188,22 @@ class PrimaryCandidates(object):
         """
             return a set of primary candidates
         """
-        a, b, cands, candidates = set(), set(), set(), set()
+        b, cands, candidates = set(), set(), set()
         if word != '':
             reps = self.all_reps(word)
-            for w in reps:
-                cands.add(w)
-                upper_lower = set(self.upper_lower(w))
-                cands = cands.union(upper_lower)
-                a = a.union(upper_lower)
-                for wd in a:
-                    accent_mark = self.accent_mark(wd)
-                    b = b.union(accent_mark)
-                    cands = cands.union(accent_mark)
-                    for ww in b:
-                        spelling_error = self.spelling_error(ww, self.n_errors)
-                        cands = cands.union(spelling_error)
+            for wd in reps:
+                cands.add(wd)
+                accent_mark = self.accent_mark(wd)
+                b = b.union(accent_mark)
+                cands = cands.union(accent_mark)
+                for ww in b:
+                    spelling_error = self.spelling_error(ww, self.n_errors)
+                    cands = cands.union(spelling_error)
             # filter cands_tmp (only leaves correct words)
-            candidates = self.filter_candidates(cands)
+            cands = self.filter_candidates(cands)
+            for c in cands:
+                candidates = candidates.union(self.upper_lower(c))
+            candidates = self.filter_candidates(candidates)
 
         return candidates
 
@@ -268,7 +267,6 @@ class SecondaryCandidates(object):
 if __name__ == '__main__':
     a = PrimaryCandidates(2)
     inp = input("Enter a word: ")
-    a.all_reps(inp)
     p = a.generate(inp)
     if p == set():
         b = SecondaryCandidates()
