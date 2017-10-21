@@ -1,17 +1,17 @@
+import os
 import pickle
-from nltk.data import load
-from os import path
 
 
 class Selector(object):
 
-    def __init__(self):
+    def __init__(self, modelfile):
         """
         model -- n-gram model.
         """
-        modelpath = 'here put path to language model'
+        # path to model file
+        filepath = os.path.join(os.getcwd(), 'Models', modelfile)
         # open model file
-        file = open(modelpath, 'rb')
+        file = open(filepath, 'rb')
         # load model file
         model = pickle.load(file)
 

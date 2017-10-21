@@ -1,6 +1,10 @@
+import os
+
+
 class OutputBuilder(object):
-    def __init__(self, filepath):
-        self.filepath = filepath
+    def __init__(self, filename):
+        self.filepath = os.path.join(os.getcwd(), 'Output', filename)
+        print('Output file:', self.filepath)
 
     def build(self, texts, order, correct):
         file = open(self.filepath, 'w')

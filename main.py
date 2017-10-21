@@ -1,4 +1,4 @@
-from os import path
+import os
 from collections import defaultdict
 from oov_picker import OOVpicker
 from oov_classifier import OOVclassifier
@@ -8,18 +8,17 @@ from variants_generation import PrimaryCandidates, SecondaryCandidates
 from candidate_selection import Selector
 
 
-file100 = '/Tweets/tweet-norm-dev100_annotated.txt'
-resultpath = '/Results/result100.txt'
-outputpath = path.split(path.abspath(__file__))[0] + resultpath
-tweets_file = path.split(path.abspath(__file__))[0] + file100
+outputfile = 'result100.txt'
+tweets_file = 'tweet-norm-dev100_annotated.txt'
+modelfile = 'bo3'
 
 splitter = Tw_Splitter(tweets_file)
 picker = OOVpicker(splitter.texts)
 classifier = OOVclassifier()
 primary = PrimaryCandidates(2)
 secondary = SecondaryCandidates()
-selector = Selector()
-output = OutputBuilder(outputpath)
+selector = Selector(modelfile)
+output = OutputBuilder(outputfile)
 oovs = picker.OOV
 tokenized = picker.tokenized
 correct = defaultdict(dict)

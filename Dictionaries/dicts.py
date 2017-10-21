@@ -1,4 +1,4 @@
-from os import path
+import os
 from collections import defaultdict
 
 
@@ -6,11 +6,11 @@ class dicts(object):
 
     def __init__(self):
 
-        filepath = path.split(path.abspath(__file__))[0] + '/txt/'
+        filepath = os.path.join(os.getcwd(), 'Dictionaries', 'Resources')
 
         # create normalization dict
         d = defaultdict(str)
-        normfile = open(filepath + 'sms.txt', 'r')
+        normfile = open(os.path.join(filepath, 'sms.txt'), 'r')
         lines = normfile.read().split('\n')
         for use, correct in [line.split(':') for line in lines]:
             d[use] = correct
@@ -18,16 +18,16 @@ class dicts(object):
         self.norm = dict(d)
 
         # create set of spanish names
-        namesfile = open(filepath + 'proper_nouns.txt', 'r')
+        namesfile = open(os.path.join(filepath, 'proper_nouns.txt'), 'r')
         lines = namesfile.read().split('\n')
         self.names = {word for word in lines}
 
         # create set of spanish lemario
-        lemfile = open(filepath + 'lemario.txt', 'r')
+        lemfile = open(os.path.join(filepath, 'lemario.txt'), 'r')
         lines = lemfile.read().split('\n')
         self.lemario = {word for word in lines}
 
         # add a set of all verbs (infinitive + conjugated) to lemario
-        verbsfile = open(filepath + 'verbs.txt', 'r')
+        verbsfile = open(os.path.join(filepath, 'verbs.txt'), 'r')
         lines = verbsfile.read().split('\n')
         self.lemario = self.lemario.union({word for word in lines})

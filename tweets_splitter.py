@@ -1,8 +1,11 @@
+import os
 from collections import defaultdict
 
 
 class Tw_Splitter(object):
-    def __init__(self, filepath):
+    def __init__(self, tweets_file):
+        filepath = os.path.join(os.getcwd(), 'Input', tweets_file)
+        print('Input tweets file:', filepath)
         file = open(filepath, 'r')
         lines = file.read().split('\n')
         # dict to store text of each tweet
