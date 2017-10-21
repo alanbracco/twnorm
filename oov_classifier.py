@@ -3,11 +3,13 @@ from Dictionaries.dicts import dicts
 from treetaggerwrapper import TreeTagger, make_tags
 from nltk.stem.snowball import SpanishStemmer
 
+
 class OOVclassifier(object):
 
     def __init__(self, stem=False):
         dictionaries = dicts()
-        path = 'here put path to TreeTagger'  # path to TreeTagger installation directory
+        # path to TreeTagger installation directory
+        path = 'here put path to TreeTagger'
         self.english_dict = enchant.Dict("en_EN")
         self.spanish_dict = enchant.Dict("es_ES")
         self.ND = dictionaries.norm
@@ -30,7 +32,7 @@ class OOVclassifier(object):
         if word.islower() or word.istitle():
             if self.stem:
                 n = len(word)
-                stem = self.stemmer.stem(word)
+                # stem = self.stemmer.stem(word)
                 # compare with first substring of length n of each word in SD
                 for w in [x[:n] for x in self.SD if len(x) >= n]:
                     result = (word == w)

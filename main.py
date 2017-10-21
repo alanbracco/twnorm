@@ -1,4 +1,3 @@
-import os
 from collections import defaultdict
 from oov_picker import OOVpicker
 from oov_classifier import OOVclassifier

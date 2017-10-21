@@ -14,6 +14,8 @@ class Tw_Splitter(object):
         corrections = defaultdict(list)
         # list of tweet id to maintain order
         order = []
+        # number of tweets
+        n = 0
         #  read and store data from each line of corpus
         for line in lines:
             splitted = line.split('\t')
@@ -22,10 +24,13 @@ class Tw_Splitter(object):
                 order.append(tweet_id)
                 texts[tweet_id] = tweet_text
                 current_id = tweet_id
+                n += 1
             else:
                 # o:original word, t:class, c:corrected word
                 o, t, c = splitted[1].split(' ')
                 corrections[current_id].append((o, t, c))
+        print('Total tweets:', n)
+        self.n = n
         self.texts = texts
         self.order = order
         self.corrections = dict(corrections)
