@@ -16,7 +16,12 @@ class PrimaryCandidates(object):
             uppercase word,
             titlecase word.
         """
-        return {word.lower(), word.upper(), word.title()}
+        result_set = set()
+        result_set.add(word.lower())
+        result_set.add(word.title())
+        # result_set.add(word.upper())
+
+        return result_set
 
     def accent_mark(self, word):
         """
@@ -200,7 +205,7 @@ class PrimaryCandidates(object):
                     spelling_error = self.spelling_error(ww, self.n_errors)
                     cands = cands.union(spelling_error)
             # filter cands_tmp (only leaves correct words)
-            cands = self.filter_candidates(cands)
+            # cands = self.filter_candidates(cands)
             for c in cands:
                 candidates = candidates.union(self.upper_lower(c))
             candidates = self.filter_candidates(candidates)

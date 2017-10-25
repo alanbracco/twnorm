@@ -16,12 +16,12 @@
 	paluegos 1 -
 	fanegol 1 -
 	jajajajajajajajajjajajajajajaja 0 Ja
-	meoooo 0 meo
+	meoooo 0 Meo
 318954900933464066	* Vega del Codorno * Actualizado: 02-04-2013 05:02 UTC * Temperatura: 2,1 ºC ( Máx.: 2,8 / Mín.: 2,1 ) * Humedad:... http://t.co/yVq0k7MWs4
 	UTC 1 -
 	ºC 1 -
 	Máx 0 Más
-	Mín 0 min
+	Mín 0 Min
 318728946764103680	@loresinte @rubitamalaguita @bea_diamonds miedo me da chicas!! Miedo me da xq el año pasao acabamos to jamas porai jajaja
 	xq 0 porque
 	pasao 0 pasado
@@ -40,18 +40,18 @@
 	aaa 0 a
 	mooovil 0 móvil
 	caasi 0 casi
-	twitteer 1 -
+	twitteer 0 Twitter
 	adios 2 -
 	Justin 2 -
 319006566965723136	Felicidades a mi omega, el mas fuerte d tds, que tienes un corazón enorme. Te echo de menos compi. Cuidate mucho. Te quiero @NachitoPeerez12
 	tds 0 todos
-	compi 0 compa
+	compi 0 pompi
 319097386939076609	@marixu93 ooooooooohhhhh yo tambien te quiero, y quiero verte ya!!! Guapa!
 	ooooooooohhhhh 0 Oh
 	tambien 1 -
 319057077542727680	@SOLOPUEDEKEDAR1 @kicamqm @martafuentesb porque tan abajo ? Eso no puede ser
 319081130416549890	@jose04011988 @NereidaMarquez6a q siii no a cambiado nadaa jajaja
-	q 0 Que
+	q 0 que
 	siii 0 si
 	nadaa 0 nada
 	jajaja 0 Ja
@@ -71,7 +71,7 @@
 	sepaaas 0 cepas
 319100975136780288	Vamos al lío que ya era hora de empezar!
 318597777674358784	oStia k putada yo d romeria to la noche ole ole
-	oStia 0 ostia
+	oStia 0 Ostia
 	k 0 ka
 	romeria 0 romería
 318847110504132610	@MariaDelmar816 no creo que a nadie le sorprenda jajajajaj ya ves que ya me humillo yo, no hace falta que lo hagas tu jajajajaj ;)
@@ -106,7 +106,7 @@
 318721870893551617	Oins q agustito en el.#sooufa!
 	Oins 1 -
 	q 0 que
-	agustito 0 agustino
+	agustito 0 gustito
 319081607321489409	#TwitterosQueMeCaenBienSinConocer @DJoyTwihard porque es mi gemela *__*
 319140060182237186	'Abrir la ventana, colgar los problemas al sol'
 318720027660546048	A descansar un pokitin y a las claseeeesss
@@ -121,16 +121,16 @@
 318851917654671360	@lluch_miguel y que va a decir su madre si estará avergonzada de tener la hija que tiene y de lo que esta haciendo.... #yanohayboda
 318784166453968896	@migueleferndez8 eres inconfundible dejando espacios antes de los signos de interrogación
 319045131976187904	Pues nada, tendre que moverme.
-	tendre 0 Tendré
+	tendre 0 tendré
 318680177620160512	@MartaPellisso @MariaDelMarG7 ohhh mis niñas preciosas tengo muchas ganas de veros !! Os quiero♥
 	ohhh 0 Oh
 319119037802115073	@kurtcomeback_ si te llamas nacho y haces fotos muy buenas no es asi o he quedado mal?
 	asi 1 -
 318507931022802944	@Alph4dan Ay Gaona, ¡qué hombre! ^^
-	Gaona 0 Gana
+	Gaona 0 Gazna
 318730036519776261	todo en exceso es malo menos las vacaciones
 319017918883049472	K mala suerte coñooo se me a roto el móvil
-	K 0 Km
+	K 0 Kg
 	coñooo 0 coño
 318850372955422720	@SergioMrqz10 jajajpero esq si no hubiera sido por esa preciosa llamda no me hubieras visto;) que era muy tarde ya jo era hora de levantarse
 	jajajpero 1 -
@@ -143,16 +143,16 @@
 	diiiiiiioooooooo 0 dio
 	Jajjajajajajajajajajajajajajajajajajajajajajaja 0 Ja
 319013015498391552	me levantado diciendo laura hace mucho sol que quiero ponerme morena..
-	laura 0 lacra
+	laura 0 Laura
 318757005055623170	#MarkosLibertad defender a nuestro pais no es un delito
 	pais 0 país
 319029520608923650	(+) y el gilipollas de Mourinho lo único que está haciendo es destruir el madridismo desde dentro.
 	Mourinho 1 -
 	madridismo 1 -
 318856354842439680	@ArribasSara @SiiLviiA_DiaZ Cri Cri, yo te puedo con un dedo sara :)
-	Cri 0 Crió
-	Cri 0 Crió
-	sara 0 para
+	Cri 0 Criá
+	Cri 0 Criá
+	sara 0 Sara
 319117472148103168	Con mi último RT dejo patente que es imposible que no esté enganchada a Twitter.
 	RT 2 -
 	Twitter 1 -
@@ -173,7 +173,7 @@
 	partoo 0 parto
 318566795810336768	@BigMartus Ola ker lo que tu aseh
 	ker 0 ser
-	aseh 0 aseá
+	aseh 0 ases
 319072321627365377	@Adrianhill661 jajajaja tssss!!! Si dspue abandonas!!
 	jajajaja 0 Ja
 	tssss 0 es
@@ -187,7 +187,7 @@
 318496561569083392	No quiero dormirme pa que no llegue mañana.... #odiandolarutina
 	pa 1 -
 318662579226554368	Sale el anuncio en la radio del centro comercial de la Zenia y dicen: DE LA Z A LA A. Y dice mi madre: o sea que Zara sí que está jajajajaja
-	Zenia 0 cenia
+	Zenia 0 tenia
 	Z 0 Za
 	Zara 1 -
 	jajajajaja 0 Ja
@@ -211,11 +211,11 @@
 318760134794944513	Hace sol, llueve, hace sol, graniza... Hace un día igual de bipolar que yo.
 318827345467285504	@AaronLo7 jaja que boooonico L
 	jaja 0 Ja
-	boooonico 0 bonico
+	boooonico 0 Bonico
 	L 0 La
 319028093010456576	ahi va la gorda nenee!!!!
 	ahi 0 Ahí
-	nenee 0 Nene
+	nenee 0 ne
 318762309285707776	Al final el que no ha cambiado la hora ha sido Don pabliukas Guti Vega
 	pabliukas 1 -
 	Guti 1 -
@@ -231,7 +231,7 @@
 318561208104017922	entre la lluvia y los cojones fritos esta noche no estoi durmiendo una mierda. q rayadas d cabeza q asco i q asco.
 	cojones 0 cajones
 	estoi 0 estoy
-	q 0 Que
+	q 0 que
 	q 0 que
 	i 0 si
 	q 0 que
@@ -242,7 +242,7 @@
 318682275229335552	@jary_17 y yo la musica;) jajajajajaj tu y yo tenemos charlita pendiente eh jajaja
 	musica 1 -
 	jajajajajaj 1 -
-	charlita 0 charlista
+	charlita 0 charleta
 	jajaja 0 Ja
 318882012486307840	MONTATE DE CADA DIA QUE PASA TU PROPIA PELICULA SIN IMPORTARTE EL PROTAGONISMO QUE LLEGE A TENER .
 	DIA 1 -
@@ -251,7 +251,7 @@
 318518211677143042	y hoy de vuelta a ortuella :)
 	ortuella 1 -
 318837032908623872	@nestur9 Tendre que ahorrar para ir en tren..
-	Tendre 0 Tendré
+	Tendre 0 tendré
 318509498715222017	pues han sido unas MUY buenas meriendas hasta ahora, las mejores, yo creo q ya ns despedimos hasta el año q viene!!;)
 	q 0 que
 	ns 0 nos
@@ -259,11 +259,11 @@
 318845592648437760	@PinnkVelvet No puedo con tu foto JAJAJAJAJJAJAJ, preciosa &lt;3
 	JAJAJAJAJJAJAJ 1 -
 318842568731422720	Y esto de que la gente ya este durmiendo o se valla a dormir y yo me puedo quedar asta que quiera por que mañana no tenho clase mola :))
-	tenho 0 tengo
+	tenho 0 Teno
 318640032393072640	Todo va a salir bien @Arteaga_JM !!! Te quiero y siempre estaré a tu lado.
 318653401363800065	No quiero levantarme todavía quiero dormir hasta las tres joder #misionimposibleenmicasa
 318993548911456256	Todos los que VERAneamos en Vera tenemos que seguir a @VERAENFURECIDA  y @POSTUREOVERA
-	VERAneamos 1 -
+	VERAneamos 0 Veraneamos
 319095482037190656	#SinHambrePorLaVida JUUM :| :| :|
 	JUUM 0 JU
 318500606874632192	Y me consumo como una vela no queda nadie a mi alrededor
@@ -272,7 +272,7 @@
 	Phone 2 -
 	firefoxOS 1 -
 318779805191528448	Valla putooo dia de mierda ..... q ascoo de todo
-	putooo 0 Puto
+	putooo 0 puto
 	dia 1 -
 	q 0 que
 	ascoo 0 asco
@@ -308,14 +308,14 @@
 	jilipollas 0 Gilipollas
 319074363133554689	Que dia mas triste no verte mas te quiero siempre estaras con nosotrs
 	dia 1 -
-	estaras 0 Estarás
+	estaras 0 estarás
 	nosotrs 0 nosotros
 318872348201734147	he muerto en rl intento de dormir y @raquel1209 se rie de miii  :(
 	rl 0 el
 	rie 0 Ríe
 	miii 0 mi
 319094081345167361	Huuuuyy como está la cosa no?? Si el gallo no canta será porque tiene algo en la garganta, no??
-	Huuuuyy 0 Huy
+	Huuuuyy 0 huy
 318846072099315713	@_innmaa95vp jajaaa ija puta...lo restriegas por toa la cara?
 	jajaaa 0 Ja
 	ija 0 iba
@@ -347,7 +347,7 @@
 318712863718010881	http://t.co/AMzsNCfHgD AI COMO LE ECHO DE MENOS.
 	AI 2 -
 318767349241102336	@javimerinomusic joe! Me los tengo que pillar ;) jejeje
-	joe 0 jose
+	joe 0 je
 	jejeje 0 Je
 319059065575714817	No te fijes en lo que has perdido, sino en lo que te queda por ganar, @davidmenendezv
 318850782101393408	#ElPetaitoDeMontesion iva empujando este #MisterioCoche http://t.co/8Pf5aSXCvb el solo jajaja
@@ -374,7 +374,7 @@
 319141755805114368	PARA MI YA NO ERES NADA SOLO UNA SUCIA RAMERA.
 318848333126975488	@adricastro6 nbeeeaaa y eso? Que le pasa a tu ojiyo? :D
 	nbeeeaaa 0 nea
-	ojiyo 0 ijiyo
+	ojiyo 0 ojito
 318749874784980992	Con ganas de que venga a verme @JuananMarley mi hermaanito me tiene abandonaa!!! :((
 	hermaanito 0 Hermanito
 	abandonaa 0 abandona
@@ -386,9 +386,9 @@
 	Maazooo 0 mazo
 	dee 0 de
 	Menooss 0 menos
-	Puuff 0 PUF
+	Puuff 0 puf
 318537666113187840	OYE OYE. K PASA AKI EH. :'( @Lauuuura99 @TriiHDD
-	K 0 Km
+	K 0 Kg
 	AKI 1 -
 319130505960366081	Ya sabes que no resisto mucho una mirada, mucho menos una tuya.
 318591439376351232	" La sonrisa mas bella llega después de la lagrima mas dolorosa."
@@ -400,10 +400,10 @@
 318654384772890624	Empezando fuerte abril, con un desayuno como Dios manda; gofre y cola-cao ^^ http://t.co/oP5wyEz9Mw
 319039006832738305	A veces la solución está en desaparecer por un tiempo.
 318687957731119104	@borjez_fdez96 no se me ha perdido nada en francia:p pero si quisiese lo haria
-	francia 0 franca
+	francia 0 Francia
 	haria 1 -
 318624257976442880	@Alwayslibelula @AnaDeLaFeBravo @xemaa_14 no quereis camping? Tomo nota
-	quereis 0 QUERÉIS
+	quereis 0 Queréis
 319121806181142529	Quiero tranquileo del bueno hoy..!!!
 	tranquileo 0 tranquilo
 318540516985806848	No sabes el daño que haces.
@@ -422,18 +422,18 @@
 	pelurroja 0 pelirroja
 319081819037368320	Creo que despues de dar un paseito con simba me tumbare un ratito en el sillón
 	despues 1 -
-	paseito 0 Paseíto
+	paseito 0 paseíto
 	simba 0 cimba
 318788233947398144	Tu sabrás a lo que juegas,pero a mi no me la vuelves a jugar.
 318632036640387072	@karinbourguigno pues sii aver si me dejan en el trabajo un poco pues ya nos kedan 2 o asi asik genial la verdad ktal vosotrs??un besitoo
-	sii 0 sí
+	sii 0 si
 	aver 2 -
 	kedan 0 quedan
 	asi 1 -
 	asik 0 así_que
 	ktal 0 qué_tal
 	vosotrs 0 vosotros
-	besitoo 0 Besito
+	besitoo 0 besito
 318876679546236929	@MTrin93 Lo de angustia sobra jajajajajaajaja
 	jajajajajaajaja 0 Ja
 318778803419750401	Buena caminata la de hoy cn @cato_alicun casi tres horas y unos 13km jaja
@@ -472,7 +472,7 @@
 	jaja 0 Ja
 318811195572383744	Alomejor no nos a pillao todo el chaparron corriendo @manumartinezca1 jajajajaaja #qemotivados ;P
 	Alomejor 1 -
-	pillao 0 pila
+	pillao 0 pilas
 	chaparron 0 chaparon
 	jajajajaaja 0 Ja
 318866743097434112	@MariaPerez89 @LuceroMexico @LuceroFanEspana  pasaa link creo que estoy registrado? Pero hace mucho que no me meto
@@ -486,9 +486,9 @@
 	mobil 0 móvil
 	em 2 -
 	vereis 0 veréis
-	gravais 0 Grabáis
+	gravais 0 grabáis
 	musica 1 -
-	jodais 0 JODÁIS
+	jodais 0 jodáis
 318850084395708416	En Londres sin parar y yo con estos pelos... La culpa es de mi adorada Rosa, pero a mí me encantan. #SarnaConGusto http://t.co/p5sjZORrli
 	Londres 1 -
 319049359167733762	La vida nos da lo que nos merecemos si tratas a todos por igual la vida te tratara como a todos.
@@ -501,12 +501,12 @@
 	alli 1 -
 	jajajajaja 0 Ja
 318849222017437697	Mirian sabe lo q ha echo po eso llama a su mama zorraica
-	Mirian 0 Minian
+	Mirian 0 Mirlan
 	q 0 que
 	po 0 por
 	zorraica 1 -
 318540168938258433	Esa violencia que teneis dentro de donde ha salio ? Vas a explotar señooooor
-	teneis 0 Tenéis
+	teneis 0 tenéis
 	señooooor 0 señor
 318680716386918401	@CarmenCCano @Maria17LL iraaaaaaa jajajaa no no no lo contrario jejej
 	iraaaaaaa 0 irá
@@ -545,11 +545,11 @@
 	q 0 que
 	q 0 que
 	q 0 que
-	acer 0 hacer
+	acer 0 Aser
 	nadiee 0 nadie
 318769930554208257	@lauraloveOM JAJAJA, Yo mas Bubu, Chica loca :3
 	JAJAJA 0 Ja
-	Bubu 0 BU
+	Bubu 0 bu
 318646979762724864	Muy buenos dias!! Empezamos c0n buenn pien el mes!!!!:p
 	dias 1 -
 	c0n 0 con
@@ -598,7 +598,7 @@
 319078133506662400	@adri_pobe hoy ya no puedes qedar no?
 	qedar 0 quedar
 319059271755112449	"@edencontrerasde: Me tengo que poner en forma, hoy toca correr" a ver si es verdad!! Q ya esta aqui el veranito!!
-	Q 1 -
+	Q 0 que
 	aqui 0 aquí
 	veranito 1 -
 318856876072767489	¿Cómo no os puede gustar este hombre? http://t.co/ynPpBLJuxO
@@ -612,7 +612,7 @@
 318508012971126785	Una sonrisa significa mucho. Dura un segundo pero su recuerdo, a veces, nunca se borra.
 319132759027245056	@dani31youtube @RaulBlandezR No están bien colocadas. Ahí*
 318755269163233282	@Lucasito_18 q coxinooooo, como dice antoniojajaj
-	q 0 Que
+	q 0 que
 	coxinooooo 0 Cochino
 	antoniojajaj 1 -
 319030460745383936	Guía de Seguridad en WordPress (I) http://t.co/y0N8c7wJaY
@@ -620,7 +620,7 @@
 	I 0 In
 318492485653508096	Descargando las 1.300 fotos de @misionposible en mi ordenador. QUÉ LOCURA!!! #mp2013
 318822210208944128	@alex_marti hola me llamo alejandro y cago mas que un oso (; lo cnoces colegui?
-	alejandro 0 alejando
+	alejandro 0 Alejandro
 	cnoces 0 coces
 	colegui 1 -
 319075279601549312	Ola q ase , eres cabra ? Ola q ase!!
@@ -633,7 +633,7 @@
 	pa 1 -
 318846677534507009	Si no lo intentas no podrás averiguarlo! :)
 319071747775266817	Felicidades a los feos de @EvaValinoVelez y @DavidBecerra8 por sus 2 mesecitos :)
-	mesecitos 0 mesesitos
+	mesecitos 0 Mesesitos
 318848840579026945	Lo tuyo es un amor de mentira, no eres feliz con el y pase lo que pase vas a ser mia...
 	mia 0 mía
 318847351215230977	Solo una vez más -.* @ArasiPrat
@@ -664,7 +664,7 @@
 	Queva 0 nueva
 319028326989697024	@Mariarteaga90 gracias i ninia aver si t veo muaxh !!
 	i 0 si
-	ninia 0 minia
+	ninia 0 ninfa
 	aver 2 -
 	t 0 te
 	muaxh 1 -
@@ -681,14 +681,14 @@
 319107293302112257	@AdrianaColeraM mañana te llevo un artículo del periódico en el que venía. He supuesto que te podría interesar…
 319092286556356608	#tito es ahora una tendencia en #Madrid http://t.co/lvSO6nyayN
 318537197571674112	A descansar wapita de face que hoy a sido un dia largo y mñana hay q levantarse cn las pilas recargadas :-) #TeQm16 @InmaGandul #TuEresEso
-	wapita 0 apita
+	wapita 0 zapita
 	face 1 -
 	dia 1 -
 	mñana 0 mañana
 	q 0 que
 	cn 0 con
 318873235083108352	Quiero pasar calor, hartarme de tintito tira en el cesped.. Quiero verano yaa!!!:) http://t.co/Z4wMBMjiGG
-	tintito 0 tintino
+	tintito 0 tontito
 	cesped 1 -
 	yaa 0 ya
 318836476399988737	"Me trayó una ola del pacifico y llego un punto que la ola me trayó y pense AH! mi orechio jodido"
@@ -702,7 +702,7 @@
 	musica 1 -
 	ticher 1 -
 319109764665733120	Pufff... Me parece a Miii q Todo Esta Teniendo un Color demasiado...Oscuro Ains!!!! kiero Pùrpura!!!!!!
-	Pufff 0 PUF
+	Pufff 0 puf
 	Miii 0 mi
 	q 0 que
 	Ains 1 -
@@ -729,7 +729,7 @@
 	diita 0 dita
 318496415489867776	@MariaCortes1997 eso es en todos los institutos?
 318862896614473728	No me merezco nada ahora mismo.. me arrepieento que flipas
-	arrepieento 0 ARREPIENTO
+	arrepieento 0 Arrepiento
 	flipas 1 -
 318723711643557889	ULTIMAMENTE ME DA.IGUAL DE TODO
 	ULTIMAMENTE 1 -
@@ -748,7 +748,7 @@
 319090650874261505	@irenee_90 noo? Tendremos que empezar otraa juumpeee..
 	noo 0 No
 	otraa 0 otra
-	juumpeee 0 jupee
+	juumpeee 0 jume
 318854197917401091	Indescriptible lo que le quiero y lo que me ayuda, mi niññño gracias por todo y felices 15;) @A3_Garcia
 	niññño 0 niño
 319112642138632192	Y en breve otro ruleo con alguien aún más perro, @jonathanvara
@@ -777,7 +777,7 @@
 	monísimo 1 -
 318514191428382720	@alvaroolopez25 estoy en ciu... como no te lo envie por whatsapp jajaja
 	ciu 0 siu
-	envie 0 envíe
+	envie 0 envié
 	whatsapp 1 -
 	jajaja 0 Ja
 318852524478193664	A mi mundo lo único que le falta para ser perfecto eres tu!! #VenYa! :)
@@ -831,7 +831,7 @@
 	echoo 0 echó
 	polvooooo 0 polvo
 318727039739912192	@OscarMartinez76 @pabloalboran @CADENA100 No nos dejeis con la intriga! Jaja que ganas y que nervios!! :)
-	dejeis 0 DEJÉIS
+	dejeis 0 dejéis
 	Jaja 0 Ja
 318512038508888064	Y luego la pica soy yo jajaja flipo.
 	jajaja 0 Ja
@@ -839,7 +839,7 @@
 319100673201418240	Una duxita y a la puta calle pero ya!
 	duxita 0 durita
 319004225323548672	Levantarse por la mañana y escuchar aires de triana no tiene precio :)
-	triana 0 trina
+	triana 0 Triana
 318828121228992515	@Juanelcierrabar madre el sandungero jajajjaja
 	sandungero 0 sandunguero
 	jajajjaja 0 Ja
@@ -850,7 +850,7 @@
 	jajajajaja 0 Ja
 318706266279145473	de marzo me quedo con ese pedazo de viaje a madrid y la visita de dos grandes a sevilla
 	madrid 1 -
-	sevilla 0 Sebiya
+	sevilla 0 Sevilla
 319050024317251585	Con @JavierAlmazn en fyqqqq!! Pppff me aburro
 	fyqqqq 1 -
 	Pppff 0 Paf
@@ -861,7 +861,7 @@
 318702802547400704	@NereaParron23 a mi mee pareces perfecta tuu rubiaa:') asiquee ya sabes lo que tocaa hooy:) Te quiero muchoo:)
 	tuu 0 tu
 	rubiaa 0 rubia
-	asiquee 0 ASIQUE
+	asiquee 0 asiqué
 	tocaa 0 toca
 	hooy 0 hoy
 	muchoo 0 mucho
@@ -877,7 +877,7 @@
 318859322811637760	Pues hoy si son muy buenas noches despues de una maravillosa conver con una gran persona , que siempre formara parte de vida  @Rosa4393 TQ:)
 	despues 1 -
 	conver 1 -
-	TQ 0 Tú
+	TQ 0 te_quiero
 318993633724493825	Con mi gente en el recreo
 318841863043956737	@Jona1412 te he inviyado aceptame
 	inviyado 0 invitado
@@ -901,21 +901,21 @@
 	dias 1 -
 	dia 1 -
 	dia 1 -
-	besazo 0 besado
+	besazo 0 besalo
 319114663755411456	Seño ricardo no ira al cole esta semana. mañana ire para que le mandes trabajos para la semana, esta todavia malito con fiebre. Un beso
-	Seño 0 Sueño
-	ricardo 0 picardo
+	Seño 0 Señor
+	ricardo 0 Ricardo
 	ire 2 -
 	todavia 0 todavía
 	malito 0 maldito
 318687428082810880	Aleluya @Sergio_Gettin alfin se despierta!
-	alfin 0 alfan
+	alfin 0 alfen
 318728080736792577	El gol que te merecias por tu trabajo y empeño http://t.co/ixkOfkMmnW
 	merecias 0 merecías
 319007653797974016	@blancaM252 :O no vas a venir a mi cumple ? Ok.
 	Ok 0 O
 318486376570032128	305 mensajes en unas horas.. menos mal que había dicho que iba a estar sin wpp,q pesadosss
-	wpp 0 pp
+	wpp 0 op
 	q 0 que
 	pesadosss 0 pesados
 318511111701921792	Dormí o no dormí, eza eh la cuehtion
@@ -923,7 +923,7 @@
 	cuehtion 1 -
 318691969280925696	"Amoss adri que son la unaaaaaaaaaaa" jajajaja
 	Amoss 0 amos
-	adri 0 adrá
+	adri 0 Adri
 	unaaaaaaaaaaa 0 una
 	jajajaja 0 Ja
 318851225649049600	@danmanso91 jajajaj si si si!! Esto esta preparao para q salga la #zorrasca En cuanto empiece el buen tiempo ya sabes que voy al puebli!
@@ -935,14 +935,14 @@
 	jajjajjajja 0 Ja
 	dioa 0 dio
 319122114978381826	que bolsa mas llena llevamos ya de corujas
-	corujas 0 crujas
+	corujas 0 coruja
 318680771848187907	Hoy no puedo decir buenos días, me va a caducar el whatsapp.
 	whatsapp 1 -
 319062038116712448	@SofiaMCR tenemos la misma opinión, ya te digo que el resto igual... Es indignante
 	indignante 0 indignarte
 318702046037561344	#LaVidaEsMásFácilCuando él esta a mi lado.
 318506739760771072	Os dejo con vuestros temillas esos raros. Hasta mañana
-	temillas 0 templas
+	temillas 0 temitas
 318692185040101377	@AbelPintos si se sintio a la distancia yo te kiero curar esa garganta""
 	sintio 0 sintió
 	kiero 0 quiero
@@ -960,14 +960,14 @@
 	miriendar 1 -
 	bebi 0 bebí
 318541303099039744	@MyriamSwanBwoy io sí q t kiero tkmmmmmmm
-	io 0 no
+	io 0 Ío
 	q 0 que
 	t 0 te
 	kiero 0 quiero
 	tkmmmmmmm 0 km
 319073414662983680	@abichuelascala no me lo digas dos veces k me voy!! xk esto no puede segir asi!
 	k 0 ka
-	xk 0 Porque
+	xk 0 porque
 	segir 0 seguir
 	asi 1 -
 318724302407090177	Resiien comiita y artica de.to de come anca mii.gordii@sandra toloc!!
@@ -975,7 +975,7 @@
 	comiita 0 comité
 	artica 1 -
 	mii 0 mi
-	gordii 0 gordo
+	gordii 0 Jordi
 	toloc 1 -
 318760218072842240	Otro abrazo para ti @Crm_Huelva. Nos vemos pronto!
 318973710017126401	Bueno, esta tarde tiene su recompensa :)))
@@ -989,7 +989,7 @@
 	daralika 1 -
 	chochete 0 chochee
 318994659986776064	Sevilla entera bonita de triana a san pablo y asta mi giralda yo la quiero ver..8'
-	triana 0 trina
+	triana 0 Triana
 	pablo 1 -
 318818030949904384	@MeryPepinilla anda maria pa q veas lo q te aprecio:)) jajaja
 	maria 2 -
@@ -1003,7 +1003,7 @@
 	REMIX 2 -
 	Frak 0 Fray
 318752014320427008	Hoy en clase de Derecho Concursal del Master de la Abogacía analizando el concurso de acreedores. [pic]: http://t.co/BOY7g6U4ls
-	Concursal 0 Concursar
+	Concursal 0 Concursan
 	Master 2 -
 	pic 2 -
 319084307308244992	@Mariinuxis O.O venga ya!! jajajajajajjajajaja
@@ -1022,7 +1022,7 @@
 	pasandoo 0 pasando
 	facturaaa 0 factura
 	q 0 que
-	caess 0 CAÉS
+	caess 0 Caes
 318982269077422081	Algunos madrugando para irse de fiesta.. Y nosotras asimilando que estamos ya en Madrid.,, BUENO DÍAS NIÑA! @Raquelmc32
 318860425653547008	@pau_hdezt tu dejaste de buscar porqe ya eres una mujer casada jajajajaja
 	porqe 0 porque
@@ -1046,7 +1046,7 @@
 	XD 0 D
 318636545248747520	Buenos dias.que asco de dia los lunes son malisimos
 	dia 1 -
-	malisimos 0 malísimos
+	malisimos 0 Malísimos
 318918653091401729	@PaulaGlezMorato @MinervaRol jaja tu amiga.me a dixo  se.lo tengo k subir .... tu baaaajaa... jajajj
 	jaja 0 Ja
 	dixo 0 dicho
@@ -1054,7 +1054,7 @@
 	baaaajaa 0 baja
 	jajajj 0 jajay
 318697349071376386	Acabo de entrar en el selecto club de jugadores de primera división en "Temporadas" en el FIFA13 de Xbox360.
-	FIFA 1 -
+	FIFA 0 fifa
 	Xbox 1 -
 318802437609766912	@JavicamuJavier cuuxamee sii peroo veen yaa eem
 	cuuxamee 1 -
@@ -1079,7 +1079,7 @@
 	Piazon 0 Piaron
 318795147242508288	Ofertas liberar iphone oficial de movistar por 5 euros RT plis mas info en openmovil.imei@gmail.com http://t.co/eH4GSLk2f3
 	iphone 1 -
-	movistar 1 -
+	movistar 0 Movistar
 	RT 2 -
 	plis 0 plus
 	info 2 -
@@ -1124,16 +1124,16 @@
 	twitaaaah 1 -
 318852442664083456	@JoseQueroQ @franjimenezsan  nunca se olvida el.banco q por debajo metias el gol,la pared q te devolvia la pelota d tenis lasombradelolivo
 	q 0 que
-	metias 0 METÍAS
+	metias 0 metías
 	q 0 que
 	devolvia 0 devolvía
 	lasombradelolivo 1 -
 318602672888487938	Empezamos bien la vuelta de vacaciones, sin agua caliente!!!
 319114793036435457	joder mis vecinos estan peleando pero chillio limpio dioss y son hermanos con parado con justin y sus hermanos xd
 	estan 0 están
-	chillio 0 cilio
+	chillio 0 hilio
 	dioss 0 Dios
-	justin 0 justen
+	justin 0 Justín
 	xd 0 de
 318863056870453248	Amo esos abrazos en los que sin querer se te cierran los ojos.
 318503061016416257	@Ruben_minuesa jajaja si tu lo dicees
@@ -1164,7 +1164,7 @@
 319049276330229760	@G_HERMANO_ @Susanistaa entonces según tu..el esta enamorado de Susana n??porque yo le veo muchísimo cuento..!
 	n 0 en
 318530585637310465	@LauraGH12  @MariasanchezzGH y la criticais cuando tneis mcho en cmun cn ella, la myoria de los #Wallistas hems sido lauristas o/y maristas!
-	criticais 0 CRITICÁIS
+	criticais 0 criticáis
 	tneis 0 tenis
 	mcho 0 mucho
 	cmun 1 -
@@ -1183,7 +1183,7 @@
 318501358699417602	Apesar de todo saber que tengo a personas hay que me ayudan y se preocupan hacen que todo lo malo se perdone!
 	Apesar 0 pesar
 318844091427340290	@t5granhermano A míriam. Igor es mi empalmado, y los gemelos me caen bien y son de mi tierra. Así que expulsaría a Míriam.
-	míriam 0 Miriam
+	míriam 0 Míriam
 	Igor 2 -
 318508642448076800	Madre mia eso es un colegio o un yo te jode y tu me jodes ?
 	mia 0 mía
@@ -1205,7 +1205,7 @@
 	cuestaa 0 cuesta
 	dspues 0 despues
 	unico 0 único
-	betis 0 betas
+	betis 0 beis
 	estaa 0 esta
 	nochee 0 noche
 318713551533510656	@BlasAuryn a mii tambiien me gustaria muchoo quee tu algun dia me siguieras ...  Lo veo imposible pero bueno jajaja
@@ -1221,7 +1221,7 @@
 	paises 0 países
 318883001675165696	A Miriam solo le falta decir. ESTOY LLORANDO XQ ME TENGO QUE CASAR CON EL!! #ghdirecto
 	Miriam 1 -
-	XQ 0 Xi
+	XQ 0 porque
 319008567447412736	Y creo que muero si no siento el roce de tu cuerpo junto a mi!!!! #Platero
 318602358831599616	Pues en el 2 ya :) a clases se ha dicho.. Dsd luego no tengo cuerpo.. En modo #zombi jaaja #BN
 	Dsd 0 Dad
@@ -1239,8 +1239,8 @@
 318837516377657344	@cortacablerojo cada semana más grandes!!!!! Yeahhhhhh http://t.co/VYNQZBjWsX
 	Yeahhhhhh 1 -
 318827236117577728	Jooo con lo bien que me caía a mí Juancar.. #GH8
-	Jooo 0 Jo
-	Juancar 0 Juncar
+	Jooo 0 jo
+	Juancar 0 Juanca
 318487164084187136	Pues dormir k mañana curro
 	k 0 ka
 319089063372128258	Muerto de sueño en el gimnasio
@@ -1261,7 +1261,7 @@
 	estan 0 están
 318888065441603584	'guasa', 'triceps' y 'borja' es ahora una tendencia en #Seville http://t.co/mArkKXb7Jx
 	triceps 2 -
-	borja 0 forja
+	borja 0 Borja
 318819365753602048	JAJAJAA tía @InesParis_13 , ahora te digo un secreto por Whatsapp,verás que casualidad. Pd: no digo lo de las compras baby,digo SÁBADO jeje.
 	JAJAJAA 0 Ja
 	Whatsapp 1 -
@@ -1271,8 +1271,8 @@
 318718107743031296	y hoy darle la enhorabuena a @DaniCampuzanoM jaja pedazo de tio vas a ser... a cuidarle mucho eh me alegro mucho un besazo
 	jaja 0 Ja
 	tio 0 tío
-	cuidarle 0 cuidarse
-	besazo 0 besado
+	cuidarle 0 cuidarlo
+	besazo 0 besalo
 318838849084223488	Viendo fotos de hace unos años :') qué tiempos aquellos
 318894790848688128	@BlancaWouh_98 jajajajajajaja NOO :(  Tu q ase cosa guapa?:)
 	jajajajajajaja 0 Ja
@@ -1284,7 +1284,7 @@
 	biiien 0 bien
 	educacion 0 educación
 	fisica 1 -
-	sss 0 SS
+	sss 0 Ss
 	jajaja 0 Ja
 319087791302664192	Un día me harán una analítica para poder embarcar, absurdo.
 318773689657196545	Salir de la Facultad y que sea de dia es otro rollo
