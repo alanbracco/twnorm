@@ -1,5 +1,5 @@
 318892064219738112	Que os follen mucho mucho el culete a los que no madrugueis mañana, que yo tengo examen de francés. To la suerte pa' mi. Nanit.
-	culete 0 culote
+	culete 0 cuete
 	madrugueis 0 Madruguéis
 	pa 1 -
 	Nanit 0 Nanita
@@ -9,7 +9,7 @@
 318852700177563648	Y mañana veo a las tontas de @Paola_Rojas22 @SaraGarcia7_ y @NereaNMG :)
 318842303303270402	@ade1984 @silvia_roman @silvi_ortega @meririzos @myriJerez @myriamdetroya La Silvita esta muy perdidita la pobre mia...jeje
 	Silvita 0 Silvia
-	perdidita 0 perdidiza
+	perdidita 0 perdiditas
 	mia 0 mía
 	jeje 0 Je
 318641689180925952	Buenos días desde mi camita.
@@ -60,10 +60,10 @@
 319068200518184960	He de reconocer que ha veces el Twitter me da ansia...
 	Twitter 1 -
 318831600295096320	@Aroiitaaaa aajajajajajajajaj aiiiii las mejores visitas las de mi inflaaa joeee!! #Quetequieroooyoatiiiiicabesa!!
-	aajajajajajajajaj 0 aj
+	aajajajajajajajaj 0 Aj
 	aiiiii 0 a
 	inflaaa 0 infla
-	joeee 0 loe
+	joeee 0 je
 319093832694247424	@DBloodflowers *Vuelve a mirar su entrepierna* LO SIENTO PERO YO SOLO VEO ALMEJA
 318807973562560513	@CazaEscorias d miiii? Perdona pero no sé d q m hablas mira por aquí ni m hables o por mensajes o por tuenti pero no m lies
 	miiii 0 mi
@@ -74,8 +74,8 @@
 	m 0 me
 	lies 2 -
 318869736261828609	@anaamilo ola k ase k no duerme
-	k 0 km
-	k 0 km
+	k 0 ka
+	k 0 ka
 319100762091294720	Noches de ron, coca cola y vatios
 318828284383211520	Te estas quedando sola y ahora te das cuenta que lo has hecho mal y vienes pidiendo perdon?, para mi jamas volveras a ser la misma.
 	perdon 0 perdón
@@ -88,7 +88,7 @@
 319090305674653698	@OfficialCritika A todas las Dreamer's #UnMesDreamersCyS y por supuesto a ti y a @OfficialSaik :)
 318865435149873152	@anngeleescastro graciias grandullonaa ...... Jajajajajaj claroo q te invitooo.. Y tuu pagas vale?? Jajajaj tee quierooo graciias!!
 	graciias 0 Gracias
-	grandullonaa 0 grandullona
+	grandullonaa 0 Grandullona
 	Jajajajajaj 1 -
 	claroo 0 claro
 	q 0 que
@@ -137,10 +137,10 @@
 	quieeeeero 0 quiero
 318869909914415104	Arrancate tartaja yaaaa jodee jajajja que grande
 	yaaaa 0 ya
-	jodee 0 jodé
+	jodee 0 Jode
 	jajajja 0 Ja
 318807773863362560	@saraydino @GuadaOtero97 anda k noo jajajajaja
-	k 0 km
+	k 0 ka
 	noo 0 no
 	jajajajaja 0 Ja
 318767307520372738	Los RT's de Justin me dan miedo, esta planeando algo..
@@ -151,8 +151,8 @@
 	ui 0 un
 	ui 0 un
 	uiii 0 un
-	k 0 km
-	jujuuuuu 0 ju
+	k 0 ka
+	jujuuuuu 0 Ju
 318887227155419138	porque todo el mundo es feliz? moriros todos.
 318487039454613504	Anoche con todas las catalanas!! (: http://t.co/R6LlwjlTId
 319112383924670466	Y ahora con una pseudopija del atleti??si ya te digo yo que... Que te como la cara jajajaja #subnormal #aPastarColega http://t.co/xZxQAk0eh1
@@ -177,7 +177,7 @@
 	viida 0 vida
 318685463277871105	Pero me doy cuenta que esta todo perdido ...
 318818259438809088	cenitaaaaa @JaiimeCalvo @Nereamontes :) http://t.co/JlDyTdTlog
-	cenitaaaaa 0 cemita
+	cenitaaaaa 0 benita
 318520557270339584	"Que sea difícil no significa que sea imposible, que sea imposible no significa que debas rendirte"
 318844422701842434	Discutir con uno dl #PPFACHAMENTIROSO d @PPCerroAmate en Twitter y lo único q sabe contestar es @ARTorrijos comió marisco #Nivel0DeDebate
 	dl 0 de
@@ -185,19 +185,19 @@
 	q 0 que
 318734586018418688	@PatriBeceiro que pasa patri siges con alvaero? O ya en casa espero que estes bien
 	patri 0 patria
-	siges 0 sises
+	siges 0 riges
 	alvaero 1 -
 	estes 1 -
 319062690339368960	aggg 74.280 en.el.paro.en.jaen.una.cifra catastrofica. mas del.40%de la poblacion #yovoyaemigraryamismo
 	aggg 0 a
-	catastrofica 0 catastrófica
+	catastrofica 0 Catastrófica
 	poblacion 0 población
 318496387933282306	@Raque_30995 jaja graciaas feaa :) traere algunos regalilloss y valla voi a pasarmeloo como nadaa :)
 	jaja 0 Ja
 	graciaas 0 gracias
 	feaa 0 fea
 	traere 0 Traeré
-	regalilloss 0 regalillos
+	regalilloss 0 Regalillos
 	voi 0 voz
 	pasarmeloo 0 Pasármelo
 	nadaa 0 nada
@@ -211,7 +211,7 @@
 318839478791831552	@ainarahurtado piensalo bien, qe te puedo parti las muelas jajaja
 	piensalo 0 Piénsalo
 	qe 0 que
-	parti 0 partí
+	parti 0 Partí
 	jajaja 0 Ja
 318991831096492032	Sacale todo el juego a la vida. Buenos dias
 	dias 1 -
@@ -229,7 +229,7 @@
 	feote 0 flote
 	sorry 2 -
 319021292764413952	En un mes tengo examen de Natu.
-	Natu 0 Nato
+	Natu 0 Nata
 318493689947246592	@davidmj93 eso tengo que verlo yo!!
 318837201460920321	Como se me abre la boca... #quesueño
 318849235992862720	"Cada vez que pasa por mi lado siento el corazón acelerado".
@@ -242,12 +242,12 @@
 	Buuenoo 0 Bueno
 	poos 2 -
 	voii 0 voz
-	muu 0 mu
-	contentaa 0 contentá
+	muu 0 Mu
+	contentaa 0 Contenta
 	despuees 0 después
 	dee 0 de
 	unaa 0 una
-	tardeecita 0 tardecita
+	tardeecita 0 Tardecita
 	enteraa 0 entera
 	Bn 0 bien
 319022760422678528	Las mas guapas @mirylin @mcortesus @pifdezcordoba http://t.co/8v6tpY7JKc

@@ -137,22 +137,22 @@ class PrimaryCandidates(object):
         candidates = set()
         rep2_tmp = list(word)
         n = len(word)
-        # replace adjacent repeated letters (second) for '-'
+        # replace adjacent repeated letters (second) for '*'
         for i in range(len(rep2_tmp) - 1):
             if rep2_tmp[i] == rep2_tmp[i+1]:
-                rep2_tmp[i+1] = '-'
-        # replace '-' for original (one and two at a time)
+                rep2_tmp[i+1] = '*'
+        # replace '*' for original (one and two at a time)
         for i in range(n - 1):
             if word[i] == word[i+1]:
                 cand_list = rep2_tmp[:i] + [word[i]] + rep2_tmp[i:]
                 # with adjacent letter repeated
-                cand = ''.join(cand_list).replace('-', '')
+                cand = ''.join(cand_list).replace('*', '')
                 candidates.add(cand)
                 # with two pairs repeated
-                hyphens = [j for j in range(i, n - 1) if cand_list[j] == '-']
+                hyphens = [j for j in range(i, n - 1) if cand_list[j] == '*']
                 for j in hyphens:
                     cand_list2 = cand_list[:j] + [word[j]] + cand_list[j:]
-                    cand = ''.join(cand_list2).replace('-', '')
+                    cand = ''.join(cand_list2).replace('*', '')
                     candidates.add(cand)
         return candidates
 

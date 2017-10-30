@@ -23,7 +23,7 @@ class Selector(object):
             return the most probable next token for prev_tokens
         """
         model = self.model
-        cands = list(candidates)
+        cands = sorted(list(candidates))
         probs = [model.cond_prob(c, prev_tokens) for c in cands]
         max_prob = max(probs)
         index = probs.index(max_prob)
