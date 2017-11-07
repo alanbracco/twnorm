@@ -17,7 +17,7 @@ class Tw_Splitter(object):
         # number of tweets
         n = 0
         #  read and store data from each line of corpus
-        for line in lines:
+        for line in [line for line in lines if len(line) > 0]:
             splitted = line.split('\t')
             if line[0] != '\t':
                 tweet_id, tweet_text = splitted
