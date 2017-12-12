@@ -29,8 +29,13 @@ def MainProcess(input_file, output_file, model_file):
     n = 1
     start_time = time.time()
     for tweet_id, tweet in oovs.items():
-        progress('Processing tweets...{:3.1f}% ({}/{})'
-                 ''.format((float(n)/picker.n)*100, n, picker.n))
+        x = int((float(n)/picker.n)*20)
+        perc = round((float(n)/picker.n)*100, 1)
+        msg = ('Processing tweets...{}% ({}/{})'.format(perc, n, picker.n) +
+               ' '*(len(str(picker.n)) + 6 - (len(str(perc))+len(str(n)))) +
+               '[' + '#'*x + ' '*(20-x) + ']')
+
+        progress(msg)
         n += 1
         for j, sent in tweet.items():  # j is number of the sent
             for_prev = tokenized[tweet_id][j]
