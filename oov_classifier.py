@@ -8,10 +8,8 @@ class OOVclassifier(object):
 
     def __init__(self, stem=False):
         dictionaries = dicts()
-        # path to TreeTagger installation directory
-        path = 'here put path to TreeTagger'
         self.english_dict = enchant.Dict("en_EN")
-        self.spanish_dict = enchant.Dict("es_ES")
+        self.spanish_dict = enchant.Dict("es_AR")
         self.ND = dictionaries.norm
         self.SD = dictionaries.lemario
         self.PND = dictionaries.names
@@ -19,6 +17,8 @@ class OOVclassifier(object):
         if stem:
             self.stemmer = SpanishStemmer()
         else:
+            # path to TreeTagger installation directory
+            path = 'here put path to TreeTagger'
             self.tagger = TreeTagger(TAGLANG='es', TAGDIR=path)
 
     def dictionary_lookup(self, word):
@@ -31,11 +31,11 @@ class OOVclassifier(object):
         result = False
         if word.islower() or word.istitle():
             if self.stem:
-                n = len(word)
-                # stem = self.stemmer.stem(word)
+                stem = self.stemmer.stem(word)
+                n = len(stem)
                 # compare with first substring of length n of each word in SD
                 for w in [x[:n] for x in self.SD if len(x) >= n]:
-                    result = (word == w)
+                    result = (stem == w)
                     if result:
                         break
             else:
