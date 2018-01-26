@@ -1,23 +1,33 @@
 import enchant
 from collections import defaultdict
-from nltk.tokenize import TweetTokenizer, sent_tokenize
+from nltk.tokenize import sent_tokenize
+from tokenizer import MyTokenizer
 
 
 def is_valid(word):
-    return (word.isalnum() and not word.isdigit())
+
+    if '@' in word and not word[0] == '@':
+        word = word.replace('@', 'a')
+    if '-' in word:
+        for w in word.split('-'):
+            if not w.isalnum() or word.isdigit():
+                return False
+        return True
+    else:
+        return (word.isalnum() and not word.isdigit())
 
 
 class OOVpicker(object):
 
     def __init__(self, tweets):
-        twt = TweetTokenizer()
-        known_word = enchant.Dict("es_ES")
+        twt = MyTokenizer()
+        known_word = enchant.Dict("es_AR")
         OOV = defaultdict(lambda: defaultdict(list))
         tokenized = defaultdict(dict)
         # split tweets by tweet separator
         for tweet_id, tweet_text in tweets.items():
             # separate tweet sentences
-            sents = sent_tokenize(tweet_text)
+            sents = sent_tokenize(tweet_text, language='spanish')
             # tokenize each sentence
             tokenized_sents = [twt.tokenize(sent) for sent in sents]
             for j, sent in enumerate(tokenized_sents):

@@ -163,7 +163,7 @@
 	asi 1 -
 	pnsao 1 -
 	part 2 -
-	amig 0 amigo
+	amig@s 0 amigos
 	tb 0 también
 318825095369990145	@FernandoF_88 @_lucia4 @javier_galgero ostia !! Sii ?? Jajajajajajaja pues yo te aviso primoo ajajajjaja me partoo :) !!!!
 	Sii 0 Si
@@ -975,7 +975,7 @@
 	comiita 0 comité
 	artica 1 -
 	mii 0 mi
-	gordii 0 Jordi
+	gordii@sandra 0 gorda@sandra
 	toloc 1 -
 318760218072842240	Otro abrazo para ti @Crm_Huelva. Nos vemos pronto!
 318973710017126401	Bueno, esta tarde tiene su recompensa :)))
@@ -1198,7 +1198,7 @@
 	on 2 -
 	like 2 -
 	there 2 -
-	tod 0 todo
+	tod@s 0 todos
 318690506097963008	Como aprovechas 1~tk @birectioner4E  @Jose_Barroso16 :-)
 	tk 0 te
 318737048720793600	Como cuestaa volver ala normalidad dspues d esta semana santa poco cofrade...lo unico que me alegra es mi betis estaa nochee con @jgarciaber
