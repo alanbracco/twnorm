@@ -18,6 +18,10 @@ from main_process import MainProcess
 
 
 if __name__ == '__main__':
+
+    abs_current_path = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(abs_current_path)
+
     opts = docopt(__doc__)
 
     input_file = opts['-i']
