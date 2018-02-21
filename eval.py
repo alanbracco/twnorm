@@ -5,26 +5,31 @@ def get_measure(gold_dict, generated_dict):
 
     print("\nSTATISTICS")
     print("==========")
-    print("There are ", len(gold_dict), "to correct.")
-    print("You corrected ", len(generated_dict))
 
-    set_gold = set(gold_dict.keys())
-    set_generated = set(generated_dict.keys())
+    set_gold_ids = set(gold_dict.keys())
+    set_generated_ids = set(generated_dict.keys())
 
-    both = sorted(list(set_gold & set_generated))
-
-    print("#Corrected vs. #ToBeCorrected:", len(both))
-    print("#NotCorrected vs. #ToBeCorrected:", len(set_gold - set_generated))
+    both = sorted(list(set_gold_ids & set_generated_ids))
+    missing_tweets = sorted(list(set_gold_ids - set_generated_ids))
 
     hits = 0
     total = 0
     wrong_cl = 0
     wrong_co = 0
+    misses = 0
+    surpluses = 0
+    unanalyzed = 0  # Quantity of words not analyzed
+    total_gold = 0  # Total number of corrections in 'gold' tweets
+    total_own = 0  # Total number of corrections in 'own' tweets
+
+    for tweet_id in missing_tweets:
+        total_gold += len(gold_dict[tweet_id])
+
     for tweet_id in both:
         gold_corrections = gold_dict[tweet_id]
         own_corrections = generated_dict[tweet_id]
-        set_gold = set(gold_corrections)
-        set_own = set(own_corrections)
+        total_gold += len(gold_corrections)
+        total_own += len(own_corrections)
 
         gold_words = {word for word, _, _ in gold_corrections}
         own_words = {word for word, _, _ in own_corrections}
@@ -36,9 +41,12 @@ def get_measure(gold_dict, generated_dict):
 
         if missing_words or surplus_words:
             print("\nTweetID:", tweet_id)
+            print("-"*len("TweetID: " + tweet_id))
             if missing_words:
+                misses += len(missing_words)
                 print("Missing corrections:", missing_words)
             if surplus_words:
+                surpluses += len(surplus_words)
                 print("Surplus corrections:", surplus_words)
 
         for word in both_words:
@@ -47,9 +55,13 @@ def get_measure(gold_dict, generated_dict):
             n_gold = len(gold_tuples)
             n_own = len(own_tuples)
             if n_gold != n_own:
+                unanalyzed += 1
                 print("WARNING: word", word, "not analized.")
-                print("You corrected", n_own, "times,",
-                      "but you have to correct it", n_gold, "times.")
+                print("You corrected", n_own, "time(s),",
+                      "but you have to correct it", n_gold, "time(s).")
+                print("DETAILS")
+                print("Actual corrections:", gold_tuples)
+                print("Current corrections:", own_tuples)
             else:
                 total += n_gold
                 for i in range(n_gold):
@@ -68,9 +80,21 @@ def get_measure(gold_dict, generated_dict):
                         else:
                             hits += 1
     assert wrong_cl + wrong_co == total - hits
-    print("\nYou hit", hits, "out of", total, "corrections.")
+
+    print("\nSUMMARY")
+    print("=======")
+    print("There are ", len(gold_dict), "to correct.")
+    print("You corrected ", len(generated_dict))
+    print("#Corrected vs. #ToBeCorrected:", len(both))
+    print("#Corrected vs. #NotToBeCorrected:",
+          len(set_generated_ids - set_gold_ids))
+    print("#NotCorrected vs. #ToBeCorrected:", len(missing_tweets))
+    print("You hit", hits, "out of", total, "corrections.")
     print("The system classified", wrong_cl, "words differently,",
-          "and missed", wrong_co, "corrections.")
+          "and", wrong_co, "are miscorrected.")
+    print("Missing corrections:", misses)
+    print("Surplus corrections:", surpluses)
+    print("Words unanalyzed (corrected not equal times):", unanalyzed, "\n")
 
 
 if __name__ == '__main__':
