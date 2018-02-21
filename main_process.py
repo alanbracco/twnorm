@@ -71,6 +71,7 @@ def MainProcess(input_file, output_file, model_file):
                     correct_word = '-'
 
                 correct[tweet_id][j].append((word, class_number, correct_word))
+    correct = dict(correct)
     output.build(splitter.texts, splitter.order, correct)
     print('\nProcess finished.')
     total_time = time.time() - start_time
