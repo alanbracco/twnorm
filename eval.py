@@ -1,10 +1,18 @@
+import os
 from tweets_splitter import Tw_Splitter
+
+
+def my_write(*args, stdout=False, filename='stats.txt'):
+    with open(filename, 'a') as file:
+        print(*args, file=file)
+    if stdout:
+        print(*args)
 
 
 def get_measure(gold_dict, generated_dict):
 
-    print("\nSTATISTICS")
-    print("==========")
+    my_write("\nSTATISTICS")
+    my_write("==========")
 
     set_gold_ids = set(gold_dict.keys())
     set_generated_ids = set(generated_dict.keys())
@@ -40,14 +48,14 @@ def get_measure(gold_dict, generated_dict):
         conflict_words = missing_words | surplus_words
 
         if missing_words or surplus_words:
-            print("\nTweetID:", tweet_id)
-            print("-"*len("TweetID: " + tweet_id))
+            my_write("\nTweetID:", tweet_id)
+            my_write("-"*len("TweetID: " + tweet_id))
             if missing_words:
                 misses += len(missing_words)
-                print("Missing corrections:", missing_words)
+                my_write("Missing corrections:", missing_words)
             if surplus_words:
                 surpluses += len(surplus_words)
-                print("Surplus corrections:", surplus_words)
+                my_write("Surplus corrections:", surplus_words)
 
         for word in both_words:
             gold_tuples = [t for t in gold_corrections if t[0] == word]
@@ -56,12 +64,12 @@ def get_measure(gold_dict, generated_dict):
             n_own = len(own_tuples)
             if n_gold != n_own:
                 unanalyzed += 1
-                print("WARNING: word", word, "not analized.")
-                print("You corrected", n_own, "time(s),",
-                      "but you have to correct it", n_gold, "time(s).")
-                print("DETAILS")
-                print("Actual corrections:", gold_tuples)
-                print("Current corrections:", own_tuples)
+                my_write("WARNING: word", word, "not analized.")
+                my_write("You corrected", n_own, "time(s),",
+                         "but you have to correct it", n_gold, "time(s).")
+                my_write("DETAILS")
+                my_write("Actual corrections:", gold_tuples)
+                my_write("Current corrections:", own_tuples)
             else:
                 total += n_gold
                 for i in range(n_gold):
@@ -70,35 +78,43 @@ def get_measure(gold_dict, generated_dict):
                     assert wg == wo
                     if clg != clo:
                         wrong_cl += 1
-                        print("You classified", word, "as", clo,
-                              "but it is", clg)
+                        my_write("You classified", word, "as", clo,
+                                 "but it is", clg)
                     else:
                         if cog != coo:
                             wrong_co += 1
-                            print("You corrected", word, "as", coo,
-                                  "but it is", cog)
+                            my_write("You corrected", word, "as", coo,
+                                     "but it is", cog)
                         else:
                             hits += 1
     assert wrong_cl + wrong_co == total - hits
 
-    print("\nSUMMARY")
-    print("=======")
-    print("There are ", len(gold_dict), "to correct.")
-    print("You corrected ", len(generated_dict))
-    print("#Corrected vs. #ToBeCorrected:", len(both))
-    print("#Corrected vs. #NotToBeCorrected:",
-          len(set_generated_ids - set_gold_ids))
-    print("#NotCorrected vs. #ToBeCorrected:", len(missing_tweets))
-    print("You hit", hits, "out of", total, "corrections.")
-    print("The system classified", wrong_cl, "words differently,",
-          "and", wrong_co, "are miscorrected.")
-    print("Missing corrections:", misses)
-    print("Surplus corrections:", surpluses)
-    print("Words unanalyzed (corrected not equal times):", unanalyzed, "\n")
+    my_write("\nSUMMARY", stdout=True)
+    my_write("=======", stdout=True)
+    my_write("There are ", len(gold_dict), "to correct.", stdout=True)
+    my_write("You corrected ", len(generated_dict), stdout=True)
+    my_write("#TweetsCorrected vs. #TweetsToBeCorrected:",
+             len(both), stdout=True)
+    my_write("#TweetsCorrected vs. #TweetsNotToBeCorrected:",
+             len(set_generated_ids - set_gold_ids), stdout=True)
+    my_write("#TweetsNotCorrected vs. #TweetsToBeCorrected:",
+             len(missing_tweets), stdout=True)
+    my_write("You hit", hits, "out of", total, "corrections.", stdout=True)
+    my_write("The system classified", wrong_cl, "words differently,",
+             "and", wrong_co, "are miscorrected.", stdout=True)
+    my_write("Missing corrections:", misses, stdout=True)
+    my_write("Surplus corrections:", surpluses, stdout=True)
+    my_write("Words unanalyzed (corrected not equal times):",
+             unanalyzed, stdout=True)
+
+    print("\nA detailed information can be found in 'stats.txt'")
 
 
 if __name__ == '__main__':
     gold_dict = Tw_Splitter('Input/corpus_v1.txt').corrections
     generated_dict = Tw_Splitter('Output/corpus_v1.txt').corrections
+
+    if os.path.exists('stats.txt'):
+        os.remove('stats.txt')
 
     get_measure(gold_dict, generated_dict)
