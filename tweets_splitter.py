@@ -4,7 +4,7 @@ from collections import defaultdict
 
 class Tw_Splitter(object):
     def __init__(self, tweets_file):
-        filepath = os.path.join(os.getcwd(), 'Input', tweets_file)
+        filepath = os.path.join(os.getcwd(), tweets_file)
         print('Input tweets file:', filepath)
         file = open(filepath, 'r')
         lines = file.read().split('\n')

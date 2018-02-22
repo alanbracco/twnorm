@@ -1,4 +1,5 @@
 import time
+from os import path
 from aux import progress
 from collections import defaultdict
 from oov_picker import OOVpicker
@@ -13,7 +14,7 @@ from candidates_memory import CandidatesMemory
 def MainProcess(input_file, output_file, model_file):
 
     print('Initializing resources...')
-    splitter = Tw_Splitter(input_file)
+    splitter = Tw_Splitter(path.join('Input', input_file))
     picker = OOVpicker(splitter.texts)
     classifier = OOVclassifier()
     primary = PrimaryCandidates(2)
