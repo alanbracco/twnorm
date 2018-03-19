@@ -1,5 +1,7 @@
 import os
+from copy import copy
 from tweets_splitter import Tw_Splitter
+from oov_picker import OOVpicker
 
 
 def my_write(*args, stdout=False, filename='stats.txt'):
@@ -9,7 +11,7 @@ def my_write(*args, stdout=False, filename='stats.txt'):
         print(*args)
 
 
-def get_measure(gold_dict, generated_dict):
+def get_measure(gold_dict, generated_dict, tokenized):
 
     my_write("\nSTATISTICS")
     my_write("==========")
@@ -30,6 +32,12 @@ def get_measure(gold_dict, generated_dict):
     total_gold = 0  # Total number of corrections in 'gold' tweets
     total_own = 0  # Total number of corrections in 'own' tweets
 
+    oov_tp = 0  # Detected as OOV and it is OOV (True positives)
+    oov_fp = 0  # Detected as OOV but it is not OOV (False positives)
+    oov_tn = 0  # Not detected as OOV and it is not OOV (True Negatives)
+    oov_fn = 0  # Not detected as OOV but it is OOV (False Negatives)
+    total_words = 0  # Total number of words
+
     for tweet_id in missing_tweets:
         total_gold += len(gold_dict[tweet_id])
 
@@ -39,12 +47,34 @@ def get_measure(gold_dict, generated_dict):
         total_gold += len(gold_corrections)
         total_own += len(own_corrections)
 
-        gold_words = {word for word, _, _ in gold_corrections}
-        own_words = {word for word, _, _ in own_corrections}
+        gold_words = [word for word, _, _ in gold_corrections]
+        set_gold_words = set(gold_words)
+        own_words = [word for word, _, _ in own_corrections]
+        set_own_words = set(own_words)
 
-        missing_words = gold_words - own_words
-        surplus_words = own_words - gold_words
-        both_words = gold_words & own_words
+        all_words = [word for j in tokenized[tweet_id].keys()
+                     for word, _ in tokenized[tweet_id][j]]
+
+        my_oov = copy(own_words)
+        gold_oov = copy(gold_words)
+        total_words += len(all_words)
+        for word in all_words:
+            if word in gold_oov and word in my_oov:
+                oov_tp += 1
+                my_oov.remove(word)
+                gold_oov.remove(word)
+            elif word in gold_oov and word not in my_oov:
+                oov_fn += 1
+                gold_oov.remove(word)
+            elif word not in gold_oov and word in my_oov:
+                oov_fp += 1
+                my_oov.remove(word)
+            elif word not in gold_oov and word not in my_oov:
+                oov_tn += 1
+
+        missing_words = set_gold_words - set_own_words
+        surplus_words = set_own_words - set_gold_words
+        both_words = set_gold_words & set_own_words
         conflict_words = missing_words | surplus_words
 
         if missing_words or surplus_words:
@@ -52,10 +82,10 @@ def get_measure(gold_dict, generated_dict):
             my_write("-"*len("TweetID: " + tweet_id))
             if missing_words:
                 misses += len(missing_words)
-                my_write("Missing corrections:", missing_words)
+                my_write("Missing words:", sorted(list(missing_words)))
             if surplus_words:
                 surpluses += len(surplus_words)
-                my_write("Surplus corrections:", surplus_words)
+                my_write("Surplus words:", sorted(list(surplus_words)))
 
         for word in both_words:
             gold_tuples = [t for t in gold_corrections if t[0] == word]
@@ -89,6 +119,12 @@ def get_measure(gold_dict, generated_dict):
                             hits += 1
     assert wrong_cl + wrong_co == total - hits
 
+    assert total_words == oov_fn + oov_fp + oov_tn + oov_tp
+
+    oov_accuracy = (oov_tp + oov_tn) / total_words
+    oov_precision = oov_tp / (oov_tp + oov_fp)
+    oov_recall = oov_tp / (oov_tp + oov_fn)
+
     my_write("\nSUMMARY", stdout=True)
     my_write("=======", stdout=True)
     my_write("There are ", len(gold_dict), "to correct.", stdout=True)
@@ -100,21 +136,33 @@ def get_measure(gold_dict, generated_dict):
     my_write("#TweetsNotCorrected vs. #TweetsToBeCorrected:",
              len(missing_tweets), stdout=True)
     my_write("You hit", hits, "out of", total, "corrections.", stdout=True)
-    my_write("The system classified", wrong_cl, "words differently,",
-             "and", wrong_co, "are miscorrected.", stdout=True)
+    my_write("The system CLASSIFIED", wrong_cl, "words differently.",
+             stdout=True)
+    my_write("The system MISCORRECTED", wrong_co, "words.", stdout=True)
     my_write("Missing corrections:", misses, stdout=True)
     my_write("Surplus corrections:", surpluses, stdout=True)
     my_write("Words unanalyzed (corrected not equal times):",
              unanalyzed, stdout=True)
 
+    my_write("\nOOV detection", stdout=True)
+    my_write("-------------", stdout=True)
+    my_write("Accuracy:", round(oov_accuracy, 2), stdout=True)
+    my_write("Precision:", round(oov_precision, 2), stdout=True)
+    my_write("Recall:", round(oov_recall, 2), stdout=True)
+
     print("\nA detailed information can be found in 'stats.txt'")
 
 
 if __name__ == '__main__':
-    gold_dict = Tw_Splitter('Input/corpus_v1.txt').corrections
-    generated_dict = Tw_Splitter('Output/corpus_v1.txt').corrections
+    input_splitter = Tw_Splitter('Input/corpus_v1.txt')
+    output_splitter = Tw_Splitter('Output/corpus_v1.txt')
+
+    gold_dict = input_splitter.corrections
+    generated_dict = output_splitter.corrections
+
+    tokenized = OOVpicker(input_splitter.texts).tokenized
 
     if os.path.exists('stats.txt'):
         os.remove('stats.txt')
 
-    get_measure(gold_dict, generated_dict)
+    get_measure(gold_dict, generated_dict, tokenized)
