@@ -6,9 +6,9 @@ TweetID: 948132798526836736
 ---------------------------
 Missing words: ['callo', 'fisure', 'termine']
 Surplus words: ['chau', 'escabiar']
+You classified JSJAJAJAJAJAJ as 1 but it is 0
 You corrected escabie as escalie but it is escabié
 You classified lpm as 1 but it is 0
-You classified JSJAJAJAJAJAJ as 1 but it is 0
 You corrected plis as plus but it is please
 You corrected jajajajaja as Ja but it is ja
 
@@ -34,8 +34,8 @@ You classified nose as 2 but it is 0
 TweetID: 948133211124748288
 ---------------------------
 Missing words: ['Na', 'publique']
-You corrected jajaja as Ja but it is ja
 You corrected jaja as Ja but it is ja
+You corrected jajaja as Ja but it is ja
 
 TweetID: 948133212424933376
 ---------------------------
@@ -66,8 +66,8 @@ You classified increible as 1 but it is 0
 TweetID: 948133416813330432
 ---------------------------
 Missing words: ['falto']
-You classified dia as 1 but it is 0
 You classified despues as 1 but it is 0
+You classified dia as 1 but it is 0
 You classified Jajaj as 1 but it is 0
 
 TweetID: 948133566462025730
@@ -89,10 +89,10 @@ TweetID: 948133698288971777
 ---------------------------
 Surplus words: ['Nanci']
 You corrected Desa as esa but it is desayuno
-You classified lpm as 1 but it is 0
 You classified dias as 1 but it is 0
-You classified jajjajaaj as 1 but it is 0
+You classified lpm as 1 but it is 0
 You classified aw as 2 but it is 0
+You classified jajjajaaj as 1 but it is 0
 
 TweetID: 948133831802019840
 ---------------------------
@@ -114,11 +114,11 @@ You classified Niuyer as 1 but it is 0
 TweetID: 948134195720851456
 ---------------------------
 Surplus words: ['Chris']
-You classified dias as 1 but it is 0
 You corrected Ak as A but it is Acá
-You classified titi as 1 but it is 0
-You corrected atr as art but it is ATR
+You classified dias as 1 but it is 0
 You corrected ahre as Are but it is ah_re
+You corrected atr as art but it is ATR
+You classified titi as 1 but it is 0
 You classified hobbie as 1 but it is 0
 You classified lpm as 1 but it is 0
 You corrected pabadas as Pavadas but it is pavadas
@@ -146,10 +146,10 @@ You corrected besis as tesis but it is besos
 TweetID: 948135083772399616
 ---------------------------
 Missing words: ['Va', 'bien', 'noticiad']
-You classified dia as 1 but it is 0
 You corrected Q as que but it is Que
 You classified dia as 1 but it is 0
 You classified aca as 1 but it is 0
+You classified dia as 1 but it is 0
 You corrected Rrrrrre as Ríe but it is Re
 You corrected acerme as acere but it is hacerme
 
@@ -180,10 +180,10 @@ TweetID: 948136054439186432
 ---------------------------
 Missing words: ['esta']
 Surplus words: ['chau']
-You classified encontre as 1 but it is 0
-You classified pa as 1 but it is 0
 You corrected chabon as Chabón but it is chabón
+You classified encontre as 1 but it is 0
 You corrected luji as lujo but it is -
+You classified pa as 1 but it is 0
 
 TweetID: 948136062949437442
 ---------------------------
@@ -207,11 +207,11 @@ You corrected eeee as e but it is eh
 TweetID: 948136559198507009
 ---------------------------
 Missing words: ['Jamas']
+You classified despues as 1 but it is 0
 You classified dia as 1 but it is 0
 You corrected lizy as liza but it is Lizy
-You classified despues as 1 but it is 0
-You corrected reglao as reglas but it is regaló
 You corrected jaz as paz but it is Jaz
+You corrected reglao as reglas but it is regaló
 
 TweetID: 948136895879569410
 ---------------------------
@@ -254,8 +254,8 @@ You classified dias as 1 but it is 0
 TweetID: 948138275381837824
 ---------------------------
 Surplus words: ['ví']
-You corrected jajajajajajajajajaja as Ja but it is ja
 You corrected Naaaa as no but it is No
+You corrected jajajajajajajajajaja as Ja but it is ja
 
 TweetID: 948138334001516544
 ---------------------------
@@ -293,15 +293,15 @@ TweetID: 948139605701922816
 ---------------------------
 Surplus words: ['Mati']
 You classified aca as 1 but it is 0
-You corrected pibeessss as Pibes but it is pibes
 You classified jajajajajaj as 1 but it is 0
+You corrected pibeessss as Pibes but it is pibes
 You classified jajajajajahajhahahahaqjqj as 1 but it is 0
 
 TweetID: 948139848329723905
 ---------------------------
 Surplus words: ['2x1', 'Betos']
-You classified Mc as 1 but it is 0
 You classified Burger as 2 but it is 0
+You classified Mc as 1 but it is 0
 You corrected lindisimo as Lindísimo but it is lindísimo
 
 TweetID: 948140020426297345
@@ -310,35 +310,35 @@ Missing words: ['INTERNE', 'VALLAN']
 You corrected RTT as retweet but it is RT
 You classified chomaso as 1 but it is 0
 You corrected aa as a but it is ah
-You classified pa as 1 but it is 0
 You classified frenchi as 1 but it is 0
+You classified pa as 1 but it is 0
 You classified pegueme as 1 but it is 0
 
 TweetID: 950488375580155905
 ---------------------------
 Missing words: ['COMO', 'SE']
 Surplus words: ['MDQ']
-You corrected criteri as criterio but it is -
 You classified PERIPDISTAS as 1 but it is 0
 You corrected Q as que but it is QUE
+You corrected criteri as criterio but it is -
 You classified aca as 1 but it is 0
 You corrected muerdennnn as Muerden but it is muerden
-You classified porfavor as 1 but it is 0
 You corrected plisss as plus but it is please
-You classified empedo as 1 but it is 0
+You classified porfavor as 1 but it is 0
 You classified aca as 1 but it is 0
+You classified empedo as 1 but it is 0
 You classified pue as 1 but it is 0
 You corrected Vamooo as Vano but it is Vamos
-You classified jajajaj as 1 but it is 0
 You classified asi as 1 but it is 0
+You classified jajajaj as 1 but it is 0
 You corrected AAAAAAAAH as Ah but it is AH
 You corrected YAYAYAYAYAYYAYAYA as ya but it is YA
 
 TweetID: 951649995127705601
 ---------------------------
 Missing words: ['gusto']
-You corrected porq as por but it is porque
 You classified mayoria as 1 but it is 0
+You corrected porq as por but it is porque
 You classified ALFIN as 1 but it is 0
 
 TweetID: 951650057627013120
@@ -412,13 +412,13 @@ TweetID: 951665341658206209
 ---------------------------
 Surplus words: ['jean', 'short']
 You classified quizas as 1 but it is 0
-You corrected buee as Vue but it is bueno
 You corrected Ajajajaj as Aj but it is Ja
+You corrected buee as Vue but it is bueno
 You corrected metian as Metían but it is metían
 You corrected casaaa as Casa but it is casa
 You corrected juegeeee as Juege but it is juegue
-You classified violin as 2 but it is 0
 You corrected ajja as Aja but it is ja
+You classified violin as 2 but it is 0
 You corrected Aaaaaa as A but it is Ah
 You corrected tw as tu but it is Twitter
 
@@ -435,10 +435,10 @@ You corrected cammm as Cam but it is cámara
 TweetID: 951680208532320258
 ---------------------------
 Missing words: ['arranque']
-You corrected mamaaaa as mama but it is mamá
 You classified increible as 1 but it is 0
-You corrected novix as novia but it is novio/a
+You corrected mamaaaa as mama but it is mamá
 You classified lpm as 1 but it is 0
+You corrected novix as novia but it is novio/a
 
 TweetID: 951680273841819648
 ---------------------------
@@ -454,10 +454,10 @@ TweetID: 951680337180090368
 Surplus words: ['1ºpuesto', 'ahicito', 'nomás']
 You corrected já as Ja but it is ja
 You corrected mepa as mesa but it is me_parece
-You corrected MUJEEEER as mujer but it is MUJER
 You corrected LEEEY as ley but it is LEY
 You corrected LEEEY as ley but it is LEY
 You corrected MUEEER as Muer but it is MUJER
+You corrected MUJEEEER as mujer but it is MUJER
 
 TweetID: 951680366129147905
 ---------------------------
@@ -474,11 +474,11 @@ TweetID: 951680394432270336
 ---------------------------
 Missing words: ['estas']
 You corrected ahi as Ahí but it is ahí
-You classified cabio as 1 but it is 0
 You corrected Uuuuuuuu as Un but it is Uh
-You corrected falis as alis but it is feliz
-You corrected ahre as Are but it is ah_re
+You classified cabio as 1 but it is 0
 You corrected AHRE as ARE but it is AH_RE
+You corrected ahre as Are but it is ah_re
+You corrected falis as alis but it is feliz
 
 TweetID: 951680423599443968
 ---------------------------
@@ -510,8 +510,8 @@ TweetID: 951680616453558273
 Surplus words: ['arcangel']
 You classified lpm as 1 but it is 0
 You classified dentrifico as 1 but it is 0
-You corrected garron as Garrón but it is garrón
 You corrected Bue as bue but it is Bueno
+You corrected garron as Garrón but it is garrón
 You classified jajajjaajjaj as 1 but it is 0
 You corrected decis as Decís but it is decís
 
@@ -524,8 +524,8 @@ TweetID: 951680711580442624
 ---------------------------
 Surplus words: ['BY', 'MYA']
 You classified JAJAJAJAAJAJAJJAJAAJAJAAJAJAJAJAJAJAJAJAJAJAJ as 1 but it is 0
-You corrected PUEDOO as puedo but it is PUEDO
 You corrected LPMM as LP but it is LPM
+You corrected PUEDOO as puedo but it is PUEDO
 You classified chikis as 1 but it is 0
 You classified TENERSUEÑO as 1 but it is 0
 You corrected ocaciona as Ocasiona but it is ocasiona
@@ -542,9 +542,9 @@ You classified lpm as 1 but it is 0
 TweetID: 951695355019714560
 ---------------------------
 Missing words: ['ah']
-You corrected q as que but it is qué
-You corrected jajaja as Ja but it is ja
 You corrected decis as Decís but it is decís
+You corrected jajaja as Ja but it is ja
+You corrected q as que but it is qué
 You corrected jaja as Ja but it is ja
 
 TweetID: 951695420362756096
@@ -566,8 +566,8 @@ You classified jejej as 1 but it is 0
 TweetID: 951695571953307648
 ---------------------------
 Missing words: ['como']
-You corrected m as mi but it is me
 You corrected duermoo as Duermo but it is duermo
+You corrected m as mi but it is me
 You corrected Mmmmmmmmm as Me but it is Mm
 You corrected JAJAJJAJJA as Ja but it is JA
 You corrected T as Tú but it is TE
@@ -580,8 +580,8 @@ You corrected Meoh as Meo but it is Mío
 TweetID: 951695720167374851
 ---------------------------
 Surplus words: ['follow', 'internet']
-You corrected ahre as Are but it is ah_re
 You corrected Encerio as Enserio but it is En_serio
+You corrected ahre as Are but it is ah_re
 
 TweetID: 951695731437588480
 ---------------------------
@@ -598,8 +598,8 @@ TweetID: 951695768716480512
 ---------------------------
 Surplus words: ['Netflix']
 You corrected jaaaaaa as Ja but it is ja
-You corrected eee as e but it is eh
 You corrected ahh as Ah but it is ah
+You corrected eee as e but it is eh
 You classified quieresalacamayotellevo as 1 but it is 0
 You corrected Ahno as Ano but it is Ah_no
 You classified bue as 1 but it is 0
@@ -610,8 +610,8 @@ You corrected Vennn as ven but it is Ven
 TweetID: 951695967698456577
 ---------------------------
 Surplus words: ['John', 'Lennon']
-You corrected paaaaake as pase but it is para_qué
 You classified Toy as 2 but it is 0
+You corrected paaaaake as pase but it is para_qué
 You classified NECECITE as 1 but it is 0
 
 TweetID: 951696001244508161
@@ -678,9 +678,9 @@ You corrected babys as babas but it is babies
 You corrected extrañabaaaaaaa as Extrañaba but it is extrañaba
 You corrected iara as para but it is Iara
 You corrected ahre as Are but it is ah_re
+You classified beibis as 1 but it is 0
 You corrected jajajajaja as Ja but it is ja
 You corrected volve as Volvé but it is volvé
-You classified beibis as 1 but it is 0
 You classified sols as 2 but it is 0
 
 TweetID: 951711117881085952
@@ -721,8 +721,8 @@ You corrected 8am as mam but it is 8_A.M.
 TweetID: 951725685047025664
 ---------------------------
 Missing words: ['llorá']
-You classified culiauuuuu as 1 but it is 0
 You corrected JAJAJAJAJA as Ja but it is JA
+You classified culiauuuuu as 1 but it is 0
 
 TweetID: 951725825031884800
 ---------------------------

@@ -87,7 +87,7 @@ def get_measure(gold_dict, generated_dict, tokenized):
                 surpluses += len(surplus_words)
                 my_write("Surplus words:", sorted(list(surplus_words)))
 
-        for word in both_words:
+        for word in sorted(list(both_words)):
             gold_tuples = [t for t in gold_corrections if t[0] == word]
             own_tuples = [t for t in own_corrections if t[0] == word]
             n_gold = len(gold_tuples)
