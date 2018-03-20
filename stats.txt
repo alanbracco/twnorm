@@ -798,7 +798,8 @@ You corrected  327
 #TweetsCorrected vs. #TweetsToBeCorrected: 279
 #TweetsCorrected vs. #TweetsNotToBeCorrected: 48
 #TweetsNotCorrected vs. #TweetsToBeCorrected: 22
-You hit 174 out of 472 corrections.
+You hit 174 out of 496 corrections (24 corrections are missing).
+You hit 348 out of 496 classifications (24 corrections are missing).
 The system CLASSIFIED 124 words differently.
 The system MISCORRECTED 174 words.
 Missing corrections: 94

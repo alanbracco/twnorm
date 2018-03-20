@@ -22,15 +22,15 @@ def get_measure(gold_dict, generated_dict, tokenized):
     both = sorted(list(set_gold_ids & set_generated_ids))
     missing_tweets = sorted(list(set_gold_ids - set_generated_ids))
 
-    hits = 0
+    hits_corr = 0
+    hits_class = 0
     total = 0
     wrong_cl = 0
     wrong_co = 0
     misses = 0
     surpluses = 0
     unanalyzed = 0  # Quantity of words not analyzed
-    total_gold = 0  # Total number of corrections in 'gold' tweets
-    total_own = 0  # Total number of corrections in 'own' tweets
+    total_missing_corr = 0  # Total number of corrections in 'gold' tweets
 
     oov_tp = 0  # Detected as OOV and it is OOV (True positives)
     oov_fp = 0  # Detected as OOV but it is not OOV (False positives)
@@ -39,13 +39,11 @@ def get_measure(gold_dict, generated_dict, tokenized):
     total_words = 0  # Total number of words
 
     for tweet_id in missing_tweets:
-        total_gold += len(gold_dict[tweet_id])
+        total_missing_corr += len(gold_dict[tweet_id])
 
     for tweet_id in both:
         gold_corrections = gold_dict[tweet_id]
         own_corrections = generated_dict[tweet_id]
-        total_gold += len(gold_corrections)
-        total_own += len(own_corrections)
 
         gold_words = [word for word, _, _ in gold_corrections]
         set_gold_words = set(gold_words)
@@ -111,13 +109,17 @@ def get_measure(gold_dict, generated_dict, tokenized):
                         my_write("You classified", word, "as", clo,
                                  "but it is", clg)
                     else:
+                        hits_class += 1
                         if cog != coo:
                             wrong_co += 1
                             my_write("You corrected", word, "as", coo,
                                      "but it is", cog)
                         else:
-                            hits += 1
-    assert wrong_cl + wrong_co == total - hits
+                            hits_corr += 1
+
+    assert wrong_cl + wrong_co == total - hits_corr
+
+    total += total_missing_corr
 
     assert total_words == oov_fn + oov_fp + oov_tn + oov_tp
 
@@ -135,7 +137,10 @@ def get_measure(gold_dict, generated_dict, tokenized):
              len(set_generated_ids - set_gold_ids), stdout=True)
     my_write("#TweetsNotCorrected vs. #TweetsToBeCorrected:",
              len(missing_tweets), stdout=True)
-    my_write("You hit", hits, "out of", total, "corrections.", stdout=True)
+    my_write("You hit", hits_corr, "out of", total, "corrections (" +
+             str(total_missing_corr), "corrections are missing).", stdout=True)
+    my_write("You hit", hits_class, "out of", total, "classifications (" +
+             str(total_missing_corr), "corrections are missing).", stdout=True)
     my_write("The system CLASSIFIED", wrong_cl, "words differently.",
              stdout=True)
     my_write("The system MISCORRECTED", wrong_co, "words.", stdout=True)
