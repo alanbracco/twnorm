@@ -496,7 +496,7 @@
 	q 0 que
 	muerdennnn 0 Muerden
 950488443657826306	@itsjoelpimentel Seguime porfavor joel 😢😢😢😢😢😢😢😢😢😢😢😢 te lo pido  Hago lo que quieras plisss
-	porfavor 1 -
+	porfavor 0 por_favor
 	joel 0 Joel
 	plisss 0 plus
 950488450477719552	Alá dame paciencia
@@ -522,7 +522,7 @@
 951650057627013120	Mañana tempranito pal pueblo a disfrutar de la pile.. si es q no llueve 😂
 	q 0 que
 951650173272326144	@Sebastian_Athie Esque son divinoooosss!!! @Sebastian_Athie @palmaagustina
-	Esque 0 Esquel
+	Esque 0 es_que
 	divinoooosss 0 Divinos
 951665042105225216	Me canse
 951665053098561537	Una birrita o un fernet. O los dos. Bien fresquitos por favor
@@ -897,7 +897,7 @@
 951710829354913792	Me llega un snap de este flaco y pienso: porque carajo no le dí
 	snap 2 -
 951710844198555648	Que alguien le diga que me pase esas casuales porfavorrrrrrrr
-	porfavorrrrrrrr 0 porfavor
+	porfavorrrrrrrr 0 por_favor
 951710849374281728	Unanse, es para hablar boludeces, sean buena onda, somos gente de tw⚘ (si van a hablar entren, sino no) 👌🏻💣 https://t.co/DdgNYycKzt 💌
 	Unanse 0 únanse
 	tw 0 tu

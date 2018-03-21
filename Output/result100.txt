@@ -18,8 +18,8 @@
 318773733093437441	Con las locas @isainvernon @Patriciia_nieto
 318848939635900416	@guijo_gomez jajajajajes si esque te quiero mas #sinellanada :)) TEQUIEROO
 	jajajajajes 1 -
-	esque 0 esquí
-	TEQUIEROO 1 -
+	esque 0 es_que
+	TEQUIEROO 0 te_quiero
 318802432618545152	@Genko jajajaja debe ser eso :D
 	jajajaja 0 Ja
 318946783944400897	Después de 7 horas y media de viaje y estar ahora 4 horas hablando por móvil me voy a dormir que mañana será un buen día, buenas noches. #J

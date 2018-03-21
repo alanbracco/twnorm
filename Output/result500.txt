@@ -773,7 +773,7 @@
 	k 0 ka
 319071752590336000	Pues vuelta a la rutina diaria. Volvemos a la facultad!!!
 318860193406545920	Si esque eres monísimo :')
-	esque 0 esquí
+	esque 0 es_que
 	monísimo 1 -
 318514191428382720	@alvaroolopez25 estoy en ciu... como no te lo envie por whatsapp jajaja
 	ciu 0 siu

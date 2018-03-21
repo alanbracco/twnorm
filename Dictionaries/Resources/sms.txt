@@ -103,7 +103,7 @@ pdo:borrachera
 pdt:piérdete
 pf:por_favor
 pkñ:pequeño
-pls:porfavor
+pls:por_favor
 porfa:por_favor
 pq:porque
 pqñ:pequeño

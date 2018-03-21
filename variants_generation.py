@@ -48,6 +48,12 @@ class PrimaryCandidates(object):
                 cands.add(restored[:i] + new + restored[i+1:])
         return cands
 
+    def agglutinated_words(self, word):
+        candidates = set()
+        for i in range(len(word)):
+            candidates.add(word[:i] + '_' + word[i:])
+        return candidates
+
     def change_letters(self, word):
         """
             return set of words with
@@ -198,14 +204,18 @@ class PrimaryCandidates(object):
             reps = self.all_reps(word)
             for wd in reps:
                 cands.add(wd)
+
                 accent_mark = self.accent_mark(wd)
                 b = b.union(accent_mark)
                 cands = cands.union(accent_mark)
+
+                agglutinated_words = self.agglutinated_words(wd)
+                cands = cands.union(agglutinated_words)
+
                 for ww in b:
                     spelling_error = self.spelling_error(ww, self.n_errors)
                     cands = cands.union(spelling_error)
-            # filter cands_tmp (only leaves correct words)
-            # cands = self.filter_candidates(cands)
+
             for c in cands:
                 candidates = candidates.union(self.upper_lower(c))
             candidates = self.filter_candidates(candidates)
