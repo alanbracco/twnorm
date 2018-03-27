@@ -324,7 +324,6 @@ You corrected criteri as criterio but it is -
 You classified aca as 1 but it is 0
 You corrected muerdennnn as Muerden but it is muerden
 You corrected plisss as plus but it is please
-You classified porfavor as 1 but it is 0
 You classified aca as 1 but it is 0
 You classified empedo as 1 but it is 0
 You classified pue as 1 but it is 0
@@ -344,7 +343,7 @@ You classified ALFIN as 1 but it is 0
 TweetID: 951650057627013120
 ---------------------------
 Missing words: ['pal']
-You corrected Esque as Esquel but it is Es_que
+You corrected Esque as es_que but it is Es_que
 You corrected divinoooosss as Divinos but it is divinos
 
 TweetID: 951665087475044352
@@ -647,7 +646,6 @@ TweetID: 951710829354913792
 ---------------------------
 Missing words: ['porque']
 Surplus words: ['snap']
-You corrected porfavorrrrrrrr as porfavor but it is por_favor
 
 TweetID: 951710849374281728
 ---------------------------
@@ -798,10 +796,10 @@ You corrected  327
 #TweetsCorrected vs. #TweetsToBeCorrected: 279
 #TweetsCorrected vs. #TweetsNotToBeCorrected: 48
 #TweetsNotCorrected vs. #TweetsToBeCorrected: 22
-You hit 174 out of 496 corrections (24 corrections are missing).
-You hit 348 out of 496 classifications (24 corrections are missing).
-The system CLASSIFIED 124 words differently.
-The system MISCORRECTED 174 words.
+You hit 176 out of 496 corrections (24 corrections are missing).
+You hit 349 out of 496 classifications (24 corrections are missing).
+The system CLASSIFIED 123 words differently.
+The system MISCORRECTED 173 words.
 Missing corrections: 94
 Surplus corrections: 112
 Words unanalyzed (corrected not equal times): 0
