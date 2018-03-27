@@ -79,8 +79,19 @@ def get_measure(gold_dict, generated_dict, tokenized):
             my_write("\nTweetID:", tweet_id)
             my_write("-"*len("TweetID: " + tweet_id))
             if missing_words:
+                sorted_missing_words = sorted(list(missing_words))
                 misses += len(missing_words)
-                my_write("Missing words:", sorted(list(missing_words)))
+                my_write("Missing words:", sorted_missing_words)
+                for word in sorted_missing_words:
+                    correct_words = [c for w, _, c in gold_corrections
+                                     if w == word]
+                    if len(correct_words) > 1:
+                        my_write("WARNING: There are more than one correction"
+                                 "for '{}'. All corrections will be printed"
+                                 "".format(word))
+                    for correct_word in correct_words:
+                        my_write(" - Word '{}' should be corrected as '{}'."
+                                 "".format(word, correct_word))
             if surplus_words:
                 surpluses += len(surplus_words)
                 my_write("Surplus words:", sorted(list(surplus_words)))
@@ -127,10 +138,18 @@ def get_measure(gold_dict, generated_dict, tokenized):
     oov_precision = oov_tp / (oov_tp + oov_fp)
     oov_recall = oov_tp / (oov_tp + oov_fn)
 
+    cl_accuracy = hits_class / total
+
+    co_accuracy = hits_corr / total
+
     my_write("\nSUMMARY", stdout=True)
     my_write("=======", stdout=True)
-    my_write("There are ", len(gold_dict), "to correct.", stdout=True)
-    my_write("You corrected ", len(generated_dict), stdout=True)
+    if len(gold_dict) > 1:
+        tweets = 'tweets'
+    else:
+        tweets = 'tweet'
+    my_write("There are", len(gold_dict), tweets, "to correct.", stdout=True)
+    my_write("You corrected", len(generated_dict), stdout=True)
     my_write("#TweetsCorrected vs. #TweetsToBeCorrected:",
              len(both), stdout=True)
     my_write("#TweetsCorrected vs. #TweetsNotToBeCorrected:",
@@ -141,7 +160,7 @@ def get_measure(gold_dict, generated_dict, tokenized):
              str(total_missing_corr), "corrections are missing).", stdout=True)
     my_write("You hit", hits_class, "out of", total, "classifications (" +
              str(total_missing_corr), "corrections are missing).", stdout=True)
-    my_write("The system CLASSIFIED", wrong_cl, "words differently.",
+    my_write("The system MISCLASSIFIED", wrong_cl, "words.",
              stdout=True)
     my_write("The system MISCORRECTED", wrong_co, "words.", stdout=True)
     my_write("Missing corrections:", misses, stdout=True)
@@ -154,6 +173,17 @@ def get_measure(gold_dict, generated_dict, tokenized):
     my_write("Accuracy:", round(oov_accuracy, 2), stdout=True)
     my_write("Precision:", round(oov_precision, 2), stdout=True)
     my_write("Recall:", round(oov_recall, 2), stdout=True)
+
+    my_write("\nClassification", stdout=True)
+    my_write("--------------", stdout=True)
+    my_write("Accuracy:", round(cl_accuracy, 2), stdout=True)
+
+    my_write("\nCorrections", stdout=True)
+    my_write("-----------", stdout=True)
+    my_write("Accuracy:", round(co_accuracy, 2), stdout=True)
+    my_write("Note that if class is wrong it is counted as MISCORRECTED too.",
+             stdout=True)
+
 
     print("\nA detailed information can be found in 'stats.txt'")
 
