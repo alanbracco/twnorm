@@ -39,7 +39,7 @@ def MainProcess(input_file, output_file, model_file):
         progress(msg)
         n += 1
         for j, sent in tweet.items():  # j is number of the sent
-            for_prev = tokenized[tweet_id][j]
+            for_prev = tokenized[tweet_id][j]  # For previous tokens corrected
             correct[tweet_id][j] = []
             for word, pos in sent:
                 class_number = classifier.classify(word)

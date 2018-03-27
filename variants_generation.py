@@ -50,7 +50,7 @@ class PrimaryCandidates(object):
 
     def agglutinated_words(self, word):
         candidates = set()
-        for i in range(len(word)):
+        for i in range(1, len(word)):
             candidates.add(word[:i] + '_' + word[i:])
         return candidates
 
