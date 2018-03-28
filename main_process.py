@@ -58,7 +58,6 @@ def MainProcess(input_file, output_file, model_file):
                             memory.add_candidates(word, IVcandidates)
                     # if no candidates generated
                     if len(IVcandidates) == 0:
-                        class_number = 1
                         correct_word = '-'
                     else:
                         prev_tokens = selector.prev_tokens((word, pos),

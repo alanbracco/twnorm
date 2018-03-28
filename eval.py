@@ -160,8 +160,7 @@ def get_measure(gold_dict, generated_dict, tokenized):
              str(total_missing_corr), "corrections are missing).", stdout=True)
     my_write("You hit", hits_class, "out of", total, "classifications (" +
              str(total_missing_corr), "corrections are missing).", stdout=True)
-    my_write("The system MISCLASSIFIED", wrong_cl, "words.",
-             stdout=True)
+    my_write("The system MISCLASSIFIED", wrong_cl, "words.", stdout=True)
     my_write("The system MISCORRECTED", wrong_co, "words.", stdout=True)
     my_write("Missing corrections:", misses, stdout=True)
     my_write("Surplus corrections:", surpluses, stdout=True)

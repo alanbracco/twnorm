@@ -17,7 +17,7 @@
 319066809934422016	Ahora tengo un felino que nombre quieres que le ponga? @laurarivsob
 318773733093437441	Con las locas @isainvernon @Patriciia_nieto
 318848939635900416	@guijo_gomez jajajajajes si esque te quiero mas #sinellanada :)) TEQUIEROO
-	jajajajajes 1 -
+	jajajajajes 0 -
 	esque 0 es_que
 	TEQUIEROO 0 te_quiero
 318802432618545152	@Genko jajajaja debe ser eso :D
@@ -50,7 +50,7 @@
 	ok 0 o
 	XD 0 D
 319104523203379200	SUSARGISTAS!!! A LAS 18:00 GRAN LLUVIA DE VOTOS!! TENEMOS Q SACAR A LOS GEMELOS DE LA CASA!! NOSOTROS TENEMOS EL PODER!! GH GEMELOS 27450 RT
-	SUSARGISTAS 1 -
+	SUSARGISTAS 0 -
 	Q 0 que
 	GH 0 Ge
 	RT 2 -
@@ -70,7 +70,7 @@
 	q 0 que
 	m 0 me
 	m 0 me
-	tuenti 1 -
+	tuenti 0 -
 	m 0 me
 	lies 2 -
 318869736261828609	@anaamilo ola k ase k no duerme
@@ -81,7 +81,7 @@
 	perdon 0 perdón
 	volveras 0 Volverás
 318520669316972545	@ManoloC13 Mira los vídeos que he retuiteao y fliparás... :S
-	retuiteao 1 -
+	retuiteao 0 -
 	fliparás 1 -
 	S 0 Si
 319097024144347136	Siempre tiene que pasar algo..
@@ -89,12 +89,12 @@
 318865435149873152	@anngeleescastro graciias grandullonaa ...... Jajajajajaj claroo q te invitooo.. Y tuu pagas vale?? Jajajaj tee quierooo graciias!!
 	graciias 0 Gracias
 	grandullonaa 0 Grandullona
-	Jajajajajaj 1 -
+	Jajajajajaj 0 -
 	claroo 0 claro
 	q 0 que
 	invitooo 0 invitó
 	tuu 0 tú
-	Jajajaj 1 -
+	Jajajaj 0 -
 	tee 2 -
 	quierooo 0 quiero
 	graciias 0 gracias
@@ -118,11 +118,11 @@
 	qe 0 que
 318505870621286400	No menos importante el 2 plato que nos hemos metido para el body, una riquísima pizza "Piemontese" @MiriamCullen7
 	body 1 -
-	Piemontese 1 -
+	Piemontese 0 -
 319096645914615808	Alguno mas habra , no se me ocurren mas
 	habra 0 habrá
 319060991902089217	Tengo más hambre que el tamagochi de un sordo.
-	tamagochi 1 -
+	tamagochi 0 -
 319128112354967555	Hechoo de menos a mi mami :'(
 	Hechoo 0 hecho
 	mami 0 mamá
@@ -156,7 +156,7 @@
 318887227155419138	porque todo el mundo es feliz? moriros todos.
 318487039454613504	Anoche con todas las catalanas!! (: http://t.co/R6LlwjlTId
 319112383924670466	Y ahora con una pseudopija del atleti??si ya te digo yo que... Que te como la cara jajajaja #subnormal #aPastarColega http://t.co/xZxQAk0eh1
-	pseudopija 1 -
+	pseudopija 0 -
 	atleti 0 Atleti
 	jajajaja 0 Ja
 319104304516571136	Mi Diario ha muerto ya :c
@@ -186,7 +186,7 @@
 318734586018418688	@PatriBeceiro que pasa patri siges con alvaero? O ya en casa espero que estes bien
 	patri 0 patria
 	siges 0 riges
-	alvaero 1 -
+	alvaero 0 -
 	estes 1 -
 319062690339368960	aggg 74.280 en.el.paro.en.jaen.una.cifra catastrofica. mas del.40%de la poblacion #yovoyaemigraryamismo
 	aggg 0 a
@@ -203,9 +203,9 @@
 	nadaa 0 nada
 319132181987471360	@Martalovedrew @Raquelsanchez96 nos hemos libradoo de la mongolitaa !
 	libradoo 0 Librado
-	mongolitaa 1 -
+	mongolitaa 0 -
 318688224920891392	BBQScreen, comparte la pantalla de tu dispositivo Android con el PC http://t.co/wAKiWwYv2a
-	BBQScreen 1 -
+	BBQScreen 0 -
 	Android 2 -
 	PC 2 -
 318839478791831552	@ainarahurtado piensalo bien, qe te puedo parti las muelas jajaja

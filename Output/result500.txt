@@ -1,25 +1,25 @@
 319106439526367234	La gente no cambia por que quiere, sino por que le hicieron daño y se vio obligada a dejar de ser quien era ..
 318676223985336320	Hoy llevo la camiseta de Batman jdjejdkahflwkdjwpvqh.
 	Batman 1 -
-	jdjejdkahflwkdjwpvqh 1 -
+	jdjejdkahflwkdjwpvqh 0 -
 318596947432841216	El siestón que me voy a echar hoy va a ser digno...!
-	siestón 1 -
+	siestón 0 -
 319132721748267009	@xHeartBreaker_ Ay Dios, hoy acabo en el hospital por ataques.
 318819189580263425	Esperando walking dead. A ver como acaba...
 	walking 2 -
 	dead 2 -
 318806604940181505	@Ursulaa5 me esquivocao y estoy en el donald del piolin ya estoy yendo. http://t.co/Q9kq4daXFv
-	esquivocao 1 -
+	esquivocao 0 -
 	donald 1 -
 	piolin 0 piolín
 318776809267290113	@cristinasorisa @lorenahl16 @rocioortiz954 @pilar_2212 @silvia_sg_95 de paluegos del fanegol jajajajajajajajajjajajajajajaja me meoooo
-	paluegos 1 -
-	fanegol 1 -
+	paluegos 0 -
+	fanegol 0 -
 	jajajajajajajajajjajajajajajaja 0 Ja
 	meoooo 0 Meo
 318954900933464066	* Vega del Codorno * Actualizado: 02-04-2013 05:02 UTC * Temperatura: 2,1 ºC ( Máx.: 2,8 / Mín.: 2,1 ) * Humedad:... http://t.co/yVq0k7MWs4
 	UTC 1 -
-	ºC 1 -
+	ºC 0 -
 	Máx 0 Más
 	Mín 0 Min
 318728946764103680	@loresinte @rubitamalaguita @bea_diamonds miedo me da chicas!! Miedo me da xq el año pasao acabamos to jamas porai jajaja
@@ -75,8 +75,8 @@
 	k 0 ka
 	romeria 0 romería
 318847110504132610	@MariaDelmar816 no creo que a nadie le sorprenda jajajajaj ya ves que ya me humillo yo, no hace falta que lo hagas tu jajajajaj ;)
-	jajajajaj 1 -
-	jajajajaj 1 -
+	jajajajaj 0 -
+	jajajajaj 0 -
 318898709410762753	#meteoAlarm en #Granada para el 03-04-2013 01:00:00 sobre Viento de nivel #BLANCO
 318822727983169537	I'm at Cercanías El Casar - @renfe (Getafe, Comunidad de Madrid) http://t.co/Jx1YnjmJeX
 	at 2 -
@@ -104,13 +104,13 @@
 318486491653357568	Yo creo que por hoy ya vale, #BuenasNoches
 318919584088469506	Mi sonrisa es mas grande que mis problemas.
 318721870893551617	Oins q agustito en el.#sooufa!
-	Oins 1 -
+	Oins 0 -
 	q 0 que
 	agustito 0 agustino
 319081607321489409	#TwitterosQueMeCaenBienSinConocer @DJoyTwihard porque es mi gemela *__*
 319140060182237186	'Abrir la ventana, colgar los problemas al sol'
 318720027660546048	A descansar un pokitin y a las claseeeesss
-	pokitin 1 -
+	pokitin 0 -
 	claseeeesss 0 clases
 318727552585846784	Que pronto se acaba lo bueno! Buena #Acampada2013 :)
 318908559578509313	@Mace_44 Rojas verdes y amarillas!, AMI ME GUSTAN LAS PASTILLAS!!!! JAJAJAJAJAJAJA!, que de risas por dios! xDDDDD
@@ -133,7 +133,7 @@
 	K 0 Ka
 	coñooo 0 coño
 318850372955422720	@SergioMrqz10 jajajpero esq si no hubiera sido por esa preciosa llamda no me hubieras visto;) que era muy tarde ya jo era hora de levantarse
-	jajajpero 1 -
+	jajajpero 0 -
 	esq 0 es_que
 	llamda 0 llamada
 318832461347962880	Recuerda qur lo hice por ti..
@@ -147,8 +147,8 @@
 318757005055623170	#MarkosLibertad defender a nuestro pais no es un delito
 	pais 0 país
 319029520608923650	(+) y el gilipollas de Mourinho lo único que está haciendo es destruir el madridismo desde dentro.
-	Mourinho 1 -
-	madridismo 1 -
+	Mourinho 0 -
+	madridismo 0 -
 318856354842439680	@ArribasSara @SiiLviiA_DiaZ Cri Cri, yo te puedo con un dedo sara :)
 	Cri 0 Cari
 	Cri 0 Cari
@@ -161,7 +161,7 @@
 	tipico 0 típico
 	egocentrico 0 Egocéntrico
 	asi 1 -
-	pnsao 1 -
+	pnsao 0 -
 	part 2 -
 	amig@s 0 amigos
 	tb 0 también
@@ -169,7 +169,7 @@
 	Sii 0 Si
 	Jajajajajajaja 0 Ja
 	primoo 0 primo
-	ajajajjaja 1 -
+	ajajajjaja 0 -
 	partoo 0 parto
 318566795810336768	@BigMartus Ola ker lo que tu aseh
 	ker 0 ser
@@ -177,7 +177,7 @@
 319072321627365377	@Adrianhill661 jajajaja tssss!!! Si dspue abandonas!!
 	jajajaja 0 Ja
 	tssss 0 es
-	dspue 1 -
+	dspue 0 -
 318722719531294720	@AlfredoCalle9  mis pumas en verano metieron 80 goles..asinque..preparate para no moverte..jajajaja
 	asinque 0 afinque
 	jajajaja 0 Ja
@@ -207,7 +207,7 @@
 318784384754913280	@B17BEBETO y que gane 2 a 0 dos de demarco
 318772186380902401	Apuntada en el gym, a ver cuanto duro. Suena subreal.
 	gym 2 -
-	subreal 1 -
+	subreal 0 -
 318760134794944513	Hace sol, llueve, hace sol, graniza... Hace un día igual de bipolar que yo.
 318827345467285504	@AaronLo7 jaja que boooonico L
 	jaja 0 Ja
@@ -217,8 +217,8 @@
 	ahi 0 Ahí
 	nenee 0 Ne
 318762309285707776	Al final el que no ha cambiado la hora ha sido Don pabliukas Guti Vega
-	pabliukas 1 -
-	Guti 1 -
+	pabliukas 0 -
+	Guti 0 -
 318701030160343041	Pensaba que era diferente, pero es igual de idiota que lo demás.
 319095785490878465	@juanfribenitez @99franka99 jajaja tuu solito te das por aludido.. Es qe te encanta ser el centro de atención ooogggg!!!  jajajaja
 	jajaja 0 Ja
@@ -241,15 +241,15 @@
 318830313969180672	Ria se me ha vuelto a poner de morena (?) Me encanta.
 318682275229335552	@jary_17 y yo la musica;) jajajajajaj tu y yo tenemos charlita pendiente eh jajaja
 	musica 1 -
-	jajajajajaj 1 -
+	jajajajajaj 0 -
 	charlita 0 carlita
 	jajaja 0 Ja
 318882012486307840	MONTATE DE CADA DIA QUE PASA TU PROPIA PELICULA SIN IMPORTARTE EL PROTAGONISMO QUE LLEGE A TENER .
 	DIA 1 -
-	PELICULA 1 -
+	PELICULA 0 -
 	LLEGE 0 LEE
 318518211677143042	y hoy de vuelta a ortuella :)
-	ortuella 1 -
+	ortuella 0 -
 318837032908623872	@nestur9 Tendre que ahorrar para ir en tren..
 	Tendre 0 Tendré
 318509498715222017	pues han sido unas MUY buenas meriendas hasta ahora, las mejores, yo creo q ya ns despedimos hasta el año q viene!!;)
@@ -257,7 +257,7 @@
 	ns 0 nos
 	q 0 que
 318845592648437760	@PinnkVelvet No puedo con tu foto JAJAJAJAJJAJAJ, preciosa &lt;3
-	JAJAJAJAJJAJAJ 1 -
+	JAJAJAJAJJAJAJ 0 -
 318842568731422720	Y esto de que la gente ya este durmiendo o se valla a dormir y yo me puedo quedar asta que quiera por que mañana no tenho clase mola :))
 	tenho 0 Teno
 318640032393072640	Todo va a salir bien @Arteaga_JM !!! Te quiero y siempre estaré a tu lado.
@@ -270,7 +270,7 @@
 318651222083129344	@ubuntu_apps no. De momento podrá competir con Windows Phone, firefoxOS y poco mas...
 	Windows 2 -
 	Phone 2 -
-	firefoxOS 1 -
+	firefoxOS 0 -
 318779805191528448	Valla putooo dia de mierda ..... q ascoo de todo
 	putooo 0 Puto
 	dia 1 -
@@ -334,7 +334,7 @@
 318872783239122944	@Paula_Villarej ñaves sígueme y calla
 	ñaves 0 aves
 318729597099335681	@Jurgi1998 lo de no te vayas haces gaupasa with my o algo asin
-	gaupasa 1 -
+	gaupasa 0 -
 	with 2 -
 	my 2 -
 	asin 0 Asín
@@ -389,7 +389,7 @@
 	Puuff 0 Puf
 318537666113187840	OYE OYE. K PASA AKI EH. :'( @Lauuuura99 @TriiHDD
 	K 0 Ka
-	AKI 1 -
+	AKI 0 -
 319130505960366081	Ya sabes que no resisto mucho una mirada, mucho menos una tuya.
 318591439376351232	" La sonrisa mas bella llega después de la lagrima mas dolorosa."
 318795898601762816	@mariagodino94 @kimbherlynmo :O al vais a banda habra ke veros xDD
@@ -413,7 +413,7 @@
 319004715373449216	Riesgo de lluvia hoy? Me cago en tus muertos
 319125364007915520	@Anita_9930 macho tiras todo torpe
 318728082812964865	@CrisHMC ASDFGGBJKKKL ¿SI? JODER TENGO QUE ESTAR EN PRIMERA FILA COMO SEA.
-	ASDFGGBJKKKL 1 -
+	ASDFGGBJKKKL 0 -
 318973108121911296	@MariaKodak ay no lo creo pero me has alegradp la mañana con este despertar. Guapa tú! .Buenos dias.
 	alegradp 0 alegrad
 	dias 1 -
@@ -438,7 +438,7 @@
 	jajajajajaajaja 0 Ja
 318778803419750401	Buena caminata la de hoy cn @cato_alicun casi tres horas y unos 13km jaja
 	cn 0 con
-	13km 1 -
+	13km 0 -
 	jaja 0 Ja
 319033207255359488	En hora y media me voy para Coruña... ¡qué pereza!
 318654173791019010	En la vida con cuidado hay que caminar #andandoconzapatosdecristal
@@ -463,15 +463,15 @@
 	Bueh 0 Bush
 318486747468152832	#dormiresdecobardes tony parker 23 ptos/ 5 rbts/ 11 asis
 	tony 2 -
-	parker 1 -
+	parker 0 -
 	ptos 0 pos
-	rbts 1 -
+	rbts 0 -
 	asis 0 Asís
 318815891024400384	@mariomarin35 Yo tambien que? jaja
 	tambien 1 -
 	jaja 0 Ja
 318811195572383744	Alomejor no nos a pillao todo el chaparron corriendo @manumartinezca1 jajajajaaja #qemotivados ;P
-	Alomejor 1 -
+	Alomejor 0 -
 	pillao 0 pila
 	chaparron 0 Chaparon
 	jajajajaaja 0 Ja
@@ -504,14 +504,14 @@
 	Mirian 0 Minian
 	q 0 que
 	po 0 por
-	zorraica 1 -
+	zorraica 0 -
 318540168938258433	Esa violencia que teneis dentro de donde ha salio ? Vas a explotar señooooor
 	teneis 0 Tenéis
 	señooooor 0 señor
 318680716386918401	@CarmenCCano @Maria17LL iraaaaaaa jajajaa no no no lo contrario jejej
 	iraaaaaaa 0 irá
 	jajajaa 0 Ja
-	jejej 1 -
+	jejej 0 -
 318828842666049536	@sorayacf Tu MINI con zodiac! Que bien vivís! Un beso http://t.co/ITKUd2y56V
 	MINI 2 -
 	zodiac 2 -
@@ -521,7 +521,7 @@
 318491728913002496	No siempre los chicos son imbeciles http://t.co/Pm1JOzKHd5
 	imbeciles 2 -
 319026982086127616	Peliculita cn mi compare @aleefranco16
-	Peliculita 1 -
+	Peliculita 0 -
 	cn 0 con
 318964775973445632	Lo que esta lloviendo por cuevas bajas madre mia
 	mia 0 mía
@@ -556,7 +556,7 @@
 	buenn 0 buen
 	pien 0 Píen
 318632879850663936	@bykikomatamoros Qué te pasa a ti con Iker? Diego y valdés lo estarán haciendo bien, pero que rápido olvidamos. A Mou le falta humildad.
-	Iker 1 -
+	Iker 0 -
 	valdés 0 Baldes
 	Mou 0 Mol
 318854363844071424	'Me ahogo en un vaso de agua si no estás'
@@ -569,7 +569,7 @@
 318835757013929984	Me toco Clary Fray. ¿Has leido el libro? Si. ¿Te gusta? Me encanta, soy nefilim hasta la muerte.
 	Clary 0 Claro
 	leido 0 leído
-	nefilim 1 -
+	nefilim 0 -
 318847146549985280	@sardinazoologic  gracias   x seguime
 	x 0 por
 318675393869647872	"Perdoname por querer entregarte mi vida,por querer darte mis ilusiones,mi tiempo, mis ganas y curar tus heridas"..
@@ -580,14 +580,14 @@
 	kn 2 -
 	piie 0 pie
 	sii 0 si
-	jajajajaha 1 -
+	jajajajaha 0 -
 	diiios 0 Dios
 	mioo 0 mío
 	an 2 -
 	sentao 0 sentar
-	jajajaj 1 -
+	jajajaj 0 -
 318509880992477184	A sido muy genial porque eh estado con @elenarb15 y ella es lo mejor ya sabes... ;) tequieromucho!
-	tequieromucho 1 -
+	tequieromucho 0 -
 318862028271939584	@lidia_yPunto vaya tela cada vez q ve mi mami algo relacionado con gh me pregunta por @MartaSanchezGH le vo a dar el fono de mami a marta :)
 	q 0 que
 	mami 0 mamá
@@ -605,7 +605,7 @@
 318846570617532417	1 mes para los 15, dulces sueños
 318914346099032064	Vaya basura de TT solo se salva TWD
 	TT 0 Tú
-	TWD 1 -
+	TWD 0 -
 318859584754307072	@likanena jajaj al final si que se va acabar el mundo como sigan asi
 	jajaj 0 jajay
 	asi 1 -
@@ -614,15 +614,15 @@
 318755269163233282	@Lucasito_18 q coxinooooo, como dice antoniojajaj
 	q 0 que
 	coxinooooo 0 Cochino
-	antoniojajaj 1 -
+	antoniojajaj 0 -
 319030460745383936	Guía de Seguridad en WordPress (I) http://t.co/y0N8c7wJaY
-	WordPress 1 -
+	WordPress 0 -
 	I 0 In
 318492485653508096	Descargando las 1.300 fotos de @misionposible en mi ordenador. QUÉ LOCURA!!! #mp2013
 318822210208944128	@alex_marti hola me llamo alejandro y cago mas que un oso (; lo cnoces colegui?
 	alejandro 0 Alejandro
 	cnoces 0 coces
-	colegui 1 -
+	colegui 0 -
 319075279601549312	Ola q ase , eres cabra ? Ola q ase!!
 	q 0 que
 	q 0 que
@@ -642,7 +642,7 @@
 319133149986705408	Es más fácil culpar a otros de la situación actual que reconocer la propia culpa. Las  CC.AA. "ricas" tienen tanta culpa como las otras 17.
 318769189441642496	HAHAHAHAHAHA OMG el icon de Justin.
 	HAHAHAHAHAHA 0 Ha
-	OMG 1 -
+	OMG 0 -
 	icon 2 -
 	Justin 2 -
 318837614109151234	@CLARISS39188207 HOLA BELLA MUY BIEN Y TU?
@@ -650,13 +650,13 @@
 	peli 0 pelo
 	fuando 0 cuando
 318757838409310209	Me voy al xaaanadu (:
-	xaaanadu 1 -
+	xaaanadu 0 -
 318821357683105792	@MelyCactus jajajaa que bien vivimos
 	jajajaa 0 Ja
 318753624614387712	Primer baño del año @ Los Álamos http://t.co/pxL0C3zGF3
 319107011000295425	HOLA! New! @ cayenablanca studio http://t.co/axFAHCgX27
 	New 2 -
-	cayenablanca 1 -
+	cayenablanca 0 -
 	studio 2 -
 318514331773976578	@MCPOMPIS jajaja Queva Queva no has visto que me a explotado el globo ?eso es que no me quiere
 	jajaja 0 Ja
@@ -667,10 +667,10 @@
 	ninia 0 cinia
 	aver 2 -
 	t 0 te
-	muaxh 1 -
+	muaxh 0 -
 319076850393554944	"Si robas, que sea un beso.      Si lloras, que sea de felicidad.      Si pierdes, que sea el miedo.      Si ganas, que sea un amigo."
 318916090522632192	@Evita_vallekas ajajajajajaa tu duerme duerme (;
-	ajajajajajaa 1 -
+	ajajajajajaa 0 -
 318892656744861696	@anadochay amoor, pode dar #RT nesse link ? https://t.co/7nUeVlkb3o . Te divulgo 3x :)) . Obg!
 	amoor 0 amor
 	nesse 0 ese
@@ -695,17 +695,17 @@
 	trayó 0 trató
 	trayó 0 trató
 	pense 0 pensé
-	orechio 1 -
+	orechio 0 -
 319082135304679424	Por el #DiaMundialDelAutismo esta noche el estadio Mediterráneo tendrá una iluminación especialmente dedicado a ellos.
 319041863577374721	Aqui en musica que no ha venido la ticher -.-
 	Aqui 0 Aquí
 	musica 1 -
-	ticher 1 -
+	ticher 0 -
 319109764665733120	Pufff... Me parece a Miii q Todo Esta Teniendo un Color demasiado...Oscuro Ains!!!! kiero Pùrpura!!!!!!
 	Pufff 0 Puf
 	Miii 0 mi
 	q 0 que
-	Ains 1 -
+	Ains 0 -
 	kiero 0 Quiero
 	Pùrpura 0 Purpura
 319134600985182208	Cuidado con las palabras, son armas peligrosas que no necesitan licencia.
@@ -719,7 +719,7 @@
 318771041205882880	@lorensh98 priiimito donde te vas?
 	priiimito 0 primitos
 318702582803623936	@Alexelangel1 @Ignasi_PR @JordiPVermelles *te miro*como esta ignasi?
-	ignasi 1 -
+	ignasi 0 -
 318693056532578304	@Atsidirdam84 como me felicite mi idolo muero seguro..  Jajaja que tonto eres.
 	idolo 1 -
 	Jajaja 0 Ja
@@ -732,7 +732,7 @@
 	arrepieento 0 Arrepiento
 	flipas 1 -
 318723711643557889	ULTIMAMENTE ME DA.IGUAL DE TODO
-	ULTIMAMENTE 1 -
+	ULTIMAMENTE 0 -
 319126133587197952	si quieres ir a la moda en gafas no dudes en comprar unas @Knockaround_Sp ;) ;) !!
 318632503537713152	Buuueno puuues llego laa Roomeeriiia:)
 	Buuueno 0 Bueno
@@ -761,13 +761,13 @@
 318664893698015233	con la nueva revista de @canamo y sus dos semillas de Cream Mandarine y Moham Ram! solo digo.. #fucKyeahhh
 	Cream 2 -
 	Mandarine 0 Mandarina
-	Moham 1 -
+	Moham 0 -
 	Ram 1 -
 318663578402058240	que monas me han quedado las uñas jajajaj
-	jajajaj 1 -
+	jajajaj 0 -
 319065934323142656	Ayayayayyay Ya están aquí mis pulseritas de @patixula_abal jijiji
 	Ayayayayyay 0 Ay
-	pulseritas 1 -
+	pulseritas 0 -
 	jijiji 0 Ji
 318848163505135616	2 de Abril día del AUTISMO, 1 apoyo a todas las familias k viven cada día con 1 miembro en sus familias #Ánimo
 	k 0 ka
@@ -778,7 +778,7 @@
 318514191428382720	@alvaroolopez25 estoy en ciu... como no te lo envie por whatsapp jajaja
 	ciu 0 siu
 	envie 0 envié
-	whatsapp 1 -
+	whatsapp 0 -
 	jajaja 0 Ja
 318852524478193664	A mi mundo lo único que le falta para ser perfecto eres tu!! #VenYa! :)
 318784757745995776	Que alegria da salir a esta hora de la facultad y que sea de dia :))
@@ -799,7 +799,7 @@
 318848679442259968	@angelillo20ney Buenas Nochess pequeñooo!! Muacks!
 	Nochess 0 noches
 	pequeñooo 0 pequeño
-	Muacks 1 -
+	Muacks 0 -
 318810717249753088	Los sueños son para los soñadores, la realidad para los valientes.
 318500654605807616	esta que está aqui se va ya:-) #Off.
 	aqui 0 aquí
@@ -811,7 +811,7 @@
 319118504357928961	Ha vuelto otra vez @AcolitoDlLibra
 319008928019132416	Los #periodistas que estén en #Madrid el 11 de abril no se pierdan el @GvsP2013 organizado por los alumnos de #GabinetesUCM en @CCInf_UCM
 318848246686556162	Viendo #kickboxer con pedrin pedrete el pajarete!!
-	pedrin 1 -
+	pedrin 0 -
 	pedrete 0 pedreta
 	pajarete 1 -
 318760301266886656	Venga.. Gabriela... Tu puedes.. Venga...
@@ -824,9 +824,9 @@
 	Phantom 2 -
 	Pain 2 -
 318487548475342848	@Isabevi97 sageraaaá tu me superas D:&lt;
-	sageraaaá 1 -
+	sageraaaá 0 -
 318831095078588416	@meca_raulhotmai jajajajajajajjaaj kee echoo polvooooo
-	jajajajajajajjaaj 1 -
+	jajajajajajajjaaj 0 -
 	kee 0 que
 	echoo 0 echó
 	polvooooo 0 polvo
@@ -852,7 +852,7 @@
 	madrid 1 -
 	sevilla 0 Sevilla
 319050024317251585	Con @JavierAlmazn en fyqqqq!! Pppff me aburro
-	fyqqqq 1 -
+	fyqqqq 0 -
 	Pppff 0 Paf
 318886815169904640	Pero me da pena borrarla de los planos, había quedado tan bonita :')
 318688338863341568	Se acabo lo bueno. . .vuelta a la rutina :(
@@ -876,7 +876,7 @@
 	diiia 0 día
 318859322811637760	Pues hoy si son muy buenas noches despues de una maravillosa conver con una gran persona , que siempre formara parte de vida  @Rosa4393 TQ:)
 	despues 1 -
-	conver 1 -
+	conver 0 -
 	TQ 0 te_quiero
 318993633724493825	Con mi gente en el recreo
 318841863043956737	@Jona1412 te he inviyado aceptame
@@ -920,14 +920,14 @@
 	pesadosss 0 pesados
 318511111701921792	Dormí o no dormí, eza eh la cuehtion
 	eza 0 esa
-	cuehtion 1 -
+	cuehtion 0 -
 318691969280925696	"Amoss adri que son la unaaaaaaaaaaa" jajajaja
 	Amoss 0 amos
 	adri 0 Adri
 	unaaaaaaaaaaa 0 una
 	jajajaja 0 Ja
 318851225649049600	@danmanso91 jajajaj si si si!! Esto esta preparao para q salga la #zorrasca En cuanto empiece el buen tiempo ya sabes que voy al puebli!
-	jajajaj 1 -
+	jajajaj 0 -
 	preparao 0 preparado
 	q 0 que
 	puebli 0 pueblo
@@ -937,7 +937,7 @@
 319122114978381826	que bolsa mas llena llevamos ya de corujas
 	corujas 0 coruja
 318680771848187907	Hoy no puedo decir buenos días, me va a caducar el whatsapp.
-	whatsapp 1 -
+	whatsapp 0 -
 319062038116712448	@SofiaMCR tenemos la misma opinión, ya te digo que el resto igual... Es indignante
 	indignante 0 indignarte
 318702046037561344	#LaVidaEsMásFácilCuando él esta a mi lado.
@@ -951,13 +951,13 @@
 	ncheees 0 noches
 	Relaax 0 Relax
 318821404277612544	Me e dado cuenta que la gente.que realmente la e importado y se que nunca me.va a fallar.y cumplir lo que dicen son los de PEÑALSORDO!!
-	PEÑALSORDO 1 -
+	PEÑALSORDO 0 -
 318767894941016065	'Es como intentar hacerlos entender que dios no existe, llevan años de ventaja en sus mentiras y eso es triste'
 318994423826485248	Voy a acabar con los problemas voy a matar al profesor de matematicas.
 	matematicas 0 matemáticas
 318722712044466176	Pos una horita de clases y a miriendar con mi bebi @claudiatero :)!
 	horita 1 -
-	miriendar 1 -
+	miriendar 0 -
 	bebi 0 bebí
 318541303099039744	@MyriamSwanBwoy io sí q t kiero tkmmmmmmm
 	io 0 Ío
@@ -976,17 +976,17 @@
 	artica 1 -
 	mii 0 mi
 	gordii@sandra 0 gorda@sandra
-	toloc 1 -
+	toloc 0 -
 318760218072842240	Otro abrazo para ti @Crm_Huelva. Nos vemos pronto!
 318973710017126401	Bueno, esta tarde tiene su recompensa :)))
 318645519352225792	A hacer faena y una duchita ! #TwitterOff
-	duchita 1 -
+	duchita 0 -
 318806470168817667	puto ruedas que salidos jajajajaj
-	jajajajaj 1 -
+	jajajajaj 0 -
 318831863256981505	@wifito_tuitero @siemprefiel999 @kenia_ds jajaja xd casi se me va el dedo y le digo a daralika que me llame chochete
 	jajaja 0 Ja
 	xd 0 de
-	daralika 1 -
+	daralika 0 -
 	chochete 0 chochee
 318994659986776064	Sevilla entera bonita de triana a san pablo y asta mi giralda yo la quiero ver..8'
 	triana 0 Triana
@@ -1034,7 +1034,7 @@
 318545757852540930	Un 33% de los Trending Topics del sábado 30 en España fueron hashtags: http://t.co/CA0mXQ5fcW
 	Trending 2 -
 	Topics 2 -
-	hashtags 1 -
+	hashtags 0 -
 318838470233698304	Pero qué guapo han puesto hoy a Miguel! Le sienta bien La Siesta ☺  @TrisUlloa @granreserva_tve
 318527657086181376	Podré perder la batalla, pero nunca la guerra. Still.
 	Still 2 -
@@ -1057,7 +1057,7 @@
 	FIFA 0 fifa
 	Xbox 1 -
 318802437609766912	@JavicamuJavier cuuxamee sii peroo veen yaa eem
-	cuuxamee 1 -
+	cuuxamee 0 -
 	sii 0 si
 	peroo 0 pero
 	veen 0 ven
@@ -1067,7 +1067,7 @@
 	Lola 1 -
 	pa 1 -
 	Almeria 0 Almería
-	MariDeBlasico 1 -
+	MariDeBlasico 0 -
 318981993473904640	Buenos dias! Calor, verano, sol, veeeeeeeen joddeeeer! #GafasDeSol #CamisetasSinMangas #Oakley
 	dias 1 -
 	veeeeeeeen 0 ven
@@ -1078,7 +1078,7 @@
 319040937886113792	Piazon se queda fuera? Por qué?  No lo entiendo...
 	Piazon 0 Piaron
 318795147242508288	Ofertas liberar iphone oficial de movistar por 5 euros RT plis mas info en openmovil.imei@gmail.com http://t.co/eH4GSLk2f3
-	iphone 1 -
+	iphone 0 -
 	movistar 0 Mobistar
 	RT 2 -
 	plis 0 plus
@@ -1090,13 +1090,13 @@
 318707548029083648	Jajaja ay Dios, cada uno me recomendáis a uno para mi trabajo jajajaja la cosa es que SHM al ser tres...a lo mejor me sube más la nota jaja
 	Jajaja 0 Ja
 	jajajaja 0 Ja
-	SHM 1 -
+	SHM 0 -
 	jaja 0 Ja
 318638890569310208	@charlyappletree Afeitate ya!!! Que ya va siendo hora...jajaja
 	Afeitate 0 Afeitare
 	jajaja 0 Ja
 318678947573424128	@miguelangeldaza Vale!! Westfallenstadion, comúnmente conocido como Signal Iduna Park, por temas de publicidad y eso. :)
-	Westfallenstadion 1 -
+	Westfallenstadion 0 -
 	Signal 2 -
 	Iduna 0 duna
 	Park 2 -
@@ -1106,7 +1106,7 @@
 318614028387770368	Que mañana es mi cumpleee
 	cumpleee 0 cumple
 318846585213693952	En serio no paro de pensar en la palabra ratópodo por culpa de @MarinaLozano13 y encima me rio sola #locaparezcoportuculpa
-	ratópodo 1 -
+	ratópodo 0 -
 318491079177539585	VOY A COGER Y NO ME VAIS A ENCONTRAR MAS VAYA
 318790332122804224	@NeeJL creo q te has saltado la primavera... Jajaja
 	q 0 que
@@ -1121,13 +1121,13 @@
 318676128866906112	Le deseo mucha suerte a mi chica @AnaParra97 que seguro que se le da muy bien! Te quiero cieloo :)
 	cieloo 0 cielo
 318797763750014976	@Sitevasnovuelv1 @miriam_180811 Me estáis petando el twitaaaah
-	twitaaaah 1 -
+	twitaaaah 0 -
 318852442664083456	@JoseQueroQ @franjimenezsan  nunca se olvida el.banco q por debajo metias el gol,la pared q te devolvia la pelota d tenis lasombradelolivo
 	q 0 que
 	metias 0 Metías
 	q 0 que
 	devolvia 0 devolvía
-	lasombradelolivo 1 -
+	lasombradelolivo 0 -
 318602672888487938	Empezamos bien la vuelta de vacaciones, sin agua caliente!!!
 319114793036435457	joder mis vecinos estan peleando pero chillio limpio dioss y son hermanos con parado con justin y sus hermanos xd
 	estan 0 están
@@ -1153,7 +1153,7 @@
 	loquiii 0 boqui
 	mñna 0 mañana
 	jaja 0 Ja
-	jejejjej 1 -
+	jejejjej 0 -
 	XD 0 D
 	XD 0 D
 318685273900843009	Hoy me acabo Death Note =) #llegoasufín
@@ -1167,11 +1167,11 @@
 	criticais 0 Criticáis
 	tneis 0 tenis
 	mcho 0 mucho
-	cmun 1 -
+	cmun 0 -
 	cn 0 con
 	myoria 0 mayoria
 	hems 2 -
-	lauristas 1 -
+	lauristas 0 -
 318814597547175936	@AnitaMarcano ya lo se bonita jajajaja
 	jajajaja 0 Ja
 318827241435959296	en eso no estoi deacuerdo
@@ -1231,13 +1231,13 @@
 318695183023747072	estamos preparando algo muy gordo para el 5 de Abril, y ese mes va a dar mucho que hablar.  600 744 924 Listas
 318551410109202433	@WarWithG pero... si vivo en Vigo... snif.
 	Vigo 1 -
-	snif 1 -
+	snif 0 -
 318934650254929921	Ojala pudiera dormir asi todas las noches :) muack L #buenasnoches
 	asi 1 -
-	muack 1 -
+	muack 0 -
 	L 0 La
 318837516377657344	@cortacablerojo cada semana más grandes!!!!! Yeahhhhhh http://t.co/VYNQZBjWsX
-	Yeahhhhhh 1 -
+	Yeahhhhhh 0 -
 318827236117577728	Jooo con lo bien que me caía a mí Juancar.. #GH8
 	Jooo 0 Jo
 	Juancar 0 Juanca
@@ -1255,7 +1255,7 @@
 	jaja 0 Ja
 318985414008520704	Pues aqi la menda se va a apretar un colacaito con bizcochos de la abu q estan tremendamente ricos!! #VayaQeSi
 	aqi 0 asi
-	colacaito 1 -
+	colacaito 0 -
 	abu 0 aba
 	q 0 que
 	estan 0 están
@@ -1264,7 +1264,7 @@
 	borja 0 Borja
 318819365753602048	JAJAJAA tía @InesParis_13 , ahora te digo un secreto por Whatsapp,verás que casualidad. Pd: no digo lo de las compras baby,digo SÁBADO jeje.
 	JAJAJAA 0 Ja
-	Whatsapp 1 -
+	Whatsapp 0 -
 	Pd 2 -
 	baby 2 -
 	jeje 0 Je
@@ -1296,18 +1296,18 @@
 	Buenoo 0 Bueno
 	Jejejejeje 0 Je
 318851031964471296	@anacg27 el mas mejor jajjajajaaj puta ana
-	jajjajajaaj 1 -
+	jajjajajaaj 0 -
 	ana 1 -
 318811298567700481	@MyriamAstorga @PaulitaGlvez entonces como lo sabes jajajajaajajaja
 	jajajajaajajaja 0 Ja
 318879614569172992	Después de ver @GH14Telecinco me voy a la camita q ya es hora. Buenas noches #twitterOff :)
 	q 0 que
 318495771706138624	@Costalcofrade aquí??? o el tuenti?
-	tuenti 1 -
+	tuenti 0 -
 318830696779104256	Gira española de @manuchao en mayo http://t.co/2dEtPT15Uz Ourense, L'Hospitalet y Rivas Vaciamadrid
 	Ourense 0 Orense
 	Rivas 1 -
-	Vaciamadrid 1 -
+	Vaciamadrid 0 -
 318872965070606336	@19Lillo @SandraSand29 PA MI TU COLA!!! jajajajajajajajajajajajajajaja
 	PA 2 -
 	jajajajajajajajajajajajajajaja 0 Ja
