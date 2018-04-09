@@ -27,15 +27,15 @@ TweetID: 948133007839416320
 Missing words: ['bien', 'mamas']
  - Word 'bien' should be corrected as 'buen'.
  - Word 'mamas' should be corrected as 'malas'.
-You classified dia as 1 but it is 0
+dia is not correct. The correct form is día
 
 TweetID: 948133071861223426
 ---------------------------
 Missing words: ['tenia']
  - Word 'tenia' should be corrected as 'tenía'.
 Surplus words: ['femicidios']
-You classified mayoria as 1 but it is 0
-You classified nose as 2 but it is 0
+mayoria is not correct. The correct form is mayoría
+nose is not in English. The correct form is no_sé
 
 TweetID: 948133211124748288
 ---------------------------
@@ -71,27 +71,27 @@ TweetID: 948133395401453568
 Surplus words: ['estan']
 You corrected casette as Casete but it is cassette
 You corrected haganse as Háganse but it is hagansé
-You classified increible as 1 but it is 0
+increible is not correct. The correct form is increíble
 
 TweetID: 948133416813330432
 ---------------------------
 Missing words: ['falto']
  - Word 'falto' should be corrected as 'faltó'.
-You classified despues as 1 but it is 0
-You classified dia as 1 but it is 0
+despues is not correct. The correct form is después
+dia is not correct. The correct form is día
 You corrected Jajaj as - but it is Ja
 
 TweetID: 948133566462025730
 ---------------------------
 Surplus words: ['Ferraro', 'Solìs']
-You classified quintuple as 2 but it is 0
+quintuple is not in English. The correct form is quíntuple
 
 TweetID: 948133588700221440
 ---------------------------
 Missing words: ['ESTA', 'trato']
  - Word 'ESTA' should be corrected as 'ESTÁ'.
  - Word 'trato' should be corrected as 'trató'.
-You classified Despues as 1 but it is 0
+Despues is not correct. The correct form is Después
 
 TweetID: 948133625928867841
 ---------------------------
@@ -103,17 +103,17 @@ TweetID: 948133698288971777
 ---------------------------
 Surplus words: ['Nanci']
 You corrected Desa as esa but it is desayuno
-You classified dias as 1 but it is 0
+dias is not correct. The correct form is días
 You corrected lpm as - but it is LPM
-You classified aw as 2 but it is 0
+aw is not in English. The correct form is -
 You corrected jajjajaaj as - but it is ja
 
 TweetID: 948133831802019840
 ---------------------------
 Surplus words: ['bondi', 'prepagas', 'subte']
-You classified pa as 1 but it is 0
-You classified pa as 1 but it is 0
-You classified pa as 1 but it is 0
+pa is not correct. The correct form is para
+pa is not correct. The correct form is para
+pa is not correct. The correct form is para
 You corrected alg as al but it is algo
 You corrected lpm as - but it is LPM
 You corrected jajajajaja as Ja but it is ja
@@ -128,10 +128,10 @@ TweetID: 948134195720851456
 ---------------------------
 Surplus words: ['Chris']
 You corrected Ak as A but it is Acá
-You classified dias as 1 but it is 0
+dias is not correct. The correct form is días
 You corrected ahre as Are but it is ah_re
 You corrected atr as art but it is ATR
-You classified titi as 1 but it is 0
+titi is not correct. The correct form is -
 You corrected hobbie as - but it is hobby
 You corrected lpm as - but it is LPM
 You corrected pabadas as Pavadas but it is pavadas
@@ -153,7 +153,7 @@ You corrected resfrio as Resfrió but it is resfrío
 TweetID: 948134888921796608
 ---------------------------
 Surplus words: ['Male']
-You classified mayoria as 1 but it is 0
+mayoria is not correct. The correct form is mayoría
 You corrected Patagonico as patagónico but it is Patagónico
 You corrected besis as tesis but it is besos
 
@@ -164,9 +164,9 @@ Missing words: ['Va', 'bien', 'noticiad']
  - Word 'bien' should be corrected as 'buen'.
  - Word 'noticiad' should be corrected as 'noticias'.
 You corrected Q as que but it is Que
-You classified dia as 1 but it is 0
-You classified aca as 1 but it is 0
-You classified dia as 1 but it is 0
+dia is not correct. The correct form is día
+aca is not correct. The correct form is acá
+dia is not correct. The correct form is día
 You corrected Rrrrrre as Ríe but it is Re
 You corrected acerme as acere but it is hacerme
 
@@ -177,7 +177,7 @@ Missing words: ['hno', 'maquina', 'tenes']
  - Word 'maquina' should be corrected as 'máquina'.
  - Word 'tenes' should be corrected as 'tenés'.
 Surplus words: ['jovenes', 'minimo']
-You classified dias as 1 but it is 0
+dias is not correct. The correct form is días
 
 TweetID: 948135668965871616
 ---------------------------
@@ -195,7 +195,7 @@ You corrected lxs as los but it is los/as
 TweetID: 948135989591101440
 ---------------------------
 Surplus words: ['finde']
-You classified Despues as 1 but it is 0
+Despues is not correct. The correct form is Después
 
 TweetID: 948136054439186432
 ---------------------------
@@ -203,9 +203,9 @@ Missing words: ['esta']
  - Word 'esta' should be corrected as 'está'.
 Surplus words: ['chau']
 You corrected chabon as Chabón but it is chabón
-You classified encontre as 1 but it is 0
+encontre is not correct. The correct form is encontré
 You corrected luji as lujo but it is -
-You classified pa as 1 but it is 0
+pa is not correct. The correct form is para
 
 TweetID: 948136062949437442
 ---------------------------
@@ -216,7 +216,7 @@ TweetID: 948136097611165696
 Missing words: ['levante', 'pise']
  - Word 'levante' should be corrected as 'levanté'.
  - Word 'pise' should be corrected as 'pisé'.
-You classified empedo as 1 but it is 0
+empedo is not correct. The correct form is en_pedo
 You corrected sj as su but it is -
 You corrected wtf as - but it is WTF
 
@@ -233,8 +233,8 @@ TweetID: 948136559198507009
 ---------------------------
 Missing words: ['Jamas']
  - Word 'Jamas' should be corrected as 'Jamás'.
-You classified despues as 1 but it is 0
-You classified dia as 1 but it is 0
+despues is not correct. The correct form is después
+dia is not correct. The correct form is día
 You corrected lizy as liza but it is Lizy
 You corrected jaz as paz but it is Jaz
 You corrected reglao as reglas but it is regaló
@@ -243,8 +243,8 @@ TweetID: 948136895879569410
 ---------------------------
 Surplus words: ['TENEMBAUN']
 You corrected diagnoticsnto as - but it is diagnosticó
-You classified empedo as 1 but it is 0
-You classified bue as 1 but it is 0
+empedo is not correct. The correct form is en_pedo
+bue is not correct. The correct form is bueno
 
 TweetID: 948137253263552512
 ---------------------------
@@ -261,7 +261,7 @@ You corrected wacho as macho but it is guacho
 TweetID: 948137628683177984
 ---------------------------
 Surplus words: ['hackearon', 'hacker']
-You classified cabio as 1 but it is 0
+cabio is not correct. The correct form is cabió
 You corrected tw as te but it is Twitter
 You corrected traguemonos as Traguémonos but it is traguemonós
 You corrected elCongreso as - but it is el_Congreso
@@ -276,7 +276,7 @@ Missing words: ['hacia']
 TweetID: 948137999245684736
 ---------------------------
 Surplus words: ['Mami']
-You classified dias as 1 but it is 0
+dias is not correct. The correct form is días
 
 TweetID: 948138275381837824
 ---------------------------
@@ -290,7 +290,7 @@ Missing words: ['insta', 'rescate']
  - Word 'insta' should be corrected as 'Instagram'.
  - Word 'rescate' should be corrected as 'rescaté'.
 Surplus words: ['boomerang']
-You classified subi as 1 but it is 0
+subi is not correct. The correct form is subí
 You corrected Disculpaaaaaa as disculpa but it is Disculpá
 You corrected diosssss as Dios but it is dios
 You corrected asquerozo as Asqueroso but it is asqueroso
@@ -300,13 +300,13 @@ TweetID: 948138655553675264
 Missing words: ['levante']
  - Word 'levante' should be corrected as 'levanté'.
 Surplus words: ['fat', 'forever']
-You classified gym as 2 but it is 0
+gym is not in English. The correct form is gimnasio
 
 TweetID: 948138684590821376
 ---------------------------
 Missing words: ['enserio']
  - Word 'enserio' should be corrected as 'en_serio'.
-You classified pen as 2 but it is 0
+pen is not in English. The correct form is pan
 You corrected aajajaja as - but it is ja
 
 TweetID: 948139379201052673
@@ -324,7 +324,7 @@ You corrected uds as - but it is ustedes
 TweetID: 948139605701922816
 ---------------------------
 Surplus words: ['Mati']
-You classified aca as 1 but it is 0
+aca is not correct. The correct form is acá
 You corrected jajajajajaj as - but it is ja
 You corrected pibeessss as Pibes but it is pibes
 You corrected jajajajajahajhahahahaqjqj as - but it is ja
@@ -332,8 +332,8 @@ You corrected jajajajajahajhahahahaqjqj as - but it is ja
 TweetID: 948139848329723905
 ---------------------------
 Surplus words: ['2x1', 'Betos']
-You classified Burger as 2 but it is 0
-You classified Mc as 1 but it is 0
+Burger is not in English. The correct form is Burger_King
+Mc is not correct. The correct form is McDonald's
 You corrected lindisimo as Lindísimo but it is lindísimo
 
 TweetID: 948140020426297345
@@ -344,7 +344,7 @@ Missing words: ['INTERNE', 'VALLAN']
 You corrected RTT as retweet but it is RT
 You corrected chomaso as - but it is chomazo
 You corrected aa as a but it is ah
-You classified pa as 1 but it is 0
+pa is not correct. The correct form is para
 You corrected pegueme as - but it is peguemé
 
 TweetID: 950488375580155905
@@ -356,14 +356,14 @@ Surplus words: ['MDQ']
 You corrected PERIPDISTAS as - but it is PERIODISTAS
 You corrected Q as que but it is QUE
 You corrected criteri as criterio but it is -
-You classified aca as 1 but it is 0
+aca is not correct. The correct form is acá
 You corrected muerdennnn as Muerden but it is muerden
 You corrected plisss as plus but it is please
-You classified aca as 1 but it is 0
-You classified empedo as 1 but it is 0
-You classified pue as 1 but it is 0
+aca is not correct. The correct form is acá
+empedo is not correct. The correct form is en_pedo
+pue is not correct. The correct form is pués
 You corrected Vamooo as Vano but it is Vamos
-You classified asi as 1 but it is 0
+asi is not correct. The correct form is así
 You corrected jajajaj as - but it is ja
 You corrected AAAAAAAAH as Ah but it is AH
 You corrected YAYAYAYAYAYYAYAYA as ya but it is YA
@@ -372,7 +372,7 @@ TweetID: 951649995127705601
 ---------------------------
 Missing words: ['gusto']
  - Word 'gusto' should be corrected as 'gustó'.
-You classified mayoria as 1 but it is 0
+mayoria is not correct. The correct form is mayoría
 You corrected porq as por but it is porque
 You corrected ALFIN as - but it is AL_FIN
 
@@ -396,9 +396,9 @@ You corrected Vamo as Vano but it is Vamos
 TweetID: 951665137206939648
 ---------------------------
 Surplus words: ['piba']
-You classified dia as 1 but it is 0
+dia is not correct. The correct form is día
 You corrected volve as Volvé but it is volvé
-You classified toy as 2 but it is 0
+toy is not in English. The correct form is estoy
 
 TweetID: 951665178139086848
 ---------------------------
@@ -431,7 +431,7 @@ TweetID: 951665232207892480
 Missing words: ['para']
  - Word 'para' should be corrected as 'pará'.
 Surplus words: ['hs', 'siliconas']
-You classified album as 2 but it is 0
+album is not in English. The correct form is álbum
 
 TweetID: 951665248095948800
 ---------------------------
@@ -458,14 +458,14 @@ You corrected jajajajajajajaja as Ja but it is ja
 TweetID: 951665341658206209
 ---------------------------
 Surplus words: ['jean', 'short']
-You classified quizas as 1 but it is 0
+quizas is not correct. The correct form is quizás
 You corrected Ajajajaj as Aj but it is Ja
 You corrected buee as Vue but it is bueno
 You corrected metian as Metían but it is metían
 You corrected casaaa as Casa but it is casa
 You corrected juegeeee as Juege but it is juegue
 You corrected ajja as Aja but it is ja
-You classified violin as 2 but it is 0
+violin is not in English. The correct form is violín
 You corrected Aaaaaa as A but it is Ah
 You corrected tw as tu but it is Twitter
 
@@ -483,7 +483,7 @@ TweetID: 951680208532320258
 ---------------------------
 Missing words: ['arranque']
  - Word 'arranque' should be corrected as 'arranqué'.
-You classified increible as 1 but it is 0
+increible is not correct. The correct form is increíble
 You corrected mamaaaa as mama but it is mamá
 You corrected lpm as - but it is LPM
 You corrected novix as novia but it is novio/a
@@ -492,7 +492,7 @@ TweetID: 951680273841819648
 ---------------------------
 Missing words: ['mi']
  - Word 'mi' should be corrected as 'mí'.
-You classified Nose as 2 but it is 0
+Nose is not in English. The correct form is No_sé
 
 TweetID: 951680284705083392
 ---------------------------
@@ -519,7 +519,7 @@ TweetID: 951680388711272448
 Missing words: ['esta', 'hable']
  - Word 'esta' should be corrected as 'está'.
  - Word 'hable' should be corrected as 'hablé'.
-You classified atras as 1 but it is 0
+atras is not correct. The correct form is atrás
 You corrected jaja as Ja but it is ja
 
 TweetID: 951680394432270336
@@ -528,7 +528,7 @@ Missing words: ['estas']
  - Word 'estas' should be corrected as 'estás'.
 You corrected ahi as Ahí but it is ahí
 You corrected Uuuuuuuu as Un but it is Uh
-You classified cabio as 1 but it is 0
+cabio is not correct. The correct form is cabió
 You corrected AHRE as ARE but it is AH_RE
 You corrected ahre as Are but it is ah_re
 You corrected falis as alis but it is feliz
@@ -576,7 +576,7 @@ TweetID: 951680702130610176
 Missing words: ['bruno', 'tenes']
  - Word 'bruno' should be corrected as 'Bruno'.
  - Word 'tenes' should be corrected as 'tenés'.
-You classified opinion as 2 but it is 0
+opinion is not in English. The correct form is opinión
 
 TweetID: 951680711580442624
 ---------------------------
@@ -594,7 +594,7 @@ Missing words: ['que']
  - Word 'que' should be corrected as 'qué'.
 Surplus words: ['Lovesick']
 You corrected 3rs as - but it is 3ra
-You classified verguenza as 1 but it is 0
+verguenza is not correct. The correct form is vergüenza
 You corrected Aaaaaaa as A but it is Ah
 You corrected lpm as - but it is LPM
 
@@ -611,9 +611,9 @@ TweetID: 951695420362756096
 ---------------------------
 Surplus words: ['arito']
 You corrected xfi as fi but it is por_favor
-You classified corazon as 1 but it is 0
+corazon is not correct. The correct form is corazón
 You corrected wp as ap but it is WhatsApp
-You classified buso as 1 but it is 0
+buso is not correct. The correct form is buzo
 You corrected HERMOSISISISISISIMO as - but it is HERMOSÍSIMO
 
 TweetID: 951695540911210497
@@ -621,7 +621,7 @@ TweetID: 951695540911210497
 Missing words: ['supere']
  - Word 'supere' should be corrected as 'superé'.
 You corrected empezé as Empece but it is empecé
-You classified bue as 1 but it is 0
+bue is not correct. The correct form is bueno
 You corrected jejej as - but it is je
 
 TweetID: 951695571953307648
@@ -650,7 +650,7 @@ TweetID: 951695731437588480
 Missing words: ['que']
  - Word 'que' should be corrected as 'qué'.
 Surplus words: ['we']
-You classified Nose as 2 but it is 0
+Nose is not in English. The correct form is No_sé
 
 TweetID: 951695751234637825
 ---------------------------
@@ -666,15 +666,15 @@ You corrected ahh as Ah but it is ah
 You corrected eee as e but it is eh
 You corrected quieresalacamayotellevo as - but it is quieres_a_la_cama_yo_te_llevo
 You corrected Ahno as Ano but it is Ah_no
-You classified bue as 1 but it is 0
-You classified Nose as 2 but it is 0
+bue is not correct. The correct form is bueno
+Nose is not in English. The correct form is No_sé
 You corrected iorar as corar but it is llorar
 You corrected Vennn as ven but it is Ven
 
 TweetID: 951695967698456577
 ---------------------------
 Surplus words: ['John', 'Lennon']
-You classified Toy as 2 but it is 0
+Toy is not in English. The correct form is Estoy
 You corrected paaaaake as pase but it is para_qué
 You corrected NECECITE as - but it is NECESITÉ
 
@@ -689,7 +689,7 @@ TweetID: 951710337144885249
 ---------------------------
 Missing words: ['día']
  - Word 'día' should be corrected as 'días'.
-You classified jg as 2 but it is 0
+jg is not in English. The correct form is -
 
 TweetID: 951710358389092353
 ---------------------------
@@ -738,7 +738,7 @@ Surplus words: ['sanguche', 'vikingos']
 TweetID: 951710928193708032
 ---------------------------
 Surplus words: ['copionas']
-You classified bue as 1 but it is 0
+bue is not correct. The correct form is bueno
 You corrected xd as de but it is XD
 
 TweetID: 951710972745535488
@@ -752,14 +752,14 @@ You corrected ahre as Are but it is ah_re
 You corrected beibis as - but it is babies
 You corrected jajajajaja as Ja but it is ja
 You corrected volve as Volvé but it is volvé
-You classified sols as 2 but it is 0
+sols is not in English. The correct form is solo
 
 TweetID: 951711117881085952
 ---------------------------
 Missing words: ['loa']
  - Word 'loa' should be corrected as 'los'.
 You corrected usd as uso but it is USD
-You classified AC as 2 but it is 0
+AC is not in English. The correct form is -
 
 TweetID: 951711192019501056
 ---------------------------
@@ -777,8 +777,8 @@ You corrected mamao as mama but it is mamado
 TweetID: 951711274680938496
 ---------------------------
 Surplus words: ['muerooooo']
-You classified AC as 2 but it is 0
-You classified AC as 2 but it is 0
+AC is not in English. The correct form is -
+AC is not in English. The correct form is -
 You corrected Vamosss as vamos but it is Vamos
 
 TweetID: 951711356369203200
@@ -804,7 +804,7 @@ TweetID: 951725825031884800
 ---------------------------
 Surplus words: ['5am', 'dormi']
 You corrected jajajaja as Ja but it is ja
-You classified bue as 1 but it is 0
+bue is not correct. The correct form is bueno
 You corrected queres as Querés but it is querés
 
 TweetID: 951725977503174656
@@ -833,7 +833,7 @@ Surplus words: ['AM']
 You corrected miserie as miseria but it is mi_serie
 You corrected Whatsapp as - but it is WhatsApp
 You corrected wacho as macho but it is guacho
-You classified AC as 2 but it is 0
+AC is not in English. The correct form is -
 You corrected Ahre as Are but it is Ah_re
 You corrected Xq as porque but it is Porque
 
@@ -853,20 +853,20 @@ TweetID: 951726953958199296
 Missing words: ['Ta']
  - Word 'Ta' should be corrected as 'Está'.
 You corrected chuparselan as - but it is chuparselá
-You classified pa as 1 but it is 0
+pa is not correct. The correct form is para
 
 TweetID: 951727055904833536
 ---------------------------
 Missing words: ['mas']
  - Word 'mas' should be corrected as 'más'.
 You corrected histerica as Histérica but it is histérica
-You classified AC as 2 but it is 0
+AC is not in English. The correct form is -
 
 TweetID: 951727093620051969
 ---------------------------
 Missing words: ['MAS']
  - Word 'MAS' should be corrected as 'MÁS'.
-You classified mayusculas as 1 but it is 0
+mayusculas is not correct. The correct form is mayúsculas
 
 TweetID: 951727165556625408
 ---------------------------
@@ -889,9 +889,8 @@ You corrected 327
 #TweetsCorrected vs. #TweetsNotToBeCorrected: 48
 #TweetsNotCorrected vs. #TweetsToBeCorrected: 22
 You hit 178 out of 496 corrections (24 corrections are missing).
-You hit 400 out of 496 classifications (24 corrections are missing).
-The system MISCLASSIFIED 72 words.
-The system MISCORRECTED 222 words.
+The system MISCORRECTED 294 words.
+72 of these miscorrections are because the system internally classified the word differently.
 Missing corrections: 94
 Surplus corrections: 112
 Words unanalyzed (corrected not equal times): 0
@@ -902,11 +901,6 @@ Accuracy: 0.94
 Precision: 0.81
 Recall: 0.85
 
-Classification
---------------
-Accuracy: 0.81
-
 Corrections
 -----------
 Accuracy: 0.36
-Note that if class is wrong it is counted as MISCORRECTED too.

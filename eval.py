@@ -41,7 +41,6 @@ class Evaluator(object):
         missing_tweets = sorted(list(set_gold_ids - set_generated_ids))
 
         hits_corr = 0
-        hits_class = 0
         total = 0
         wrong_cl = 0
         wrong_co = 0
@@ -139,18 +138,20 @@ class Evaluator(object):
                         assert wg == wo
                         if clg != clo:
                             wrong_cl += 1
-                            self.my_write("You classified", word, "as", clo,
-                                          "but it is", clg)
+                            wrong_co += 1
+                            if clo == '1':
+                                self.my_write(wo, "is not correct.",
+                                              "The correct form is", cog)
+                            elif clo == '2':
+                                self.my_write(wo, "is not in English.",
+                                              "The correct form is", cog)
                         else:
-                            hits_class += 1
                             if cog != coo:
                                 wrong_co += 1
                                 self.my_write("You corrected", word, "as", coo,
                                               "but it is", cog)
                             else:
                                 hits_corr += 1
-
-        assert wrong_cl + wrong_co == total - hits_corr
 
         total += total_missing_corr
 
@@ -159,8 +160,6 @@ class Evaluator(object):
         oov_accuracy = (oov_tp + oov_tn) / total_words
         oov_precision = oov_tp / (oov_tp + oov_fp)
         oov_recall = oov_tp / (oov_tp + oov_fn)
-
-        cl_accuracy = hits_class / total
 
         co_accuracy = hits_corr / total
 
@@ -182,13 +181,12 @@ class Evaluator(object):
         self.my_write("You hit", hits_corr, "out of", total, "corrections (" +
                       str(total_missing_corr), "corrections are missing).",
                       stdout=True)
-        self.my_write("You hit", hits_class, "out of", total,
-                      "classifications (" + str(total_missing_corr),
-                      "corrections are missing).", stdout=True)
-        self.my_write("The system MISCLASSIFIED", wrong_cl, "words.",
-                      stdout=True)
         self.my_write("The system MISCORRECTED", wrong_co, "words.",
                       stdout=True)
+        if wrong_cl > 0:
+            self.my_write(wrong_cl, "of these miscorrections are because the",
+                          "system internally classified the word differently.",
+                          stdout=True)
         self.my_write("Missing corrections:", misses, stdout=True)
         self.my_write("Surplus corrections:", surpluses, stdout=True)
         self.my_write("Words unanalyzed (corrected not equal times):",
@@ -200,15 +198,9 @@ class Evaluator(object):
         self.my_write("Precision:", round(oov_precision, 2), stdout=True)
         self.my_write("Recall:", round(oov_recall, 2), stdout=True)
 
-        self.my_write("\nClassification", stdout=True)
-        self.my_write("--------------", stdout=True)
-        self.my_write("Accuracy:", round(cl_accuracy, 2), stdout=True)
-
         self.my_write("\nCorrections", stdout=True)
         self.my_write("-----------", stdout=True)
         self.my_write("Accuracy:", round(co_accuracy, 2), stdout=True)
-        self.my_write("Note that if class is wrong it is counted"
-                      " as MISCORRECTED too.", stdout=True)
 
         print("\nA detailed information can be found in '{}'"
               "".format(self.output_file))
