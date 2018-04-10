@@ -19,7 +19,6 @@ class WTAclassifier(object):
         else:
             # path to TreeTagger installation directory
             path = 'here put path to TreeTagger'
-            path = '/home/alangb/TWPP'
             self.tagger = TreeTagger(TAGLANG='es', TAGDIR=path)
 
     def dictionary_lookup(self, word):
