@@ -9,6 +9,7 @@
 	plis 0 please
 948132827467517952	No puedo tener el sueño tan cambiado ❌🖕🏻
 948132832072945664	Pinto dormir (?
+	Pinto 0 Pintó
 948132842772582400	El principio. en Ushuaia, Tierra del Fuego, Argentina https://t.co/Jj1Y4zNtv7
 948132858719240192	Creo que no va a empujar más, jajajajaja
 	jajajajaja 0 ja
@@ -74,6 +75,7 @@
 	q 0 que
 	q 0 que
 	q 0 que
+	estan 0 están
 948133416813330432	Otra vez falto el empleado de mi viejo 😥 despues quieren leyes que los beneficien. Por algo tienen 30 años y son empleados. No les importa nada si el dia lo cobran igual
 	falto 0 faltó
 	despues 0 después
@@ -139,6 +141,7 @@
 	Matambriol 0 matambre
 948134138065899520	Que lindo compartir pensamientos con otra persona
 948134150694895616	Tendría que irme a.dormir ya
+	a.dormir 0 a_dormir
 948134195720851456	@Mega983 @christiangrosso Buen diaaaaaa q lindo escucharte Chris!!! Ak en el trabajo con mas pilas q nunca!! vamos q ya llegan mis vacaciones 🏖👙 tachando dias... buen 2018 !!! 🤘🎵📻❤
 	diaaaaaa 0 día
 	q 0 que
@@ -151,6 +154,7 @@
 948134235961004032	Además de hacer chipá de bolsita lo pronuncio como palabra aguda para escarnio de correntinos y https://t.co/2sFCNRNwqH urbana, maestro
 948134238796345344	@CoraDeBardieri BASTA DE AUMENTOS. NO DAMOS MAS!!!! NO https://t.co/3JRblzeXf0 PARA QUE ME.ASFIXIES MAURICIO!!!!!
 	MAS 0 MÁS
+	ME.ASFIXIES 0 ME_ASFIXIES
 948134243946950657	Hoy se acompaña el desayuno con galletas de arroz es muy fuerte habrir el dispensero y tener que evitar todo lo dulce !!!! @gasparedes @MIAFM #Saturno me encanta !!! https://t.co/vPrcZNiayx
 	habrir 0 abrir
 	dispensero 0 despensero
@@ -196,6 +200,7 @@
 948134752871178240	@GuidoFestaVelez @scarlet1854 @ElHijoFallado Y si!! El que labura tiene derecho a eso y mucho más!!  El que se rasca el higo, cobra planes y hace piquetes para cargarle la vida a los que laburan, NO!! El Gobierno hace muchas cagadas pero eso no transforma a los descerebrados en genios
 948134808827383808	Hoy soy la vieja nilda del Siempre.sin ese aura sagrada del primero de año
 	nilda 0 Nilda
+	Siempre.sin 0 siempre_sin
 948134819128659968	#rpsp Leer Habacuc 3. Confía siempre en el Señor. #PrimeroDios en General Roca, Rio Negro https://t.co/N3xyiWmd43
 948134840326590465	@todonoticias Genio
 948134860757061632	No puedo pensarla tanto!!
@@ -246,6 +251,7 @@
 	hno 0 hermano
 	tenes 0 tenés
 	dias 0 días
+	minimo 0 mínimo
 	maquina 0 máquina
 948135592474406912	Si te caga te va a cagar de todas formas amiguito no te preocupes.
 948135668965871616	07:15 a.m
@@ -318,6 +324,7 @@
 948137087638884352	ah bue
 	bue 0 bueno
 948137253263552512	Ahora x @El4topoderlt10 Alejandro Soto, tìo de Aylen una de las vìctimas de Facundo Solìs.
+	tìo 0 tío
 	vìctimas 0 víctimas
 948137262382047238	aaaa estoy muy enamorada de Justin lpm este hombre es hermoso
 	aaaa 0 ah
@@ -338,7 +345,7 @@
 948137825098174465	Pasé poe varias panaderías pero elegí parar en la que está mas cerca de casa, la única que hoy no trabaja.
 	poe 0 por
 948137832505372672	Uuu ya veo q ni me levanto a las 10
-	Uuu 0 Uhh
+	Uuu 0 Uh
 	q 0 que
 948137899807166465	Ok, este tweet me hizo la mañana. Debo haber caído en un capítulo de la Dimensión Desconocida https://t.co/i2IwJXHTHL
 948137914239803393	Pero bueno, no trabajo ooo
@@ -419,6 +426,7 @@
 948140225087332352	Que chomaso trabajar tan temprano que se hagan las 15:30 me quiero ir a dormir
 	chomaso 0 chomazo
 948140256687214592	Alejandro Soto, padre de Aylen, pidió justiciay dijo que la acción de Facundo Solís era predecible. Nota en @El4topoderlt10
+	justiciay 0 justicia_y
 948140345740746753	Que rica tarta aa
 	aa 0 ah
 948140427340853248	Se me pinchó la rueda de la bici y no me queda otra q caminar, el 2018 se arranca pa frenchi y andando a como de lugar
@@ -503,10 +511,13 @@
 	vanda 0 banda
 	Asen 0 Hacen
 	mucica 0 música
-	gravasiones 0 grabasiones
+	gravasiones 0 grabaciones
+	twitter 0 Twitter
 951665231301922818	Fuist
 	Fuist 0 Fuiste
 951665232207892480	14 hs sin luz, se me derriten las siliconas, se me cae el cu... Ah no para ese ya lo tenía caído. estoy pegoteada... Media pila @OficialEdesur @CaballitoXLaLuz @Cortes_en_BsAs
+	hs 0 horas
+	cu 0 culo
 	para 0 pará
 951665242475515904	Otra de mis amigas embarazadas. Que manera de ser tia por Deos😂
 	tia 0 tía
@@ -515,6 +526,7 @@
 	album 0 álbum
 	camila 0 Camila
 951665248095948800	Sobreviví 25 minutos de Sharnado: no se si shorar por lo mala que es, o por q son 5. Y yo q pensé q el fenómeno rápido y furioso era extraño
+	Sharnado 0 Sharknado
 	se 0 sé
 	shorar 0 llorar
 	q 0 que
@@ -712,6 +724,7 @@
 	q 0 qué
 	decis 0 decís
 951695388175749120	Mi único héroe en este lió! https://t.co/z0KSMw6nmS
+	lió 0 lío
 951695413479923713	Me alegra tanto que a Lucas le valla bien! Ojalá siempre le valla así 😍❤
 	valla 0 vaya
 	valla 0 vaya
@@ -764,6 +777,7 @@
 	que 0 qué
 	Nose 0 No_sé
 951695751234637825	YO LA TOCO SUAVECITO DICE QUE TIENE TODO LO QUE NECESITO Y SI ME EQUIVOCO YO LO RETIFICO PORQUE SU CARICIA ME A VUELTO UN ADICTO A SU PIEL   DÍA Y NOCHE BY MYA   https://t.co/QYX01Apqaw https://t.co/47P2jbjndK
+	RETIFICO 0 RECTIFICO
 	A 0 HA
 951695768716480512	Necesito ver si decido quedarme pero Netflix la saco jaaaaaa
 	jaaaaaa 0 ja
@@ -778,6 +792,7 @@
 	Ahno 0 Ah_no
 951695801755013122	@Gonflores21 bue o te caigo bien o.me.queres muerta https://t.co/QxB7AjCsO3
 	bue 0 bueno
+	o.me.queres 0 o_me_querés
 951695802321326080	Me bañe y se me fue todo el sueño a la mierda
 	bañe 0 bañé
 951695858227085312	Que le paso? Nose 😂
@@ -808,6 +823,7 @@
 	se 0 sé
 951710370275692545	Todo empezo una noche de calor  se enamoraban con algun licor  y desde entonces no pudo parar  sabia que esto no tenia final...
 	empezo 0 empezó
+	algun 0 algún
 	sabia 0 sabía
 	tenia 0 tenía
 951710445471260672	Lo que extraño a mí prima, pero como era antes
@@ -887,6 +903,7 @@
 	mamao 0 mamado
 951711274680938496	Ayyyyy muerooooo | NO NOS VAMOS NADA AC
 	Ayyyyy 0 Ay
+	muerooooo 0 muero
 	AC 0 -
 951711326904160256	Vamosss que podemosss | NO NOS VAMOS NADA AC
 	Vamosss 0 Vamos
@@ -909,22 +926,23 @@
 	favorrrrrr 0 favor
 951725825031884800	@MoreParnisciano Y son las 5am jajajaja dormi ahí en tu bella habitación amarilla
 	jajajaja 0 ja
+	dormi 0 dormí
 951725834880126976	Trato q eso no importe pero no puedo🙄
 	q 0 que
 951725929004503040	bue con los mambos que tengo que queres ver
 	bue 0 bueno
 	queres 0 querés
 951725977503174656	QUE BUENA SERIE THE END OF THE FUCKING WORLD LPM
+951726037544718336	Nosotras nos juntabamos un mes antes, pq inútiles siempre https://t.co/r1stX7qkL8
 	juntabamos 0 juntábamos
 	pq 0 porque
-951726037544718336	Nosotras nos juntabamos un mes antes, pq inútiles siempre https://t.co/r1stX7qkL8
+951726086567661568	[12/1 5:01] Nai Andrada: Llegue llorando [12/1 5:01] Nai Andrada: Pq me corrio un perro y me acprde de la película [12/1 5:01] Nai Andrada: Y me imagine a todos los muertpd ahi
 	Pq 0 Porque
 	corrio 0 corrió
 	acprde 0 acordé
 	imagine 0 imaginé
 	muertpd 0 muertos
 	ahi 0 ahí
-951726086567661568	[12/1 5:01] Nai Andrada: Llegue llorando [12/1 5:01] Nai Andrada: Pq me corrio un perro y me acprde de la película [12/1 5:01] Nai Andrada: Y me imagine a todos los muertpd ahi
 951726175906394112	@Celimagadan Aaaaaaa boeee te vas echar la primer mentira del 2018? 😂 😂 😂
 	Aaaaaaa 0 Ah
 	boeee 0 bueno
@@ -959,7 +977,7 @@
 	q 0 que
 951726825427828736	Que sueño viejaaa, se me.wsta haciendo re larga la noche
 	viejaaa 0 vieja
-	wsta 0 está
+	me.wsta 0 me_está
 951726852615344128	Para qué me despierto a ésta horaaaaaaaaaaaaaaaaaaa
 	ésta 0 esta
 	horaaaaaaaaaaaaaaaaaaa 0 hora
@@ -985,6 +1003,7 @@
 	Aaaaaa 0 Ah
 	recupere 0 recuperé
 951727193381588992	@AyaxL_Akd Jaajajajaj crackkk, aguanten los simpson y aguante vos amigo🍻 jajajaja, voy a dormir a feliz ahora(?
+	Jaajajajaj 0 Ja
 	crackkk 0 crack
 	simpson 0 Simpsons
 	jajajaja 0 ja

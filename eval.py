@@ -92,29 +92,31 @@ class Evaluator(object):
             both_words = set_gold_words & set_own_words
             conflict_words = missing_words | surplus_words
 
-            if missing_words or surplus_words:
+            if (missing_words or surplus_words or
+                    gold_corrections != own_corrections):
                 self.my_write("\nTweetID:", tweet_id)
                 self.my_write("-"*len("TweetID: " + tweet_id))
-                if missing_words:
-                    sorted_missing_words = sorted(list(missing_words))
-                    misses += len(missing_words)
-                    self.my_write("Missing words:", sorted_missing_words)
-                    for word in sorted_missing_words:
-                        correct_words = [c for w, _, c in gold_corrections
-                                         if w == word]
-                        if len(correct_words) > 1:
-                            self.my_write("WARNING: There are more than one"
-                                          " correction for '{}'. All "
-                                          "corrections"
-                                          " will be printed".format(word))
-                        for correct_word in correct_words:
-                            self.my_write(" - Word '{}' should be "
-                                          "corrected as '{}'."
-                                          "".format(word, correct_word))
-                if surplus_words:
-                    surpluses += len(surplus_words)
-                    self.my_write("Surplus words:",
-                                  sorted(list(surplus_words)))
+
+            if missing_words:
+                sorted_missing_words = sorted(list(missing_words))
+                misses += len(missing_words)
+                self.my_write("Missing words:", sorted_missing_words)
+                for word in sorted_missing_words:
+                    correct_words = [c for w, _, c in gold_corrections
+                                     if w == word]
+                    if len(correct_words) > 1:
+                        self.my_write("WARNING: There are more than one"
+                                      " correction for '{}'. All "
+                                      "corrections"
+                                      " will be printed".format(word))
+                    for correct_word in correct_words:
+                        self.my_write(" - Word '{}' should be "
+                                      "corrected as '{}'."
+                                      "".format(word, correct_word))
+            if surplus_words:
+                surpluses += len(surplus_words)
+                self.my_write("Surplus words:",
+                              sorted(list(surplus_words)))
 
             for word in sorted(list(both_words)):
                 gold_tuples = [t for t in gold_corrections if t[0] == word]
