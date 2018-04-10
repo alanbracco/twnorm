@@ -227,6 +227,7 @@ if __name__ == '__main__':
     output_file = opts['-o']
     if output_file is None:
         output_file = 'stats.txt'
+    output_file = 'Stats/' + output_file
     if os.path.exists(output_file):
         os.remove(output_file)
 
