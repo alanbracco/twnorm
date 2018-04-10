@@ -1372,7 +1372,7 @@ Missing corrections: 90
 Surplus corrections: 98
 Words unanalyzed (corrected not equal times): 0
 
-OOV detection
+WTA detection
 -------------
 Accuracy: 0.94
 Precision: 0.83

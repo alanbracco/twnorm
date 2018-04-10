@@ -3,7 +3,7 @@ import enchant
 from os import path
 from aux import progress
 from collections import defaultdict
-from oov_picker import OOVpicker
+from wta_picker import WTApicker
 from tweets_splitter import Tw_Splitter
 from output_builder import OutputBuilder
 
@@ -12,16 +12,16 @@ def BaselineNormalization(input_file, output_file):
 
     print('Initializing resources...')
     splitter = Tw_Splitter(path.join('Input', input_file))
-    picker = OOVpicker(splitter.texts)
+    picker = WTApicker(splitter.texts)
     output = OutputBuilder(output_file)
-    oovs = picker.OOV
+    wtas = picker.WTA
     correct = defaultdict(dict)
     iv_dict = enchant.Dict("es_AR")
     print('Initialization finished')
 
     n = 1
     start_time = time.time()
-    for tweet_id, tweet in oovs.items():
+    for tweet_id, tweet in wtas.items():
         x = int((float(n)/picker.n)*20)
         perc = round((float(n)/picker.n)*100, 1)
         msg = ('Processing tweets...{}% ({}/{})'.format(perc, n, picker.n) +

@@ -4,7 +4,7 @@ from treetaggerwrapper import TreeTagger, make_tags
 from nltk.stem.snowball import SpanishStemmer
 
 
-class OOVclassifier(object):
+class WTAclassifier(object):
 
     def __init__(self, stem=False):
         dictionaries = dicts()
@@ -19,6 +19,7 @@ class OOVclassifier(object):
         else:
             # path to TreeTagger installation directory
             path = 'here put path to TreeTagger'
+            path = '/home/alangb/TWPP'
             self.tagger = TreeTagger(TAGLANG='es', TAGDIR=path)
 
     def dictionary_lookup(self, word):

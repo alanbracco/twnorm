@@ -8,7 +8,7 @@ This is a project to work on text normalization of tweets in spanish.
 
 ### Settings before execution
 Once, you have installed all the requirements, in *line 21* of
-*oov_classifier.py* file, you have to enter the path to TreeTagger installation
+*wta_classifier.py* file, you have to enter the path to TreeTagger installation
 directory.
 Also, you need to activate *twnorm_venv* virtual environment.
 In order to do this, type **workon twnorm_venv** in the console and press Enter.

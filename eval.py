@@ -16,7 +16,7 @@ import sys
 from copy import copy
 from docopt import docopt
 from tweets_splitter import Tw_Splitter
-from oov_picker import OOVpicker
+from wta_picker import WTApicker
 
 
 class Evaluator(object):
@@ -49,10 +49,10 @@ class Evaluator(object):
         unanalyzed = 0  # Quantity of words not analyzed
         total_missing_corr = 0  # Total number of corrections in 'gold' tweets
 
-        oov_tp = 0  # Detected as OOV and it is OOV (True positives)
-        oov_fp = 0  # Detected as OOV but it is not OOV (False positives)
-        oov_tn = 0  # Not detected as OOV and it is not OOV (True Negatives)
-        oov_fn = 0  # Not detected as OOV but it is OOV (False Negatives)
+        wta_tp = 0  # Detected as WTA and it is WTA (True positives)
+        wta_fp = 0  # Detected as WTA but it is not WTA (False positives)
+        wta_tn = 0  # Not detected as WTA and it is not WTA (True Negatives)
+        wta_fn = 0  # Not detected as WTA but it is WTA (False Negatives)
         total_words = 0  # Total number of words
 
         for tweet_id in missing_tweets:
@@ -70,22 +70,22 @@ class Evaluator(object):
             all_words = [word for j in tokenized[tweet_id].keys()
                          for word, _ in tokenized[tweet_id][j]]
 
-            my_oov = copy(own_words)
-            gold_oov = copy(gold_words)
+            my_wta = copy(own_words)
+            gold_wta = copy(gold_words)
             total_words += len(all_words)
             for word in all_words:
-                if word in gold_oov and word in my_oov:
-                    oov_tp += 1
-                    my_oov.remove(word)
-                    gold_oov.remove(word)
-                elif word in gold_oov and word not in my_oov:
-                    oov_fn += 1
-                    gold_oov.remove(word)
-                elif word not in gold_oov and word in my_oov:
-                    oov_fp += 1
-                    my_oov.remove(word)
-                elif word not in gold_oov and word not in my_oov:
-                    oov_tn += 1
+                if word in gold_wta and word in my_wta:
+                    wta_tp += 1
+                    my_wta.remove(word)
+                    gold_wta.remove(word)
+                elif word in gold_wta and word not in my_wta:
+                    wta_fn += 1
+                    gold_wta.remove(word)
+                elif word not in gold_wta and word in my_wta:
+                    wta_fp += 1
+                    my_wta.remove(word)
+                elif word not in gold_wta and word not in my_wta:
+                    wta_tn += 1
 
             missing_words = set_gold_words - set_own_words
             surplus_words = set_own_words - set_gold_words
@@ -157,11 +157,11 @@ class Evaluator(object):
 
         total += total_missing_corr
 
-        assert total_words == oov_fn + oov_fp + oov_tn + oov_tp
+        assert total_words == wta_fn + wta_fp + wta_tn + wta_tp
 
-        oov_accuracy = (oov_tp + oov_tn) / total_words
-        oov_precision = oov_tp / (oov_tp + oov_fp)
-        oov_recall = oov_tp / (oov_tp + oov_fn)
+        wta_accuracy = (wta_tp + wta_tn) / total_words
+        wta_precision = wta_tp / (wta_tp + wta_fp)
+        wta_recall = wta_tp / (wta_tp + wta_fn)
 
         co_accuracy = hits_corr / total
 
@@ -194,11 +194,11 @@ class Evaluator(object):
         self.my_write("Words unanalyzed (corrected not equal times):",
                       unanalyzed, stdout=True)
 
-        self.my_write("\nOOV detection", stdout=True)
+        self.my_write("\nWTA detection", stdout=True)
         self.my_write("-------------", stdout=True)
-        self.my_write("Accuracy:", round(oov_accuracy, 2), stdout=True)
-        self.my_write("Precision:", round(oov_precision, 2), stdout=True)
-        self.my_write("Recall:", round(oov_recall, 2), stdout=True)
+        self.my_write("Accuracy:", round(wta_accuracy, 2), stdout=True)
+        self.my_write("Precision:", round(wta_precision, 2), stdout=True)
+        self.my_write("Recall:", round(wta_recall, 2), stdout=True)
 
         self.my_write("\nCorrections", stdout=True)
         self.my_write("-----------", stdout=True)
@@ -237,7 +237,7 @@ if __name__ == '__main__':
     gold_dict = gold_splitter.corrections
     generated_dict = generated_splitter.corrections
 
-    tokenized = OOVpicker(gold_splitter.texts).tokenized
+    tokenized = WTApicker(gold_splitter.texts).tokenized
 
     evaluator = Evaluator(output_file)
     evaluator.get_measure(gold_dict, generated_dict, tokenized)

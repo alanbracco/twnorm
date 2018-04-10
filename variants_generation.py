@@ -1,12 +1,12 @@
 # from string import ascii_lowercase as lcase
 import re
-from oov_classifier import OOVclassifier
+from wta_classifier import WTAclassifier
 
 
 class PrimaryCandidates(object):
 
     def __init__(self, n):
-        self.cf = OOVclassifier()
+        self.cf = WTAclassifier()
         self.n_errors = n
 
     def upper_lower(self, word):

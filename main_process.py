@@ -2,8 +2,8 @@ import time
 from os import path
 from aux import progress
 from collections import defaultdict
-from oov_picker import OOVpicker
-from oov_classifier import OOVclassifier
+from wta_picker import WTApicker
+from wta_classifier import WTAclassifier
 from tweets_splitter import Tw_Splitter
 from output_builder import OutputBuilder
 from variants_generation import PrimaryCandidates, SecondaryCandidates
@@ -15,13 +15,13 @@ def MainProcess(input_file, output_file, model_file):
 
     print('Initializing resources...')
     splitter = Tw_Splitter(path.join('Input', input_file))
-    picker = OOVpicker(splitter.texts)
-    classifier = OOVclassifier()
+    picker = WTApicker(splitter.texts)
+    classifier = WTAclassifier()
     primary = PrimaryCandidates(2)
     secondary = SecondaryCandidates()
     selector = Selector(model_file)
     output = OutputBuilder(output_file)
-    oovs = picker.OOV
+    wtas = picker.WTA
     tokenized = picker.tokenized
     correct = defaultdict(dict)
     memory = CandidatesMemory()
@@ -29,7 +29,7 @@ def MainProcess(input_file, output_file, model_file):
 
     n = 1
     start_time = time.time()
-    for tweet_id, tweet in oovs.items():
+    for tweet_id, tweet in wtas.items():
         x = int((float(n)/picker.n)*20)
         perc = round((float(n)/picker.n)*100, 1)
         msg = ('Processing tweets...{}% ({}/{})'.format(perc, n, picker.n) +

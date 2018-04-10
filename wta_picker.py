@@ -17,12 +17,12 @@ def is_valid(word):
         return (word.isalnum() and not word.isdigit())
 
 
-class OOVpicker(object):
+class WTApicker(object):
 
     def __init__(self, tweets):
         twt = MyTokenizer()
         known_word = enchant.Dict("es_AR")
-        OOV = defaultdict(lambda: defaultdict(list))
+        WTA = defaultdict(lambda: defaultdict(list))
         tokenized = defaultdict(dict)
         # split tweets by tweet separator
         for tweet_id, tweet_text in tweets.items():
@@ -41,9 +41,9 @@ class OOVpicker(object):
                     if not known_word.check(word):
                         # add (word, pos) to j-th sent
                         # of tweet with id = tweet_id
-                        OOV[tweet_id][j].append((word, pos))
-        n = len(OOV)
+                        WTA[tweet_id][j].append((word, pos))
+        n = len(WTA)
         print('Tweets to correct:', n)
         self.n = n
         self.tokenized = dict(tokenized)
-        self.OOV = dict(OOV)
+        self.WTA = dict(WTA)
