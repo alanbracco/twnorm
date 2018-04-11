@@ -51,6 +51,29 @@ class Evaluator(object):
         if stdout:
             print(*args)
 
+    def set_wta_metrics(self):
+        assert self.total_words == (self.wta_fn + self.wta_fp +
+                                    self.wta_tn + self.wta_tp)
+        self.wta_accuracy = (self.wta_tp + self.wta_tn) / self.total_words
+        self.wta_precision = self.wta_tp / (self.wta_tp + self.wta_fp)
+        self.wta_recall = self.wta_tp / (self.wta_tp + self.wta_fn)
+
+    def set_corr_metrics(self):
+        self.co_precision = self.hits_corr / self.total_gen_corr
+        self.co_recall = self.hits_corr / self.total_gold_corr
+
+    def show_metrics(self):
+        self.my_write("\nWTA detection", stdout=True)
+        self.my_write("-------------", stdout=True)
+        self.my_write("Accuracy:", round(self.wta_accuracy, 2), stdout=True)
+        self.my_write("Precision:", round(self.wta_precision, 2), stdout=True)
+        self.my_write("Recall:", round(self.wta_recall, 2), stdout=True)
+
+        self.my_write("\nCorrections", stdout=True)
+        self.my_write("-----------", stdout=True)
+        self.my_write("Precision:", round(self.co_precision, 2), stdout=True)
+        self.my_write("Recall:", round(self.co_recall, 2), stdout=True)
+
     def get_measure(self, gold_dict, generated_dict, tokenized):
 
         self.my_write("\nSTATISTICS")
@@ -104,7 +127,6 @@ class Evaluator(object):
             missing_words = set_gold_words - set_own_words
             surplus_words = set_own_words - set_gold_words
             both_words = set_gold_words & set_own_words
-            conflict_words = missing_words | surplus_words
 
             if (missing_words or surplus_words or
                     gold_corrections != own_corrections):
@@ -171,22 +193,16 @@ class Evaluator(object):
         self.total_gold_corr += self.total_missing_corr
         self.total_gen_corr += self.total_surplus_corr
 
-        assert self.total_words == (self.wta_fn + self.wta_fp +
-                                    self.wta_tn + self.wta_tp)
+        self.set_wta_metrics()
+        self.set_corr_metrics()
 
-        self.wta_accuracy = (self.wta_tp + self.wta_tn) / self.total_words
-        self.wta_precision = self.wta_tp / (self.wta_tp + self.wta_fp)
-        self.wta_recall = self.wta_tp / (self.wta_tp + self.wta_fn)
-
-        self.co_precision = self.hits_corr / self.total_gen_corr
-        self.co_recall = self.hits_corr / self.total_gold_corr
-
-        self.my_write("\nSUMMARY", stdout=True)
-        self.my_write("=======", stdout=True)
         if len(gold_dict) > 1:
             tweets = 'tweets'
         else:
             tweets = 'tweet'
+
+        self.my_write("\nSUMMARY", stdout=True)
+        self.my_write("=======", stdout=True)
         self.my_write("There are", len(gold_dict), tweets, "to correct.",
                       stdout=True)
         self.my_write("You corrected", len(generated_dict), stdout=True)
@@ -210,16 +226,7 @@ class Evaluator(object):
                           "(corrected not equal times in the tweet):",
                           self.discarded, stdout=True)
 
-        self.my_write("\nWTA detection", stdout=True)
-        self.my_write("-------------", stdout=True)
-        self.my_write("Accuracy:", round(self.wta_accuracy, 2), stdout=True)
-        self.my_write("Precision:", round(self.wta_precision, 2), stdout=True)
-        self.my_write("Recall:", round(self.wta_recall, 2), stdout=True)
-
-        self.my_write("\nCorrections", stdout=True)
-        self.my_write("-----------", stdout=True)
-        self.my_write("Precision:", round(self.co_precision, 2), stdout=True)
-        self.my_write("Recall:", round(self.co_recall, 2), stdout=True)
+        self.show_metrics()
 
         print("\nA detailed information can be found in '{}'"
               "".format(self.output_file))
