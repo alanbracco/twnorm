@@ -22,6 +22,22 @@ from wta_picker import WTApicker
 class Evaluator(object):
     def __init__(self, output_file):
         self.output_file = output_file
+        self.hits_corr = 0  # Words corrected ok (quantity)
+        self.wrong_cl = 0  # Wrong classification (quantity)
+        self.wrong_co = 0  # Wrong corrections (quantity)
+        self.misses = 0  # Missing corrections (quantity)
+        self.surpluses = 0  # Surplus corrections (quantity)
+        self.discarded = 0  # Words discarded (quantity)
+        self.total_gold_corr = 0  # Corrections in gold corpus (quantity)
+        self.total_gen_corr = 0  # Corrections in generated corpus (quantity)
+        self.total_missing_corr = 0  # Missing corrections (quantity)
+        self.total_surplus_corr = 0  # Surplus corrections (quantity)
+
+        self.wta_tp = 0  # It's WTA and it's analyzed (True positives)
+        self.wta_fp = 0  # It isn't WTA but it's analyzed (False positives)
+        self.wta_tn = 0  # It isn't WTA and it isn't analyzed (True Negatives)
+        self.wta_fn = 0  # It's WTA but it isn't analyzed (False Negatives)
+        self.total_words = 0  # Total number of words
 
     def my_write(self, *args, stdout=False):
         with open(self.output_file, 'a') as file:
@@ -41,35 +57,18 @@ class Evaluator(object):
         missing_tweets = sorted(list(set_gold_ids - set_generated_ids))
         surplus_tweets = sorted(list(set_generated_ids - set_gold_ids))
 
-        hits_corr = 0  # Words corrected ok (quantity)
-        wrong_cl = 0  # Wrong classification (quantity)
-        wrong_co = 0  # Wrong corrections (quantity)
-        misses = 0  # Missing corrections (quantity)
-        surpluses = 0  # Surplus corrections (quantity)
-        unanalyzed = 0  # Words not analyzed (quantity)
-        total_gold_corr = 0  # Corrections in gold corpus (quantity)
-        total_gen_corr = 0  # Corrections in generated corpus (quantity)
-        total_missing_corr = 0  # Missing corrections (quantity)
-        total_surplus_corr = 0  # Surplus corrections (quantity)
-
-        wta_tp = 0  # Detected as WTA and it is WTA (True positives)
-        wta_fp = 0  # Detected as WTA but it is not WTA (False positives)
-        wta_tn = 0  # Not detected as WTA and it is not WTA (True Negatives)
-        wta_fn = 0  # Not detected as WTA but it is WTA (False Negatives)
-        total_words = 0  # Total number of words
-
         for tweet_id in missing_tweets:
-            total_missing_corr += len(gold_dict[tweet_id])
+            self.total_missing_corr += len(gold_dict[tweet_id])
 
         for tweet_id in surplus_tweets:
-            total_surplus_corr += len(generated_dict[tweet_id])
+            self.total_surplus_corr += len(generated_dict[tweet_id])
 
         for tweet_id in both:
             gold_corrections = gold_dict[tweet_id]
             own_corrections = generated_dict[tweet_id]
 
-            total_gold_corr += len(gold_corrections)
-            total_gen_corr += len(own_corrections)
+            self.total_gold_corr += len(gold_corrections)
+            self.total_gen_corr += len(own_corrections)
 
             gold_words = [word for word, _, _ in gold_corrections]
             set_gold_words = set(gold_words)
@@ -81,20 +80,20 @@ class Evaluator(object):
 
             my_wta = copy(own_words)
             gold_wta = copy(gold_words)
-            total_words += len(all_words)
+            self.total_words += len(all_words)
             for word in all_words:
                 if word in gold_wta and word in my_wta:
-                    wta_tp += 1
+                    self.wta_tp += 1
                     my_wta.remove(word)
                     gold_wta.remove(word)
                 elif word in gold_wta and word not in my_wta:
-                    wta_fn += 1
+                    self.wta_fn += 1
                     gold_wta.remove(word)
                 elif word not in gold_wta and word in my_wta:
-                    wta_fp += 1
+                    self.wta_fp += 1
                     my_wta.remove(word)
                 elif word not in gold_wta and word not in my_wta:
-                    wta_tn += 1
+                    self.wta_tn += 1
 
             missing_words = set_gold_words - set_own_words
             surplus_words = set_own_words - set_gold_words
@@ -108,7 +107,7 @@ class Evaluator(object):
 
             if missing_words:
                 sorted_missing_words = sorted(list(missing_words))
-                misses += len(missing_words)
+                self.misses += len(missing_words)
                 self.my_write("Missing words:", sorted_missing_words)
                 for word in sorted_missing_words:
                     correct_words = [c for w, _, c in gold_corrections
@@ -123,7 +122,7 @@ class Evaluator(object):
                                       "corrected as '{}'."
                                       "".format(word, correct_word))
             if surplus_words:
-                surpluses += len(surplus_words)
+                self.surpluses += len(surplus_words)
                 self.my_write("Surplus words:",
                               sorted(list(surplus_words)))
 
@@ -133,7 +132,7 @@ class Evaluator(object):
                 n_gold = len(gold_tuples)
                 n_own = len(own_tuples)
                 if n_gold != n_own:
-                    unanalyzed += 1
+                    self.discarded += 1
                     self.my_write("WARNING: word", word, "not analized.")
                     self.my_write("You corrected", n_own, "time(s),",
                                   "but you have to correct it", n_gold,
@@ -147,8 +146,8 @@ class Evaluator(object):
                         wo, clo, coo = own_tuples[i]
                         assert wg == wo
                         if clg != clo:
-                            wrong_cl += 1
-                            wrong_co += 1
+                            self.wrong_cl += 1
+                            self.wrong_co += 1
                             if clo == '1':
                                 self.my_write(wo, "is not correct.",
                                               "The correct form is", cog)
@@ -157,23 +156,24 @@ class Evaluator(object):
                                               "The correct form is", cog)
                         else:
                             if cog != coo:
-                                wrong_co += 1
+                                self.wrong_co += 1
                                 self.my_write("You corrected", word, "as", coo,
                                               "but it is", cog)
                             else:
-                                hits_corr += 1
+                                self.hits_corr += 1
 
-        total_gold_corr += total_missing_corr
-        total_gen_corr += total_surplus_corr
+        self.total_gold_corr += self.total_missing_corr
+        self.total_gen_corr += self.total_surplus_corr
 
-        assert total_words == wta_fn + wta_fp + wta_tn + wta_tp
+        assert self.total_words == (self.wta_fn + self.wta_fp +
+                                    self.wta_tn + self.wta_tp)
 
-        wta_accuracy = (wta_tp + wta_tn) / total_words
-        wta_precision = wta_tp / (wta_tp + wta_fp)
-        wta_recall = wta_tp / (wta_tp + wta_fn)
+        wta_accuracy = (self.wta_tp + self.wta_tn) / self.total_words
+        wta_precision = self.wta_tp / (self.wta_tp + self.wta_fp)
+        wta_recall = self.wta_tp / (self.wta_tp + self.wta_fn)
 
-        co_precision = hits_corr / total_gen_corr
-        co_recall = hits_corr / total_gold_corr
+        co_precision = self.hits_corr / self.total_gen_corr
+        co_recall = self.hits_corr / self.total_gold_corr
 
         self.my_write("\nSUMMARY", stdout=True)
         self.my_write("=======", stdout=True)
@@ -190,18 +190,19 @@ class Evaluator(object):
                       len(surplus_tweets), stdout=True)
         self.my_write("#TweetsNotCorrected vs. #TweetsToBeCorrected:",
                       len(missing_tweets), stdout=True)
-        self.my_write("The system MISCORRECTED", wrong_co, "words.",
+        self.my_write("The system MISCORRECTED", self.wrong_co, "words.",
                       stdout=True)
-        if wrong_cl > 0:
-            self.my_write(wrong_cl, "of these miscorrections are because the",
+        if self.wrong_cl > 0:
+            self.my_write(self.wrong_cl,
+                          "of these miscorrections are because the",
                           "system internally classified the word differently.",
                           stdout=True)
-        self.my_write("Missing corrections:", misses, stdout=True)
-        self.my_write("Surplus corrections:", surpluses, stdout=True)
-        if unanalyzed > 0:
-            self.my_write("Words unanalyzed",
+        self.my_write("Missing corrections:", self.misses, stdout=True)
+        self.my_write("Surplus corrections:", self.surpluses, stdout=True)
+        if self.discarded > 0:
+            self.my_write("Words discarded",
                           "(corrected not equal times in the tweet):",
-                          unanalyzed, stdout=True)
+                          self.discarded, stdout=True)
 
         self.my_write("\nWTA detection", stdout=True)
         self.my_write("-------------", stdout=True)
