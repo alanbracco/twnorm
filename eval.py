@@ -39,6 +39,12 @@ class Evaluator(object):
         self.wta_fn = 0  # It's WTA but it isn't analyzed (False Negatives)
         self.total_words = 0  # Total number of words
 
+        self.wta_accuracy = 0  # Accuracy in WTA detection
+        self.wta_precision = 0  # Precision in WTA detection
+        self.wta_recall = 0  # Recall in WTA detection
+        self.co_precision = 0  # Precision in correction
+        self.co_recall = 0  # Recall in correction
+
     def my_write(self, *args, stdout=False):
         with open(self.output_file, 'a') as file:
             print(*args, file=file)
@@ -168,12 +174,12 @@ class Evaluator(object):
         assert self.total_words == (self.wta_fn + self.wta_fp +
                                     self.wta_tn + self.wta_tp)
 
-        wta_accuracy = (self.wta_tp + self.wta_tn) / self.total_words
-        wta_precision = self.wta_tp / (self.wta_tp + self.wta_fp)
-        wta_recall = self.wta_tp / (self.wta_tp + self.wta_fn)
+        self.wta_accuracy = (self.wta_tp + self.wta_tn) / self.total_words
+        self.wta_precision = self.wta_tp / (self.wta_tp + self.wta_fp)
+        self.wta_recall = self.wta_tp / (self.wta_tp + self.wta_fn)
 
-        co_precision = self.hits_corr / self.total_gen_corr
-        co_recall = self.hits_corr / self.total_gold_corr
+        self.co_precision = self.hits_corr / self.total_gen_corr
+        self.co_recall = self.hits_corr / self.total_gold_corr
 
         self.my_write("\nSUMMARY", stdout=True)
         self.my_write("=======", stdout=True)
@@ -206,14 +212,14 @@ class Evaluator(object):
 
         self.my_write("\nWTA detection", stdout=True)
         self.my_write("-------------", stdout=True)
-        self.my_write("Accuracy:", round(wta_accuracy, 2), stdout=True)
-        self.my_write("Precision:", round(wta_precision, 2), stdout=True)
-        self.my_write("Recall:", round(wta_recall, 2), stdout=True)
+        self.my_write("Accuracy:", round(self.wta_accuracy, 2), stdout=True)
+        self.my_write("Precision:", round(self.wta_precision, 2), stdout=True)
+        self.my_write("Recall:", round(self.wta_recall, 2), stdout=True)
 
         self.my_write("\nCorrections", stdout=True)
         self.my_write("-----------", stdout=True)
-        self.my_write("Precision:", round(co_precision, 2), stdout=True)
-        self.my_write("Recall:", round(co_recall, 2), stdout=True)
+        self.my_write("Precision:", round(self.co_precision, 2), stdout=True)
+        self.my_write("Recall:", round(self.co_recall, 2), stdout=True)
 
         print("\nA detailed information can be found in '{}'"
               "".format(self.output_file))
