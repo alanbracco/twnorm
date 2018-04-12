@@ -1266,8 +1266,11 @@ WTA detection
 Accuracy: 0.94
 Precision: 0.83
 Recall: 0.85
+F1: 0.84
 
-Corrections
+WTA correction
 -----------
+Accuracy: 0.85
 Precision: 0.28
 Recall: 0.31
+F1: 0.29

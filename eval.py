@@ -51,16 +51,36 @@ class Evaluator(object):
         if stdout:
             print(*args)
 
+    def update_tp_tn_fp_fn(self, all_words, gold_wta, my_wta):
+        for word in all_words:
+            if word in gold_wta and word in my_wta:
+                self.wta_tp += 1
+                my_wta.remove(word)
+                gold_wta.remove(word)
+            elif word in gold_wta and word not in my_wta:
+                self.wta_fn += 1
+                gold_wta.remove(word)
+            elif word not in gold_wta and word in my_wta:
+                self.wta_fp += 1
+                my_wta.remove(word)
+            elif word not in gold_wta and word not in my_wta:
+                self.wta_tn += 1
+
     def set_wta_metrics(self):
         assert self.total_words == (self.wta_fn + self.wta_fp +
                                     self.wta_tn + self.wta_tp)
         self.wta_accuracy = (self.wta_tp + self.wta_tn) / self.total_words
         self.wta_precision = self.wta_tp / (self.wta_tp + self.wta_fp)
         self.wta_recall = self.wta_tp / (self.wta_tp + self.wta_fn)
+        self.wta_f1 = ((2 * self.wta_precision * self.wta_recall)
+                       / (self.wta_precision + self.wta_recall))
 
     def set_corr_metrics(self):
+        self.co_accuracy = (self.hits_corr + self.wta_tn) / self.total_words
         self.co_precision = self.hits_corr / self.total_gen_corr
         self.co_recall = self.hits_corr / self.total_gold_corr
+        self.co_f1 = ((2 * self.co_precision * self.co_recall)
+                      / (self.co_precision + self.co_recall))
 
     def show_metrics(self):
         self.my_write("\nWTA detection", stdout=True)
@@ -68,11 +88,14 @@ class Evaluator(object):
         self.my_write("Accuracy:", round(self.wta_accuracy, 2), stdout=True)
         self.my_write("Precision:", round(self.wta_precision, 2), stdout=True)
         self.my_write("Recall:", round(self.wta_recall, 2), stdout=True)
+        self.my_write("F1:", round(self.wta_f1, 2), stdout=True)
 
-        self.my_write("\nCorrections", stdout=True)
+        self.my_write("\nWTA correction", stdout=True)
         self.my_write("-----------", stdout=True)
+        self.my_write("Accuracy:", round(self.co_accuracy, 2), stdout=True)
         self.my_write("Precision:", round(self.co_precision, 2), stdout=True)
         self.my_write("Recall:", round(self.co_recall, 2), stdout=True)
+        self.my_write("F1:", round(self.co_f1, 2), stdout=True)
 
     def get_measure(self, gold_dict, generated_dict, tokenized):
 
@@ -106,23 +129,11 @@ class Evaluator(object):
 
             all_words = [word for j in tokenized[tweet_id].keys()
                          for word, _ in tokenized[tweet_id][j]]
-
             my_wta = copy(own_words)
             gold_wta = copy(gold_words)
             self.total_words += len(all_words)
-            for word in all_words:
-                if word in gold_wta and word in my_wta:
-                    self.wta_tp += 1
-                    my_wta.remove(word)
-                    gold_wta.remove(word)
-                elif word in gold_wta and word not in my_wta:
-                    self.wta_fn += 1
-                    gold_wta.remove(word)
-                elif word not in gold_wta and word in my_wta:
-                    self.wta_fp += 1
-                    my_wta.remove(word)
-                elif word not in gold_wta and word not in my_wta:
-                    self.wta_tn += 1
+
+            self.update_tp_tn_fp_fn(all_words, gold_wta, my_wta)
 
             missing_words = set_gold_words - set_own_words
             surplus_words = set_own_words - set_gold_words
