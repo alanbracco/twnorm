@@ -1366,11 +1366,9 @@ You corrected 327
 #TweetsCorrected vs. #TweetsToBeCorrected: 280
 #TweetsCorrected vs. #TweetsNotToBeCorrected: 47
 #TweetsNotCorrected vs. #TweetsToBeCorrected: 25
-You hit 134 out of 519 corrections (28 corrections are missing).
 The system MISCORRECTED 357 words.
 Missing corrections: 90
 Surplus corrections: 98
-Words unanalyzed (corrected not equal times): 0
 
 WTA detection
 -------------
@@ -1380,4 +1378,5 @@ Recall: 0.85
 
 Corrections
 -----------
-Accuracy: 0.26
+Precision: 0.2
+Recall: 0.22
