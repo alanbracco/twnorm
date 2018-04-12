@@ -28,8 +28,9 @@ def MainProcess(input_file, output_file, model_file):
     print('Initialization finished')
 
     n = 1
-    start_time = time.time()
+    tweets_time = {}
     for tweet_id, tweet in wtas.items():
+        tweet_start = time.time()
         x = int((float(n)/picker.n)*20)
         perc = round((float(n)/picker.n)*100, 1)
         msg = ('Processing tweets...{}% ({}/{})'.format(perc, n, picker.n) +
@@ -71,9 +72,24 @@ def MainProcess(input_file, output_file, model_file):
                     correct_word = '-'
 
                 correct[tweet_id][j].append((word, class_number, correct_word))
+
+        tweet_end = time.time()
+        tweets_time[tweet_id] = tweet_end - tweet_start
+
     correct = dict(correct)
     output.build(splitter.texts, splitter.order, correct)
+
+    total_time = sum([t for t in tweets_time.values()])
+    tweet_rate = len(wtas) / total_time
+
+    total_tokens = sum([len(correct[x][y]) for x in correct
+                        for y in correct[x]])
+    token_rate = total_tokens / total_time
+
     print('\nProcess finished.')
-    total_time = time.time() - start_time
     print('Took:', time.strftime("%H hs %M min %S sec",
                                  time.gmtime(total_time)))
+    print('Tweet rate (only tweets to correct):',
+          round(tweet_rate, 2), 'tweets/sec')
+    print('Token rate (only tokens to correct):',
+          round(token_rate, 2), 'tokens/sec')
