@@ -6,9 +6,8 @@ from wta_picker import WTApicker
 from wta_classifier import WTAclassifier
 from tweets_splitter import Tw_Splitter
 from output_builder import OutputBuilder
-from variants_generation import PrimaryCandidates, SecondaryCandidates
+from variants_generation import VariantsGenerator
 from candidate_selection import Selector
-from candidates_memory import CandidatesMemory
 
 
 def MainProcess(input_file, output_file, model_file):
@@ -17,14 +16,12 @@ def MainProcess(input_file, output_file, model_file):
     splitter = Tw_Splitter(path.join('Input', input_file))
     picker = WTApicker(splitter.texts)
     classifier = WTAclassifier()
-    primary = PrimaryCandidates(2)
-    secondary = SecondaryCandidates()
+    variants_generator = VariantsGenerator()
     selector = Selector(model_file)
     output = OutputBuilder(output_file)
     wtas = picker.WTA
     tokenized = picker.tokenized
     correct = defaultdict(dict)
-    memory = CandidatesMemory()
     print('Initialization finished')
 
     n = 1
@@ -46,17 +43,7 @@ def MainProcess(input_file, output_file, model_file):
                 class_number = classifier.classify(word)
                 # if class is variant
                 if class_number == 0:
-                    if memory.already_processed(word):
-                        IVcandidates = memory.get_candidates(word)
-                    else:
-                        IVcandidates = primary.generate(word)
-                        # if no primary candidates generated
-                        if len(IVcandidates) == 0:
-                            IVcandidates = secondary.generate(word)
-                            memory.add_candidates(word, IVcandidates,
-                                                  primary=False)
-                        else:
-                            memory.add_candidates(word, IVcandidates)
+                    IVcandidates = variants_generator.generate(word)
                     # if no candidates generated
                     if len(IVcandidates) == 0:
                         correct_word = '-'

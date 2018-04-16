@@ -1,11 +1,12 @@
 # from string import ascii_lowercase as lcase
 import re
 from wta_classifier import WTAclassifier
+from candidates_memory import CandidatesMemory
 
 
 class PrimaryCandidates(object):
 
-    def __init__(self, n):
+    def __init__(self, n=2):
         self.cf = WTAclassifier()
         self.n_errors = n
 
@@ -279,13 +280,26 @@ class SecondaryCandidates(object):
         return candidates
 
 
+class VariantsGenerator(object):
+    def __init__(self, n=2):
+        self.primary = PrimaryCandidates(n)
+        self.secondary = SecondaryCandidates()
+        self.memory = CandidatesMemory()
+
+    def generate(self, word):
+        if self.memory.already_processed(word):
+            candidates = self.memory.get_candidates(word)
+        else:
+            candidates = self.primary.generate(word)
+            if candidates == set():
+                candidates = self.secondary.generate(word)
+                self.memory.add_candidates(word, candidates)
+            else:
+                self.memory.add_candidates(word, candidates, primary=True)
+        return candidates
+
+
 if __name__ == '__main__':
-    a = PrimaryCandidates(2)
+    vg = VariantsGenerator()
     inp = input("Enter a word: ")
-    p = a.generate(inp)
-    if p == set():
-        b = SecondaryCandidates()
-        s = b.generate(inp)
-        print("Second:", s)
-    else:
-        print("Primary:", p)
+    print(vg.generate(inp))
