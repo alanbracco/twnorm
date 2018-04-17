@@ -109,8 +109,15 @@ class Evaluator(object):
         missing_tweets = sorted(list(set_gold_ids - set_generated_ids))
         surplus_tweets = sorted(list(set_generated_ids - set_gold_ids))
 
-        for tweet_id in missing_tweets:
-            self.total_missing_corr += len(gold_dict[tweet_id])
+        if missing_tweets:
+            self.my_write("\nMISSING TWEETS")
+            self.my_write("--------------")
+            for tweet_id in missing_tweets:
+                self.total_missing_corr += len(gold_dict[tweet_id])
+
+                self.my_write(tweet_id)
+                for wta, _, _ in gold_dict[tweet_id]:
+                    self.my_write("  - '{}' not detected as WTA.".format(wta))
 
         for tweet_id in surplus_tweets:
             self.total_surplus_corr += len(generated_dict[tweet_id])

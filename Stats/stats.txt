@@ -2,6 +2,62 @@
 STATISTICS
 ==========
 
+MISSING TWEETS
+--------------
+948132832072945664
+  - 'Pinto' not detected as WTA.
+948132938847223808
+  - 'hambree' not detected as WTA.
+948133296558526464
+  - 'dejo' not detected as WTA.
+948133378209075200
+  - 'd' not detected as WTA.
+948133515287252992
+  - 'mijo' not detected as WTA.
+948134150694895616
+  - 'a.dormir' not detected as WTA.
+948134238796345344
+  - 'MAS' not detected as WTA.
+  - 'ME.ASFIXIES' not detected as WTA.
+948135001329164290
+  - 'piso' not detected as WTA.
+948135266757300224
+  - 'éste' not detected as WTA.
+948135306045329408
+  - 'bebe' not detected as WTA.
+948136466605068289
+  - 'Ésto' not detected as WTA.
+948139277002649600
+  - 'se' not detected as WTA.
+950488451845156864
+  - 'quien' not detected as WTA.
+951665042105225216
+  - 'canse' not detected as WTA.
+951695285226483712
+  - 'D' not detected as WTA.
+951695388175749120
+  - 'lió' not detected as WTA.
+951695413479923713
+  - 'valla' not detected as WTA.
+  - 'valla' not detected as WTA.
+951695802321326080
+  - 'bañe' not detected as WTA.
+951710460407001088
+  - 'mando' not detected as WTA.
+  - 'cuba' not detected as WTA.
+951710514861821952
+  - 'mí' not detected as WTA.
+951710537171259392
+  - 'ira' not detected as WTA.
+951710919196856320
+  - 'dio' not detected as WTA.
+951726313836072961
+  - 'haz' not detected as WTA.
+951726463010648064
+  - 'Ta' not detected as WTA.
+951726625179258880
+  - 'que' not detected as WTA.
+
 TweetID: 948132798526836736
 ---------------------------
 Missing words: ['callo', 'fisure', 'termine']
