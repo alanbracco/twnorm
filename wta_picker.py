@@ -13,6 +13,11 @@ def is_valid(word):
             if not w.isalnum() or word.isdigit():
                 return False
         return True
+    # if '.' in word:
+    #     for w in word.split('.'):
+    #         if not w.isalnum() or word.isdigit():
+    #             return False
+    #     return True
     else:
         return (word.isalnum() and not word.isdigit())
 
@@ -24,6 +29,7 @@ class WTApicker(object):
         known_word = enchant.Dict("es_AR")
         WTA = defaultdict(lambda: defaultdict(list))
         tokenized = defaultdict(dict)
+        all_tokens = defaultdict(dict)
         # split tweets by tweet separator
         for tweet_id, tweet_text in tweets.items():
             # separate tweet sentences
@@ -36,6 +42,8 @@ class WTApicker(object):
                 # list of (word, pos) where word is alphanumeric and not digit
                 wp_list = [(word, pos) for pos, word in e if is_valid(word)]
                 tokenized[tweet_id][j] = wp_list
+                all_tokens[tweet_id][j] = [(word, pos)
+                                           for pos, word in enumerate(sent)]
                 for word, pos in wp_list:
                     # check if word is In Vocabulary
                     if not known_word.check(word):
@@ -47,3 +55,4 @@ class WTApicker(object):
         self.n = n
         self.tokenized = dict(tokenized)
         self.WTA = dict(WTA)
+        self.all_tokens = dict(all_tokens)

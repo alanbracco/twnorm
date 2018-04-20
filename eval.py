@@ -53,6 +53,10 @@ class Evaluator(object):
 
     def update_tp_tn_fp_fn(self, all_words, gold_wta, my_wta):
         for word in all_words:
+            if word == "a.dormir":
+                print(all_words)
+                print(gold_wta)
+                print(my_wta)
             if word in gold_wta and word in my_wta:
                 self.wta_tp += 1
                 my_wta.remove(word)
@@ -97,7 +101,7 @@ class Evaluator(object):
         self.my_write("Recall:", round(self.co_recall, 2), stdout=True)
         self.my_write("F1:", round(self.co_f1, 2), stdout=True)
 
-    def get_measure(self, gold_dict, generated_dict, tokenized):
+    def get_measure(self, gold_dict, generated_dict, all_tokens):
 
         self.my_write("\nSTATISTICS")
         self.my_write("==========")
@@ -134,8 +138,8 @@ class Evaluator(object):
             own_words = [word for word, _, _ in own_corrections]
             set_own_words = set(own_words)
 
-            all_words = [word for j in tokenized[tweet_id].keys()
-                         for word, _ in tokenized[tweet_id][j]]
+            all_words = [word for j in all_tokens[tweet_id].keys()
+                         for word, _ in all_tokens[tweet_id][j]]
             my_wta = copy(own_words)
             gold_wta = copy(gold_words)
             self.total_words += len(all_words)
@@ -279,7 +283,7 @@ if __name__ == '__main__':
     gold_dict = gold_splitter.corrections
     generated_dict = generated_splitter.corrections
 
-    tokenized = WTApicker(gold_splitter.texts).tokenized
+    all_tokens = WTApicker(gold_splitter.texts).all_tokens
 
     evaluator = Evaluator(output_file)
-    evaluator.get_measure(gold_dict, generated_dict, tokenized)
+    evaluator.get_measure(gold_dict, generated_dict, all_tokens)
