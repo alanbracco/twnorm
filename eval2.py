@@ -15,8 +15,86 @@ import os
 import sys
 from copy import copy
 from docopt import docopt
+from collections import Counter
+from wta_picker import WTApicker
 from tweets_splitter import Tw_Splitter
-from wta_picker import WTApickereval
+
+
+class Evaluator(object):
+    def __init__(self, output_file):
+        self.output_file = output_file
+
+    def my_write(self, *args, stdout=False):
+        with open(self.output_file, 'a') as file:
+            print(*args, file=file)
+        if stdout:
+            print(*args)
+
+    def print_missing_tweets(self, missing_tweets_ids, tweets_dict):
+        self.my_write("\nMISSING TWEETS")
+        self.my_write("--------------")
+        for tweet_id in missing_tweets_ids:
+            self.my_write(tweet_id)
+            for wta, _, _ in tweets_dict[tweet_id]:
+                self.my_write("  - '{}' not detected as WTA.".format(wta))
+
+    def get_precision_and_recall(self, gold_dict, gen_dict,
+                                 tweet_ids, for_correction=False):
+
+        hits = 0
+        total_gold_wta = sum([len(gold_dict[x]) for x in gold_dict])
+        total_gen_wta = sum([len(gen_dict[x]) for x in gen_dict])
+
+        for tweet_id in tweet_ids:
+            current_hits = 0
+            if for_correction:
+                gold = gold_dict[tweet_id]
+                generated = gen_dict[tweet_id]
+                current_hits += len(set(gold_dict[tweet_id]) & set(gen_dict[tweet_id]))
+            else:
+                gold = [w for w, _, _ in gold_dict[tweet_id]]
+                generated = [w for w, _, _ in gen_dict[tweet_id]]
+                current_hits += len(set(gold) & set(generated))
+
+            gold_counter = Counter(gold)
+            gen_counter = Counter(generated)
+            for key, times in gold_counter.items():
+                if key in generated and times > 1:
+                    # Minus 1 because the first count appears in
+                    # conjunction of gold and generated sets
+                    current_hits += times - 1
+            hits += current_hits
+
+        precision = hits / total_gen_wta
+        recall = hits / total_gold_wta
+
+        return precision, recall
+
+    def get_measures(self, gold_dict, gen_dict, all_tokens):
+
+        self.my_write("\nSTATISTICS")
+        self.my_write("==========")
+
+        set_gold_ids = set(gold_dict.keys())
+        set_generated_ids = set(generated_dict.keys())
+
+        # Tweets that appear in gold and generated
+        both = sorted(list(set_gold_ids & set_generated_ids))
+        # Tweets that only appear in gold
+        missing_tweets = sorted(list(set_gold_ids - set_generated_ids))
+        # Tweets that only appear in generated
+        surplus_tweets = sorted(list(set_generated_ids - set_gold_ids))
+
+        # if missing_tweets:
+        #     self.print_missing_tweets(missing_tweets, gold_dict)
+
+        wta_precision, wta_recall = self.get_precision_and_recall(
+                                        gold_dict, gen_dict, both)
+        # wta_accuracy = self.get_wta_accuracy()
+        # wta_precision, wta_recall = self.get_precision_and_recall(
+        #                                 gold_dict, gen_dict, both, for_correction=True)
+        print(wta_recall)
+
 
 
 if __name__ == '__main__':
@@ -51,4 +129,4 @@ if __name__ == '__main__':
     all_tokens = WTApicker(gold_splitter.texts).all_tokens
 
     evaluator = Evaluator(output_file)
-    evaluator.get_measure(gold_dict, generated_dict, all_tokens)
+    evaluator.get_measures(gold_dict, generated_dict, all_tokens)
