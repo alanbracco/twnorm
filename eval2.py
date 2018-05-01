@@ -39,22 +39,24 @@ class Evaluator(object):
                 self.my_write("  - '{}' not detected as WTA.".format(wta))
 
     def get_precision_and_recall(self, gold_dict, gen_dict,
-                                 tweet_ids, for_correction=False):
+                                 for_correction=False):
 
         hits = 0
         total_gold_wta = sum([len(gold_dict[x]) for x in gold_dict])
         total_gen_wta = sum([len(gen_dict[x]) for x in gen_dict])
 
+        tweet_ids = sorted(list(set(gold_dict.keys()) & set(gen_dict.keys())))
+
         for tweet_id in tweet_ids:
             current_hits = 0
-            if for_correction:
-                gold = gold_dict[tweet_id]
-                generated = gen_dict[tweet_id]
-                current_hits += len(set(gold_dict[tweet_id]) & set(gen_dict[tweet_id]))
-            else:
-                gold = [w for w, _, _ in gold_dict[tweet_id]]
-                generated = [w for w, _, _ in gen_dict[tweet_id]]
-                current_hits += len(set(gold) & set(generated))
+
+            gold = gold_dict[tweet_id]
+            generated = gen_dict[tweet_id]
+            if not for_correction:
+                gold = [w for w, _, _ in gold]
+                generated = [w for w, _, _ in generated]
+
+            current_hits += len(set(gold) & set(generated))
 
             gold_counter = Counter(gold)
             gen_counter = Counter(generated)
@@ -88,13 +90,14 @@ class Evaluator(object):
         # if missing_tweets:
         #     self.print_missing_tweets(missing_tweets, gold_dict)
 
-        wta_precision, wta_recall = self.get_precision_and_recall(
-                                        gold_dict, gen_dict, both)
-        # wta_accuracy = self.get_wta_accuracy()
-        # wta_precision, wta_recall = self.get_precision_and_recall(
-        #                                 gold_dict, gen_dict, both, for_correction=True)
-        print(wta_recall)
+        # WTA detection metrics
+        wta_precision, wta_recall = self.get_precision_and_recall(gold_dict,
+                                                                  gen_dict)
 
+        # WTA correction metrics
+        corr_precision, corr_recall = self.get_precision_and_recall(
+                                        gold_dict, gen_dict,
+                                        for_correction=True)
 
 
 if __name__ == '__main__':
