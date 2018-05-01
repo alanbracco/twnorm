@@ -38,6 +38,50 @@ class Evaluator(object):
             for wta, _, _ in tweets_dict[tweet_id]:
                 self.my_write("  - '{}' not detected as WTA.".format(wta))
 
+    def get_accuracy(self, gold_dict, gen_dict, all_tokens,
+                     for_correction=False):
+
+        hits = 0
+        for tweet_id in all_tokens:
+            current_hits = 0
+            tokens = all_tokens[tweet_id]
+
+            if tweet_id in gold_dict and tweet_id in gen_dict:
+
+                gold = [w for w, _, _ in gold_dict[tweet_id]]
+                gen = [w for w, _, _ in gen_dict[tweet_id]]
+
+                if for_correction:
+                    gold_corr = {wd: corr for wd, _, corr
+                                 in gold_dict[tweet_id]}
+                    gen_corr = {wd: corr for wd, _, corr in gen_dict[tweet_id]}
+
+                for token in tokens:
+                    if (token in gold and token in gen):
+                        if ((not for_correction) or
+                                gold_corr[token] == gen_corr[token]):
+                            current_hits += 1
+                            gold.remove(token)
+                            gen.remove(token)
+                    elif (token not in gold and token not in gen):
+                        current_hits += 1
+
+            elif tweet_id not in gold_dict and tweet_id not in gen_dict:
+                current_hits += len(tokens)
+
+            elif tweet_id in gold_dict and tweet_id not in gen_dict:
+                current_hits += len(tokens) - len(gold_dict[tweet_id])
+
+            else:
+                current_hits += len(tokens) - len(gen_dict[tweet_id])
+
+            hits += current_hits
+
+        total_tokens = sum(len(all_tokens[twt_id]) for twt_id in all_tokens)
+        accuracy = hits / total_tokens
+
+        return accuracy
+
     def get_precision_and_recall(self, gold_dict, gen_dict,
                                  for_correction=False):
 
@@ -93,11 +137,14 @@ class Evaluator(object):
         # WTA detection metrics
         wta_precision, wta_recall = self.get_precision_and_recall(gold_dict,
                                                                   gen_dict)
+        wta_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens)
 
         # WTA correction metrics
         corr_precision, corr_recall = self.get_precision_and_recall(
                                         gold_dict, gen_dict,
                                         for_correction=True)
+        corr_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens,
+                                          for_correction=True)
 
 
 if __name__ == '__main__':
