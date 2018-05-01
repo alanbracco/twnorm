@@ -42,8 +42,10 @@ class WTApicker(object):
                 # list of (word, pos) where word is alphanumeric and not digit
                 wp_list = [(word, pos) for pos, word in e if is_valid(word)]
                 tokenized[tweet_id][j] = wp_list
-                all_tokens[tweet_id][j] = [(word, pos)
-                                           for pos, word in enumerate(sent)]
+                if tweet_id not in all_tokens:
+                    all_tokens[tweet_id] = []
+                all_tokens[tweet_id].extend([word for pos, word
+                                             in enumerate(sent)])
                 for word, pos in wp_list:
                     # check if word is In Vocabulary
                     if not known_word.check(word):
