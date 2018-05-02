@@ -30,13 +30,22 @@ class Evaluator(object):
         if stdout:
             print(*args)
 
-    def print_missing_tweets(self, missing_tweets_ids, tweets_dict):
-        self.my_write("\nMISSING TWEETS")
-        self.my_write("--------------")
-        for tweet_id in missing_tweets_ids:
+    def print_symdiff_tweets(self, tweets_ids, tweets_dict, missing=True):
+        if missing:
+            header = "MISSING TWEETS"
+            dashes = '-' * len(header)
+            msg = "  - '{}' was not detected as WTA."
+        else:
+            header = "SURPLUS TWEETS"
+            dashes = '-' * len(header)
+            msg = "  - '{}' should not be detected as WTA."
+
+        self.my_write(header)
+        self.my_write(dashes)
+        for tweet_id in tweets_ids:
             self.my_write(tweet_id)
             for wta, _, _ in tweets_dict[tweet_id]:
-                self.my_write("  - '{}' not detected as WTA.".format(wta))
+                self.my_write(msg.format(wta))
 
     def get_accuracy(self, gold_dict, gen_dict, all_tokens,
                      for_correction=False):
@@ -118,8 +127,8 @@ class Evaluator(object):
 
     def get_measures(self, gold_dict, gen_dict, all_tokens):
 
-        self.my_write("\nSTATISTICS")
-        self.my_write("==========")
+        self.my_write("STATISTICS")
+        self.my_write("==========\n")
 
         set_gold_ids = set(gold_dict.keys())
         set_generated_ids = set(generated_dict.keys())
@@ -131,8 +140,13 @@ class Evaluator(object):
         # Tweets that only appear in generated
         surplus_tweets = sorted(list(set_generated_ids - set_gold_ids))
 
-        # if missing_tweets:
-        #     self.print_missing_tweets(missing_tweets, gold_dict)
+        if missing_tweets:
+            self.print_symdiff_tweets(missing_tweets, gold_dict, missing=True)
+
+        if surplus_tweets:
+            if missing_tweets:
+                self.my_write('\n')
+            self.print_symdiff_tweets(surplus_tweets, gen_dict, missing=False)
 
         # WTA detection metrics
         wta_precision, wta_recall = self.get_precision_and_recall(gold_dict,
