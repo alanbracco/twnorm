@@ -47,6 +47,33 @@ class Evaluator(object):
             for wta, _, _ in tweets_dict[tweet_id]:
                 self.my_write(msg.format(wta))
 
+    def get_true_positives(self, gold_dict, gen_dict, for_correction=False):
+
+        hits = 0
+        tweet_ids = sorted(list(set(gold_dict.keys()) & set(gen_dict.keys())))
+
+        for tweet_id in tweet_ids:
+            current_hits = 0
+
+            gold = gold_dict[tweet_id]
+            generated = gen_dict[tweet_id]
+            if not for_correction:
+                gold = [w for w, _, _ in gold]
+                generated = [w for w, _, _ in generated]
+
+            current_hits += len(set(gold) & set(generated))
+
+            gold_counter = Counter(gold)
+            gen_counter = Counter(generated)
+            for key, times in gold_counter.items():
+                if key in generated and times > 1:
+                    # Minus 1 because the first count appears in
+                    # conjunction of gold and generated sets
+                    current_hits += times - 1
+            hits += current_hits
+
+        return hits
+
     def get_accuracy(self, gold_dict, gen_dict, all_tokens,
                      for_correction=False):
 
@@ -94,31 +121,10 @@ class Evaluator(object):
     def get_precision_and_recall(self, gold_dict, gen_dict,
                                  for_correction=False):
 
-        hits = 0
         total_gold_wta = sum([len(gold_dict[x]) for x in gold_dict])
         total_gen_wta = sum([len(gen_dict[x]) for x in gen_dict])
 
-        tweet_ids = sorted(list(set(gold_dict.keys()) & set(gen_dict.keys())))
-
-        for tweet_id in tweet_ids:
-            current_hits = 0
-
-            gold = gold_dict[tweet_id]
-            generated = gen_dict[tweet_id]
-            if not for_correction:
-                gold = [w for w, _, _ in gold]
-                generated = [w for w, _, _ in generated]
-
-            current_hits += len(set(gold) & set(generated))
-
-            gold_counter = Counter(gold)
-            gen_counter = Counter(generated)
-            for key, times in gold_counter.items():
-                if key in generated and times > 1:
-                    # Minus 1 because the first count appears in
-                    # conjunction of gold and generated sets
-                    current_hits += times - 1
-            hits += current_hits
+        hits = self.get_true_positives(gold_dict, gen_dict, for_correction)
 
         precision = hits / total_gen_wta
         recall = hits / total_gold_wta
