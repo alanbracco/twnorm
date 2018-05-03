@@ -15,7 +15,7 @@ import os
 import sys
 from copy import copy
 from docopt import docopt
-from collections import Counter
+from collections import Counter, defaultdict
 from wta_picker import WTApicker
 from tweets_splitter import Tw_Splitter
 
@@ -43,9 +43,59 @@ class Evaluator(object):
         self.my_write(header)
         self.my_write(dashes)
         for tweet_id in tweets_ids:
-            self.my_write(tweet_id)
+            header = "TweetID: {tweet_id}".format(tweet_id=tweet_id)
+            self.my_write(header)
             for wta, _, _ in tweets_dict[tweet_id]:
                 self.my_write(msg.format(wta))
+
+    def print_conflict_tweets(self, tweets_ids, gold_dict, gen_dict):
+
+        header = "CONFLICTIVE TWEETS"
+        dashes = '-' * len(header)
+
+        self.my_write(header)
+        self.my_write(dashes)
+
+        for tweet_id in tweets_ids:
+            gold_corr = defaultdict(list)
+            for wd, _, corr in gold_dict[tweet_id]:
+                gold_corr[wd].append(corr)
+            gold_corr = dict(gold_corr)
+
+            gen_corr = defaultdict(list)
+            for wd, _, corr in gen_dict[tweet_id]:
+                gen_corr[wd].append(corr)
+            gen_corr = dict(gen_corr)
+
+            missing_words = [word for word in gold_corr.keys()
+                             if word not in gen_corr.keys()]
+
+            surplus_words = [word for word in gen_corr.keys()
+                             if word not in gold_corr.keys()]
+
+            both_keys = set(gen_corr.keys()) & set(gold_corr.keys())
+            conflictive_words = [word for word in both_keys
+                                 if gold_corr[word] != gen_corr[word]]
+
+            if missing_words or surplus_words or conflictive_words:
+                header = "TweetID: {tweet_id}".format(tweet_id=tweet_id)
+                self.my_write(header)
+
+                if missing_words:
+                    self.my_write("  Missing words:", sorted(missing_words))
+                if surplus_words:
+                    self.my_write("  Surplus words:", sorted(surplus_words))
+                for word in sorted(conflictive_words):
+                    if len(gold_corr[word]) == len(gen_corr[word]) == 1:
+                        self.my_write("  - '{}' was corrected as '{}' "
+                                      "but it is '{}'"
+                                      "".format(word, gen_corr[word][0],
+                                                gold_corr[word][0]))
+                    else:
+                        self.my_write("  - Corrections for '{}' are {}\n"
+                                      "    but you corrected as {}"
+                                      "".format(word, gold_corr[word],
+                                                gen_corr[word]))
 
     def get_true_positives(self, gold_dict, gen_dict, for_correction=False):
 
@@ -144,11 +194,15 @@ class Evaluator(object):
 
         if missing_tweets:
             self.print_symdiff_tweets(missing_tweets, gold_dict, missing=True)
+            self.my_write()
 
         if surplus_tweets:
-            if missing_tweets:
-                self.my_write('\n')
             self.print_symdiff_tweets(surplus_tweets, gen_dict, missing=False)
+            self.my_write()
+
+        if both:
+            self.print_conflict_tweets(both, gold_dict, gen_dict)
+            self.my_write()
 
         # WTA detection metrics
         wta_precision, wta_recall = self.get_precision_and_recall(gold_dict,
