@@ -77,30 +77,26 @@ class Evaluator(object):
     def get_accuracy(self, gold_dict, gen_dict, all_tokens,
                      for_correction=False):
 
-        hits = 0
+        # Start with True positives count
+        hits = self.get_true_positives(gold_dict, gen_dict, for_correction)
+
+        # Calculate True Negatives
         for tweet_id in all_tokens:
             current_hits = 0
             tokens = all_tokens[tweet_id]
 
             if tweet_id in gold_dict and tweet_id in gen_dict:
-
-                gold = [w for w, _, _ in gold_dict[tweet_id]]
-                gen = [w for w, _, _ in gen_dict[tweet_id]]
-
-                if for_correction:
-                    gold_corr = {wd: corr for wd, _, corr
-                                 in gold_dict[tweet_id]}
-                    gen_corr = {wd: corr for wd, _, corr in gen_dict[tweet_id]}
-
+                gold_tokens = [w for w, _, _ in gold_dict[tweet_id]]
+                gen_tokens = [w for w, _, _ in gen_dict[tweet_id]]
                 for token in tokens:
-                    if (token in gold and token in gen):
-                        if ((not for_correction) or
-                                gold_corr[token] == gen_corr[token]):
-                            current_hits += 1
-                            gold.remove(token)
-                            gen.remove(token)
-                    elif (token not in gold and token not in gen):
+                    if token not in gold_tokens and token not in gen_tokens:
                         current_hits += 1
+                    else:
+                        if token in gold_tokens:
+                            gold_tokens.remove(token)
+
+                        if token in gen_tokens:
+                            gen_tokens.remove(token)
 
             elif tweet_id not in gold_dict and tweet_id not in gen_dict:
                 current_hits += len(tokens)
