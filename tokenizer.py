@@ -96,6 +96,8 @@ REGEXPS = (
     r"""
     (?:[\w]*@+[\w]*)+
     |
+    (?:[\w]+\.[\w]+)+
+    |
     (?:[^\W\d_](?:[^\W\d_]|['\-_])+[^\W\d_]) # Words with apostrophes or dashes
     |
     (?:[+\-]?\d+[,/.:-]\d+[+\-]?)  # Numbers, including fractions, decimals.

@@ -4,22 +4,22 @@ STATISTICS
 SUMMARY
 =======
 #TweetsToCorrect: 305
-#TweetsCorrected vs. #TweetsToBeCorrected: 280
+#TweetsCorrected vs. #TweetsToBeCorrected: 279
 #TweetsCorrected vs. #TweetsNotToBeCorrected: 47
-#TweetsNotCorrected vs. #TweetsToBeCorrected: 25
-Missing corrections: 28
+#TweetsNotCorrected vs. #TweetsToBeCorrected: 26
+Missing corrections: 29
 Surplus corrections: 69
 
 WTA detecion
 ------------
 Accuracy: 94.69%
-Precision: 74.06%
+Precision: 74.17%
 Recall: 80.62%
 
 WTA correction
 ------------
 Accuracy: 89.11%
-Precision: 28.21%
+Precision: 28.25%
 Recall: 30.71%
 
 DETAILED INFO
@@ -48,6 +48,8 @@ TweetID: 948135266757300224
   - 'éste' was not detected as WTA.
 TweetID: 948135306045329408
   - 'bebe' was not detected as WTA.
+TweetID: 948135668965871616
+  - 'a.m' was not detected as WTA.
 TweetID: 948136466605068289
   - 'Ésto' was not detected as WTA.
 TweetID: 948139277002649600
@@ -330,9 +332,6 @@ TweetID: 948135453898747904
   Missing words: ['hno', 'maquina', 'tenes']
   Surplus words: ['jovenes']
   - 'dias' was corrected as '-' but it is 'días'
-TweetID: 948135668965871616
-  Missing words: ['a.m']
-  Surplus words: ['m']
 TweetID: 948135671654506496
   - 'Xfa' was corrected as 'por_favor' but it is 'Por_favor'
 TweetID: 948135730223525888
