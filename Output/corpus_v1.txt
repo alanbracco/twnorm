@@ -155,6 +155,7 @@
 	Metanol 1 -
 948134138065899520	Que lindo compartir pensamientos con otra persona
 948134150694895616	Tendría que irme a.dormir ya
+	a.dormir 0 adormir
 948134195720851456	@Mega983 @christiangrosso Buen diaaaaaa q lindo escucharte Chris!!! Ak en el trabajo con mas pilas q nunca!! vamos q ya llegan mis vacaciones 🏖👙 tachando dias... buen 2018 !!! 🤘🎵📻❤
 	diaaaaaa 0 día
 	q 0 que
@@ -169,6 +170,7 @@
 	chipá 1 -
 	bolsita 1 -
 948134238796345344	@CoraDeBardieri BASTA DE AUMENTOS. NO DAMOS MAS!!!! NO https://t.co/3JRblzeXf0 PARA QUE ME.ASFIXIES MAURICIO!!!!!
+	ME.ASFIXIES 0 -
 948134243946950657	Hoy se acompaña el desayuno con galletas de arroz es muy fuerte habrir el dispensero y tener que evitar todo lo dulce !!!! @gasparedes @MIAFM #Saturno me encanta !!! https://t.co/vPrcZNiayx
 	habrir 0 abrir
 	dispensero 0 despensero
@@ -221,6 +223,7 @@
 	laburan 1 -
 948134808827383808	Hoy soy la vieja nilda del Siempre.sin ese aura sagrada del primero de año
 	nilda 0 Nilda
+	Siempre.sin 0 Síempre.Cin
 948134819128659968	#rpsp Leer Habacuc 3. Confía siempre en el Señor. #PrimeroDios en General Roca, Rio Negro https://t.co/N3xyiWmd43
 	Habacuc 1 -
 948134840326590465	@todonoticias Genio
@@ -272,6 +275,7 @@
 948135592474406912	Si te caga te va a cagar de todas formas amiguito no te preocupes.
 	amiguito 0 amiguitos
 948135668965871616	07:15 a.m
+	a.m 0 a.
 948135671654506496	@CostaOkis como ayer no los pude escuchar.. Podrías pasar la clave de la semana?  Xfa!!! Besos y feliz año para todos
 	Xfa 0 por_favor
 948135682509295616	Que nunca me falte la familia, el fernet y la buena vista de Dios. en San Miguel, Buenos Aires https://t.co/Km2Xl7fG9E
@@ -477,6 +481,7 @@
 	pa 1 -
 	frenchi 0 -
 948140431476445184	Arrancando demasiado temprano u.u kill me
+	u.u 0 u.
 	kill 2 -
 948140532185870336	Nota: sigo esperando el subte E para hacer combinación con la línea D
 	subte 1 -
@@ -841,6 +846,7 @@
 	Ahno 0 Ano
 951695801755013122	@Gonflores21 bue o te caigo bien o.me.queres muerta https://t.co/QxB7AjCsO3
 	bue 1 -
+	o.me.queres 0 a.me.queres
 951695802321326080	Me bañe y se me fue todo el sueño a la mierda
 951695858227085312	Que le paso? Nose 😂
 	Nose 2 -
@@ -1035,6 +1041,7 @@
 	q 0 que
 951726825427828736	Que sueño viejaaa, se me.wsta haciendo re larga la noche
 	viejaaa 0 vieja
+	me.wsta 0 -
 951726852615344128	Para qué me despierto a ésta horaaaaaaaaaaaaaaaaaaa
 	horaaaaaaaaaaaaaaaaaaa 0 hora
 951726886333362176	Sabes qqqqq hermano

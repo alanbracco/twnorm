@@ -13,6 +13,12 @@ def is_valid(word):
             if not w.isalnum() or word.isdigit():
                 return False
         return True
+    if '.' in word:
+        for w in word.split('.'):
+            if not w.isalnum() or word.isdigit():
+                return False
+        return True
+
     else:
         return (word.isalnum() and not word.isdigit())
 

@@ -4,22 +4,22 @@ STATISTICS
 SUMMARY
 =======
 #TweetsToCorrect: 305
-#TweetsCorrected vs. #TweetsToBeCorrected: 279
+#TweetsCorrected vs. #TweetsToBeCorrected: 282
 #TweetsCorrected vs. #TweetsNotToBeCorrected: 47
-#TweetsNotCorrected vs. #TweetsToBeCorrected: 26
-Missing corrections: 29
-Surplus corrections: 69
+#TweetsNotCorrected vs. #TweetsToBeCorrected: 23
+Missing corrections: 25
+Surplus corrections: 70
 
 WTA detecion
 ------------
-Accuracy: 94.69%
-Precision: 74.17%
-Recall: 80.62%
+Accuracy: 94.79%
+Precision: 74.29%
+Recall: 81.61%
 
 WTA correction
 ------------
-Accuracy: 89.11%
-Precision: 28.25%
+Accuracy: 89.09%
+Precision: 27.95%
 Recall: 30.71%
 
 DETAILED INFO
@@ -37,19 +37,12 @@ TweetID: 948133378209075200
   - 'd' was not detected as WTA.
 TweetID: 948133515287252992
   - 'mijo' was not detected as WTA.
-TweetID: 948134150694895616
-  - 'a.dormir' was not detected as WTA.
-TweetID: 948134238796345344
-  - 'MAS' was not detected as WTA.
-  - 'ME.ASFIXIES' was not detected as WTA.
 TweetID: 948135001329164290
   - 'piso' was not detected as WTA.
 TweetID: 948135266757300224
   - 'éste' was not detected as WTA.
 TweetID: 948135306045329408
   - 'bebe' was not detected as WTA.
-TweetID: 948135668965871616
-  - 'a.m' was not detected as WTA.
 TweetID: 948136466605068289
   - 'Ésto' was not detected as WTA.
 TweetID: 948139277002649600
@@ -157,6 +150,7 @@ TweetID: 948139817052884992
   - 'cuadrazos' should not be detected as WTA.
   - 'spiedo' should not be detected as WTA.
 TweetID: 948140431476445184
+  - 'u.u' should not be detected as WTA.
   - 'kill' should not be detected as WTA.
 TweetID: 948140532185870336
   - 'subte' should not be detected as WTA.
@@ -285,10 +279,15 @@ TweetID: 948134052900540417
 TweetID: 948134101479018496
   Surplus words: ['Metanol', 'Microcentro', 'Subte', 'Tetra', 'Vitel']
   - 'Matambriol' was corrected as '-' but it is 'matambre'
+TweetID: 948134150694895616
+  - 'a.dormir' was corrected as 'adormir' but it is 'a_dormir'
 TweetID: 948134195720851456
   Surplus words: ['Chris']
   - 'Ak' was corrected as 'A' but it is 'Acá'
   - 'dias' was corrected as '-' but it is 'días'
+TweetID: 948134238796345344
+  Missing words: ['MAS']
+  - 'ME.ASFIXIES' was corrected as '-' but it is 'ME_ASFIXIES'
 TweetID: 948134540542992384
   - 'ahre' was corrected as 'Are' but it is 'ah_re'
   - 'atr' was corrected as 'art' but it is 'ATR'
@@ -309,7 +308,7 @@ TweetID: 948134750547599360
   - 'atr' was corrected as 'art' but it is 'ATR'
   - 'resfrio' was corrected as 'Resfrió' but it is 'resfrío'
 TweetID: 948134808827383808
-  Missing words: ['Siempre.sin']
+  - 'Siempre.sin' was corrected as 'Síempre.Cin' but it is 'siempre_sin'
 TweetID: 948134888921796608
   Surplus words: ['Male']
   - 'mayoria' was corrected as '-' but it is 'mayoría'
@@ -332,6 +331,8 @@ TweetID: 948135453898747904
   Missing words: ['hno', 'maquina', 'tenes']
   Surplus words: ['jovenes']
   - 'dias' was corrected as '-' but it is 'días'
+TweetID: 948135668965871616
+  - 'a.m' was corrected as 'a.' but it is 'A.M.'
 TweetID: 948135671654506496
   - 'Xfa' was corrected as 'por_favor' but it is 'Por_favor'
 TweetID: 948135730223525888
@@ -726,8 +727,8 @@ TweetID: 951695796210151429
 TweetID: 951695801222402050
   - 'Ahno' was corrected as 'Ano' but it is 'Ah_no'
 TweetID: 951695801755013122
-  Missing words: ['o.me.queres']
   - 'bue' was corrected as '-' but it is 'bueno'
+  - 'o.me.queres' was corrected as 'a.me.queres' but it is 'o_me_querés'
 TweetID: 951695858227085312
   - 'Nose' was corrected as '-' but it is 'No_sé'
 TweetID: 951695888325533696
@@ -847,7 +848,7 @@ TweetID: 951726469880991744
 TweetID: 951726718229807104
   - 'Xq' was corrected as 'porque' but it is 'Porque'
 TweetID: 951726825427828736
-  Missing words: ['me.wsta']
+  - 'me.wsta' was corrected as '-' but it is 'me_está'
 TweetID: 951726852615344128
   Missing words: ['ésta']
 TweetID: 951726886333362176
