@@ -7,3 +7,7 @@ def progress(msg, width=None):
         width = len(msg)
     print('\b' * width + msg, end='')
     sys.stdout.flush()
+
+
+def to_str_perc(number):
+    return "{}%".format(round(number*100, 2))

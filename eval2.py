@@ -16,6 +16,7 @@ import sys
 from copy import copy
 from docopt import docopt
 from collections import Counter, defaultdict
+from aux import to_str_perc
 from wta_picker import WTApicker
 from tweets_splitter import Tw_Splitter
 
@@ -179,11 +180,27 @@ class Evaluator(object):
 
     def get_measures(self, gold_dict, gen_dict, all_tokens):
 
-        self.my_write("STATISTICS")
-        self.my_write("==========\n")
+        # WTA detection metrics
+        wta_precision, wta_recall = self.get_precision_and_recall(gold_dict,
+                                                                  gen_dict)
+        wta_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens)
+
+        # WTA correction metrics
+        corr_precision, corr_recall = self.get_precision_and_recall(
+                                        gold_dict, gen_dict,
+                                        for_correction=True)
+        corr_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens,
+                                          for_correction=True)
+
+        wta_tuple = (wta_accuracy, wta_precision, wta_recall)
+        corr_tuple = (corr_accuracy, corr_precision, corr_recall)
+
+        return wta_tuple, corr_tuple
+
+    def write_detailed_info(self, gold_dict, gen_dict):
 
         set_gold_ids = set(gold_dict.keys())
-        set_generated_ids = set(generated_dict.keys())
+        set_generated_ids = set(gen_dict.keys())
 
         # Tweets that appear in gold and generated
         both = sorted(list(set_gold_ids & set_generated_ids))
@@ -191,6 +208,12 @@ class Evaluator(object):
         missing_tweets = sorted(list(set_gold_ids - set_generated_ids))
         # Tweets that only appear in generated
         surplus_tweets = sorted(list(set_generated_ids - set_gold_ids))
+
+        if missing_tweets or surplus_tweets or both:
+            header = "DETAILED INFO"
+            self.my_write(header)
+            self.my_write('=' * len(header))
+            self.my_write()
 
         if missing_tweets:
             self.print_symdiff_tweets(missing_tweets, gold_dict, missing=True)
@@ -204,17 +227,61 @@ class Evaluator(object):
             self.print_conflict_tweets(both, gold_dict, gen_dict)
             self.my_write()
 
-        # WTA detection metrics
-        wta_precision, wta_recall = self.get_precision_and_recall(gold_dict,
-                                                                  gen_dict)
-        wta_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens)
+    def write_summary(self, gold_dict, gen_dict, all_tokens):
 
-        # WTA correction metrics
-        corr_precision, corr_recall = self.get_precision_and_recall(
-                                        gold_dict, gen_dict,
-                                        for_correction=True)
-        corr_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens,
-                                          for_correction=True)
+        gold_ids = set(gold_dict.keys())
+        gen_ids = set(gen_dict.keys())
+        tp_tweets = gold_ids & gen_ids
+        fp_tweets = gen_ids - gold_ids
+        fn_tweets = gold_ids - gen_ids
+        tweets_to_correct = len(gold_ids)
+
+        missing_corrections = sum([len(gold_dict[tid]) for tid in fn_tweets])
+        surplus_corrections = sum([len(gen_dict[tid]) for tid in fp_tweets])
+
+        wta_tuple, corr_tuple = self.get_measures(gold_dict, gen_dict,
+                                                  all_tokens)
+
+        wta_accuracy = wta_tuple[0]
+        wta_precision = wta_tuple[1]
+        wta_recall = wta_tuple[2]
+
+        corr_accuracy = corr_tuple[0]
+        corr_precision = corr_tuple[1]
+        corr_recall = corr_tuple[2]
+
+        header = "SUMMARY"
+        self.my_write(header, stdout=True)
+        self.my_write('=' * len(header), stdout=True)
+        self.my_write("#TweetsToCorrect:", tweets_to_correct, stdout=True)
+        self.my_write("#TweetsCorrected vs. #TweetsToBeCorrected:",
+                      len(tp_tweets), stdout=True)
+        self.my_write("#TweetsCorrected vs. #TweetsNotToBeCorrected:",
+                      len(fp_tweets), stdout=True)
+        self.my_write("#TweetsNotCorrected vs. #TweetsToBeCorrected:",
+                      len(fn_tweets), stdout=True)
+        self.my_write("Missing corrections:", missing_corrections, stdout=True)
+        self.my_write("Surplus corrections:", surplus_corrections, stdout=True)
+        self.my_write(stdout=True)
+        self.my_write("WTA detecion", stdout=True)
+        self.my_write("------------", stdout=True)
+        self.my_write("Accuracy:", to_str_perc(wta_accuracy), stdout=True)
+        self.my_write("Precision:", to_str_perc(wta_precision), stdout=True)
+        self.my_write("Recall:", to_str_perc(wta_recall), stdout=True)
+        self.my_write(stdout=True)
+        self.my_write("WTA correction", stdout=True)
+        self.my_write("------------", stdout=True)
+        self.my_write("Accuracy:", to_str_perc(corr_accuracy), stdout=True)
+        self.my_write("Precision:", to_str_perc(corr_precision), stdout=True)
+        self.my_write("Recall:", to_str_perc(corr_recall), stdout=True)
+
+    def build_output_stats(self, gold_dict, gen_dict, all_tokens):
+        self.my_write("STATISTICS")
+        self.my_write("==========\n")
+
+        self.write_summary(gold_dict, gen_dict, all_tokens)
+        self.my_write()
+        self.write_detailed_info(gold_dict, gen_dict)
 
 
 if __name__ == '__main__':
@@ -249,4 +316,4 @@ if __name__ == '__main__':
     all_tokens = WTApicker(gold_splitter.texts).all_tokens
 
     evaluator = Evaluator(output_file)
-    evaluator.get_measures(gold_dict, generated_dict, all_tokens)
+    evaluator.build_output_stats(gold_dict, generated_dict, all_tokens)
