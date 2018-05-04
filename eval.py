@@ -15,35 +15,15 @@ import os
 import sys
 from copy import copy
 from docopt import docopt
-from tweets_splitter import Tw_Splitter
+from collections import Counter, defaultdict
+from aux import to_str_perc
 from wta_picker import WTApicker
+from tweets_splitter import Tw_Splitter
 
 
 class Evaluator(object):
     def __init__(self, output_file):
         self.output_file = output_file
-        self.hits_corr = 0  # Words corrected ok (quantity)
-        self.wrong_cl = 0  # Wrong classification (quantity)
-        self.wrong_co = 0  # Wrong corrections (quantity)
-        self.misses = 0  # Missing corrections (quantity)
-        self.surpluses = 0  # Surplus corrections (quantity)
-        self.discarded = 0  # Words discarded (quantity)
-        self.total_gold_corr = 0  # Corrections in gold corpus (quantity)
-        self.total_gen_corr = 0  # Corrections in generated corpus (quantity)
-        self.total_missing_corr = 0  # Missing corrections (quantity)
-        self.total_surplus_corr = 0  # Surplus corrections (quantity)
-
-        self.wta_tp = 0  # It's WTA and it's analyzed (True positives)
-        self.wta_fp = 0  # It isn't WTA but it's analyzed (False positives)
-        self.wta_tn = 0  # It isn't WTA and it isn't analyzed (True Negatives)
-        self.wta_fn = 0  # It's WTA but it isn't analyzed (False Negatives)
-        self.total_words = 0  # Total number of words
-
-        self.wta_accuracy = 0  # Accuracy in WTA detection
-        self.wta_precision = 0  # Precision in WTA detection
-        self.wta_recall = 0  # Recall in WTA detection
-        self.co_precision = 0  # Precision in correction
-        self.co_recall = 0  # Recall in correction
 
     def my_write(self, *args, stdout=False):
         with open(self.output_file, 'a') as file:
@@ -51,203 +31,257 @@ class Evaluator(object):
         if stdout:
             print(*args)
 
-    def update_tp_tn_fp_fn(self, all_words, gold_wta, my_wta):
-        for word in all_words:
-            if word in gold_wta and word in my_wta:
-                self.wta_tp += 1
-                my_wta.remove(word)
-                gold_wta.remove(word)
-            elif word in gold_wta and word not in my_wta:
-                self.wta_fn += 1
-                gold_wta.remove(word)
-            elif word not in gold_wta and word in my_wta:
-                self.wta_fp += 1
-                my_wta.remove(word)
-            elif word not in gold_wta and word not in my_wta:
-                self.wta_tn += 1
+    def print_symdiff_tweets(self, tweets_ids, tweets_dict, missing=True):
+        if missing:
+            header = "MISSING TWEETS"
+            dashes = '-' * len(header)
+            msg = "  - '{}' was not detected as WTA."
+        else:
+            header = "SURPLUS TWEETS"
+            dashes = '-' * len(header)
+            msg = "  - '{}' should not be detected as WTA."
 
-    def set_wta_metrics(self):
-        assert self.total_words == (self.wta_fn + self.wta_fp +
-                                    self.wta_tn + self.wta_tp)
-        self.wta_accuracy = (self.wta_tp + self.wta_tn) / self.total_words
-        self.wta_precision = self.wta_tp / (self.wta_tp + self.wta_fp)
-        self.wta_recall = self.wta_tp / (self.wta_tp + self.wta_fn)
-        self.wta_f1 = ((2 * self.wta_precision * self.wta_recall)
-                       / (self.wta_precision + self.wta_recall))
+        self.my_write(header)
+        self.my_write(dashes)
+        for tweet_id in tweets_ids:
+            header = "TweetID: {tweet_id}".format(tweet_id=tweet_id)
+            self.my_write(header)
+            for wta, _, _ in tweets_dict[tweet_id]:
+                self.my_write(msg.format(wta))
 
-    def set_corr_metrics(self):
-        self.co_accuracy = (self.hits_corr + self.wta_tn) / self.total_words
-        self.co_precision = self.hits_corr / self.total_gen_corr
-        self.co_recall = self.hits_corr / self.total_gold_corr
-        self.co_f1 = ((2 * self.co_precision * self.co_recall)
-                      / (self.co_precision + self.co_recall))
+    def print_conflict_tweets(self, tweets_ids, gold_dict, gen_dict):
 
-    def show_metrics(self):
-        self.my_write("\nWTA detection", stdout=True)
-        self.my_write("-------------", stdout=True)
-        self.my_write("Accuracy:", round(self.wta_accuracy, 2), stdout=True)
-        self.my_write("Precision:", round(self.wta_precision, 2), stdout=True)
-        self.my_write("Recall:", round(self.wta_recall, 2), stdout=True)
-        self.my_write("F1:", round(self.wta_f1, 2), stdout=True)
+        header = "CONFLICTIVE TWEETS"
+        dashes = '-' * len(header)
 
-        self.my_write("\nWTA correction", stdout=True)
-        self.my_write("-----------", stdout=True)
-        self.my_write("Accuracy:", round(self.co_accuracy, 2), stdout=True)
-        self.my_write("Precision:", round(self.co_precision, 2), stdout=True)
-        self.my_write("Recall:", round(self.co_recall, 2), stdout=True)
-        self.my_write("F1:", round(self.co_f1, 2), stdout=True)
+        self.my_write(header)
+        self.my_write(dashes)
 
-    def get_measure(self, gold_dict, generated_dict, tokenized):
+        for tweet_id in tweets_ids:
+            gold_corr = defaultdict(list)
+            for wd, _, corr in gold_dict[tweet_id]:
+                gold_corr[wd].append(corr)
+            gold_corr = dict(gold_corr)
 
-        self.my_write("\nSTATISTICS")
-        self.my_write("==========")
+            gen_corr = defaultdict(list)
+            for wd, _, corr in gen_dict[tweet_id]:
+                gen_corr[wd].append(corr)
+            gen_corr = dict(gen_corr)
+
+            missing_words = [word for word in gold_corr.keys()
+                             if word not in gen_corr.keys()]
+
+            surplus_words = [word for word in gen_corr.keys()
+                             if word not in gold_corr.keys()]
+
+            both_keys = set(gen_corr.keys()) & set(gold_corr.keys())
+            conflictive_words = [word for word in both_keys
+                                 if gold_corr[word] != gen_corr[word]]
+
+            if missing_words or surplus_words or conflictive_words:
+                header = "TweetID: {tweet_id}".format(tweet_id=tweet_id)
+                self.my_write(header)
+
+                if missing_words:
+                    self.my_write("  Missing words:", sorted(missing_words))
+                if surplus_words:
+                    self.my_write("  Surplus words:", sorted(surplus_words))
+                for word in sorted(conflictive_words):
+                    if len(gold_corr[word]) == len(gen_corr[word]) == 1:
+                        self.my_write("  - '{}' was corrected as '{}' "
+                                      "but it is '{}'"
+                                      "".format(word, gen_corr[word][0],
+                                                gold_corr[word][0]))
+                    else:
+                        self.my_write("  - Corrections for '{}' are {}\n"
+                                      "    but you corrected as {}"
+                                      "".format(word, gold_corr[word],
+                                                gen_corr[word]))
+
+    def get_true_positives(self, gold_dict, gen_dict, for_correction=False):
+
+        hits = 0
+        tweet_ids = sorted(list(set(gold_dict.keys()) & set(gen_dict.keys())))
+
+        for tweet_id in tweet_ids:
+            current_hits = 0
+
+            gold = gold_dict[tweet_id]
+            generated = gen_dict[tweet_id]
+            if not for_correction:
+                gold = [w for w, _, _ in gold]
+                generated = [w for w, _, _ in generated]
+
+            current_hits += len(set(gold) & set(generated))
+
+            gold_counter = Counter(gold)
+            gen_counter = Counter(generated)
+            for key, times in gold_counter.items():
+                if key in generated and times > 1:
+                    # Minus 1 because the first count appears in
+                    # conjunction of gold and generated sets
+                    current_hits += times - 1
+            hits += current_hits
+
+        return hits
+
+    def get_accuracy(self, gold_dict, gen_dict, all_tokens,
+                     for_correction=False):
+
+        # Start with True positives count
+        hits = self.get_true_positives(gold_dict, gen_dict, for_correction)
+
+        # Calculate True Negatives
+        for tweet_id in all_tokens:
+            current_hits = 0
+            tokens = all_tokens[tweet_id]
+
+            if tweet_id in gold_dict and tweet_id in gen_dict:
+                gold_tokens = [w for w, _, _ in gold_dict[tweet_id]]
+                gen_tokens = [w for w, _, _ in gen_dict[tweet_id]]
+                for token in tokens:
+                    if token not in gold_tokens and token not in gen_tokens:
+                        current_hits += 1
+                    else:
+                        if token in gold_tokens:
+                            gold_tokens.remove(token)
+
+                        if token in gen_tokens:
+                            gen_tokens.remove(token)
+
+            elif tweet_id not in gold_dict and tweet_id not in gen_dict:
+                current_hits += len(tokens)
+
+            elif tweet_id in gold_dict and tweet_id not in gen_dict:
+                current_hits += len(tokens) - len(gold_dict[tweet_id])
+
+            else:
+                current_hits += len(tokens) - len(gen_dict[tweet_id])
+
+            hits += current_hits
+
+        total_tokens = sum(len(all_tokens[twt_id]) for twt_id in all_tokens)
+        accuracy = hits / total_tokens
+
+        return accuracy
+
+    def get_precision_and_recall(self, gold_dict, gen_dict,
+                                 for_correction=False):
+
+        total_gold_wta = sum([len(gold_dict[x]) for x in gold_dict])
+        total_gen_wta = sum([len(gen_dict[x]) for x in gen_dict])
+
+        hits = self.get_true_positives(gold_dict, gen_dict, for_correction)
+
+        precision = hits / total_gen_wta
+        recall = hits / total_gold_wta
+
+        return precision, recall
+
+    def get_measures(self, gold_dict, gen_dict, all_tokens):
+
+        # WTA detection metrics
+        wta_precision, wta_recall = self.get_precision_and_recall(gold_dict,
+                                                                  gen_dict)
+        wta_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens)
+
+        # WTA correction metrics
+        corr_precision, corr_recall = self.get_precision_and_recall(
+                                        gold_dict, gen_dict,
+                                        for_correction=True)
+        corr_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens,
+                                          for_correction=True)
+
+        wta_tuple = (wta_accuracy, wta_precision, wta_recall)
+        corr_tuple = (corr_accuracy, corr_precision, corr_recall)
+
+        return wta_tuple, corr_tuple
+
+    def write_detailed_info(self, gold_dict, gen_dict):
 
         set_gold_ids = set(gold_dict.keys())
-        set_generated_ids = set(generated_dict.keys())
+        set_generated_ids = set(gen_dict.keys())
 
+        # Tweets that appear in gold and generated
         both = sorted(list(set_gold_ids & set_generated_ids))
+        # Tweets that only appear in gold
         missing_tweets = sorted(list(set_gold_ids - set_generated_ids))
+        # Tweets that only appear in generated
         surplus_tweets = sorted(list(set_generated_ids - set_gold_ids))
 
+        if missing_tweets or surplus_tweets or both:
+            header = "DETAILED INFO"
+            self.my_write(header)
+            self.my_write('=' * len(header))
+            self.my_write()
+
         if missing_tweets:
-            self.my_write("\nMISSING TWEETS")
-            self.my_write("--------------")
-            for tweet_id in missing_tweets:
-                self.total_missing_corr += len(gold_dict[tweet_id])
+            self.print_symdiff_tweets(missing_tweets, gold_dict, missing=True)
+            self.my_write()
 
-                self.my_write(tweet_id)
-                for wta, _, _ in gold_dict[tweet_id]:
-                    self.my_write("  - '{}' not detected as WTA.".format(wta))
+        if surplus_tweets:
+            self.print_symdiff_tweets(surplus_tweets, gen_dict, missing=False)
+            self.my_write()
 
-        for tweet_id in surplus_tweets:
-            self.total_surplus_corr += len(generated_dict[tweet_id])
+        if both:
+            self.print_conflict_tweets(both, gold_dict, gen_dict)
+            self.my_write()
 
-        for tweet_id in both:
-            gold_corrections = gold_dict[tweet_id]
-            own_corrections = generated_dict[tweet_id]
+    def write_summary(self, gold_dict, gen_dict, all_tokens):
 
-            self.total_gold_corr += len(gold_corrections)
-            self.total_gen_corr += len(own_corrections)
+        gold_ids = set(gold_dict.keys())
+        gen_ids = set(gen_dict.keys())
+        tp_tweets = gold_ids & gen_ids
+        fp_tweets = gen_ids - gold_ids
+        fn_tweets = gold_ids - gen_ids
+        tweets_to_correct = len(gold_ids)
 
-            gold_words = [word for word, _, _ in gold_corrections]
-            set_gold_words = set(gold_words)
-            own_words = [word for word, _, _ in own_corrections]
-            set_own_words = set(own_words)
+        missing_corrections = sum([len(gold_dict[tid]) for tid in fn_tweets])
+        surplus_corrections = sum([len(gen_dict[tid]) for tid in fp_tweets])
 
-            all_words = [word for j in tokenized[tweet_id].keys()
-                         for word, _ in tokenized[tweet_id][j]]
-            my_wta = copy(own_words)
-            gold_wta = copy(gold_words)
-            self.total_words += len(all_words)
+        wta_tuple, corr_tuple = self.get_measures(gold_dict, gen_dict,
+                                                  all_tokens)
 
-            self.update_tp_tn_fp_fn(all_words, gold_wta, my_wta)
+        wta_accuracy = wta_tuple[0]
+        wta_precision = wta_tuple[1]
+        wta_recall = wta_tuple[2]
 
-            missing_words = set_gold_words - set_own_words
-            surplus_words = set_own_words - set_gold_words
-            both_words = set_gold_words & set_own_words
+        corr_accuracy = corr_tuple[0]
+        corr_precision = corr_tuple[1]
+        corr_recall = corr_tuple[2]
 
-            if (missing_words or surplus_words or
-                    gold_corrections != own_corrections):
-                self.my_write("\nTweetID:", tweet_id)
-                self.my_write("-"*len("TweetID: " + tweet_id))
-
-            if missing_words:
-                sorted_missing_words = sorted(list(missing_words))
-                self.misses += len(missing_words)
-                self.my_write("Missing words:", sorted_missing_words)
-                for word in sorted_missing_words:
-                    correct_words = [c for w, _, c in gold_corrections
-                                     if w == word]
-                    if len(correct_words) > 1:
-                        self.my_write("WARNING: There are more than one"
-                                      " correction for '{}'. All "
-                                      "corrections"
-                                      " will be printed".format(word))
-                    for correct_word in correct_words:
-                        self.my_write(" - Word '{}' should be "
-                                      "corrected as '{}'."
-                                      "".format(word, correct_word))
-            if surplus_words:
-                self.surpluses += len(surplus_words)
-                self.my_write("Surplus words:",
-                              sorted(list(surplus_words)))
-
-            for word in sorted(list(both_words)):
-                gold_tuples = [t for t in gold_corrections if t[0] == word]
-                own_tuples = [t for t in own_corrections if t[0] == word]
-                n_gold = len(gold_tuples)
-                n_own = len(own_tuples)
-                if n_gold != n_own:
-                    self.discarded += 1
-                    self.my_write("WARNING: word", word, "not analized.")
-                    self.my_write("You corrected", n_own, "time(s),",
-                                  "but you have to correct it", n_gold,
-                                  "time(s).")
-                    self.my_write("DETAILS")
-                    self.my_write("Actual corrections:", gold_tuples)
-                    self.my_write("Current corrections:", own_tuples)
-                else:
-                    for i in range(n_gold):
-                        wg, clg, cog = gold_tuples[i]
-                        wo, clo, coo = own_tuples[i]
-                        assert wg == wo
-                        if clg != clo:
-                            self.wrong_cl += 1
-                            self.wrong_co += 1
-                            if clo == '1':
-                                self.my_write(wo, "is not correct.",
-                                              "The correct form is", cog)
-                            elif clo == '2':
-                                self.my_write(wo, "is not in English.",
-                                              "The correct form is", cog)
-                        else:
-                            if cog != coo:
-                                self.wrong_co += 1
-                                self.my_write("You corrected", word, "as", coo,
-                                              "but it is", cog)
-                            else:
-                                self.hits_corr += 1
-
-        self.total_gold_corr += self.total_missing_corr
-        self.total_gen_corr += self.total_surplus_corr
-
-        self.set_wta_metrics()
-        self.set_corr_metrics()
-
-        if len(gold_dict) > 1:
-            tweets = 'tweets'
-        else:
-            tweets = 'tweet'
-
-        self.my_write("\nSUMMARY", stdout=True)
-        self.my_write("=======", stdout=True)
-        self.my_write("There are", len(gold_dict), tweets, "to correct.",
-                      stdout=True)
-        self.my_write("You corrected", len(generated_dict), stdout=True)
+        header = "SUMMARY"
+        self.my_write(header, stdout=True)
+        self.my_write('=' * len(header), stdout=True)
+        self.my_write("#TweetsToCorrect:", tweets_to_correct, stdout=True)
         self.my_write("#TweetsCorrected vs. #TweetsToBeCorrected:",
-                      len(both), stdout=True)
+                      len(tp_tweets), stdout=True)
         self.my_write("#TweetsCorrected vs. #TweetsNotToBeCorrected:",
-                      len(surplus_tweets), stdout=True)
+                      len(fp_tweets), stdout=True)
         self.my_write("#TweetsNotCorrected vs. #TweetsToBeCorrected:",
-                      len(missing_tweets), stdout=True)
-        self.my_write("The system MISCORRECTED", self.wrong_co, "words.",
-                      stdout=True)
-        if self.wrong_cl > 0:
-            self.my_write(self.wrong_cl,
-                          "of these miscorrections are because the",
-                          "system internally classified the word differently.",
-                          stdout=True)
-        self.my_write("Missing corrections:", self.misses, stdout=True)
-        self.my_write("Surplus corrections:", self.surpluses, stdout=True)
-        if self.discarded > 0:
-            self.my_write("Words discarded",
-                          "(corrected not equal times in the tweet):",
-                          self.discarded, stdout=True)
+                      len(fn_tweets), stdout=True)
+        self.my_write("Missing corrections:", missing_corrections, stdout=True)
+        self.my_write("Surplus corrections:", surplus_corrections, stdout=True)
+        self.my_write(stdout=True)
+        self.my_write("WTA detecion", stdout=True)
+        self.my_write("------------", stdout=True)
+        self.my_write("Accuracy:", to_str_perc(wta_accuracy), stdout=True)
+        self.my_write("Precision:", to_str_perc(wta_precision), stdout=True)
+        self.my_write("Recall:", to_str_perc(wta_recall), stdout=True)
+        self.my_write(stdout=True)
+        self.my_write("WTA correction", stdout=True)
+        self.my_write("------------", stdout=True)
+        self.my_write("Accuracy:", to_str_perc(corr_accuracy), stdout=True)
+        self.my_write("Precision:", to_str_perc(corr_precision), stdout=True)
+        self.my_write("Recall:", to_str_perc(corr_recall), stdout=True)
 
-        self.show_metrics()
+    def build_output_stats(self, gold_dict, gen_dict, all_tokens):
+        self.my_write("STATISTICS")
+        self.my_write("==========\n")
 
-        print("\nA detailed information can be found in '{}'"
-              "".format(self.output_file))
+        self.write_summary(gold_dict, gen_dict, all_tokens)
+        self.my_write()
+        self.write_detailed_info(gold_dict, gen_dict)
 
 
 if __name__ == '__main__':
@@ -274,12 +308,12 @@ if __name__ == '__main__':
         os.remove(output_file)
 
     gold_splitter = Tw_Splitter(gold_file_path)
-    generated_splitter = Tw_Splitter(generated_file_path)
-
     gold_dict = gold_splitter.corrections
+
+    generated_splitter = Tw_Splitter(generated_file_path)
     generated_dict = generated_splitter.corrections
 
-    tokenized = WTApicker(gold_splitter.texts).tokenized
+    all_tokens = WTApicker(gold_splitter.texts).all_tokens
 
     evaluator = Evaluator(output_file)
-    evaluator.get_measure(gold_dict, generated_dict, tokenized)
+    evaluator.build_output_stats(gold_dict, generated_dict, all_tokens)
