@@ -6,7 +6,7 @@ from nltk.stem.snowball import SpanishStemmer
 
 class WTAclassifier(object):
 
-    def __init__(self, stem=False):
+    def __init__(self, stem=False, tag=False):
         dictionaries = dicts()
         self.english_dict = enchant.Dict("en_EN")
         self.spanish_dict = enchant.Dict("es_AR")
@@ -14,9 +14,11 @@ class WTAclassifier(object):
         self.SD = dictionaries.lemario
         self.PND = dictionaries.names
         self.stem = stem
+        self.tag = tag
+
         if stem:
             self.stemmer = SpanishStemmer()
-        else:
+        if tag:
             # path to TreeTagger installation directory
             path = 'here put path to TreeTagger'
             self.tagger = TreeTagger(TAGLANG='es', TAGDIR=path)
@@ -38,7 +40,7 @@ class WTAclassifier(object):
                     result = (stem == w)
                     if result:
                         break
-            else:
+            if self.tag:
                 lemma = make_tags(self.tagger.tag_text(word))[0].lemma
                 result = self.dictionary_lookup(lemma)
         return result
