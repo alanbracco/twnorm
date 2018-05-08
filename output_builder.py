@@ -2,12 +2,13 @@ import os
 
 
 class OutputBuilder(object):
-    def __init__(self, filename):
+    def __init__(self, filename, verbose=False):
         self.filepath = os.path.join(os.getcwd(), 'Output', filename)
         self.line_start = '\t'
         self.correction_separator = '\n\t'
         self.end_corrections = '\n'
-        print('Output file:', self.filepath)
+        if verbose:
+            print('Output file:', self.filepath)
 
     def build(self, texts, order, correct):
         with open(self.filepath, 'w') as file:

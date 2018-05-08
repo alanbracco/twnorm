@@ -11,9 +11,9 @@ from output_builder import OutputBuilder
 def BaselineNormalization(input_file, output_file):
 
     print('Initializing resources...')
-    splitter = Tw_Splitter(path.join('Input', input_file))
-    picker = WTApicker(splitter.texts)
-    output = OutputBuilder(output_file)
+    splitter = Tw_Splitter(path.join('Input', input_file), verbose=True)
+    picker = WTApicker(splitter.texts, verbose=True)
+    output = OutputBuilder(output_file, verbose=True)
     wtas = picker.WTA
     correct = defaultdict(dict)
     iv_dict = enchant.Dict("es_AR")

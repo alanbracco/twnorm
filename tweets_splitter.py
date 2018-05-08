@@ -3,9 +3,10 @@ from collections import defaultdict
 
 
 class Tw_Splitter(object):
-    def __init__(self, tweets_file):
+    def __init__(self, tweets_file, verbose=False):
         filepath = os.path.join(os.getcwd(), tweets_file)
-        print('Input tweets file:', filepath)
+        if verbose:
+            print('Input tweets file:', filepath)
         file = open(filepath, 'r')
         lines = file.read().split('\n')
         # dict to store text of each tweet
@@ -29,7 +30,8 @@ class Tw_Splitter(object):
                 # o:original word, t:class, c:corrected word
                 o, t, c = splitted[1].split(' ')
                 corrections[current_id].append((o, t, c))
-        print('Total tweets:', n)
+        if verbose:
+            print('Total tweets:', n)
         self.n = n
         self.texts = texts
         self.order = order

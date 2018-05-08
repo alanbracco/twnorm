@@ -25,7 +25,7 @@ def is_valid(word):
 
 class WTApicker(object):
 
-    def __init__(self, tweets):
+    def __init__(self, tweets, verbose=False):
         twt = MyTokenizer()
         known_word = enchant.Dict("es_AR")
         WTA = defaultdict(lambda: defaultdict(list))
@@ -54,7 +54,8 @@ class WTApicker(object):
                         # of tweet with id = tweet_id
                         WTA[tweet_id][j].append((word, pos))
         n = len(WTA)
-        print('Tweets to correct:', n)
+        if verbose:
+            print('Tweets to correct:', n)
         self.n = n
         self.tokenized = dict(tokenized)
         self.WTA = dict(WTA)

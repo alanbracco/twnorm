@@ -13,12 +13,12 @@ from candidate_selection import Selector
 def MainProcess(input_file, output_file, model_file):
 
     print('Initializing resources...')
-    splitter = Tw_Splitter(path.join('Input', input_file))
-    picker = WTApicker(splitter.texts)
+    splitter = Tw_Splitter(path.join('Input', input_file), verbose=True)
+    picker = WTApicker(splitter.texts, verbose=True)
     classifier = WTAclassifier()
     variants_generator = VariantsGenerator()
     selector = Selector(model_file)
-    output = OutputBuilder(output_file)
+    output = OutputBuilder(output_file, verbose=True)
     wtas = picker.WTA
     tokenized = picker.tokenized
     correct = defaultdict(dict)
