@@ -44,19 +44,18 @@ def MainProcess(input_file, output_file, model_file):
                 # if class is variant
                 if class_number == 0:
                     IVcandidates = variants_generator.generate(word)
-                    # if no candidates generated
-                    if len(IVcandidates) == 0:
-                        correct_word = '-'
-                    else:
-                        prev_tokens = selector.prev_tokens((word, pos),
-                                                           for_prev)
-                        correct_word = selector.choose(prev_tokens,
-                                                       IVcandidates)
-                        for_prev[for_prev.index((word, pos))] = (
-                                                        correct_word, pos)
+                    correct_word = selector.select_candidate(word, pos,
+                                                             for_prev,
+                                                             IVcandidates)
+                    # If a correction was made
+                    if correct_word != selector.UNKNOWN_CORRECTION:
+                        # To pick corrected previous tokens
+                        # in following iterations
+                        for_prev[for_prev.index((word, pos))] = (correct_word,
+                                                                 pos)
                 # if class is correct or NoES
                 else:
-                    correct_word = '-'
+                    correct_word = selector.DEFAULT_CORRECTION
 
                 correct[tweet_id][j].append((word, class_number, correct_word))
 

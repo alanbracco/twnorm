@@ -17,6 +17,8 @@ class Selector(object):
 
         self.model = model
         self.n = model.n
+        self.UNKNOWN_CORRECTION = '-'
+        self.DEFAULT_CORRECTION = '-'
 
     def choose(self, prev_tokens, candidates):
         """
@@ -31,8 +33,9 @@ class Selector(object):
 
         return winner
 
-    def prev_tokens(self, pair, tokenized):
+    def prev_tokens(self, word, position, tokenized):
         n = self.n
+        pair = (word, position)
         index = tokenized.index(pair)
         prev_tokens = tuple()
         for i in range(index - n + 1, index):
@@ -41,3 +44,11 @@ class Selector(object):
             else:
                 prev_tokens += (tokenized[i][0],)
         return prev_tokens
+
+    def select_candidate(self, word, position, tokens, candidates):
+        if not candidates:
+            return self.UNKNOWN_CORRECTION
+
+        prev_tokens = self.prev_tokens(word, position, tokens)
+        selected_candidate = self.choose(prev_tokens, candidates)
+        return selected_candidate
