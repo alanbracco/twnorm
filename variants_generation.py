@@ -185,7 +185,8 @@ class PrimaryCandidates(object):
 
     def filter_candidates(self, cands):
         """
-            return set of IV candidates
+            Given a set of tokens (where incorrect words can appear),
+            it returns a set of IV (In Vocabulary) candidates.
         """
         candidates = set()
         cf = self.cf
@@ -199,7 +200,7 @@ class PrimaryCandidates(object):
 
     def generate(self, word):
         """
-            return a set of primary candidates
+            Given a word, it returns a set of primary candidates
         """
         b, cands, candidates = set(), set(), set()
         if word != '':
@@ -228,11 +229,9 @@ class PrimaryCandidates(object):
 class SecondaryCandidates(object):
     def __init__(self):
         self.helper = PrimaryCandidates(2)
-        self.cf = self.helper.cf
 
     def edit_distance(self, word):
         candidates = set()
-        cf = self.cf
         n = len(word)
         abc = 'abcdefghijklmnñopqrstuvwxyzáéíóú'
         # abc = lcase[:14] + 'ñ' + lcase[14:] + 'áéíóú'
@@ -240,29 +239,25 @@ class SecondaryCandidates(object):
             for i in range(n):
                 # delete i-th letter
                 cand = word[:i] + word[i+1:]
-                if cf.check(cand):
-                    candidates.add(cand)
+                candidates.add(cand)
                 # swap i-th letter for i+1-th letter
                 if i > 0:
                     swap = word[i] + word[i-1]
                     cand = word[:i-1] + swap + word[i+1:]
-                    if cf.check(cand):
-                        candidates.add(cand)
+                    candidates.add(cand)
                 for x in abc:
                     # replace i-th letter for x
                     cand = word[:i] + x + word[i+1:]
-                    if cf.check(cand):
-                        candidates.add(cand)
+                    candidates.add(cand)
                     # insert x in i-th position
                     cand = word[:i] + x + word[i:]
-                    if cf.check(cand):
-                        candidates.add(cand)
+                    candidates.add(cand)
         for x in abc:
             # insert x at the end of word
             cand1, cand2 = word + x, x + word
-            for cand in [cand1, cand2]:
-                if cf.check(cand):
-                    candidates.add(cand)
+            candidates = candidates.union({cand1, cand2})
+
+        candidates = self.helper.filter_candidates(candidates)
         return candidates
 
     def generate(self, word):

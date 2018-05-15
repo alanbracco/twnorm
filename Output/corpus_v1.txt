@@ -366,7 +366,7 @@
 	envídienmen 0 -
 948137628683177984	Me hackearon mi tw pero yo soy más hacker que ellos y les cabio.
 	hackearon 0 hachearon
-	tw 0 te
+	tw 0 también
 	hacker 2 -
 	cabio 1 -
 948137629790371840	Aprendamos a hacer lo más difícil, pidamos perdón, traguemonos el orgullo que es un lastre que nos arrastra hasta el abismo, el enemigo nos miente para que no lo hagamos. Jesús murió en la cruz para perdonarnos, hagamos lo mismo  Dios los bendiga.   https://t.co/h6lJt5bCOV
@@ -439,7 +439,7 @@
 	piba 0 iba
 948139523275444226	Me estoy meando
 948139594352152577	Sepan uds que mi busarda es culpa de un golpe de calor. Uno cuantos...
-	uds 0 -
+	uds 0 todos
 	busarda 1 -
 948139605701922816	Falta Mati aca cantando Cancerbero y estamos jajajajajaj, que pibeessss Quiero dormir
 	Mati 0 Mato
@@ -590,7 +590,7 @@
 	1ra 0 era
 951665304081502208	Ya ni stalk puede con este celu
 	stalk 2 -
-	celu 0 celo
+	celu 0 celular
 951665312167964672	@NaaniFernandez1 Ese sos vos gato sin codigos
 	codigos 0 códigos
 951665304442167296	Voy a comerte hasta llegar a tus huesos, mi boca si que sabe de eso...
@@ -627,7 +627,7 @@
 951665490031792128	Arte astracto.
 	astracto 0 abstracto
 951680179826544641	Quiero hacer una foto de tw con alguiennnn
-	tw 0 tu
+	tw 0 televisión
 	alguiennnn 0 alguien
 951680180250169351	Me habían bloqueado l cuenta, que
 	l 0 la
@@ -638,7 +638,7 @@
 951680184331132931	Negra no puedo hablar con vos y no parar decir pelotudeces me contagias qcyo
 	qcyo 0 -
 951680188915515392	Mis recuerdos en fb con @SofiEsscobar son todo lo que está bien.
-	fb 0 fe
+	fb 0 también
 951680191721598976	@nicoo_arias Pelotudo jajsjsjsj😂🖕🏼🖕🏼🖕🏼🖕🏼
 	jajsjsjsj 0 -
 951680196394061824	Lo lindo del verano es que no te cagas de frio cuando salís, es  lo único lindo, lo demas lo tiene el invierno
@@ -691,7 +691,7 @@
 951680423599443968	Como hacen esas parejas que van y vuelven? Pero tomatelaaaaaaaa
 	tomatelaaaaaaaa 0 tomatera
 951680450661179392	@PmoreThreads bb💖💖
-	bb 0 beso
+	bb 0 también
 951680468935725056	@CharitoAlasia Una manzana con caramelo (que azkito)
 	azkito 0 -
 951680472102432768	Unas ganas que de la nada aparezcas y me des todos tus abrazos que tanto quiero ...
@@ -788,7 +788,7 @@
 951695426918535170	@alinabravo2 Me hacen mal al corazon☹
 	corazon 0 corazón
 951695434107572224	@SabbriAlbornoz mandame wp
-	wp 0 ap
+	wp 0 guapa
 951695440092770306	Que hago con buso con el calor que hace 🙄
 	buso 1 -
 951695477073997824	HERMOSISISISISISIMO TODO, PERO TODO, CORRAN A VERLO https://t.co/g1RWOQg8im
@@ -816,7 +816,7 @@
 	Meoh 0 Meo
 	opening 2 -
 951695715306229761	Luna 4to menguante de sangre 😍😍😍
-	4to 0 to
+	4to 0 moto
 951695720167374851	Boom!!!!!! Feliz cumpleaaañoosssssss✨Encerio te agradesco por todo❤Te amo demasiado,siempre estaré para vos Mi querido Amigo del internet❤❤♥ @boomscar @boomscar espero que te pongas lindo y me des follow ahre 😂❤
 	cumpleaaañoosssssss 0 cumpleaños
 	Encerio 0 Enserio
@@ -905,7 +905,7 @@
 	porfavorrrrrrrr 0 por_favor
 951710849374281728	Unanse, es para hablar boludeces, sean buena onda, somos gente de tw⚘ (si van a hablar entren, sino no) 👌🏻💣 https://t.co/DdgNYycKzt 💌
 	Unanse 0 únanse
-	tw 0 tu
+	tw 0 televisión
 951710849722351616	@Smirnoff_Arg deberian crear un vodka light, gatos
 	deberian 0 deberían
 951710883092119552	@camimaisterrena @milagrosssssssg viste, ella te dice Camila, no te trata como yo... veni conmigo que es mejor jajajaa
@@ -968,15 +968,15 @@
 	x 0 por
 	tkm 0 km
 951725664939503616	Mañana 8am arriba y sigo acá 5am cualquiera
-	8am 0 mam
-	5am 0 mam
+	8am 0 examen
+	5am 0 examen
 951725685047025664	Que culiauuuuu meta llorá JAJAJAJAJA
 	culiauuuuu 0 -
 	JAJAJAJAJA 0 Ja
 951725736347480065	Lo que me gusta ese flaco por favorrrrrr
 	favorrrrrr 0 favor
 951725825031884800	@MoreParnisciano Y son las 5am jajajaja dormi ahí en tu bella habitación amarilla
-	5am 0 mam
+	5am 0 examen
 	jajajaja 0 Ja
 	dormi 0 dormí
 951725834880126976	Trato q eso no importe pero no puedo🙄

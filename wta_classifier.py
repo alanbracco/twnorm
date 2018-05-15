@@ -25,14 +25,15 @@ class WTAclassifier(object):
     def check_NoES(self, word):
         result = False
         if len(word) > 1:
+            # Tokens like 'x' or 'q' appear in english dict and return True
             result = self.english_dict.check(word)
         return result
 
     def classify(self, word):
         if self.check(word):
-            result = 1
+            result = 1  # Correct word in spanish
         elif self.check_NoES(word):
-            result = 2
+            result = 2  # Correct word in another language
         else:
-            result = 0
+            result = 0  # Variant word (to correct)
         return result
