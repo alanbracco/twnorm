@@ -2,7 +2,7 @@ import os
 from collections import defaultdict
 
 
-class dicts(object):
+class Dicts(object):
 
     def __init__(self):
 
@@ -40,3 +40,18 @@ class dicts(object):
         lines = verbsfile.read().split('\n')
         verbsfile.close()
         self.lemario = self.lemario.union({word for word in lines})
+
+    def is_valid(self, word):
+        result = (word in self.lemario or
+                  word in self.names or
+                  word in self.norm.values())
+        return result
+
+    def is_social_term(self, word):
+        return word in self.norm.keys()
+
+    def fix_social_term(self, word):
+        result = word
+        if self.is_social_term(word):
+            result = self.norm[word]
+        return result

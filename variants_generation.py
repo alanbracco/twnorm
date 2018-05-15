@@ -190,8 +190,9 @@ class PrimaryCandidates(object):
         candidates = set()
         cf = self.cf
         for w in cands:
-            if w in cf.ND.keys():
-                candidates.add(cf.ND[w])
+            if cf.extra_dicts.is_social_term(w):
+                actual_word = cf.extra_dicts.fix_social_term(w)
+                candidates.add(actual_word)
             if cf.check(w):
                 candidates.add(w)
         return candidates
