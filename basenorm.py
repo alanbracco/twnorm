@@ -1,7 +1,7 @@
 import time
 import enchant
 from os import path
-from aux import progress
+from aux import print_progress
 from collections import defaultdict
 from wta_picker import WTApicker
 from tweets_splitter import Tw_Splitter
@@ -19,19 +19,13 @@ def BaselineNormalization(input_file, output_file):
     iv_dict = enchant.Dict("es_AR")
     print('Initialization finished')
 
-    n = 1
+    accumulated = 1
     tweets_time = {}
     start_time = time.time()
     for tweet_id, tweet in wtas.items():
         tweet_start = time.time()
-        x = int((float(n)/picker.n)*20)
-        perc = round((float(n)/picker.n)*100, 1)
-        msg = ('Processing tweets...{}% ({}/{})'.format(perc, n, picker.n) +
-               ' '*(len(str(picker.n)) + 6 - (len(str(perc))+len(str(n)))) +
-               '[' + '#'*x + ' '*(20-x) + ']')
-
-        progress(msg)
-        n += 1
+        print_progress(accumulated, picker.n)
+        accumulated += 1
         for j, sent in tweet.items():  # j is number of the sent
             correct[tweet_id][j] = []
             for word, pos in sent:
