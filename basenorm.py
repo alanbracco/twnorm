@@ -4,14 +4,14 @@ from os import path
 from aux import print_progress
 from collections import defaultdict
 from wta_picker import WTApicker
-from tweets_splitter import Tw_Splitter
+from tweets_splitter import Splitter
 from output_builder import OutputBuilder
 
 
 def BaselineNormalization(input_file, output_file):
 
     print('Initializing resources...')
-    splitter = Tw_Splitter(path.join('Input', input_file), verbose=True)
+    splitter = Splitter(path.join('Input', input_file), verbose=True)
     picker = WTApicker(splitter.texts, verbose=True)
     output = OutputBuilder(output_file, verbose=True)
     wtas = picker.WTA

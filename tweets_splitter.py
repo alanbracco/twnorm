@@ -2,7 +2,7 @@ import os
 from collections import defaultdict
 
 
-class Tw_Splitter(object):
+class Splitter(object):
     def __init__(self, tweets_file, verbose=False):
         filepath = os.path.join(os.getcwd(), tweets_file)
         if verbose:

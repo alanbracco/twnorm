@@ -4,7 +4,7 @@ from aux import print_progress
 from collections import defaultdict
 from wta_picker import WTApicker
 from wta_classifier import WTAclassifier
-from tweets_splitter import Tw_Splitter
+from tweets_splitter import Splitter
 from output_builder import OutputBuilder
 from variants_generation import VariantsGenerator
 from candidate_selection import Selector
@@ -13,7 +13,7 @@ from candidate_selection import Selector
 def MainProcess(input_file, output_file, model_file):
 
     print('Initializing resources...')
-    splitter = Tw_Splitter(path.join('Input', input_file), verbose=True)
+    splitter = Splitter(path.join('Input', input_file), verbose=True)
     picker = WTApicker(splitter.texts, verbose=True)
     classifier = WTAclassifier()
     variants_generator = VariantsGenerator()
