@@ -2,7 +2,6 @@ import time
 from os import path
 from aux import print_progress
 from collections import defaultdict
-from wta_picker import WTApicker
 from wta_classifier import WTAclassifier
 from tweets_splitter import Splitter
 from output_builder import OutputBuilder
@@ -14,13 +13,12 @@ def MainProcess(input_file, output_file, model_file):
 
     print('Initializing resources...')
     splitter = Splitter(path.join('Input', input_file), verbose=True)
-    picker = WTApicker(splitter.texts, verbose=True)
     classifier = WTAclassifier()
     variants_generator = VariantsGenerator()
     selector = Selector(model_file)
     output = OutputBuilder(output_file, verbose=True)
-    wtas = picker.WTA
-    tokenized = picker.tokenized
+    wtas = splitter.WTA
+    tokenized = splitter.tokenized
     correct = defaultdict(dict)
     print('Initialization finished')
 
@@ -28,7 +26,7 @@ def MainProcess(input_file, output_file, model_file):
     tweets_time = {}
     for tweet_id, tweet in wtas.items():
         tweet_start = time.time()
-        print_progress(accumulated, picker.n)
+        print_progress(accumulated, len(wtas))
         accumulated += 1
         for j, sent in tweet.items():  # j is number of the sent
             for_prev = tokenized[tweet_id][j]  # For previous tokens corrected

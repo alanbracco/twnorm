@@ -3,7 +3,6 @@ import enchant
 from os import path
 from aux import print_progress
 from collections import defaultdict
-from wta_picker import WTApicker
 from tweets_splitter import Splitter
 from output_builder import OutputBuilder
 
@@ -12,9 +11,8 @@ def BaselineNormalization(input_file, output_file):
 
     print('Initializing resources...')
     splitter = Splitter(path.join('Input', input_file), verbose=True)
-    picker = WTApicker(splitter.texts, verbose=True)
     output = OutputBuilder(output_file, verbose=True)
-    wtas = picker.WTA
+    wtas = splitter.WTA
     correct = defaultdict(dict)
     iv_dict = enchant.Dict("es_AR")
     print('Initialization finished')
@@ -24,7 +22,7 @@ def BaselineNormalization(input_file, output_file):
     start_time = time.time()
     for tweet_id, tweet in wtas.items():
         tweet_start = time.time()
-        print_progress(accumulated, picker.n)
+        print_progress(accumulated, len(wtas))
         accumulated += 1
         for j, sent in tweet.items():  # j is number of the sent
             correct[tweet_id][j] = []
