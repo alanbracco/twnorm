@@ -3,6 +3,7 @@ import enchant
 from tokenizer import MyTokenizer
 from collections import defaultdict
 from nltk.tokenize import sent_tokenize
+from wta_classifier import WTAclassifier
 
 
 def is_valid(word):
@@ -27,6 +28,7 @@ def is_valid(word):
 class Splitter(object):
     def __init__(self, tweets_file, verbose=False):
         filepath = os.path.join(os.getcwd(), tweets_file)
+        self.verbose = verbose
         if verbose:
             print('Input tweets file:', filepath)
         file = open(filepath, 'r')
@@ -60,8 +62,6 @@ class Splitter(object):
         self.corrections = dict(corrections)
 
         twt = MyTokenizer()
-        known_word = enchant.Dict("es_AR")
-        WTA = defaultdict(lambda: defaultdict(list))
         tokenized = defaultdict(dict)
         all_tokens = defaultdict(dict)
         # split tweets by tweet separator
@@ -80,17 +80,8 @@ class Splitter(object):
                     all_tokens[tweet_id] = []
                 all_tokens[tweet_id].extend([word for pos, word
                                              in enumerate(sent)])
-                for word, pos in wp_list:
-                    # check if word is In Vocabulary
-                    if not known_word.check(word):
-                        # add (word, pos) to j-th sent
-                        # of tweet with id = tweet_id
-                        WTA[tweet_id][j].append((word, pos))
-        if verbose:
-            print('Tweets to correct:', len(WTA))
 
         self.tokenized = dict(tokenized)
-        self.WTA = dict(WTA)
         self.all_tokens = dict(all_tokens)
 
     def get_texts(self):
@@ -99,8 +90,24 @@ class Splitter(object):
     def get_ids_order(self):
         return self.order
 
-    def get_wtas(self):
-        return self.WTA
+    def get_wtas(self, baseNorm=False):
+        WTA = defaultdict(lambda: defaultdict(list))
+        if baseNorm:
+            classifier = enchant.Dict("es_AR")
+        else:
+            classifier = enchant.Dict("es_AR")
+
+        for tweet_id in self.tokenized:
+            for j in self.tokenized[tweet_id]:
+                for word, pos in self.tokenized[tweet_id][j]:
+                    # check if word is In Vocabulary
+                    if not classifier.check(word):
+                        # add (word, pos) to j-th sent
+                        # of tweet with id = tweet_id
+                        WTA[tweet_id][j].append((word, pos))
+        if self.verbose:
+            print('Tweets to correct:', len(WTA))
+        return dict(WTA)
 
     def get_analyzable_tokens(self):
         return self.tokenized

@@ -12,7 +12,7 @@ def BaselineNormalization(input_file, output_file):
     print('Initializing resources...')
     splitter = Splitter(path.join('Input', input_file), verbose=True)
     output = OutputBuilder(output_file, verbose=True)
-    wtas = splitter.get_wtas()
+    wtas = splitter.get_wtas(baseNorm=True)
     correct = defaultdict(dict)
     iv_dict = enchant.Dict("es_AR")
     print('Initialization finished')
