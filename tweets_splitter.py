@@ -92,3 +92,18 @@ class Splitter(object):
         self.tokenized = dict(tokenized)
         self.WTA = dict(WTA)
         self.all_tokens = dict(all_tokens)
+
+    def get_texts(self):
+        return self.texts
+
+    def get_ids_order(self):
+        return self.order
+
+    def get_wtas(self):
+        return self.WTA
+
+    def get_analyzable_tokens(self):
+        return self.tokenized
+
+    def get_all_tokens(self):
+        return self.all_tokens

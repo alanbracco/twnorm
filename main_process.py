@@ -17,8 +17,8 @@ def MainProcess(input_file, output_file, model_file):
     variants_generator = VariantsGenerator()
     selector = Selector(model_file)
     output = OutputBuilder(output_file, verbose=True)
-    wtas = splitter.WTA
-    tokenized = splitter.tokenized
+    wtas = splitter.get_wtas()
+    tokenized = splitter.get_analyzable_tokens()
     correct = defaultdict(dict)
     print('Initialization finished')
 
@@ -55,7 +55,7 @@ def MainProcess(input_file, output_file, model_file):
         tweets_time[tweet_id] = tweet_end - tweet_start
 
     correct = dict(correct)
-    output.build(splitter.texts, splitter.order, correct)
+    output.build(splitter.get_texts(), splitter.get_ids_order(), correct)
 
     total_time = sum([t for t in tweets_time.values()])
     tweet_rate = len(wtas) / total_time
