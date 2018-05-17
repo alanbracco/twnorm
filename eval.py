@@ -17,8 +17,7 @@ from copy import copy
 from docopt import docopt
 from collections import Counter, defaultdict
 from aux import to_str_perc
-from wta_picker import WTApicker
-from tweets_splitter import Tw_Splitter
+from tweets_splitter import Splitter
 
 
 class Evaluator(object):
@@ -307,13 +306,13 @@ if __name__ == '__main__':
     if os.path.exists(output_file):
         os.remove(output_file)
 
-    gold_splitter = Tw_Splitter(gold_file_path)
+    gold_splitter = Splitter(gold_file_path)
     gold_dict = gold_splitter.corrections
 
-    generated_splitter = Tw_Splitter(generated_file_path)
+    generated_splitter = Splitter(generated_file_path)
     generated_dict = generated_splitter.corrections
 
-    all_tokens = WTApicker(gold_splitter.texts).all_tokens
+    all_tokens = gold_splitter.get_all_tokens()
 
     evaluator = Evaluator(output_file)
     evaluator.build_output_stats(gold_dict, generated_dict, all_tokens)
