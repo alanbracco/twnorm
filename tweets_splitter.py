@@ -95,7 +95,7 @@ class Splitter(object):
         if baseNorm:
             classifier = enchant.Dict("es_AR")
         else:
-            classifier = enchant.Dict("es_AR")
+            classifier = WTAclassifier()
 
         for tweet_id in self.tokenized:
             for j in self.tokenized[tweet_id]:
