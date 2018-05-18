@@ -254,7 +254,7 @@
 948135273048637440	No tengo ni ganas de ir a trabajar dormí todo el día ayer y tengo sueño
 948135306045329408	Imposible poder levantarse hoy... menos teniendo un bombón durmiendo al lado @Maarvellani ♥️ te amo bebe✨
 948135319194492928	#NoCambioNada @lajeantonio. Y aca nos quejamos de la inflacion!! Buen dia !
-	aca 1 -
+	aca 0 Acá
 	inflacion 0 inflación
 	dia 0 día
 948135377222676483	Quiero ir a una joda pero que abunde el porro
@@ -350,7 +350,7 @@
 	hackearon 0 hachearon
 	V 0 Va
 948137087638884352	ah bue
-	bue 1 -
+	bue 0 Vue
 948137253263552512	Ahora x @El4topoderlt10 Alejandro Soto, tìo de Aylen una de las vìctimas de Facundo Solìs.
 	x 0 por
 	tìo 0 tío
@@ -443,7 +443,7 @@
 	busarda 1 -
 948139605701922816	Falta Mati aca cantando Cancerbero y estamos jajajajajaj, que pibeessss Quiero dormir
 	Mati 0 Mato
-	aca 1 -
+	aca 0 Acá
 	jajajajajaj 0 -
 	pibeessss 0 pies
 948139640422322177	Concientemente me la iba a mandar anoche. Inconscientemente me olvidé. Gracias universo.
@@ -496,7 +496,7 @@
 	PERIPDISTAS 0 -
 950488394383200256	@OPINOLOGODTURNO @Murielsantaok Unos libros x aca q no muerdennnn
 	x 0 por
-	aca 1 -
+	aca 0 Acá
 	q 0 que
 	muerdennnn 0 Muerden
 950488443657826306	@itsjoelpimentel Seguime porfavor joel 😢😢😢😢😢😢😢😢😢😢😢😢 te lo pido  Hago lo que quieras plisss
@@ -508,8 +508,8 @@
 950488451845156864	Necesito un puto parlante quien puede prestar/alquilar????
 951649955126632448	Estamos re empedo y dijimos vamos a hacer un asado pue y bueno aca estamos haciendo un asado las 00 en RIACHUELO
 	empedo 1 -
-	pue 1 -
-	aca 1 -
+	pue 0 Pué
+	aca 0 Acá
 951649990623072256	@facubrt Vamooo ese positivismo asi me gustaaa jajajaj
 	Vamooo 0 Vano
 	asi 0 así
@@ -723,7 +723,7 @@
 951680620622700546	Es dentrifico con chispas no me jodan https://t.co/jjcpPROf7S
 	dentrifico 0 -
 951680624007446528	@BeluCampoos @Lulu23arcoiris Bue loca jajajjaajjaj encima con bendicion, ya queria ser mamá garron yo 🤦‍♀️
-	Bue 0 bue
+	Bue 0 búe
 	jajajjaajjaj 0 -
 	bendicion 0 bendición
 	queria 0 quería
@@ -799,7 +799,7 @@
 	aburricion 0 aburrición
 951695561534722048	@gabr__z Jajajajaja bue, mejor callate
 	Jajajajaja 0 Ja
-	bue 1 -
+	bue 0 Vue
 951695567238942721	@Agosgarciarey  jejej https://t.co/875eAoEN3s
 	jejej 0 -
 951695571953307648	Y ahora como m duermoo 🤦🤦
@@ -845,7 +845,7 @@
 951695801222402050	Ahno amigo
 	Ahno 0 Ano
 951695801755013122	@Gonflores21 bue o te caigo bien o.me.queres muerta https://t.co/QxB7AjCsO3
-	bue 1 -
+	bue 0 Vue
 	o.me.queres 0 -
 951695802321326080	Me bañe y se me fue todo el sueño a la mierda
 951695858227085312	Que le paso? Nose 😂
@@ -922,7 +922,7 @@
 951710928193708032	Yo puse en una foto "xq quiero y puedo" y ahora todas ponen lo mismo copionas caras de verga bue quién era xd
 	xq 0 porque
 	copionas 0 copinas
-	bue 1 -
+	bue 0 Vue
 	xd 0 de
 951710972745535488	@Melanicordoba13 Ah entonces si tenes 4 babys esa es mi amiga del Felipe
 	babys 0 babas
@@ -982,7 +982,7 @@
 951725834880126976	Trato q eso no importe pero no puedo🙄
 	q 0 que
 951725929004503040	bue con los mambos que tengo que queres ver
-	bue 1 -
+	bue 0 Vue
 	queres 0 Querés
 951725977503174656	QUE BUENA SERIE THE END OF THE FUCKING WORLD LPM
 	THE 2 -

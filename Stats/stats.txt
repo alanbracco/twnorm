@@ -311,7 +311,7 @@ TweetID: 948135083772399616
   Missing words: ['Va', 'bien', 'noticiad']
   - 'Q' was corrected as 'que' but it is 'Que'
 TweetID: 948135319194492928
-  - 'aca' was corrected as '-' but it is 'acá'
+  - 'aca' was corrected as 'Acá' but it is 'acá'
 TweetID: 948135401574883328
   - 'Rrrrrre' was corrected as 'Ríe' but it is 'Re'
 TweetID: 948135404770877440
@@ -365,7 +365,7 @@ TweetID: 948136895879569410
 TweetID: 948136917287268352
   - 'empedo' was corrected as '-' but it is 'en_pedo'
 TweetID: 948137087638884352
-  - 'bue' was corrected as '-' but it is 'bueno'
+  - 'bue' was corrected as 'Vue' but it is 'bueno'
 TweetID: 948137253263552512
   Surplus words: ['Aylen', 'Solìs', 'x']
 TweetID: 948137262382047238
@@ -425,7 +425,7 @@ TweetID: 948139594352152577
   - 'uds' was corrected as 'todos' but it is 'ustedes'
 TweetID: 948139605701922816
   Surplus words: ['Mati']
-  - 'aca' was corrected as '-' but it is 'acá'
+  - 'aca' was corrected as 'Acá' but it is 'acá'
   - 'jajajajajaj' was corrected as '-' but it is 'ja'
   - 'pibeessss' was corrected as 'pies' but it is 'pibes'
 TweetID: 948139734643159040
@@ -457,14 +457,14 @@ TweetID: 950488375580155905
   - 'Q' was corrected as 'que' but it is 'QUE'
   - 'criteri' was corrected as 'criterio' but it is '-'
 TweetID: 950488394383200256
-  - 'aca' was corrected as '-' but it is 'acá'
+  - 'aca' was corrected as 'Acá' but it is 'acá'
   - 'muerdennnn' was corrected as 'Muerden' but it is 'muerden'
 TweetID: 950488443657826306
   - 'plisss' was corrected as 'plus' but it is 'please'
 TweetID: 951649955126632448
-  - 'aca' was corrected as '-' but it is 'acá'
+  - 'aca' was corrected as 'Acá' but it is 'acá'
   - 'empedo' was corrected as '-' but it is 'en_pedo'
-  - 'pue' was corrected as '-' but it is 'pués'
+  - 'pue' was corrected as 'Pué' but it is 'pués'
 TweetID: 951649990623072256
   - 'Vamooo' was corrected as 'Vano' but it is 'Vamos'
   - 'jajajaj' was corrected as '-' but it is 'ja'
@@ -616,7 +616,7 @@ TweetID: 951680616453558273
 TweetID: 951680620622700546
   - 'dentrifico' was corrected as '-' but it is 'dentífrico'
 TweetID: 951680624007446528
-  - 'Bue' was corrected as 'bue' but it is 'Bueno'
+  - 'Bue' was corrected as 'búe' but it is 'Bueno'
   - 'garron' was corrected as 'Garrón' but it is 'garrón'
   - 'jajajjaajjaj' was corrected as '-' but it is 'ja'
 TweetID: 951680628075978753
@@ -665,7 +665,7 @@ TweetID: 951695540911210497
   Missing words: ['supere']
   - 'empezé' was corrected as 'Empece' but it is 'empecé'
 TweetID: 951695561534722048
-  - 'bue' was corrected as '-' but it is 'bueno'
+  - 'bue' was corrected as 'Vue' but it is 'bueno'
 TweetID: 951695567238942721
   - 'jejej' was corrected as '-' but it is 'je'
 TweetID: 951695571953307648
@@ -703,7 +703,7 @@ TweetID: 951695796210151429
 TweetID: 951695801222402050
   - 'Ahno' was corrected as 'Ano' but it is 'Ah_no'
 TweetID: 951695801755013122
-  - 'bue' was corrected as '-' but it is 'bueno'
+  - 'bue' was corrected as 'Vue' but it is 'bueno'
   - 'o.me.queres' was corrected as '-' but it is 'o_me_querés'
 TweetID: 951695858227085312
   - 'Nose' was corrected as '-' but it is 'No_sé'
@@ -752,7 +752,7 @@ TweetID: 951710924087484416
   Surplus words: ['sanguche', 'vikingos']
 TweetID: 951710928193708032
   Surplus words: ['copionas']
-  - 'bue' was corrected as '-' but it is 'bueno'
+  - 'bue' was corrected as 'Vue' but it is 'bueno'
   - 'xd' was corrected as 'de' but it is 'XD'
 TweetID: 951710972745535488
   Missing words: ['tenes']
@@ -798,7 +798,7 @@ TweetID: 951725825031884800
   Surplus words: ['5am']
   - 'jajajaja' was corrected as 'Ja' but it is 'ja'
 TweetID: 951725929004503040
-  - 'bue' was corrected as '-' but it is 'bueno'
+  - 'bue' was corrected as 'Vue' but it is 'bueno'
   - 'queres' was corrected as 'Querés' but it is 'querés'
 TweetID: 951726037544718336
   - 'juntabamos' was corrected as 'Juntábamos' but it is 'juntábamos'

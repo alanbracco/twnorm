@@ -35,12 +35,6 @@ class Dicts(object):
         slangfile.close()
         self.slang = {word for word in lines}
 
-        # add a set of all verbs (infinitive + conjugated) to lemario
-        verbsfile = open(os.path.join(filepath, 'verbs.txt'), 'r')
-        lines = verbsfile.read().split('\n')
-        verbsfile.close()
-        self.lemario = self.lemario.union({word for word in lines})
-
     def is_valid(self, word):
         result = (word in self.lemario or
                   word in self.names or
