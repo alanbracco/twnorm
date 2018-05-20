@@ -47,3 +47,12 @@ class WTAclassifier(object):
         else:
             result = 0  # Variant word (to correct)
         return result
+
+    def is_variant(self, class_number):
+        return class_number == 0
+
+    def is_correct(self, class_number):
+        return class_number == 1
+
+    def is_not_spanish(self, class_number):
+        return class_number == 2

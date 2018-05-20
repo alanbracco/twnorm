@@ -35,7 +35,7 @@ def MainProcess(input_file, output_file, model_file, lemma):
             for word, pos in sent:
                 class_number = classifier.classify(word)
                 # if class is variant
-                if class_number == 0:
+                if classifier.is_variant(class_number):
                     IVcandidates = variants_generator.generate(word)
                     correct_word = selector.select_candidate(word, pos,
                                                              for_prev,
