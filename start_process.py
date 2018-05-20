@@ -1,7 +1,8 @@
 """Train a parser.
 
 Usage:
-  start_process.py -i <input_file> [-o <output_file>] [-m <model_file>] [-b]
+  start_process.py -i <input_file>
+                   [-o <output_file>] [-m <model_file>] [-b] [-l]
   start_process.py -h | --help
 
 Options:
@@ -9,6 +10,7 @@ Options:
   -i <input_file>    Input file with tweets
   -o <output_file>   Output file with tweets and list of corrections
                      [default: output.txt]
+  -l                 Use lemmatizer
   -b                 Use baseline normalization
   -h --help     Show this screen.
 """
@@ -44,4 +46,5 @@ if __name__ == '__main__':
         if not os.path.isfile(model_file):
             print('You must enter an existing model file.')
             sys.exit()
-        MainProcess(input_file, output_file, model_file)
+        lemmatize = bool(opts['-l'])
+        MainProcess(input_file, output_file, model_file, lemmatize)

@@ -9,11 +9,12 @@ from variants_generation import VariantsGenerator
 from candidate_selection import Selector
 
 
-def MainProcess(input_file, output_file, model_file):
+def MainProcess(input_file, output_file, model_file, lemma):
 
     print('Initializing resources...')
-    splitter = Splitter(path.join('Input', input_file), verbose=True)
-    classifier = WTAclassifier()
+    splitter = Splitter(path.join('Input', input_file),
+                        verbose=True, lemma=lemma)
+    classifier = WTAclassifier(lemma=lemma)
     variants_generator = VariantsGenerator()
     selector = Selector(model_file)
     output = OutputBuilder(output_file, verbose=True)

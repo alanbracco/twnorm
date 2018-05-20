@@ -26,8 +26,9 @@ def is_valid(word):
 
 
 class Splitter(object):
-    def __init__(self, tweets_file, verbose=False):
+    def __init__(self, tweets_file, verbose=False, lemma=False):
         filepath = os.path.join(os.getcwd(), tweets_file)
+        self.lemma = lemma
         self.verbose = verbose
         if verbose:
             print('Input tweets file:', filepath)
@@ -95,7 +96,7 @@ class Splitter(object):
         if baseNorm:
             classifier = enchant.Dict("es_AR")
         else:
-            classifier = WTAclassifier()
+            classifier = WTAclassifier(lemma=self.lemma)
 
         for tweet_id in self.tokenized:
             for j in self.tokenized[tweet_id]:

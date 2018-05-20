@@ -1,6 +1,16 @@
+import spacy
 import enchant
 from Dictionaries.dicts import Dicts
-from lemmatizer import Lemmatizer
+
+
+class Lemmatizer(object):
+
+    def __init__(self):
+        self.lemmatizer = spacy.load("es")
+
+    def lemmatize(self, word):
+        lemma = self.lemmatizer(word)[0].lemma_
+        return lemma
 
 
 class WTAclassifier(object):
