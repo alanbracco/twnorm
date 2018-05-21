@@ -26,14 +26,13 @@ def is_valid(word):
 
 
 class Splitter(object):
-    def __init__(self, tweets_file, verbose=False, lemma=False):
-        filepath = os.path.join(os.getcwd(), tweets_file)
+    def __init__(self, filepath, verbose=False, lemma=False):
         self.lemma = lemma
         self.verbose = verbose
         if verbose:
             print('Input tweets file:', filepath)
-        file = open(filepath, 'r')
-        lines = file.read().split('\n')
+        with open(filepath, 'r') as file:
+            lines = file.read().split('\n')
         # dict to store text of each tweet
         texts = dict()
         # dict to store corrections of each tweet

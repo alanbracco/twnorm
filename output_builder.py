@@ -2,8 +2,8 @@ import os
 
 
 class OutputBuilder(object):
-    def __init__(self, filename, verbose=False):
-        self.filepath = os.path.join(os.getcwd(), 'Output', filename)
+    def __init__(self, filepath, verbose=False):
+        self.filepath = filepath
         self.line_start = '\t'
         self.correction_separator = '\n\t'
         self.end_corrections = '\n'

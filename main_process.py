@@ -1,5 +1,4 @@
 import time
-from os import path
 from aux import print_progress
 from collections import defaultdict
 from wta_classifier import WTAclassifier
@@ -12,8 +11,7 @@ from candidate_selection import Selector
 def MainProcess(input_file, output_file, model_file, lemma):
 
     print('Initializing resources...')
-    splitter = Splitter(path.join('Input', input_file),
-                        verbose=True, lemma=lemma)
+    splitter = Splitter(input_file, verbose=True, lemma=lemma)
     classifier = WTAclassifier(lemma=lemma)
     variants_generator = VariantsGenerator()
     selector = Selector(model_file)

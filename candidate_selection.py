@@ -4,16 +4,14 @@ import pickle
 
 class Selector(object):
 
-    def __init__(self, modelfile):
+    def __init__(self, modelpath):
         """
         model -- n-gram model.
         """
-        # path to model file
-        filepath = os.path.join(os.getcwd(), 'Models', modelfile)
         # open model file
-        file = open(filepath, 'rb')
-        # load model file
-        model = pickle.load(file)
+        with open(modelpath, 'rb') as file:
+            # load model file
+            model = pickle.load(file)
 
         self.model = model
         self.n = model.n
