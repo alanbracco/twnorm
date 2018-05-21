@@ -6,11 +6,12 @@ class Dicts(object):
 
     def __init__(self):
 
-        filepath = os.path.join(os.getcwd(), 'Dictionaries', 'Resources')
+        abs_current_path = os.path.dirname(os.path.abspath(__file__))
+        resources_path = os.path.join(abs_current_path, 'Resources')
 
         # create normalization dict
         d = defaultdict(str)
-        normfile = open(os.path.join(filepath, 'sms.txt'), 'r')
+        normfile = open(os.path.join(resources_path, 'sms.txt'), 'r')
         lines = normfile.read().split('\n')
         for use, correct in [line.split(':') for line in lines]:
             d[use] = correct
@@ -18,19 +19,19 @@ class Dicts(object):
         self.norm = dict(d)
 
         # create set of spanish names
-        namesfile = open(os.path.join(filepath, 'proper_nouns.txt'), 'r')
+        namesfile = open(os.path.join(resources_path, 'proper_nouns.txt'), 'r')
         lines = namesfile.read().split('\n')
         namesfile.close()
         self.names = {word for word in lines}
 
         # create set of spanish lemario
-        lemfile = open(os.path.join(filepath, 'lemario.txt'), 'r')
+        lemfile = open(os.path.join(resources_path, 'lemario.txt'), 'r')
         lines = lemfile.read().split('\n')
         lemfile.close()
         self.lemario = {word for word in lines}
 
         # create set of argentine slang
-        slangfile = open(os.path.join(filepath, 'lunfardos.txt'), 'r')
+        slangfile = open(os.path.join(resources_path, 'lunfardos.txt'), 'r')
         lines = slangfile.read().split('\n')
         slangfile.close()
         self.slang = {word for word in lines}
