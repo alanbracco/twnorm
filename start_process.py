@@ -21,14 +21,13 @@ from main_process import MainProcess
 from basenorm import BaselineNormalization
 
 
-if __name__ == '__main__':
-
-    abs_current_path = os.path.dirname(os.path.abspath(__file__))
+def start_process():
+    project_root_path = os.path.dirname(os.path.abspath(__file__))
 
     opts = docopt(__doc__)
 
     input_file = opts['-i']
-    input_file_path = os.path.join(abs_current_path, 'Input', input_file)
+    input_file_path = os.path.join(project_root_path, 'Input', input_file)
     if not os.path.isfile(input_file_path):
         print('You must enter an existing input file.')
         sys.exit()
@@ -36,16 +35,20 @@ if __name__ == '__main__':
     output_file = opts['-o']
     if not output_file:
         output_file = 'output.txt'
-    output_file_path = os.path.join(abs_current_path, 'Output', output_file)
+    output_file_path = os.path.join(project_root_path, 'Output', output_file)
 
     if opts['-b']:
         BaselineNormalization(input_file_path, output_file_path)
     else:
         model_file = opts['-m']
-        model_file_path = os.path.join(abs_current_path, 'Models', model_file)
+        model_file_path = os.path.join(project_root_path, 'Models', model_file)
         if not os.path.isfile(model_file_path):
             print('You must enter an existing model file.')
             sys.exit()
         lemmatize = bool(opts['-l'])
         MainProcess(input_file_path, output_file_path, model_file_path,
                     lemmatize)
+
+
+if __name__ == '__main__':
+    start_process()
