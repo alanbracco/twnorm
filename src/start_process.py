@@ -22,12 +22,14 @@ from basenorm import BaselineNormalization
 
 
 def start_process():
-    project_root_path = os.path.dirname(os.path.abspath(__file__))
+    abs_current_path = os.path.dirname(os.path.abspath(__file__))
+    project_root_path = os.path.join(abs_current_path, '..')
 
     opts = docopt(__doc__)
 
     input_file = opts['-i']
     input_file_path = os.path.join(project_root_path, 'Input', input_file)
+    input_file_path = os.path.abspath(input_file_path)
     if not os.path.isfile(input_file_path):
         print('You must enter an existing input file.')
         sys.exit()
@@ -36,6 +38,7 @@ def start_process():
     if not output_file:
         output_file = 'output.txt'
     output_file_path = os.path.join(project_root_path, 'Output', output_file)
+    output_file_path = os.path.abspath(output_file_path)
 
     if opts['-b']:
         BaselineNormalization(input_file_path, output_file_path)
