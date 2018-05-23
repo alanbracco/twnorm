@@ -1,6 +1,6 @@
 import spacy
 import enchant
-from Dictionaries.dicts import Dicts
+from twnorm.Dictionaries.dicts import Dicts
 
 
 class Lemmatizer(object):

@@ -1,8 +1,8 @@
 """Evaluate normalization.
 
 Usage:
-  eval.py -r <gold_file> -g <generated_file> [-o <output_file>]
-  eval.py -h | --help
+  evalnorm -r <gold_file> -g <generated_file> [-o <output_file>]
+  evalnorm -h | --help
 
 Options:
   -r <gold_file>      Original corpus to compare results
@@ -16,8 +16,8 @@ import sys
 from copy import copy
 from docopt import docopt
 from collections import Counter, defaultdict
-from aux import to_str_perc
-from tweets_splitter import Splitter
+from twnorm.aux import to_str_perc
+from twnorm.tweets_splitter import Splitter
 
 
 class Evaluator(object):
@@ -283,18 +283,22 @@ class Evaluator(object):
         self.write_detailed_info(gold_dict, gen_dict)
 
 
-if __name__ == '__main__':
+def evaluate():
 
     opts = docopt(__doc__)
 
+    abs_current_path = os.path.dirname(os.path.abspath(__file__))
+    project_root_path = os.path.join(abs_current_path, '..')
+
     gold_file = opts['-r']
-    gold_file_path = os.path.join(os.getcwd(), 'Input', gold_file)
+    gold_file_path = os.path.join(project_root_path, 'Input', gold_file)
     if not os.path.isfile(gold_file_path):
         print('You must enter an existing input file.')
         sys.exit()
 
     generated_file = opts['-g']
-    generated_file_path = os.path.join(os.getcwd(), 'Output', generated_file)
+    generated_file_path = os.path.join(project_root_path, 'Output',
+                                       generated_file)
     if not os.path.isfile(generated_file_path):
         print('You must enter an existing input file.')
         sys.exit()
@@ -302,9 +306,9 @@ if __name__ == '__main__':
     output_file = opts['-o']
     if output_file is None:
         output_file = 'stats.txt'
-    output_file = 'Stats/' + output_file
-    if os.path.exists(output_file):
-        os.remove(output_file)
+    output_file_path = os.path.join(project_root_path, 'Stats/', output_file)
+    if os.path.exists(output_file_path):
+        os.remove(output_file_path)
 
     gold_splitter = Splitter(gold_file_path)
     gold_dict = gold_splitter.corrections
@@ -314,5 +318,9 @@ if __name__ == '__main__':
 
     all_tokens = gold_splitter.get_all_tokens()
 
-    evaluator = Evaluator(output_file)
+    evaluator = Evaluator(output_file_path)
     evaluator.build_output_stats(gold_dict, generated_dict, all_tokens)
+
+
+if __name__ == '__main__':
+    evaluate()

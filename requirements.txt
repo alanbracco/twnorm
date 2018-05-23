@@ -1,0 +1,5 @@
+docopt
+pyenchant
+nltk
+spacy
+-e .

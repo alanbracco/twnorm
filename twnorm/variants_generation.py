@@ -1,7 +1,7 @@
 # from string import ascii_lowercase as lcase
 import re
-from wta_classifier import WTAclassifier
-from candidates_memory import CandidatesMemory
+from twnorm.wta_classifier import WTAclassifier
+from twnorm.candidates_memory import CandidatesMemory
 
 
 class PrimaryCandidates(object):

@@ -1,9 +1,9 @@
 import os
 import enchant
-from tokenizer import MyTokenizer
+from twnorm.tokenizer import MyTokenizer
 from collections import defaultdict
 from nltk.tokenize import sent_tokenize
-from wta_classifier import WTAclassifier
+from twnorm.wta_classifier import WTAclassifier
 
 
 def is_valid(word):
