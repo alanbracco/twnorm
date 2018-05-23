@@ -1,8 +1,8 @@
 """Evaluate normalization.
 
 Usage:
-  eval.py -r <gold_file> -g <generated_file> [-o <output_file>]
-  eval.py -h | --help
+  evalnorm -r <gold_file> -g <generated_file> [-o <output_file>]
+  evalnorm -h | --help
 
 Options:
   -r <gold_file>      Original corpus to compare results
@@ -16,8 +16,8 @@ import sys
 from copy import copy
 from docopt import docopt
 from collections import Counter, defaultdict
-from aux import to_str_perc
-from tweets_splitter import Splitter
+from twnorm.aux import to_str_perc
+from twnorm.tweets_splitter import Splitter
 
 
 class Evaluator(object):

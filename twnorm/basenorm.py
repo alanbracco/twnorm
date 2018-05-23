@@ -1,10 +1,10 @@
 import time
 import enchant
 from os import path
-from aux import print_progress
+from twnorm.aux import print_progress
 from collections import defaultdict
-from tweets_splitter import Splitter
-from output_builder import OutputBuilder
+from twnorm.tweets_splitter import Splitter
+from twnorm.output_builder import OutputBuilder
 
 
 def BaselineNormalization(input_file, output_file):

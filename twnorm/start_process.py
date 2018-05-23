@@ -1,9 +1,8 @@
 """Train a parser.
 
 Usage:
-  start_process.py -i <input_file>
-                   [-o <output_file>] [-m <model_file>] [-b] [-l]
-  start_process.py -h | --help
+  twnorm -i <input_file> [-o <output_file>] [-m <model_file>] [-b] [-l]
+  twnorm -h | --help
 
 Options:
   -m <model_file>    Model to use in candidates selection
@@ -17,8 +16,8 @@ Options:
 import os
 import sys
 from docopt import docopt
-from main_process import MainProcess
-from basenorm import BaselineNormalization
+from twnorm.main_process import MainProcess
+from twnorm.basenorm import BaselineNormalization
 
 
 def start_process():

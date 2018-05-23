@@ -1,11 +1,11 @@
 import time
-from aux import print_progress
+from twnorm.aux import print_progress
 from collections import defaultdict
-from wta_classifier import WTAclassifier
-from tweets_splitter import Splitter
-from output_builder import OutputBuilder
-from variants_generation import VariantsGenerator
-from candidate_selection import Selector
+from twnorm.wta_classifier import WTAclassifier
+from twnorm.tweets_splitter import Splitter
+from twnorm.output_builder import OutputBuilder
+from twnorm.variants_generation import VariantsGenerator
+from twnorm.candidate_selection import Selector
 
 
 def MainProcess(input_file, output_file, model_file, lemma):
