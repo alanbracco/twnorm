@@ -1,4 +1,5 @@
 import os
+import sys
 import enchant
 from twnorm.tokenizer import MyTokenizer
 from collections import defaultdict
@@ -51,9 +52,16 @@ class Splitter(object):
                 current_id = tweet_id
                 n += 1
             else:
-                # o:original word, t:class, c:corrected word
-                o, t, c = splitted[1].split(' ')
-                corrections[current_id].append((o, t, c))
+                try:
+                    # o:original word, t:class, c:corrected word
+                    o, t, c = splitted[1].split(' ')
+                    corrections[current_id].append((o, t, c))
+                except ValueError:
+                    print("\nWrong correction format.")
+                    print("TweetID:", tweet_id)
+                    print("Expected format: <original_word> "
+                          "<class> <corrected_word>")
+                    sys.exit("Process finished")
         if verbose:
             print('Total tweets:', n)
 
