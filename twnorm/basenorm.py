@@ -10,12 +10,16 @@ from twnorm.output_builder import OutputBuilder
 def BaselineNormalization(input_file, output_file):
 
     print('Initializing resources...')
+    init_start = time.time()
     splitter = Splitter(input_file, verbose=True)
     output = OutputBuilder(output_file, verbose=True)
     wtas = splitter.get_wtas(baseNorm=True)
     correct = defaultdict(dict)
     iv_dict = enchant.Dict("es_AR")
-    print('Initialization finished')
+    init_end = time.time()
+    init_time = time.strftime("%M min %S sec",
+                              time.gmtime(init_end - init_start))
+    print('Initialization finished ({}).'.format(init_time))
 
     accumulated = 1
     tweets_time = {}
