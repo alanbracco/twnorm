@@ -281,8 +281,7 @@ class Evaluator(object):
         if not case_sensitive:
             gold_dict = self.to_lower_case(gold_dict)
             gen_dict = self.to_lower_case(gen_dict)
-            for x in all_tokens:
-                all_tokens[x] = [y.lower() for y in all_tokens[x]]
+            all_tokens = self.to_lower_case(all_tokens)
 
         self.my_write("STATISTICS")
         self.my_write("==========\n")
@@ -293,8 +292,11 @@ class Evaluator(object):
 
     def to_lower_case(self, corr_dict):
         for tid in corr_dict:
-            corr_dict[tid] = [(o.lower(), t, c.lower())
-                              for o, t, c in corr_dict[tid]]
+            if isinstance(corr_dict[tid][0], str):
+                corr_dict[tid] = [w.lower() for w in corr_dict[tid]]
+            else:
+                corr_dict[tid] = [(o.lower(), t, c.lower())
+                                  for o, t, c in corr_dict[tid]]
         return corr_dict
 
 
