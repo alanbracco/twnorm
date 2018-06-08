@@ -1,7 +1,7 @@
 """Evaluate normalization.
 
 Usage:
-  evalnorm -r <gold_file> -g <generated_file> [-o <output_file>] [-n]
+  evalnorm -r <gold_file> -g <generated_file> [-o <output_file>] [-n] [-c]
   evalnorm -h | --help
 
 Options:
@@ -10,6 +10,7 @@ Options:
   -o <output_file>     Output file with normalization performance info
                        [default: stats.txt]
   -n                   Deactivate case sensitive evaluation
+  -c                   Filter gold context-based corrections
   -h --help            Show this screen.
 """
 import os
@@ -19,6 +20,7 @@ from docopt import docopt
 from collections import Counter, defaultdict
 from twnorm.aux import to_str_perc
 from twnorm.tweets_splitter import Splitter
+from twnorm.wta_classifier import WTAclassifier
 
 
 class Evaluator(object):
@@ -276,7 +278,10 @@ class Evaluator(object):
         self.my_write("Recall:", to_str_perc(corr_recall), stdout=True)
 
     def build_output_stats(self, gold_dict, gen_dict, all_tokens,
-                           case_sensitive=True):
+                           case_sensitive=True, no_context_corrections=False):
+
+        if no_context_corrections:
+            gold_dict = self.filter_existing_words(gold_dict)
 
         if not case_sensitive:
             gold_dict = self.to_lower_case(gold_dict)
@@ -298,6 +303,18 @@ class Evaluator(object):
                 corr_dict[tid] = [(o.lower(), t, c.lower())
                                   for o, t, c in corr_dict[tid]]
         return corr_dict
+
+    def filter_existing_words(self, corr_dict):
+        classifier = WTAclassifier()
+        filtered_dict = dict()
+
+        for tid in corr_dict:
+            filtered_words = [(o, t, c) for o, t, c in corr_dict[tid]
+                              if not classifier.check(o)]
+            if filtered_words:
+                filtered_dict[tid] = filtered_words
+
+        return filtered_dict
 
 
 def evaluate():
@@ -328,6 +345,7 @@ def evaluate():
         os.remove(output_file_path)
 
     case_sensitive = not bool(opts['-n'])
+    no_context_corrections = bool(opts['-c'])
 
     gold_splitter = Splitter(gold_file_path)
     gold_dict = gold_splitter.corrections
@@ -339,7 +357,8 @@ def evaluate():
 
     evaluator = Evaluator(output_file_path)
     evaluator.build_output_stats(gold_dict, generated_dict, all_tokens,
-                                 case_sensitive)
+                                 case_sensitive=case_sensitive,
+                                 no_context_corrections=no_context_corrections)
 
 
 if __name__ == '__main__':
