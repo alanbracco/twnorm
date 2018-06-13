@@ -11,6 +11,7 @@ from twnorm.candidate_selection import Selector
 def MainProcess(input_file, output_file, model_file, lemma):
 
     print('Initializing resources...')
+    init_start = time.time()
     splitter = Splitter(input_file, verbose=True, lemma=lemma)
     classifier = WTAclassifier(lemma=lemma)
     variants_generator = VariantsGenerator()
@@ -19,7 +20,10 @@ def MainProcess(input_file, output_file, model_file, lemma):
     wtas = splitter.get_wtas()
     tokenized = splitter.get_analyzable_tokens()
     correct = defaultdict(dict)
-    print('Initialization finished')
+    init_end = time.time()
+    init_time = time.strftime("%M min %S sec",
+                              time.gmtime(init_end - init_start))
+    print('Initialization finished ({}).'.format(init_time))
 
     accumulated = 1
     tweets_time = {}
