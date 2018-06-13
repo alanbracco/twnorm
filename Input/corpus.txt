@@ -1312,7 +1312,6 @@
 948139817052884992	@alferdez Que cuadrazos. Tres pollos al spiedo, todos quemados y siguen dando vueltas. Realmente creen que pueden ser un alternativa electoral?
 948139848329723905	Quien me quiere acompañar a Mc, Betos, 2x1, Burger lo que sea!!! Quierooooo!!!!
 	Mc 0 McDonald's
-	Burger 0 Burger_King
 	Quierooooo 0 Quiero
 948140001258287104	Ojo q a veces criticamos a quienes tarde o temprano nos integran en momentos en los q es lindisimo estar acompañado. Celebro fuerte esto. #LaFotoMenosPensada #potrosUnidos
 	q 0 que
@@ -1321,8 +1320,8 @@
 948140020426297345	#NoCambiaNada mi hermana está  SIN LÍNEA TELEFÓNICA NI INTERNE HACE UN MES @TelefonicaComAr MIENTE dice Fecha y Hora para q VENGA TÉCNICA y te dejan esperando y SE RÍEN Y HAY QUE PAGAR LAS FACTURAS SON CARADURAS Y ESTAFADORES @INFOen140 por favor  RTT VALLAN a robar a España
 	INTERNE 0 INTERNET
 	q 0 que
-	RTT 0 RT
-	VALLAN 0 VAYAN
+	RTT 0 -
+	VALLAN 1 VAYAN
 948140225087332352	Que chomaso trabajar tan temprano que se hagan las 15:30 me quiero ir a dormir
 	chomaso 0 chomazo
 948140256687214592	Alejandro Soto, padre de Aylen, pidió justiciay dijo que la acción de Facundo Solís era predecible. Nota en @El4topoderlt10
@@ -1346,7 +1345,7 @@
 948140790877913088	Ayer me pinto escribirle a la nada porque no le mande el msj, pero fue como si se lo hubiese mandado 😞🙄
 	mjs 0 mensaje
 948140870330671104	mas difícil q la tabla de pi https://t.co/FWjJvyWm9Z
-	mas 0 más
+	mas 1 más
 	q 0 que
 948140879503659008	@SuenaRockNac Estar al frente y darle la mano al piti ,despues cuandoy vuelta para encontrarme con mis amigos siento algo que me pega en la espalda y era esta lista(en la reladad son eran dos pero la otra se la regalé a alguien especial) https://t.co/ZCVy25HhSl
 	piti 0 Piti
@@ -1354,24 +1353,26 @@
 	cuandoy 0 me_doy
 	reladad 0 realidad
 948140915113234432	No le deseo a nadie estar asiiiii
-	asiiiii 0 asi
+	asiiiii 0 así
 948140967969939457	@2067Ariel Mmm no se
-	Mmm 0 mm
-	no_se 0 no_sé
+	Mmm 0 Mm
+	se 1 sé
 948140977981603841	07:35 de la mañana y estoy antojadosima de una milanesa a La caballo con papas fritas 🤦🏾‍♀️
 	antojadosima 0 antojadisima
 	La 0 la
 948141543898132480	Buenassss.... Buen martes y buena jornada, amiguitos y amiguitas!!! 👍#TwitterOn
-	Buenassss 0 buenas
+	Buenassss 0 Buenas
 948141611753594880	Los mates de cafe a esta hora son la gloria..
 	cafe 0 café
 949060574503145474	Si tomas otra marca de cerveza (industrial) después de una Heineken te queres cortar los huevos.
+	queres 0 querés
 949060610381238273	Soy insoportable, pero te amo Black💙🐶 https://t.co/XnfDd2RrQh
 949060613866754050	alguiem quiere ir a mr.lommo
 	alguiem 0 alguien
 	mr.lommo 0 Mr._Lomo
 949060630052528128	no quiero estar acá porfavor llevenme a Bariloche de vuelta
 	porfavor 0 por_favor
+	llevenme 0 llevenmé
 949060659869900800	Alguien que quiera teres? Ahora, ya?
 	teres 0 -
 949060694661566465	Ya elegimos los vinos y el Fernet y la cerveza y el campari y cada vez q decía un número yo le sumaba 1 caja más porqCONOZCO A LOS INVITADOS
@@ -1379,14 +1380,15 @@
 	porqCONOZCO 0 por_que_conozco
 949060742132715520	OCHO y ustedes diciendo "y qui mi dicis di li mini qui miti il nivii" PELOTUDOS https://t.co/OwH2ALQc3f
 	qui 0 que
-	mi 0 me
-	dicis 0 decis
+	mi 1 me
+	dicis 0 decís
 	di 0 de
 	li 0 la
+	mini 1 mina
 	qui 0 que
-	miti 0 meti
-	il 0 el
-	nivii 0 -
+	miti 0 mató
+	il 0 al
+	nivii 0 novio
 949060784868462593	En las vacaciones estoy más al pedo que en la escue... ah no para
 	escue 0 escuela
 949060795928862720	Se me estaría dificultando la traducción de tucumano a mendocino
@@ -1400,15 +1402,14 @@
 	creepers 0 Creepers
 	iuuuujuu 0 iuju
 949060920973590528	Ya habrá otra persona que me erice la piel y se lo va a perder.
-	erice 0 ericé
 949060936161165312	Hay que reirse p9ara no llorar (?
 	p9ara 0 para
 949060951768264704	Como hacerles entender a mis  viejos que no fumen más?
 	Como 0 Cómo
 949060957849968640	a alguien + le pasa q cuando escucha no me arrepiento de este amor de attaque se le viene a la cabeza el VIDEASO de la orga??????😍😍💗💗
 	q 0 que
-	+ 0 más
-	attaque 0 Attaque_77
+	attaque 0 ataque
+	VIDEASO 0 VIDEAZO
 	orga 0 -
 949060974824353792	@ZunigaAnabella No te olvides del campamento de la semana que viene tía Mary
 949060975507976193	Claro, después estamos los que nunca estamos de novio https://t.co/FdceS3cD2a
@@ -1420,7 +1421,7 @@
 949061025214627842	@elsablo6 Espero que los sindicalistas se reúnan en la carce
 	carce 0 carcel
 949061048463699968	Ke linda noticia @MicaelaLis94 que tienen su casita!!!!😙
-	Ke 0 que
+	Ke 0 Que
 949061050690949121	Vos decis que esta piba me dijo esto, me mueeero😍
 	mueeero 0 muero
 949061054109290498	Fue me voy a duchar y muevo por ahí a despejarme.
@@ -1429,14 +1430,12 @@
 949061115060871169	G-E-N-O-C-I-D-A-S https://t.co/qw6xrjn5hb
 	G-E-N-O-C-I-D-A-S 0 genocidas
 949061120559591424	puedo ver crossfit games todo el día
-	crossfit 0 CrossFit
-	games 0 Games
 949061127199252480	AJAJAJAJAJAJAJAJAJAJA ES UN CHISTE
 	AJAJAJAJAJAJAJAJAJAJA 0 ja
 949061128168136705	Cero cocinar
 949061139715035136	Es que están vacacionando!!! No entendés???? https://t.co/77nOwzG6SK
 949061145121390593	@violeyapur es lo mismo que digo yo, y aunque no te importe mas uno que otro no luchan x ambos generos, luchan x parar con la violencia hacia las mujeres nadamas y eso me parexemal :$
-	mas 0 más
+	mas 1 más
 	x 0 por
 	generos 0 géneros
 	x 0 por
@@ -1450,6 +1449,7 @@
 949061206643441665	el que avisa NO traiciona, bss
 	bss 0 besos
 949061209453670401	@ungloboentodas @martinnicolas08 @luigiquemero Seria bueno que tengamos dirigentes que esten a la altura de lo que representa Huracan.
+	Seria 1 Sería
 	esten 0 estén
 	Huracan 0 Huracán
 949061210317746177	Ya está grande la señora...... https://t.co/MJsMxY1hni
@@ -1460,46 +1460,51 @@
 949061217594871808	Todavía ni me fui y ya le estoy diciendo a Black que lo espero allá para salir de joda INTENSO 💯pre
 	pre 0 siempre
 949061237576433664	Esta piba es re distinta alas demás , te juro que me re gusto ,solo necesito su número
-	alas 0 a_las
+	alas 1 a_las
+	gusto 1 gustó
 949061279938998272	Ahita el que no iba a perdonar 😂 me arrepiento no haber hecho lo mismo y iba a estar todo bien 😂😂😂😂😂
-	Ahita 0 ahi_esta
-	y 0 e
+	Ahita 0 Ahi_está
+	y 1 e
 949061286285004800	@camiguzman En realidad eso es un proyecto de ley, pero si, tened razón
-	tened 0 tenes
+	tened 0 tenés
 949061295525056514	mi mamá se enojo pq estuve todo el día en mi casa, después si salgo mucho se queja.. quien t entiend mujer, decidite
+	enojo 1 enojó
 	pq 0 porque
 	t 0 te
 	entiend 0 entiende
 949061328928460800	Estoy escabiando mucha birra últimamente, qué lindo jajaja
 	jajaja 0 ja
 949061346456301570	GUACHO MD LA RE BAJÓ XQXQXQXQXQXQXQXQ NO QUIERO ENTERARME DE NADA MAS SON 1HIJOS DE PUTA
-	MD 0 me
-	XQXQXQXQXQXQXQXQ 0 porque
-	MAS 0 más
-	1HIJOS 0 unos_hijos
+	MD 0 ME
+	XQXQXQXQXQXQXQXQ 0 PORQUE
+	MAS 1 MÁS
+	1HIJOS 0 UNOS_HIJOS
 949061396494520320	Me había olvidado de la 4ta temp de Black mirror, ya esta ya me instale
 	4ta 0 cuarta
 	temp 0 temporada
-	mirror 0 Mirror
+	mirror 1 Mirror
+	esta 1 está
+	instale 1 instalé
 949061408007827456	e amigo activa, deja de ser tan muerto y despertate de una ves, chamuyate alguna o algo deja de esperarrr
-	e 0 eh
-	ves 0 vez
+	e 1 eh
+	ves 1 vez
 	esperarrr 0 esperar
 949061442841563136	Hace como una hora se durmió, unas ganas de despertarlo 🙄
 949061456443641858	Si te fallo es cosa de pendejo🤘🏽
 949061477318709249	teo y joaquin me llamaron locos la mejor conversacion de lavida
 	teo 0 Teo
 	joaquin 0 Joaquín
+	conversacion 0 conversación
 	lavida 0 la_vida
 949061513687552000	@naucitoh Todo bien. No lo tomé así. Solo te aclaré. Abrazo.
 949061535313399808	Mi hermano me regalo una cuemta de Netflix👐Sin dudas es el mejor
+	regalo 1 regaló
 	cuemta 0 cuenta
 949061543982977024	5 veces me hice el DNI y me salta un error de datos.. Creo q soy extaterrestre😂..😤 https://t.co/6PezFD5Tfr
 	q 0 que
 	extaterrestre 0 extraterrestre
 949061590426574848	la locura apasionada del amor 💙 https://t.co/0RtXX8FE6a
 949061592997560321	Entren a este tuit y lean la cadena https://t.co/8a4FtWOTE7
-	tuit 0 tweet
 949061599779868672	La pereza es tu peor enemigo.
 949061601285627904	Me encantaría estar en el campo. Tranquila
 949061627852349441	dulce de leche en todas sus expresiones😍👅 https://t.co/g9V1hNOsLB
@@ -1508,7 +1513,7 @@
 949061758433529856	porque si gano to los mios ganan
 	to 0 todos
 949061772547444739	Mmmmmm que bombón!!!! https://t.co/LweJcPvupY
-	Mmmmmm 0 mm
+	Mmmmmm 0 Mm
 949061814834384897	Hoy veía a los pibes buscando las remes de la promo y me agarró unas ganas de tener 17 😣
 	remes 0 remeras
 	promo 0 promoción
@@ -1516,11 +1521,13 @@
 	tw 0 Twitter
 	insta 0 Instagram
 949061856056041472	Entre a las 7, me fui a las 12 a casa y volvi a las 13 a uno.  Y salgo a las 22 (ME FALTA EL COLCHON)
+	Entre 1 Entré
 	volvi 0 volví
 	COLCHON 0 colchón
 949061924637102082	Los cap. viejos de los Simpsons 👈😍
 	cap 0 capítulos
 949062032220975105	Bien ahí que ya empeze a laburar no veo la hora de que me paguen para ir a nike jajaj
+	empeze 0 empecé
 	nike 0 Nike
 	jajaj 0 ja
 949062166149255174	@NacionalAM870 @DIRECTVar @NacionalCordoba @NacionalAM540 @Deportes870 Van a transmitir como depedian a lxs empleadxs de la radio en directv tambien?
@@ -1532,28 +1539,29 @@
 	tambien 0 también
 949062234759712768	Que hace la municipalidadd de rosario para prevenir los  archi conocidos cortes luz ??? Me pueden decir?????? Hdp
 	municipalidadd 0 municipalidad
-	rosario 0 Rosario
+	rosario 1 Rosario
 	archi_conocidos 0 archiconocidos
 	Hdp 0 HDP
 949062365080969216	vos tendrías que estas enojado? en todo caso yo soy la que tiene q estarlo
-	estas 0 estar
+	estas 1 estar
 	q 0 que
 949062412145233922	Solteraaaaaaaaaaaaaaaaaa jajajaja
-	Solteraaaaaaaaaaaaaaaaaa 0 soltera
+	Solteraaaaaaaaaaaaaaaaaa 0 Soltera
 	jajajaja 0 ja
 949062465161220096	Todo pasa por algo y ahora lo creo. Tendría que estar vacacionando en NY, pero por terceros no pudimos ir.  Ahora están en estado de emergencia por el frío...
 	NY 0 Nueva_York
 949062505741119488	Y ahora que regresas tu pretendes que este juego continue y digo no
-	continue 0 continúe
+	continue 1 continúe
 949062555712049153	Truco, Rodrigo, fernet y un puchito, ¿qué ondix?
 	ondix 0 onda
 949062583495069696	Hay q ser crack para fesfriarse en verano🖑
 	q 0 que
 	fesfriarse 0 resfriarse
 949062588624769024	Como me iria a la pileta del club pero no me pongo ese gorrito ni a paaaaaalo
-	Como 0 cómo
-	paaaaaalo 0 palos
+	iria 0 iría
+	paaaaaalo 0 palo
 949062639807811585	Si querés podes esperar y pensar en tod@s. Pero ganó la desesperación.
+	podes 0 podés
 	tod@s 0 todos/as
 949062658187321344	Ya fue, soy horrible pwro no impprta #SelfieForDabru https://t.co/v2wi76yxOh
 	pwro 0 pero
@@ -1565,17 +1573,18 @@
 	promo 0 promoción
 	promo 0 promoción
 949062697882136576	@alejoanm @Agust1nBertoni Eia no eh nada solo fuee 1 tryst pasa2
-	Eia 0 ella
+	Eia 0 Ella
+	eh 1 es
 	fuee 0 fue
 	1 0 un
 	tryst 0 triste
 	pasa2 0 pasado
 949062706274938880	Nose porque me pongo asi , soy una terrible pelotuda 🙁
-	Nose 0 no_sé
+	Nose 1 No_sé
 949062706807607301	@sasuketrash ya encendiste las velitas negras?
 949062758720593920	La última vez que se fueron mis viejos no me mori porque estaba de novio, veremos que pasa esta ves
 	mori 0 morí
-	ves 0 vez
+	ves 1 vez
 949062761069367296	Hasta cuando duerme es hermosa 😍 https://t.co/uWG1eUDHwc
 949062762860351488	Serie o peli?
 	peli 0 película
@@ -1590,32 +1599,36 @@
 	peesona 0 persona
 	q 0 que
 949062824445333504	jua q se haga mover
+	jua 0 ja
 	q 0 que
 949062863682981888	Otra vez corte de luz buenos aires
-	buenos_aires 0 Buenos_Aires
+	buenos 1 Buenos
+	aires 1 Aires
 949062884734193664	Y para ir a sufrir y llorae al kinesiologo
 	llorae 0 llorar
 949062885199765504	De verdad ? Agarrá un libro de biología mujer! 🤦🏼‍♀️ https://t.co/gZYdUgfamq
 949062885728243712	@SabrinaMazzochi Najajajaja q mala
-	Najajajaja 0 ja
+	Najajajaja 0 Ja
 	q 0 que
 949062887389192193	@yeraalfonzo1 Hubieses venido a la mía.
 949062888643231744	Este vientito huele a tormentita.
 949062910126559232	No tengo palabras  @30SECONDSTOMARS https://t.co/ENXXXbw3H7
 949062897795289089	No doy mas wacho hace cuanto que no hacia nada 😣
 	wacho 0 guacho
-	cuanto 0 cuánto
-	hacia 0 hacía
+	hacia 1 hacía
 949062919190405120	@micaforconi Aaa bueno cambio de fecha jajaj
-	Aaa 0 a
+	Aaa 0 Ah
 	jajaj 0 ja
 949062973649309696	estuve deprimida todo el dia y para dejar de estarlo entre a tw ahora estoy mucho mejor
+	dia 0 día
 	tw 0 Twitter
 949062974395834369	increible como me arruina la existencia mi mama por diosssssssss
-	mama 0 mamá
+	increible 0 increíble
+	mama 1 mamá
 	diosssssssss 0 dios
 949062980070715394	Necesito una remera de stranger things 😍
-	stranger_things 0 Stranger_Things
+	stranger 1 Stranger
+	things 1 Things
 949062983833014272	no comprendo
 949062989616992257	Fascinante organización 👌
 949062991919673344	@vancouverIove Con mucjo cabello y barba jamie estaba sensacional
@@ -1625,43 +1638,40 @@
 949063016519274497	No me estarían cerrando las cosas en mi cabezota
 949063071871438848	@JuliWoj14 Cuando quieras amigo vos sabes como es la movida tropical
 949063072823545856	Hora picó para el mate amargo 👌
-	picó 0 pico
+	picó 1 pico
 949063098098429956	@gregorio_rojass Goloso
 949063104427646977	La historia de mi vida https://t.co/M1XjYChCSi
 949084721723641856	@barbarammzz @barbaracalmate AAAAaaaaaaAAA ME ALTERAS
-	AAAAaaaaaaAAA 0 a
+	AAAAaaaaaaAAA 0 AH
 949084727000096770	@juan_amorin @pepesiracusa Que asco...si fuese su hijx sentiría vergüenza ajena...lamentable!
 	hijx 0 hijo/a
 949084739465510914	No puede ser tan cobani este wsp! https://t.co/qAFJrP4Yhr
 	wsp 0 WhatsApp
 949084744578424833	algun dia superaré el remix de pepon dj?
-	pepon_dj 0 Pepón_DJ
 949084757928931329	@grifrias Lessssstoooo
-	Lessssstoooo 0 listo
+	Lessssstoooo 0 Listo
 949084763347963904	Me hacen asar estas cosas hno,  nose quien fue pero que necesidad de abollarme el auto loco 😤😢
-	asar 0 pasar
 	hno 0 hermano
-	nose 0 no_sé
+	nose 1 no_sé
 949084784734728194	@MedicenKaru Evidentemente deberia hacerse cargo visa ...darme los datos de cuando y como se hizo esa compra y demas.. pero no pueden pasar esa información, mas que pasarme el lick de la pag de ellos por email
 	deberia 0 debería
 	visa 0 Visa
-	cuando 0 cuándo
-	como 0 cómo
 	demas 0 demás
-	mas 0 más
+	mas 1 más
 	lick 0 link
 	pag 0 página
 949084814434594821	Futbol con Pibes ⚽️
-	Futbol 0 fútbol
 949084866678853638	@JimeMiranda14 ES VERDAD VENIS VOS TAMBIENNN, era para agus pero obviamente q vas a venir
-	TAMBIENNN 0 también
+	VENIS 0 VENÍS
+	TAMBIENNN 0 TAMBIÉN
 	agus 0 Agustín/a
 	q 0 que
 949084893140717568	Ed sheeran es una caricia al corazón
-	Ed_sheeran 0 Ed_Sheeran
+	sheeran 0 Sheeran
 949084914733015040	Me artaronnnn
-	artaronnnn 0 artaron
+	artaronnnn 0 hartaron
 949084955853934592	@MelyCorazon Mejor es ponerse a rallar y entrarle de a pedazitos...jajaja
+	pedazitos 0 pedacitos
 	jajaja 0 ja
 949084979870519303	@lionelftgago si ncsita 1 reemplazo q vaya tu hno blda ahre hablaba cortando todas las palabras alto acv
 	ncsita 0 necesita
@@ -1676,18 +1686,17 @@
 	julieta 0 Julieta
 949085041732276224	Esto no es música, es droga
 949085094937055232	Que pase el tiempo Volando por favor, me quiero tatuaaaaar!!
-	Volando 0 volando
 	tatuaaaaar 0 tatuar
 949085101182373889	Mi vieja bardeandome porque ella tiene aire acondicionado y yo no oseaññññññ
-	oseaññññññ 0 osea
+	bardeandome 0 bardeandomé
+	oseaññññññ 0 o_sea
 949085109730365441	Que asco que son laa lesbianas de las estrellas. Dejate de joder
 	laa 0 las
 949085127036030978	@Matii_016 Un cordobe si, el ferne no
 	cordobe 0 cordobés
 	ferne 0 fernet
 949085131398139904	@AngeldebritoOk Huuu que fuerte   Respuesta !! es nesesario 🤔
-	Huuu 0 hu
-	Respuesta 0 respuesta
+	Huuu 0 uh
 	nesesario 0 necesario
 949085148737306624	No me puedo serntir tan mal
 	serntir 0 sentir
@@ -1698,14 +1707,17 @@
 949085188465799168	Tipo que todas las sras grandes siempre me están diciendo ARANCELI 😂 Tan difícil mi nombre no es!! Ajjajaja
 	sras 0 señoras
 	ARANCELI 0 Araceli
-	Ajjajaja 0 ja
+	Ajjajaja 0 Ja
 949085196086861824	@smiledwithgrace Tiiiii es mi hermano
-	Tiiiii 0 si
+	Tiiiii 0 Si
 949085200113373185	@xFaRgAnx Te queria informar de que un usuario de YouTube. Más exactamente "XDantonio GamerXd" ah copiado el logo de tu canal. No se si te parece bien a ti o no. Si yo fuese tu lo reportaría pero bue.
+	queria 0 quería
+	ah 1 ha
+	tu 1 tú
 	bue 0 bueno
 949085204106416130	Nono cómo cambiaron los dos, Alfred sobre todo. https://t.co/wdyfvTTeQS
 949085224129966080	@ElyValinotti @PiiaReynaldii Vaaamosss en bondiii, desoues nos volvemos a cba. 🙈🙈😂
-	Vaaamosss 0 vamos
+	Vaaamosss 0 Vamos
 	bondiii 0 bondi
 	desoues 0 después
 	cba 0 Córdoba
@@ -1714,28 +1726,29 @@
 949085264588177409	Hoy fiesta en la playa babyyyyyyyyyy 😎😎
 	babyyyyyyyyyy 0 baby
 949085265288626176	A todo el mundo me pregunto si tiene helado jajaja alguien que se apiade de mi porfa y me traiga
-	me 0 le
+	me 1 le
 	jajaja 0 ja
 	porfa 0 por_favor
 949085265661972482	Cuando alguien que tenes bloqueado mira tus estados de wa https://t.co/0Bmh9wpBml
 	wa 0 WhatsApp
 949085294174916608	Seraa paraa mi ese estado de face? Porque yo no creo estar en sus pensamiento yo estando lejos de sus ojos. 🙁🙁 Me dejo dudando jajaja
-	Seraa 0 sera
+	Seraa 0 Será
 	paraa 0 para
 	face 0 Facebook
 	jajaja 0 ja
 949085321710505985	Con stefano parecemos mas hermanos que madrina y ahijado 😂 nos vivimos peliando 😂
 	stefano 0 Stefano
-	mas 0 más
+	mas 1 más
 	peliando 0 peleando
 949085437846540289	Nahuel si tuvieras Twitter te putearia https://t.co/CpKVW5xuGG
+	putearia 0 putearía
 949085503734902784	bue estoy re minita, aguanta un toke
 	bue 0 bueno
 	toke 0 toque
 949085558017536000	Está en este preciso momento sentando en la mesa comiendo con mis abuelos  😀 https://t.co/se7UODdCzK
 949085600585519104	no se pero aaca me estoy muriendo d calor
-	no_se 0 no_sé
-	aaca 0 aca
+	se 1 sé
+	aaca 0 acá
 	d 0 de
 949085629345927168	@militofancy k kosa
 	k 0 que
@@ -1743,14 +1756,15 @@
 949085628435718150	Feliz noche para tod@s. ✌😍❤ @nacholacriatura https://t.co/9x0x8NRNxj
 	tod@s 0 todos/as
 949085642616655872	Habra algo mas impuntual que german y manuel? Si los dos juntos
-	mas 0 más
+	Habra 0 Habrá
+	mas 1 más
 	german 0 German
 	manuel 0 Manuel
 949085681724293121	las acotaciones de @serenaguaragna1 nunk faltan ni fallan https://t.co/jJGTQabJsI
 	nunk 0 nunca
 949085746606034945	Un ej mas del oposicionismo x deporte. Aporte 0. Con oposición tan básica, jamás saldremos adelante. https://t.co/Rm3X0QjaFi
 	ej 0 ejemplo
-	mas 0 más
+	mas 1 más
 	x 0 por
 949085810757963783	El suyo aaaaaa https://t.co/EQC2KVPoT7
 	aaaaaa 0 a
@@ -1760,38 +1774,38 @@
 	q 0 que
 	c 0 con
 949085797722009605	Wacho quiero un amigo o amiga para mandarnos fotos nuestras en wsap y cargarnos de risa por ser altos memes 😂😂 LPM porque no tengo amigos así ? Son re ortivass 😒
-	Wacho 0 guacho
+	Wacho 0 Guacho
 	wsap 0 WhatsApp
-	cargarnos 0 cagarnos
+	cargarnos 1 cagarnos
 	ortivass 0 ortivas
 949085830387204097	@CandeRuartee Oh te amo con to mi corazon aaaaaahr
 	to 0 todo
 	corazon 0 corazón
 	aaaaaahr 0 ah
 949085839732199424	Me da un nose que caundo dicen "Gracias por ELEJIR bien a tu novix" no Porque nadie elije de quien se enamora. Porque es como que yo "elija" a mi idolo no es asi, uno se va encariñando con esa persona especial No se trata de elejir con quien queremos estar
-	nose 0 no_sé
+	nose 1 no_sé
 	caundo 0 cuando
+	ELEJIR 0 ELEGIR
 	novix 0 novio/a
-	Porque 0 porque
+	elije 0 elige
+	idolo 0 ídolo
 	asi 0 así
-	No 0 no
 	elejir 0 elegir
 949085845776162821	No se puede uno sentar afuera a tomarse un fernet porque estos mosquitos del orto te joden  -.-
 949085877220855809	Me saca de mis cabales el nivel de homofobia que maneja mi nona por favor que mente cerrada🤦🏼‍♀️
 949085879087390720	@NunkMasKK No entiendo? Que lee importa si les paga o no el Gobierno? Que patalee todo lo que quiera, seguro a el le pagaban los K. Cual es?
-	lee 0 le
-	patalee 0 pataleé
-	el 0 él
-	K 0 Kirchner
+	lee 1 le
+	el 1 él
 949085929209323520	@Andrelosan Vieron quién es? Googleen!!
-	Googleen 0 -
 949085932896038913	Por gil y burro ja https://t.co/9VXc7Bsx3T
 949085933709783042	descubrí que amo el turrón de maní
 949085943193128960	Soy la única q no se animó a etiquetar al enano en la slfie jajaja qué vergüenza no me da la cara sorry #SelfieForCasanova
+	q 0 que
 	slfie 0 selfie
 	jajaja 0 ja
 949085988692922368	esta es la primera vez q no queme algo mientra cocinexd
 	q 0 que
+	queme 1 quemé
 	mientra 0 mientras
 	cocinexd 0 cocino
 949086050026184704	@ladyprecarizada Y vos menos pendeja!!!! No hay q ser mujer para saber q un aborto ea un asesinato. Un poco de materia gris x aca pleaseeeee
@@ -1807,6 +1821,7 @@
 	x 0 por
 	tel 0 teléfono
 949086200958193665	en mi primer dia haciéndome cargo de la casa hice que explote el calefon
+	dia 0 día
 	calefon 0 calefón
 949086219576791040	Estoy  e n a m o r a d í s i m a, me tiene así😍
 	e_n_a_m_o_r_a_d_í_s_i_m_a 0 enamoradísima
@@ -1820,12 +1835,14 @@
 949086314225381376	Ojalá algún día deje de comerme letras y escriba bien
 949086339093487616	Quiero arrancar el gym me iba a ir a correr y termine en mostaza,  asi no se puede
 	gym 0 gimnasio
+	termine 1 terminé
 	mostaza 0 Mostaza
 	asi 0 así
 949086374757568512	Tú me partiste el corazón  Pero mi amor no hay problema, no no
-	Pero 0 pero
 949086406160371714	Fui al gym, camine 2,3k de ida a la pileta, nade 1,6k y camino 2,3k de vuelta. O llego a la pretemporada o llego.
 	gym 0 gimnasio
+	camine 1 caminé
+	nade 1 nadé
 949086409050218496	@MelerEzequiel Ey!  Te estoy escribiendo por Messenger!
 949086432508960768	mil maneras de morir y no sd me acurre ninguna que no sea pegarme 1tiro pero no tengo COMO lloro
 	sd 0 se
@@ -1835,78 +1852,155 @@
 949658632836321281	Quiero Mc:/
 	Mc:/ 0 McDonald's_:/
 949658690944229376	Vallas con quien te vallas ninguno de esos cabrones da la talla 🎶
+	Vallas 1 Vayas
+	vallas 1 vayas
 949658723210932225	A mi me mandas cosas tiernas y te las leo 20 veces😂
 949658751983935488	hoy ya dije NO VOY A TOMAR VOY A LLEGAR BIEN A CASA (igual noc) ahre
+	noc 0 no_sé
+	ahre 0 ah_re
 949658837098946560	@EnzoPaez1913 Yo estuve bien anoche grax por preguntar
+	grax 0 gracias
 949658919512702978	la odio por dios
 949658931143565312	sisissiis yooo jaja https://t.co/V8Nb7by9SM
+	sisissiis 0 si
+	yooo 0 yo
+	jaja 0 ja
 949658946389860353	La cerveza se toma bien FRIA  hno
+	FRIA 0 FRÍA
+	hno 0 hermano
 949658953398587393	Que ganas de una hamburguesa de mac
+	mac 0 McDonald's_:/
 949658954992320512	@mis2centavos @andyfreire El que tiene el currito permanente con la empresita de venta de articulos de oficina? 🤦🏼‍♀️
+	articulos 0 artículos
 949659027285381120	Que quilombo cuando se meten las familias papá. Olvidate marta hasta el 2030 no toco un pito
+	marta 0 Marta
 949659038622642177	@SilEverywhere Ajajaa...buena esaaaa!! Vicky Donda ..tenés labuto que hacer ! Teléfono !
+	Ajajaa 0 Ja
+	esaaaa 0 esa
+	labuto 0 laburo
 949659148932788230	Buenas nocheeeeess mendozaaaaaaa!! Al filo del anochecer mi amorrrrrr 🎵
+	nocheeeeess 0 noches
+	mendozaaaaaaa 0 Mendoza
+	amorrrrrr 0 amor
 949659181027643392	Re linda noche 😍
 949659189596557317	Quiero seguir durmiendo👊
 949659193593778178	Yo no me rescató ni saliendo sola.
+	rescató 1 rescato
 949659274334089217	Si tú eres tu peor enemigo y pierdes contra ti mismo, igual ganas. Se entiende?
 949659326666428417	Desde q naci ma o menoooo https://t.co/DISAnr0shp
+	q 0 que
+	naci 0 nací
+	ma 0 más
+	menoooo 0 menos
 949659459999199237	we q dice https://t.co/cEDCopImhl
+	q 0 que
 949659600483217408	Na mis viejos se pasaron con el regalo de reyes 💕💕
+	Na 0 No
 949659621622345729	Ya tengo un grupo de wsp para buscar depto a ver que sale de eso ... !!!
+	wsp 0 WhatsApp
+	depto 0 departamento
 949659623770017799	@fedesenatoree Ups no la bardees JAJAJAJJAA
+	JAJAJAJJAA 0 JA
 949659679277404165	Me olvidé la llave y alarme de cas estoy en el auto enfiestada
+	alarme 1 alarma
+	cas 0 casa
 949659843618656256	Quiero vivir dos veces, para poder olvidarrrrrrrteee
+	olvidarrrrrrrteee 0 olvidarte
 949659844285489152	Su sonrisa me atrapó
 949659845103357954	No dormí nada😭😭
 949659865013719041	Este es mi año https://t.co/Dcw6JUHbAY
 949659873112985600	Gracias por dejarme en paz
 949659876929802241	tengo que entender que ya no me aguanto la gira
 949659977496629248	@Leilagomezok3 @OfficialTeamTNT @nalgon_ass @almanegracharge @lacolaperfil @DiosasSud @alineculonafans @David_69__ @producciones195 Es exitante el blanco en tu kola
+	exitante 0 excitante
+	kola 0 cola
 949660053426057216	Ojalá que se den las buenas
 949660057083531265	Buen día!!
 949660067518930944	Me pregunto porqué es tanta la diferencia de costo entre la asistencia al viajero de una compañía y de otra. 🤔
 949660069985169408	Ni se q me voy a poner esta noche
+	se 1 sé
 949660099055890432	@martinezsaan Aaaah booooenoooo lo leo y no lo creo
+	Aaaah 0 Ah
+	booooenoooo 0 bueno
 949660133470212096	No sé de quién fue la idea de los tríos pero sepan que los detesto. Besos #OTDirecto6E
 949660151216209920	Voy a dormir siesta toda la tarde
 949660197169123329	@Miusbitches Un Gmail ok
 949660283139739648	Lo mejor de que haya vuelto Carlitos es que dejó el corte de pelo feo que tenia allá en China
 949660290953764864	Hay olores que se deberían prohibir y lo digo enserio
+	enserio 1 en_serio
 949660315150700544	Mi tia me está cagando a pedo pq dice que estoy muy flaca
+	tia 0 tía
+	pq 0 porque
 949660344452042753	Deci que no me emocione,si sabia ls respuesta😆
+	Deci 0 Decí
+	sabia 1 sabía
+	ls 0 la
 949660384008515585	Anoche me desvele y no dormi casi nada. No veo la hora salir y dormir todo el dia 😥😣
+	desvele 1 desvelé
+	dormi 0 dormí
+	dia 0 día
 949660456091729920	@morgancarlota @MarceloOpen La Sra tiene la cintura muy arriba o directamente no tiene?
+	Sra 0 Señora
 949660470490910720	Cerrando la semana laboral trabajando 18 horas 💪💪💪
 949660484567031808	ir en la moto con crocs, fascinante pero peligroso
+	crocs 0 Crocs
 949660532835053568	@MarilenLaustsen Trank amiga, lx vamos a cagar a piñas!!!
+	Trank 0 Tranquila
+	lx 0 lo/a
 949660628771311616	Todo la mañana con la campera y el pantalón largo, y pretendo estar así todo el día
+	Todo 1 Toda
 949660668910850048	Que onda esos msj jajaja ñe
+	msj 0 mensaje
+	jajaja 0 ja
+	ñe 0 -
 949660699718012928	@Luchisimoo La banana se come después de entrenar
 949660787605426176	Ohhhh pagaba locuras,que lastima che
+	Ohhhh 0 Oh
 949660860749942784	Me cruzas toda la piel, es mejor que cualquier droga.
 949660866139607043	@marley_ok X favorrr 😍😍
+	X 0 Por
+	favorrr 0 favor
 949660888587493376	@AkaBujones te falta pierna Bro ahre decia
+	Bro 0 Brother
+	ahre 0 ah_re
+	decia 0 decía
 949660913619165184	Gracias @NetflixLAT, me termine otra serie en 4 hs y debería estar estudiando
+	termine 1 terminé
+	hs 0 horas
 949660915565322240	@CarlosMurro @infobae Un par de plomo. Y esto se encamina fácilmente. Que no te quede dudas. Incluyendo a gente de los DD.HH.
+	DD.HH. 0 Derechos_Humanos
 949660970972008449	Si Tévez se fue y volvio miles de veces. Porque no vovles vos y te quedas para siempre? @aguerosergiokun
+	vovles 0 volvés
 949661044456263680	Cómo pueden dormir estando de vacasiones.? Cosas que nunca voy a entender.!
+	vacasiones 0 vacaciones
 949661104594194440	Tengo 5 días de retraso debo estar embarazada del espíritu santo
 949661120347992064	Viajar hoy o mañana. Esa es la cuestión.
 949661119983038465	Raya al medio con pañuelo, tatuaje en la piel
 949661227931848704	ESTOY DE VACACIONES IUJUUUU
+	IUJUUUU 0 IUJU
 949661238405091328	Como le metimos al gym
+	gym 0 gimnasio
 949661286031417345	me pasa con uds @ZoeFanelli @agustincor2ba https://t.co/fHHLFwYmrX
+	uds 0 ustedes
 949661370517245952	Que alguien me explique como se sigue despues de esto porque la verdad yo no se.
+	despues 0 después
+	se 1 sé
 949661370651463680	@SharkAlberto19 Aún merece estar en la selección. Ojalá lo podamos ver bajo los 3 palos en el mundial
 949661375537786880	Me muero de amor 💗 https://t.co/4Eott3Sg40
 949661377018425344	@RCentraI En la cancha son 11 contra 11,que problema te hacés hay q jugar a romperlos y listo
+	q 0 que
 949661448187367429	@carosalomoon99 Uuuuh para ponerlo en un cuadro hacia mucho que no me chupaba asi
+	Uuuuh 0 Uh
+	hacia 1 hacía
+	asi 0 así
 949661585152335875	Quiero ir a las termaaasss
+	termaaasss 0 termas
 949661615800160256	Cuando entra indumentaria nueva este me manda fotos y yo no tengo ni 2 pesos shoro
+	shoro 0 -
 949661624159363074	Mamá le dice al perro que me venga a despertar. El forro viene y se me sube arriba de la cabeza
 949661656908484608	como verga se conectará esta app al tele
 949661669881413632	Muchachos no pierdan la esperanza Ramón ya esta por llegaaar!!
+	llegaaar 0 llegar
 949661696297177088	no puede ser más lindo https://t.co/qN2xBYmWYC
 949661787250724864	Se va dando pasito a pasito. Espero que sea un gran año👌
 949661790799106049	Fernet🤓
@@ -1916,121 +2010,269 @@
 949661875091976192	Me estaría molestando hacer sociales con la gente
 949661887251255299	Si me lo ofreces vos me voy hasta la luna @kevsho9 🌝 https://t.co/m0m0KYqfYc
 949661896059310080	@juliiquevedo1 Oww gracias x todo a vos mi amor te amo te amoo😍😍😍😍
+	Oww 0 Ow
+	x 0 por
+	amoo 0 amo
 949661961033306112	anoche soñé con mi ex y hoy llegué tarde al trabajo ja junate esas indirectas in your face
 949661970403332096	Con sus besos cura to' mis males, en su cuello marque mi iniciales💃💃
+	to' 0 todos
 949661989185507328	Lo que nos reíamos con nahuel mientras bailabamos y hablábamos jajaja un groso mi tio 😂
+	nahuel 0 Nahuel
+	jajaja 0 ja
+	tio 0 tío
 949662075495813120	Laurita va a estar en el bailando el año que viene? #angelresponde
 949662076204650496	Naaa si yo me zarpó de boluda🙄🙄👌
+	Naaa 0 No
+	zarpó 1 zarpo
 949662109968855040	Ahhhhh BOE!!! Cerrame la ocho https://t.co/n3bymyPB7v
+	Ahhhhh 0 Ah
+	BOE 0 BUENO
 949662123092738048	Me encanta saber que las mentiras tienen patas cortas.
 949662132370661382	Por un 2018 sin acoso callejero
 949662168932343808	Cómo descansar al Presidente de los EEUU en el primer párrafo de la nota uno del @nytimes https://t.co/k5aFU5oDDb
+	EEUU 0 EE.UU.
 949662175353888770	A M O R💞💫 https://t.co/IKjIqiZnzM
+	A_M_O_R 0 AMOR
 949662181620092928	💗💗💗 en Lanús Partido https://t.co/s4pJ5OTn1S
 949662217988902912	@NainKaren Weno, activa mates y cada uno se lleva su bombilla we jajaja
+	Weno 0 Bueno
+	jajaja 0 ja
 949662224917786624	Que rico es el fernet bolo
+	bolo 0 boludo
 949662246115913729	@jeree96 But ella se pierde todo lo que tengo para ofrecer
 949662262649851905	Mc con los peques.
+	Mc 0 McDonald's
 949662270417719299	voy a preparar una tortita para merendar con mis amigas ❤
 949662294715387904	Este carnicero es genuinamente nacional y popular.. https://t.co/SOPyHI7Qln
 949662321223323650	@MarieCintioni Ud encandila !!!!!
+	Ud 0 Usted
 949662324197117953	Incomprable era... tal cual!!! https://t.co/TU3VHsXmYS
 949662326361387008	Mina más odiosa que Fernanda no debe haber 😂
 949662401640779776	Aca loa tenes al sorete. https://t.co/7q7KaHbvnB
+	Aca 0 Acá
+	loa 0 lo
+	tenes 0 tenés
 950485398215692288	No soy tu pais ni vos me presidente
+	pais 0 país
+	me 1 mi
 950485449516224512	@dievalen @alfajorperdido ¿Cuánto vale en Ezeiza cada alfajor?¿100 mangos?
 950485459502817281	#3AñosGS Que orgullosa estoy de vos miamor @gonzalosoloaok https://t.co/A5DJTji9wf
+	miamor 0 mi_amor
 950485487403356161	@MaitteFerreyra espero que este año sigas con esa hermosa sonrisa amiga , este y todos los qu t quedan
+	qu 0 que
+	t 0 te
 950485503262035970	Me entró agua en el oído y no me lo puedo sacar, 100pre pelotuds
+	100pre 0 siempre
+	pelotuds 0 pelotudos
 950485523507924997	Con el bombon que me cruze a la salida de Khalama 😍 @AgusReyero1 https://t.co/jneFw19NfI
+	bombon 0 bombón
+	cruze 0 crucé
 950485527156883457	@_brisayanet yo mas bb
+	mas 1 más
+	bb 0 bebé
 950485535612702726	Uds bien? https://t.co/Zr0gAoBiAa
+	Uds 0 Ustedes
 950485539693658113	Que ganas de estar en miami parte 7899 Ahre
+	miami 0 Miami
+	Ahre 0 Ah_re
 950485577648001025	@itsjoelpimentel siguemeeee xfis
+	siguemeeee 0 sigueme
+	xfis 0 por_favor
 950485594509053952	@dcerono Shhhhh 😉
+	Shhhhh 0 Sh
 950485621176496129	La esperanza es lo último que se pierde https://t.co/BflZX4tkfY
 950485623336587269	@gabukrause 'cuchame una cosita, si vuelvo de mis vacaciones y estás, vos ponés la casa y yo las birras. tepa?
+	'cuchame 0 escuchame
+	tepa 0 te_parece
 950485644094197760	Hoy si o si lavo la moto
 950485688599957504	6 años después,  volvemos a buscar energía de la buena! #Vacas
 950485692886540294	Quiero ir al teatro y mi mama no quiere 😢
+	mama 1 mamá
 950485731750940672	Porq no soy Megan Fox? 😭😭😭😭😭😭😭😭😭😭😭😭😭
+	Porq 0 Porque
 950485749283082245	@willyindavera21 @Macaren09789482 Dioso vos 😎😎
+	Dioso 0 Dios
 950485764076425218	yo me visto re crota y sin maquillaje siempre que onda https://t.co/NUIQfLmBV9
 950485795986690053	No entiendo a mi pen drive. Pasa de un tema de Alma Fuerte a uno de Ricardo Arjona.... Tengo que cambiar de voz a cada rato. 😁
 950485883987349504	@NicoFariasss @Lozafran12 El barrio nomas favorece a peru a nadie más
+	nomas 0 nomás
+	peru 0 Perú
 950486039470239744	@elcarpo sean 4 megapixeles o 30 mega pixeles la foto se vè igual en un monitor....se vè igual cuando la imprimis...la gente todavìa no se diò cuenta que mas megapixeles solo sirven para hacer zoom o imprimir gigante
+	vè 0 ve
+	imprimis 0 imprimís
+	todavìa 0 todavía
+	dìo 0 dio
+	mas 1 más
 950486042188099584	Que asco amigo, EL mal humor que estoy manejando😑🤐
 950486067962097665	@NahuelServino Si estuviera en Buenos Aires te invitaría
 950486072743596033	Que lindo sería poder vencer al maldito destino.... maldito.
 950486085364322311	Semejante siesta metiii
+	metiii 0 metí
 950486097775202304	No juego mas al clash me canso
+	mas 1 más
 950486121661726720	Me hice una almohada con la arena, hablame de ser morsa😂
 950486130872512512	@aetchebarne Agustin una verdadera verguenza q se hagan compras sin Licitacion huele a lo peor de la corrupción de la clase Politica de los ultimos 70 años. Era Cambiemos no mas de lo mismo.
+	Agustin 0 Agustín
+	verguenza 0 vergüenza
+	q 0 que
+	Licitacion 0 licitación
+	Politica 0 política
+	ultimos 0 últimos
+	mas 1 más
 950486266784645120	@itsjoelpimentel PORFAVOR
+	PORFAVOR 0 POR_FAVOR
 950486267308969984	Si como la perdio cuando estaba con CFK??? Como todos Uds!!!
+	perdio 0 perdió
+	Uds 0 ustedes
 950486268953137152	@NicolasLeiva__ como que no lo conoces amigo, media pilaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	pilaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 0 pila
 950486321977528322	Jajajajaajajja tipico
+	Jajajajaajajja 0 Ja
+	tipico 0 típico
 950486401023401991	Me subieron el monotributo a $896 degenme en passsss #MadreMiDio 😨😨😨😨😨😱😱😱😱
+	degenme 0 dejenmé
+	passsss 0 paz
 950486513707515904	Me aburren con el chamuyo del bronceado muchachos👋
 950486519353049088	Después de que se cansó de resongar con ese auto 😂
 950486520284184576	Por suerte no me desperte con dolor de cabeza
+	desperte 0 desperté
 950486628807729154	No se puede exculpar al Estado porque hubo o hay bandalismo. Si hay bandalismo se reponen los carteles la cantidad de veces que sea necesaria.  El Estado es responsable.
 950486633647878147	Ahora no escuentro a esas perras que me decian en la cara,que no llegaria ni a hacer la mitad de las cosas que tengo logradas🎶🎶🎶🎶🎶
+	decia 0 decían
+	llegaria 0 llegaría
 950486691286077440	tu juego histérico del mal!
 950486699540451332	Y pa que te miento si eres la que mi corazon roba cuantas veces tu Quieras 🎶
+	pa 0 para
+	corazon 0 corazón
 950486712354050049	@Emilce75 La clínica ,debió decir a la familia que es un riesgo ,con dos cesareas tener otro tan seguido!!!
+	cesareas 0 cesáreas
 950486765437181954	Te amo y te amo amor ,no me importa decirlo asi,ya ne paso la ultima vez que otro gil lo dijo por mii
+	asi 0 así
+	ne 0 me
+	paso 1 pasó
+	ultima 0 última
+	mii 0 mi
 950486766917632001	Que comienzen mis vacaciones
+	comienzen 0 comiencen
 950486789587906563	@itsjoelpimentel seguime por el amor de diosny por l oque mas quieras en el mundo 😢😢🙏🙏🙏🙏🙏
+	diosny 0 dios
+	l 0 lo
+	oque 0 que
+	mas 1 más
 950486801722101760	Como dejar de mirar al verdulero q tanto me gusta cuando vengo a comprar????? bebéeeeeeee
+	q 0 que
+	bebéeeeeeee 0 bebé
 950486811536756736	Me mata Genaro jajajajaja ta gordaso
+	jajajajaja 0 ja
+	ta 0 está
+	gordaso 0 gordazo
 950486818570596352	@ValenzuelaAdri_ Y hoy yooo
+	yooo 0 yo
 950486819711397889	Otro día en el que no tengo un perro como mascota y debo pasar ratos intentando llamar la atención del gato.
 950486826011316224	todo bien pero me afectas la visual
 950486892298100736	@Bracesco A ver, dónde están los responsables. Se deben prohibir lis celulares en servicio. Que cosa no entienden?
+	lis 0 los
 950486911382147072	@fraanco_gallo Nunca me dijiste de imprimir nada!
 950486914678784005	que lindo es compartir mi vida a tu lado ❤ https://t.co/DM2NakHuo9
 950486925248483339	@DaianaAbril12 la vida es corta,hacete torta,chissstee,todos giles,no se rescata ni unooo
+	chissstee 0 chiste
+	unooo 0 uno
 950487081826111489	Con la plata de la venta de Tagliafico se puede ir abuscar a Tagliafico? Gran jugador y capitán.
 950487102323679234	Yo ya nose si mi vieja me toma el pelo o asimilo enserio mis cosas, nose si es chiste o lo acepta vite
+	nose 1 no_sé
+	enserio 1 en_serio
+	nose 1 no_sé
+	vite 0 viste
 950487117611847685	Le puede decir a @itsjoelpimentel que me siga porfavor  Hace de ayer que le pido y no he tenido la opotunidad Su ayuda seria muy util en este momento  Gracias 😍😙😙😙😙 Aguante aries carajo https://t.co/fHgs4tDWsX
+	porfavor 0 por_favor
+	opotunidad 0 oportunidad
+	seria 1 sería
+	util 0 útil
 950487122913439745	@guillepanizza @animessina @telefenoticias @telefe Una genia la profe @animessina
 950487123433611265	Si mi mejor amigo se llega a enterar de lo que acabo de hacer se va a enojar y no me va a hablar por seis meses aprox, aunque no me habla
+	aporx 0 aproximadamente
 950487226982559746	Te felicito hermano te lo re mereces,  Teamo puto 😘 estoy orgulloso… https://t.co/XhwWJe8W0Q
+	Teamo 0 Te_amo
 950487257370198016	Abeja o abispa de mierda!!! Como doles  😭😭😭
 950487286730428416	No hay nada más rico que probar tu boca pero esta vez mamasiiiita no es tan fácil la cossa
+	mamasiiiita 0 mamacita
+	cossa 0 cosa
 950487310822461441	Mamita, con la panza que estoy sacando parezco de 5 meses
 950487323967459329	Es muy lunes para batatas asadas y una cerveza bien helada?
 950487337397571587	@Kiwita Es el que hace décadas viene cantando "si te veo con otro yo te mato". Ninguna sorpresa. El tipo siempre fue bastante misogino.
+	misogino 0 misógino
 950487339586945024	@elcarpo 4 Mpx =2560 x 1440 en este momento mi monitor se vè en  1366x768
+	Mpx 0 Megapíxeles
+	vè 0 ve
 950487383866306560	@1952md QEPD.Consuelo a familiares y amigos.
 950487407941464064	Obvio fue nochon con la loquitas 💚❤ en Villa Gesell https://t.co/dBQtCuxS6Y
 950487409501843459	Mi papá puso un cd de *redobles de tambores * LUIS MIGUEL. Me tiro por la ventana de la camioneta.
+	cd 0 CD
 950487425297633282	Todo me afecta el quintuple estos días. Exploto de los celos.
+	quintuple 0 quíntuple
 950487430364360704	Estaba stalkeando a un wacho hermoso y me encuentro con que tiene novia, ya ta
+	wacho 0 guacho
+	ta 0 está
 950487470365462528	@itsjoelpimentel Holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	Holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 0 Hola
 950487476900069376	@AmericaTV Jjjaj en eso de que no se sabe que tenemos en la cabeza no lo dudo, y lo otro....... quizás tenga razón 🤣
+	Jjjaj 0 Ja
 950487477546049544	Me hizo acordar a rex de toy story https://t.co/1UznjuzBX5
 950487492540686337	Le pueden decir a @itsjoelpimentel que me siga porfavor se lo pido  Gracias!! 😙😙😙 https://t.co/k82zDa80ry
+	porfavor 0 por_favor
 950487528569692160	Oye mami lleva a un lugar mejor en Santa María, Buenos Aires, Argentina https://t.co/910RwEZf4z
 950487533330288641	Lo q faltaba q vengan con shampoo y se bañen en el rio 😒 (son 40)
+	q 0 que
+	rio 0 río
 950487564032598016	Todas las cosas que contaminen tu alma, échalas pa' afuera
+	pa' 0 para
 950487600929878016	@hindelita La escuche en tnt ayer y fue así. También ver los hombres de negro riguroso fue importante
+	tnt 0 TNT
 950487674858688512	@NahuelServino Cuando vuelva hacemos algo xd
+	xd 0 XD
 950487689723293697	@A24COM VIDAL PREFIRIÓ  NO ESCUCHARLOS. SON TODOS GENTE CON ESTUDIO.PREPARADOS.EDUCADOS....Y FUERON TRATADOS COMO NWGROS DE MUERDA! HOY MUERE UNA BB
+	NWGROS 0 NEGROS
+	MUERDA 1 MIERDA
+	BB 0 BEBÉ
 950487711923822592	Recién llego de patriada y me pregunto porq no me quede un rato más y me arrepiento de no haberme quedado nadando,  que calorrrrrr la puta madre
+	porq 0 porque
+	quede 1 quedé
+	calorrrrrr 0 calor
 950487754923589633	A esta.mina que le pegó así a su hija ,notiene arreglo,solo pena de muerte,que va a estar arrepentida,en cuanto se la den de nuevo vuelve apegarme asi
+	notiene 0 no_tiene
+	apegarme 0 a_pegarme
+	asi 0 así
 950487768953688064	@JotaEngle Veni a la pileeh
+	Veni 0 Ven´i
+	pileeh 0 pile
 950487774347526144	Lo más lindo de estar sola en casa es que mis amigas me traen tuppers con comida para que sobreviva jajajaja
+	jajajaja 0 ja
 950487925619331074	Por fin tenemos buen wifi en la casa, so, hola internet ahre 🤷🏻‍♀️
+	ahre 0 ah_re
 950487985505566720	me voy a ir a domir y ojala no me despierte más je, bsos
+	ojala 0 ojalá
+	bsos 0 besos
 950488052291469312	@nancyloaz ah llegado el momento de decirlooo
+	ah 1 ha
+	decirlooo 0 decirlo
 950488075146350595	@mercado_river @PrattoLucas12 Y tb te dije que te lo iba a reconocer.Tenias razón.
+	tb 0 también
+	Tenias 0 Tenías
 950488079185469444	@MileSilvi A quien hay que pegarle amiga???
 950488154758402055	Al pedo le conte todo
+	conte 0 conté
 950488156692008962	ME VA A DARNUN CARO PARDIACO SI NO ME SEGUÍS @itsjoelpimentel https://t.co/3zbnTyVBVc
+	DARNUN 0 DAR_UN
+	CARO 1 PARO
+	PARDIACO 0 CARDÍACO
 950488219958829062	yo no entiendo porque las personas c pileta no invitan a sus amigos, si yo tuviera pileta estaria 24/7 ahi con los sabandijas estos
+	c 0 con
+	estaria 0 estaría
+	ahi 0 ahí
 950488331619590149	#3AñosGS si les da paja twittear den rt, necesitamos ser tt por Gonzalo lpm
+	rt 0 RT
+	tt 0 TT
+	lpm 0 LPM
 950488358458941440	no entendí lo de la remera https://t.co/HuDycgdUIh
 950488367170510850	@RoaringWindd soy fan
 950488368084848640	Me empiezo a cansar de pelotudeces. Ya no estoy para que me rompan las pelotas 🙄
@@ -2038,8 +2280,7 @@
 	criteri 0 -
 	Q 0 QUE
 	PERIPDISTAS 0 PERIODISTAS
-	SE 0 SÉ
-	COMO 0 CÓMO
+	SE 1 SÉ
 950488394383200256	@OPINOLOGODTURNO @Murielsantaok Unos libros x aca q no muerdennnn
 	x 0 por
 	aca 0 acá
@@ -2051,9 +2292,8 @@
 	plisss 0 please
 950488450477719552	Alá dame paciencia
 950488451845156864	Necesito un puto parlante quien puede prestar/alquilar????
-	quien 0 quién
 951649955126632448	Estamos re empedo y dijimos vamos a hacer un asado pue y bueno aca estamos haciendo un asado las 00 en RIACHUELO
-	empedo 0 en_pedo
+	empedo 1 en_pedo
 	pue 0 pués
 	aca 0 acá
 951649990623072256	@facubrt Vamooo ese positivismo asi me gustaaa jajajaj
@@ -2067,7 +2307,7 @@
 951649995127705601	estoy como de buen humor porq a la mayoria les gusto mi poema✨
 	porq 0 porque
 	mayoria 0 mayoría
-	gusto 0 gustó
+	gusto 1 gustó
 951650052006662146	ALFIN YA ES VIERNES #ThisIsCAMILA #Camila https://t.co/2kG0EutmpI
 	ALFIN 0 AL_FIN
 951650057627013120	Mañana tempranito pal pueblo a disfrutar de la pile.. si es q no llueve 😂
@@ -2077,7 +2317,7 @@
 	Esque 0 Es_que
 	divinoooosss 0 divinos
 951665042105225216	Me canse
-	canse 0 cansé
+	canse 1 cansé
 951665053098561537	Una birrita o un fernet. O los dos. Bien fresquitos por favor
 951665087475044352	Alguna serieee cheta?
 	serieee 0 serie
@@ -2095,12 +2335,11 @@
 951665178139086848	Mi tio llego de chile y nos trajo regalos. El mio fue un vino con sabor a frutilla, lo amo
 	tio 0 tío
 	llego 0 llegó
-	chile 0 Chile
+	chile 1 Chile
 	mio 0 mío
 951665179653230593	A quien le pintan unas birras y vueltas??
-	quien 0 quién
 951665208291885056	Me enganche con Naruto 😂 parezco un nene ya
-	enganche 0 enganché
+	enganche 1 enganché
 951665220790910976	@TomCL_ @tupaclarriera96 Son lo mejoer La rompen con la vanda #LosDAK Asen la mejor mucica🎧 Rompan la en esta segunda gravasiones para #KallysMashup Soy @ornellapichu fan de #KallysMashup Los sigo en twitter @TomCL_ @tupaclarriera96 Quisiera que me sigan Saludos https://t.co/VWuHM3jQb8
 	mejoer 0 mejor
 	vanda 0 banda
@@ -2122,7 +2361,7 @@
 	camila 0 Camila
 951665248095948800	Sobreviví 25 minutos de Sharnado: no se si shorar por lo mala que es, o por q son 5. Y yo q pensé q el fenómeno rápido y furioso era extraño
 	Sharnado 0 Sharknado
-	se 0 sé
+	se 1 sé
 	shorar 0 llorar
 	q 0 que
 	q 0 que
@@ -2137,6 +2376,7 @@
 	q 0 que
 	larrrgo 0 largo
 951665302282145793	Excelente 1ra función en Teatro Del Lago Carlos Paz https://t.co/t19q0sPT2X
+	1ra 0 primera
 951665304081502208	Ya ni stalk puede con este celu
 951665312167964672	@NaaniFernandez1 Ese sos vos gato sin codigos
 	codigos 0 códigos
@@ -2146,7 +2386,7 @@
 951665336906022912	Boeeeeeee! No me puede ser q todos ahora me digan esto, solo me pele jajajajajajajaja https://t.co/Npe9wMo3vJ
 	Boeeeeeee 0 Bueno
 	q 0 que
-	pele 0 pelé/peleé
+	pele 0 -
 	jajajajajajajaja 0 ja
 951665341658206209	Siempre me gustaron las casas con vestidores, y me imagino si tuviera uno estaria re pelado; con 3 remeras, un jean, un par de medias para rellenar y dos short. Ah y quizas una camisa
 	estaria 0 estaría
@@ -2193,15 +2433,15 @@
 	cammm 0 cámara
 951680208532320258	Es increible como arranque este año mamaaaa
 	increible 0 increíble
-	arranque 0 arranqué
+	arranque 1 arranqué
 	mamaaaa 0 mamá
 951680225640927234	me acuerdo cuando decía que no iba a tener novix hasta que terminara la FACULTAD lpm
 	novix 0 novio/a
 	lpm 0 LPM
 951680273841819648	Nose xq me siento si no son para mi 🙄
-	Nose 0 No_sé
+	Nose 1 No_sé
 	xq 0 porque
-	mi 0 mí
+	mi 1 mí
 951680284705083392	Y un Chuck Bass xfa https://t.co/61e7K57YGm
 	xfa 0 por_favor
 951680337180090368	Ya casi...el 1ºpuesto está ahicito nomás ja ja já😎😎😎 https://t.co/fNf0TXK4Lt
@@ -2218,13 +2458,13 @@
 	Ola 0 Hola
 	Zoi 0 Soy
 951680388711272448	Ya esta ya le hable jaja no hay vuelta atras 😂😂
-	esta 0 está
-	hable 0 hablé
+	esta 1 está
+	hable 1 hablé
 	jaja 0 ja
 	atras 0 atrás
 951680394432270336	@martincchx ahi estas
 	ahi 0 ahí
-	estas 0 estás
+	estas 1 estás
 951680416456507392	@nicolascava27 @Maarturello Uuuuuuuu te cabio
 	Uuuuuuuu 0 Uh
 	cabio 0 cabió
@@ -2234,7 +2474,6 @@
 	AHRE 0 AH_RE
 	ahre 0 ah_re
 951680423599443968	Como hacen esas parejas que van y vuelven? Pero tomatelaaaaaaaa
-	Como 0 Cómo
 	tomatelaaaaaaaa 0 tomatelá
 951680450661179392	@PmoreThreads bb💖💖
 	bb 0 bebé
@@ -2245,14 +2484,14 @@
 	q 0 que
 	bbbbyyyeeeee 0 bye
 951680519888146432	@JoaaPiedrabuena Estoy re ofendido no se si te diste cuenta Jajajjaa
-	se 0 sé
+	se 1 sé
 	Jajajjaa 0 Ja
 951680522551529473	@Gigisnail @sebamgns @sinrostro77 @Crisenberg @edufeiok ABORTO LEGAAAAAL EN EL HOSPITAAAAAL!💚♬♪
 	LEGAAAAAL 0 LEGAL
 	HOSPITAAAAAL 0 HOSPITAL
 951680531556716544	No me queres cuidar? Yo ya no se q más hacer para verme bien
 	queres 0 querés
-	se 0 sé
+	se 1 sé
 	q 0 que
 951680536384286720	@B6onzalez Un ascoooo como pueden tragar eso con el olor q tiene
 	ascoooo 0 asco
@@ -2300,8 +2539,7 @@
 951680739799597062	El desinterés ocaciona la distancia.
 	ocaciona 0 ocasiona
 951695241689665536	Ustedes entienden que yo me iba a dormir temprano pero sacaron la 3rs temporada de Lovesick?? Por que me haces esto @NetflixLAT??
-	3rs 0 3ra
-	que 0 qué
+	3rs 0 tercera
 951695278385614853	Que justicia de mierda, me dan verguenza ajena https://t.co/0FGmgmECQl
 	verguenza 0 vergüenza
 951695285226483712	@tomasAimaretti D nada
@@ -2313,10 +2551,10 @@
 	lpm 0 LPM
 951695355019714560	Jajajaja,ah dormir 😴👋
 	Jajajaja 0 Ja
-	ah 0 a
+	ah 1 a
 951695376918155264	@CamiADiaaz jajaja q decis loca
 	jajaja 0 ja
-	q 0 qué
+	q 0 que
 	decis 0 decís
 951695388175749120	Mi único héroe en este lió! https://t.co/z0KSMw6nmS
 	lió 0 lío
@@ -2336,7 +2574,7 @@
 951695434107572224	@SabbriAlbornoz mandame wp
 	wp 0 WhatsApp
 951695440092770306	Que hago con buso con el calor que hace 🙄
-	buso 0 buzo
+	buso 1 buzo
 951695477073997824	HERMOSISISISISISIMO TODO, PERO TODO, CORRAN A VERLO https://t.co/g1RWOQg8im
 	HERMOSISISISISISIMO 0 HERMOSÍSIMO
 951695540911210497	Yo me supere y empezé de abajo✔
@@ -2350,7 +2588,6 @@
 951695567238942721	@Agosgarciarey  jejej https://t.co/875eAoEN3s
 	jejej 0 je
 951695571953307648	Y ahora como m duermoo 🤦🤦
-	como 0 cómo
 	m 0 me
 	duermoo 0 duermo
 951695597236453376	#Repost  @la_doniteria  Mmmmmmmmm en Buenos Aires, Argentina https://t.co/yU5GtrrAYA
@@ -2363,17 +2600,17 @@
 	Dioh 0 Dios
 	Meoh 0 Mío
 951695715306229761	Luna 4to menguante de sangre 😍😍😍
+	4to 0 cuarto
 951695720167374851	Boom!!!!!! Feliz cumpleaaañoosssssss✨Encerio te agradesco por todo❤Te amo demasiado,siempre estaré para vos Mi querido Amigo del internet❤❤♥ @boomscar @boomscar espero que te pongas lindo y me des follow ahre 😂❤
 	cumpleaaañoosssssss 0 cumpleaños
 	Encerio 0 En_serio
 	agradesco 0 agradezco
 	ahre 0 ah_re
 951695731437588480	Dicen que "cambie" les pregunto en que y me responden "Nose, no das ni bola" we algo coherente digan
-	que 0 qué
-	Nose 0 No_sé
+	Nose 1 No_sé
 951695751234637825	YO LA TOCO SUAVECITO DICE QUE TIENE TODO LO QUE NECESITO Y SI ME EQUIVOCO YO LO RETIFICO PORQUE SU CARICIA ME A VUELTO UN ADICTO A SU PIEL   DÍA Y NOCHE BY MYA   https://t.co/QYX01Apqaw https://t.co/47P2jbjndK
 	RETIFICO 0 RECTIFICO
-	A 0 HA
+	A 1 HA
 951695768716480512	Necesito ver si decido quedarme pero Netflix la saco jaaaaaa
 	jaaaaaa 0 ja
 951695795430023174	Uff, ahh, eee https://t.co/RbzUolRby7
@@ -2387,11 +2624,10 @@
 	Ahno 0 Ah_no
 951695801755013122	@Gonflores21 bue o te caigo bien o.me.queres muerta https://t.co/QxB7AjCsO3
 	bue 0 bueno
-	o.me.queres 0 o_me_querés
 951695802321326080	Me bañe y se me fue todo el sueño a la mierda
-	bañe 0 bañé
+	bañe 1 bañé
 951695858227085312	Que le paso? Nose 😂
-	Nose 0 No_sé
+	Nose 1 No_sé
 951695888325533696	Nunca había salido tan mal, nada me queda bien, estoy a punto de iorar
 	iorar 0 llorar
 951695940628467712	Vennn que no habló tan al pedo
@@ -2409,42 +2645,42 @@
 	loooooooooz 0 luz
 	looooooz 0 luz
 951710337144885249	Faltan DOS día y nos vamoss con mi amiga ☀️🏖
-	día 0 días
+	día 1 días
 	vamoss 0 vamos
 951710353863446528	las personas q me dicen jg claramente tienen un lugar en mi corazón, son claves
 	q 0 que
 	jg 0 -
 951710358389092353	Todos los días durmiendome a las 4 o 5 y despertandome a las 9 o 10, no se como aguanto
-	se 0 sé
+	se 1 sé
 951710370275692545	Todo empezo una noche de calor  se enamoraban con algun licor  y desde entonces no pudo parar  sabia que esto no tenia final...
 	empezo 0 empezó
 	algun 0 algún
-	sabia 0 sabía
+	sabia 1 sabía
 	tenia 0 tenía
 951710445471260672	Lo que extraño a mí prima, pero como era antes
+	mí 1 mi
 951710446805020672	@LaVidaYElCanto Jaaa muy buenooo!!
 	Jaaa 0 Ja
 	buenooo 0 bueno
 951710460407001088	Mi hermano me mando un mensaje para ir a cuba, yo estaba re durmiendo
-	mando 0 mandó
+	mando 1 mandó
 	cuba 0 Cuba
 951710501649702913	me cago de sueño encima que bronquita
 951710514861821952	Me hizo volver a mí pubertad 😲 https://t.co/wp2Dm6nVAG
-	mí 0 mi
+	mí 1 mi
 951710524995264512	Por que me cuesta tanto dormirmeeeeee?!?!
-	que 0 qué
 	dormirmeeeeee 0 dormirme
 951710537171259392	A donde ira Nacho a esta hora.? 🤔
-	ira 0 irá
+	ira 1 irá
 951710595988049920	@tuchauchita Siiiiii!!! Ya lo verás!!! Hay diferentes modelos, no hacen ruido, te relaja!!
 	Siiiiii 0 Si
 951710671774810112	-hola si quiero ser polisia
 	polisia 0 policía
 951710679173664771	Nunca pasa de tener una 2da https://t.co/H4rWLKdYfM
+	2da 0 segunda
 951710702590406661	Globitoooo que manija me tenés
 	Globitoooo 0 Globito
 951710829354913792	Me llega un snap de este flaco y pienso: porque carajo no le dí
-	porque 0 por_qué
 951710844198555648	Que alguien le diga que me pase esas casuales porfavorrrrrrrr
 	porfavorrrrrrrr 0 por_favor
 951710849374281728	Unanse, es para hablar boludeces, sean buena onda, somos gente de tw⚘ (si van a hablar entren, sino no) 👌🏻💣 https://t.co/DdgNYycKzt 💌
@@ -2459,7 +2695,7 @@
 951710889610227712	le vino andres
 	andres 0 Andrés
 951710919196856320	jugar un deporte no te define que sos dio mío https://t.co/PcX6ZRAhMg
-	dio 0 dios
+	dio 1 dios
 951710924087484416	estábamos a punto de salir y de repente decidimos ke no y ahora no puedo estar siendo tan feliz con un sanguche de asado mirando vikingos 🍖⚔️😍
 	ke 0 que
 951710928193708032	Yo puse en una foto "xq quiero y puedo" y ahora todas ponen lo mismo copionas caras de verga bue quién era xd
@@ -2490,7 +2726,6 @@
 	nueveeee 0 nueve
 	AC 0 -
 951711192019501056	@lito_vasquez00 Quien lo juna a ese
-	Quien 0 Quién
 951711219123187718	ni facundo me estaría hablando okkkk
 	facundo 0 Facundo
 	okkkk 0 ok
@@ -2513,13 +2748,15 @@
 	tkm 0 TKM
 951725664939503616	Mañana 8am arriba y sigo acá 5am cualquiera
 	8am 0 8_A.M.
+	5am 0 5_A.M.
 951725685047025664	Que culiauuuuu meta llorá JAJAJAJAJA
 	culiauuuuu 0 culeado
-	llorá 0 llorar
+	llorá 1 llorar
 	JAJAJAJAJA 0 JA
 951725736347480065	Lo que me gusta ese flaco por favorrrrrr
 	favorrrrrr 0 favor
 951725825031884800	@MoreParnisciano Y son las 5am jajajaja dormi ahí en tu bella habitación amarilla
+	5am 0 5_A.M.
 	jajajaja 0 ja
 	dormi 0 dormí
 951725834880126976	Trato q eso no importe pero no puedo🙄
@@ -2543,17 +2780,19 @@
 	boeee 0 bueno
 951726178540441600	Que calor de la puta madre eNCIMA SON LAS 5 AM Y DEBERÍA DE ESTAR DURMIENDO
 	eNCIMA 0 encima
+	AM 0 A.M.
 951726245749886976	Basta chicos me vot a mirar miserie
 	vot 0 voy
 	miserie 0 mi_serie
 951726313836072961	Llévame al paraíso de tu cama eso es algo que nunca me haz dicho
-	haz 0 has
+	haz 1 has
 951726378411544576	Cosas que uno no espera y Despegar mandando Whatsapp.😸😸😸😸😸 https://t.co/tM4oXBMY78
 	Whatsapp 0 WhatsApp
 951726386070376448	@PezoaDouglas Jaja vos sabes ratóm 😉😏
 	Jaja 0 Ja
 	ratóm 0 ratón
 951726463010648064	Ta mas dable que un pancho a la salida de la joda
+	mas 1 más
 	Ta 0 Está
 951726450859704320	Pobre wacho llora por la novia y si supiera
 	wacho 0 guacho
@@ -2566,25 +2805,24 @@
 951726561425838081	I wanna die lentamente porque ya me puse mal🤙🏾
 951726589372444672	Decepción tremenda la que se lleva uno
 951726625179258880	@cotiwankenobi_ Por que??
-	que 0 qué
 951726718229807104	Xq con mi novio hagamos todo juntos no significa que seamos manipuladores. Como se nota q siempre te boludearon!!!! 🤔
 	Xq 0 Porque
 	q 0 que
 951726825427828736	Que sueño viejaaa, se me.wsta haciendo re larga la noche
 	viejaaa 0 vieja
-	me.wsta 0 me_está
+	wsta 0 está
 951726852615344128	Para qué me despierto a ésta horaaaaaaaaaaaaaaaaaaa
 	ésta 0 esta
 	horaaaaaaaaaaaaaaaaaaa 0 hora
 951726886333362176	Sabes qqqqq hermano
-	qqqqq 0 qué
+	qqqqq 0 que
 951726953958199296	Ta pa chuparselan
 	Ta 0 Está
 	pa 0 para
 	chuparselan 0 chuparselá
 951727055904833536	ESTOy mas histerica q nuncaA
 	ESTOy 0 Estoy
-	mas 0 más
+	mas 1 más
 	histerica 0 histérica
 	q 0 que
 	nuncaA 0 nunca
@@ -2593,10 +2831,10 @@
 	AC 0 -
 951727093620051969	necesito mayusculas MAS GRANDES
 	mayusculas 0 mayúsculas
-	MAS 0 MÁS
+	MAS 1 MÁS
 951727165556625408	Aaaaaa te recupere Twitter, casi perdí mi cuenta
 	Aaaaaa 0 Ah
-	recupere 0 recuperé
+	recupere 1 recuperé
 951727193381588992	@AyaxL_Akd Jaajajajaj crackkk, aguanten los simpson y aguante vos amigo🍻 jajajaja, voy a dormir a feliz ahora(?
 	Jaajajajaj 0 Ja
 	crackkk 0 crack
