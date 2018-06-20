@@ -1,17 +1,19 @@
-"""Train a parser.
+"""TEXT NORMALIZATOR
 
 Usage:
-  twnorm -i <input_file> [-o <output_file>] [-m <model_file>] [-b] [-l]
+  twnorm -i <input_file> [-o <output_file>] [-m <model_file>] [-l] [-b]
+         [-t <number>]
   twnorm -h | --help
 
 Options:
-  -m <model_file>    Model to use in candidates selection
   -i <input_file>    Input file with tweets
   -o <output_file>   Output file with tweets and list of corrections
                      [default: output.txt]
-  -l                 Use lemmatizer
-  -b                 Use baseline normalization
-  -h --help     Show this screen.
+  -m <model_file>    Model to use in candidates selection
+  -l                 Enables lemmatizer
+  -b                 Enables baseline normalization
+  -t <number>        Show the <number> most costly tweets (processing time)
+  -h --help          Show this screen.
 """
 import os
 import sys
@@ -52,8 +54,18 @@ def start_process():
         model_file_path = ''
         lemmatize = False
 
+    times = opts['-t']
+    if times:
+        try:
+            times = int(times)
+        except Exception:
+            print("Tweets quantity must be an integer.")
+            sys.exit()
+    else:
+        times = 0
+
     MainProcess(input_file_path, output_file_path, model_file_path,
-                lemmatize, baseline)
+                lemma=lemmatize, times=times, baseline=baseline)
 
 
 if __name__ == '__main__':

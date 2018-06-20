@@ -8,7 +8,8 @@ from twnorm.variants_generation import VariantsGenerator, BaselineGenerator
 from twnorm.candidate_selection import Selector, BaselineSelector
 
 
-def MainProcess(input_file, output_file, model_file, lemma, baseline):
+def MainProcess(input_file, output_file, model_file,
+                lemma=False, times=0, baseline=False):
 
     print('Initializing resources...')
     init_start = time.time()
@@ -74,10 +75,20 @@ def MainProcess(input_file, output_file, model_file, lemma, baseline):
 
     token_rate = total_tokens / total_time
 
-    print('\nProcess finished.')
-    print('Took:', time.strftime("%H hs %M min %S sec",
-                                 time.gmtime(total_time)))
+    process_time = time.strftime("%H hs %M min %S sec",
+                                 time.gmtime(total_time))
+    print('\nProcess finished ({}).\n'.format(process_time))
     print('Tweet rate (only tweets to correct):',
           round(tweet_rate, 2), 'tweets/sec')
     print('Token rate (only tokens to correct):',
           round(token_rate, 2), 'tokens/sec')
+
+    if times > 0:
+        print("\nTweets processing time")
+        if times > len(wtas):
+            times = len(wtas)
+        tweets_times = [(tweet, time) for tweet, time in tweets_time.items()]
+        tweets_times = sorted(tweets_times, key=lambda x: x[1], reverse=True)
+        for i in range(times):
+            print("Tweet ID: {} | Processing time: {} seg"
+                  "".format(tweets_times[i][0], round(tweets_times[i][1], 3)))
