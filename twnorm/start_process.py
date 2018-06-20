@@ -17,7 +17,6 @@ import os
 import sys
 from docopt import docopt
 from twnorm.main_process import MainProcess
-from twnorm.basenorm import BaselineNormalization
 
 
 def start_process():

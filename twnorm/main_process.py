@@ -34,6 +34,7 @@ def MainProcess(input_file, output_file, model_file, lemma, baseline):
 
     accumulated = 1
     tweets_time = {}
+    total_tokens = 0
     for tweet_id, tweet in wtas.items():
         tweet_start = time.time()
         print_progress(accumulated, len(wtas))
@@ -42,6 +43,7 @@ def MainProcess(input_file, output_file, model_file, lemma, baseline):
             for_prev = tokenized[tweet_id][j]  # For previous tokens corrected
             correct[tweet_id][j] = []
             for word, pos in sent:
+                total_tokens += 1
                 class_number = classifier.classify(word)
                 # if class is variant
                 if classifier.is_variant(class_number):
@@ -70,8 +72,6 @@ def MainProcess(input_file, output_file, model_file, lemma, baseline):
     total_time = sum([t for t in tweets_time.values()])
     tweet_rate = len(wtas) / total_time
 
-    total_tokens = sum([len(correct[x][y]) for x in correct
-                        for y in correct[x]])
     token_rate = total_tokens / total_time
 
     print('\nProcess finished.')
