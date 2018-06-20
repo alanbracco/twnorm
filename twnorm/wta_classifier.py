@@ -56,3 +56,17 @@ class WTAclassifier(object):
 
     def is_not_spanish(self, class_number):
         return class_number == 2
+
+
+class BaselineClassifier(object):
+    def __init__(self):
+        self.spanish_dict = enchant.Dict("es_AR")
+
+    def classify(self, word):
+        return int(self.spanish_dict.check(word))
+
+    def is_variant(self, class_number):
+        return class_number == 0
+
+    def is_correct(self, class_number):
+        return class_number == 1

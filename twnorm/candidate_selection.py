@@ -1,4 +1,5 @@
 import os
+import enchant
 import pickle
 
 
@@ -50,3 +51,15 @@ class Selector(object):
         prev_tokens = self.prev_tokens(word, position, tokens)
         selected_candidate = self.choose(prev_tokens, candidates)
         return selected_candidate
+
+
+class BaselineSelector(object):
+    def __init__(self):
+        self.DEFAULT_CORRECTION = '-'
+        self.UNKNOWN_CORRECTION = '-'
+
+    def select_candidate(self, word, position, tokens, candidates):
+        if not candidates:
+            return self.DEFAULT_CORRECTION
+        else:
+            return candidates[0].replace(' ', '_')

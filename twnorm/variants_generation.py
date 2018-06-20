@@ -1,5 +1,6 @@
 # from string import ascii_lowercase as lcase
 import re
+import enchant
 from twnorm.wta_classifier import WTAclassifier
 from twnorm.candidates_memory import CandidatesMemory
 
@@ -293,6 +294,14 @@ class VariantsGenerator(object):
             else:
                 self.memory.add_candidates(word, candidates, primary=True)
         return candidates
+
+
+class BaselineGenerator(object):
+    def __init__(self):
+        self.generator = enchant.Dict("es_AR")
+
+    def generate(self, word):
+        return self.generator.suggest(word)
 
 
 if __name__ == '__main__':

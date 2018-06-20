@@ -39,17 +39,22 @@ def start_process():
     output_file_path = os.path.join(project_root_path, 'Output', output_file)
     output_file_path = os.path.abspath(output_file_path)
 
-    if opts['-b']:
-        BaselineNormalization(input_file_path, output_file_path)
-    else:
+    baseline = bool(opts['-b'])
+    if not baseline:
         model_file = opts['-m']
-        model_file_path = os.path.join(project_root_path, 'Models', model_file)
-        if not os.path.isfile(model_file_path):
+        if model_file:
+            model_file_path = os.path.join(project_root_path, 'Models',
+                                           model_file)
+        if not (model_file and os.path.isfile(model_file_path)):
             print('You must enter an existing model file.')
             sys.exit()
         lemmatize = bool(opts['-l'])
-        MainProcess(input_file_path, output_file_path, model_file_path,
-                    lemmatize)
+    else:
+        model_file_path = ''
+        lemmatize = False
+
+    MainProcess(input_file_path, output_file_path, model_file_path,
+                lemmatize, baseline)
 
 
 if __name__ == '__main__':

@@ -1,24 +1,31 @@
 import time
 from twnorm.aux import print_progress
 from collections import defaultdict
-from twnorm.wta_classifier import WTAclassifier
+from twnorm.wta_classifier import WTAclassifier, BaselineClassifier
 from twnorm.tweets_splitter import Splitter
 from twnorm.output_builder import OutputBuilder
-from twnorm.variants_generation import VariantsGenerator
-from twnorm.candidate_selection import Selector
+from twnorm.variants_generation import VariantsGenerator, BaselineGenerator
+from twnorm.candidate_selection import Selector, BaselineSelector
 
 
-def MainProcess(input_file, output_file, model_file, lemma):
+def MainProcess(input_file, output_file, model_file, lemma, baseline):
 
     print('Initializing resources...')
     init_start = time.time()
     splitter = Splitter(input_file, verbose=True, lemma=lemma)
-    classifier = WTAclassifier(lemma=lemma)
-    variants_generator = VariantsGenerator()
-    selector = Selector(model_file)
-    output = OutputBuilder(output_file, verbose=True)
-    wtas = splitter.get_wtas()
+
+    if baseline:
+        classifier = BaselineClassifier()
+        variants_generator = BaselineGenerator()
+        selector = BaselineSelector()
+    else:
+        classifier = WTAclassifier(lemma=lemma)
+        variants_generator = VariantsGenerator()
+        selector = Selector(model_file)
+
     tokenized = splitter.get_analyzable_tokens()
+    wtas = splitter.get_wtas(baseNorm=baseline)
+    output = OutputBuilder(output_file, verbose=True)
     correct = defaultdict(dict)
     init_end = time.time()
     init_time = time.strftime("%M min %S sec",
