@@ -1,6 +1,7 @@
 # from string import ascii_lowercase as lcase
 import re
 import enchant
+from collections import Counter
 from twnorm.wta_classifier import WTAclassifier
 from twnorm.candidates_memory import CandidatesMemory
 
@@ -179,9 +180,10 @@ class PrimaryCandidates(object):
             if patt != '':
                 result.add(patt)
         # reps[2] is word with two occurrences together max.
-        onetwo = self.onetwo_repetition(reps[2])
-        for w in onetwo:
-            result.add(w)
+        if len(Counter(word)) > 2:
+            onetwo = self.onetwo_repetition(reps[2])
+            for w in onetwo:
+                result.add(w)
         return result
 
     def filter_candidates(self, cands):
