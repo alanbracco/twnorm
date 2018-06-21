@@ -33,13 +33,12 @@ def MainProcess(input_file, output_file, model_file,
                               time.gmtime(init_end - init_start))
     print('Initialization finished ({}).'.format(init_time))
 
-    accumulated = 1
+    accumulated = 0
     tweets_time = {}
     total_tokens = 0
+    print_progress(accumulated, len(wtas))
     for tweet_id, tweet in wtas.items():
         tweet_start = time.time()
-        print_progress(accumulated, len(wtas))
-        accumulated += 1
         for j, sent in tweet.items():  # j is number of the sent
             for_prev = tokenized[tweet_id][j]  # For previous tokens corrected
             correct[tweet_id][j] = []
@@ -63,6 +62,8 @@ def MainProcess(input_file, output_file, model_file,
                     correct_word = selector.DEFAULT_CORRECTION
 
                 correct[tweet_id][j].append((word, class_number, correct_word))
+        accumulated += 1
+        print_progress(accumulated, len(wtas))
 
         tweet_end = time.time()
         tweets_time[tweet_id] = tweet_end - tweet_start
