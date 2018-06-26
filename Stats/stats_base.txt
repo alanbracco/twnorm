@@ -12,15 +12,15 @@ Surplus corrections: 177
 
 WTA detecion
 ------------
-Accuracy: 94.99%
-Precision: 72.42%
-Recall: 78.20%
+Accuracy: 95.00%
+Precision: 72.53%
+Recall: 78.22%
 
 WTA correction
 ------------
 Accuracy: 89.09%
 Precision: 17.77%
-Recall: 19.18%
+Recall: 19.16%
 
 DETAILED INFO
 =============
@@ -489,9 +489,9 @@ TweetID: 944694646478958592
 TweetID: 944694678422769664
   - 'jajajajajajaj' was corrected as 'escusabaraja' but it is 'ja'
 TweetID: 944694686177996802
-  Surplus words: ['Terre']
+  - 'Terre' was corrected as 'Erre' but it is 'terremoto'
   - 'pa' was corrected as 'ap' but it is 'para'
-  - Corrections for 'terre' are ['terremoto', 'terremoto', 'terremoto']
+  - Corrections for 'terre' are ['terremoto', 'terremoto']
     but you corrected as ['yerre', 'yerre']
 TweetID: 944694719296278533
   Missing words: ['se']
@@ -2006,7 +2006,7 @@ TweetID: 950485883987349504
 TweetID: 950486039470239744
   Missing words: ['dìo', 'mas']
   Surplus words: ['diò', 'megapixeles', 'pixeles', 'zoom']
-  - Corrections for 'vè' are ['ve']
+  - Corrections for 'vè' are ['ve', 've']
     but you corrected as ['va', 'va']
 TweetID: 950486085364322311
   - 'metiii' was corrected as 'metido' but it is 'metí'
@@ -2088,7 +2088,7 @@ TweetID: 950487476900069376
 TweetID: 950487533330288641
   Missing words: ['rio']
   Surplus words: ['shampoo']
-  - Corrections for 'q' are ['que']
+  - Corrections for 'q' are ['que', 'que']
     but you corrected as ['a', 'a']
 TweetID: 950487564032598016
   Missing words: ["pa'"]

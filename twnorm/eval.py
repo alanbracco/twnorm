@@ -118,11 +118,14 @@ class Evaluator(object):
 
             gold_counter = Counter(gold)
             gen_counter = Counter(generated)
-            for key, times in gold_counter.items():
-                if key in generated and times > 1:
-                    # Minus 1 because the first count appears in
-                    # conjunction of gold and generated sets
-                    current_hits += times - 1
+
+            for w in (set(gold) & set(generated)):
+                # Minus 1 because the first count appears in
+                # conjunction of gold and generated sets
+                gold_count = gold_counter[w] - 1
+                gen_count = gen_counter[w] - 1
+                current_hits += min(gold_count, gen_count)
+
             hits += current_hits
 
         return hits

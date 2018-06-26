@@ -16,7 +16,7 @@
 944694678422769664	@EzequielTupone Con lengua  jajajajajajaj
 	jajajajajajaj 0 ja
 944694686177996802	@EuGonzaa Terre terre terre terremoto pa tu cola 🎤
-	terre 0 terremoto
+	Terre 0 terremoto
 	terre 0 terremoto
 	terre 0 terremoto
 	pa 0 para
@@ -2099,6 +2099,7 @@
 	peru 0 Perú
 950486039470239744	@elcarpo sean 4 megapixeles o 30 mega pixeles la foto se vè igual en un monitor....se vè igual cuando la imprimis...la gente todavìa no se diò cuenta que mas megapixeles solo sirven para hacer zoom o imprimir gigante
 	vè 0 ve
+	vè 0 ve
 	imprimis 0 imprimís
 	todavìa 0 todavía
 	dìo 0 dio
@@ -2222,6 +2223,7 @@
 	porfavor 0 por_favor
 950487528569692160	Oye mami lleva a un lugar mejor en Santa María, Buenos Aires, Argentina https://t.co/910RwEZf4z
 950487533330288641	Lo q faltaba q vengan con shampoo y se bañen en el rio 😒 (son 40)
+	q 0 que
 	q 0 que
 	rio 0 río
 950487564032598016	Todas las cosas que contaminen tu alma, échalas pa' afuera
