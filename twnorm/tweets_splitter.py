@@ -1,10 +1,9 @@
 import os
 import sys
-import enchant
 from twnorm.tokenizer import MyTokenizer
 from collections import defaultdict
 from nltk.tokenize import sent_tokenize
-from twnorm.wta_classifier import WTAclassifier
+from twnorm.wta_classifier import WTAclassifier, BaselineClassifier
 
 
 def is_valid(word):
@@ -101,7 +100,7 @@ class Splitter(object):
     def get_wtas(self, baseNorm=False):
         WTA = defaultdict(lambda: defaultdict(list))
         if baseNorm:
-            classifier = enchant.Dict("es_AR")
+            classifier = BaselineClassifier()
         else:
             classifier = WTAclassifier(lemma=self.lemma)
 
@@ -109,10 +108,11 @@ class Splitter(object):
             for j in self.tokenized[tweet_id]:
                 for word, pos in self.tokenized[tweet_id][j]:
                     # check if word is In Vocabulary
-                    if not classifier.check(word):
-                        # add (word, pos) to j-th sent
+                    class_number = classifier.classify(word)
+                    if not classifier.is_correct(class_number):
+                        # add (word, class_number, pos) to j-th sent
                         # of tweet with id = tweet_id
-                        WTA[tweet_id][j].append((word, pos))
+                        WTA[tweet_id][j].append((word, class_number, pos))
         if self.verbose:
             print('Tweets to correct:', len(WTA))
         return dict(WTA)

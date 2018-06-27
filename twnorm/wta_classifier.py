@@ -67,6 +67,9 @@ class BaselineClassifier(object):
         self.VARIANT_CLASS = 0
         self.SPANISH_CLASS = 1
 
+    def check(self, word):
+        return self.spanish_dict.check(word)
+
     def classify(self, word):
         return int(self.spanish_dict.check(word))
 

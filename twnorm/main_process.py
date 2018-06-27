@@ -42,9 +42,8 @@ def MainProcess(input_file, output_file, model_file,
         for j, sent in tweet.items():  # j is number of the sent
             for_prev = tokenized[tweet_id][j]  # For previous tokens corrected
             correct[tweet_id][j] = []
-            for word, pos in sent:
+            for word, class_number, pos in sent:
                 total_tokens += 1
-                class_number = classifier.classify(word)
                 # if class is variant
                 if classifier.is_variant(class_number):
                     IVcandidates = variants_generator.generate(word)
