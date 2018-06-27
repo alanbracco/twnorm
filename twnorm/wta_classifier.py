@@ -20,9 +20,9 @@ class WTAclassifier(object):
         self.english_dict = enchant.Dict("en_EN")
         self.spanish_dict = enchant.Dict("es_AR")
         self.lemma = lemma
-        self.VARIANT_CLASS  = 0
-        self.SPANISH_CLASS  = 1
-        self.FOREIGN_CLASS  = 2
+        self.VARIANT_CLASS = 0
+        self.SPANISH_CLASS = 1
+        self.FOREIGN_CLASS = 2
         if lemma:
             self.lemmatizer = Lemmatizer()
 
@@ -64,8 +64,8 @@ class WTAclassifier(object):
 class BaselineClassifier(object):
     def __init__(self):
         self.spanish_dict = enchant.Dict("es_AR")
-        self.VARIANT_CLASS  = 0
-        self.SPANISH_CLASS  = 1
+        self.VARIANT_CLASS = 0
+        self.SPANISH_CLASS = 1
 
     def classify(self, word):
         return int(self.spanish_dict.check(word))

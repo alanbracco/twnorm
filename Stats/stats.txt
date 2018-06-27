@@ -18,9 +18,9 @@ Recall: 77.25%
 
 WTA correction
 ------------
-Accuracy: 90.76%
-Precision: 31.39%
-Recall: 32.48%
+Accuracy: 90.79%
+Precision: 31.69%
+Recall: 32.79%
 
 DETAILED INFO
 =============
@@ -469,7 +469,7 @@ TweetID: 944694622982475776
 TweetID: 944694627617132544
   - 'AHRE' was corrected as 'ARE' but it is 'AH_RE'
 TweetID: 944694678422769664
-  - 'jajajajajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajajajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944694686177996802
   - 'Terre' was corrected as 'Tele' but it is 'terremoto'
   - 'pa' was corrected as '-' but it is 'para'
@@ -496,7 +496,7 @@ TweetID: 944694754792656896
   - 'JAJAJAJA' was corrected as 'Ja' but it is 'ja'
 TweetID: 944694759888736256
   - 'atr' was corrected as 'art' but it is 'ATR'
-  - 'jajajajajajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajajajajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944694760626905088
   - 'jodi' was corrected as 'Jodí' but it is 'jodí'
 TweetID: 944694767723732992
@@ -511,6 +511,8 @@ TweetID: 944694786572914689
 TweetID: 944694787449516033
   Missing words: ['suaaa_b']
   Surplus words: ['b', 'suaaa']
+TweetID: 944694821092020224
+  - 'MIII' was corrected as 'mi' but it is 'MI'
 TweetID: 944694837093289985
   Missing words: ['tente']
   - 'escuchandote' was corrected as 'Escuchándote' but it is 'escuchándote'
@@ -537,13 +539,11 @@ TweetID: 944694970254086144
 TweetID: 944694973236219904
   - 'monzó' was corrected as 'montó' but it is 'Monzó'
 TweetID: 944695000297869312
-  - 'jajajajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944695008149598209
   Missing words: ['mio']
   Surplus words: ['clippers']
   - 'mc' was corrected as 'Mc' but it is '-'
-TweetID: 944695022741573637
-  - 'Jajajaja' was corrected as 'Ja' but it is 'ja'
 TweetID: 944695026537390080
   Missing words: ['ésto']
   Surplus words: ['Abrevaya']
@@ -573,8 +573,6 @@ TweetID: 944695163720433664
   - 'lpm' was corrected as '-' but it is 'LPM'
 TweetID: 944695179843461121
   - 'limon' was corrected as 'Limón' but it is 'limón'
-TweetID: 944695185367293954
-  - 'Jajajajaj' was corrected as '-' but it is 'Ja'
 TweetID: 944695196238995456
   Missing words: ['avise']
   Surplus words: ['AlDiablo']
@@ -706,7 +704,7 @@ TweetID: 944695956620095489
 TweetID: 944695991269253121
   - 'Nacio' was corrected as 'Nació' but it is 'nació'
 TweetID: 944695997304852480
-  - 'jajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944696009317371906
   Surplus words: ['bondi']
   - 'aproposito' was corrected as 'Apropósito' but it is 'a_propósito'
@@ -769,7 +767,7 @@ TweetID: 944696779915845633
   Surplus words: ['recursé']
 TweetID: 944696785485860864
   Missing words: ['d']
-  - 'ajajajaj' was corrected as 'Aj' but it is 'ja'
+  - 'ajajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944696788933595137
   - 'rebentarme' was corrected as 'Reventarme' but it is 'reventarme'
 TweetID: 944696789852139520
@@ -787,7 +785,7 @@ TweetID: 944696886149238786
   Surplus words: ['geder', 'machimbre']
 TweetID: 944696913814872065
   Surplus words: ['pibes']
-  - 'jajajajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944696915865849857
   Surplus words: ['boluditos']
   - 'coetes' was corrected as 'costes' but it is 'cohetes'
@@ -802,7 +800,7 @@ TweetID: 944696983742308352
   Missing words: ['está', 'ta']
   Surplus words: ['papuda']
 TweetID: 944697013387571201
-  - 'jajajjaajjaajjaajaajaajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajjaajjaajjaajaajaajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944697030600994817
   Missing words: ['traeme']
 TweetID: 944697064788844544
@@ -819,10 +817,10 @@ TweetID: 944697245760479232
   - 'jaja' was corrected as 'Ja' but it is 'ja'
 TweetID: 944697248381915141
   - 'bb' was corrected as 'bien' but it is 'bebé'
-  - 'jajajajajajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajajajajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944697265914073088
   - 'Cn' was corrected as 'con' but it is 'Con'
-  - 'jajajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 944697323086602240
   - 'JAJAJAJAJA' was corrected as 'Ja' but it is 'JA'
   - 'lpm' was corrected as '-' but it is 'LPM'
@@ -1045,7 +1043,7 @@ TweetID: 948133698288971777
 TweetID: 948133713690464256
   - 'lpm' was corrected as '-' but it is 'LPM'
 TweetID: 948133828844978176
-  - 'jajjajaaj' was corrected as '-' but it is 'ja'
+  - 'jajjajaaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 948133831802019840
   Surplus words: ['bondi', 'prepagas']
   - Corrections for 'pa' are ['para', 'para', 'para']
@@ -1200,7 +1198,7 @@ TweetID: 948138684590821376
 TweetID: 948138972923953157
   - 'pen' was corrected as '-' but it is 'pan'
 TweetID: 948139267250966530
-  - 'aajajaja' was corrected as '-' but it is 'ja'
+  - 'aajajaja' was corrected as 'Ja' but it is 'ja'
 TweetID: 948139379201052673
   Missing words: ['Bs']
   - 'Assss' was corrected as 'As' but it is 'Aires'
@@ -1209,10 +1207,10 @@ TweetID: 948139594352152577
 TweetID: 948139605701922816
   Surplus words: ['Mati']
   - 'aca' was corrected as 'Acá' but it is 'acá'
-  - 'jajajajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajajajaj' was corrected as 'Ja' but it is 'ja'
   - 'pibeessss' was corrected as 'pies' but it is 'pibes'
 TweetID: 948139734643159040
-  - 'jajajajajahajhahahahaqjqj' was corrected as '-' but it is 'ja'
+  - 'jajajajajahajhahahahaqjqj' was corrected as 'Ja' but it is 'ja'
 TweetID: 948139848329723905
   Missing words: ['Mc']
   Surplus words: ['2x1', 'Betos', 'Burger']
@@ -1430,8 +1428,6 @@ TweetID: 949062824445333504
   - 'jua' was corrected as 'Gua' but it is 'ja'
 TweetID: 949062884734193664
   Surplus words: ['kinesiologo']
-TweetID: 949062885728243712
-  - 'Najajajaja' was corrected as '-' but it is 'Ja'
 TweetID: 949062897795289089
   Missing words: ['hacia']
   - 'wacho' was corrected as 'macho' but it is 'guacho'
@@ -1506,7 +1502,6 @@ TweetID: 949085185030737920
 TweetID: 949085188465799168
   Missing words: ['sras']
   - 'ARANCELI' was corrected as 'ARACELI' but it is 'Araceli'
-  - 'Ajjajaja' was corrected as '-' but it is 'Ja'
 TweetID: 949085196086861824
   - 'Tiiiii' was corrected as 'ti' but it is 'Si'
 TweetID: 949085200113373185
@@ -1878,7 +1873,7 @@ TweetID: 951649955126632448
   - 'pue' was corrected as 'Pué' but it is 'pués'
 TweetID: 951649990623072256
   - 'Vamooo' was corrected as 'Vano' but it is 'Vamos'
-  - 'jajajaj' was corrected as '-' but it is 'ja'
+  - 'jajajaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 951649993294860288
   - 'AAAAAAAAH' was corrected as 'Ah' but it is 'AH'
   - 'YAYAYAYAYAYYAYAYA' was corrected as 'ya' but it is 'YA'
@@ -1934,7 +1929,6 @@ TweetID: 951665336906022912
 TweetID: 951665341658206209
   Surplus words: ['jean', 'short']
 TweetID: 951665359056187392
-  - 'Ajajajaj' was corrected as 'Aj' but it is 'Ja'
   - 'buee' was corrected as 'Vue' but it is 'bueno'
 TweetID: 951665361669230592
   - 'metian' was corrected as 'Metían' but it is 'metían'
@@ -2026,7 +2020,7 @@ TweetID: 951680620622700546
 TweetID: 951680624007446528
   - 'Bue' was corrected as 'búe' but it is 'Bueno'
   - 'garron' was corrected as 'Garrón' but it is 'garrón'
-  - 'jajajjaajjaj' was corrected as '-' but it is 'ja'
+  - 'jajajjaajjaj' was corrected as 'Ja' but it is 'ja'
 TweetID: 951680628075978753
   - 'decis' was corrected as 'Decís' but it is 'decís'
 TweetID: 951680702130610176
@@ -2238,7 +2232,6 @@ TweetID: 951727165556625408
   Missing words: ['recupere']
   - 'Aaaaaa' was corrected as 'A' but it is 'Ah'
 TweetID: 951727193381588992
-  - 'Jaajajajaj' was corrected as '-' but it is 'Ja'
   - 'jajajaja' was corrected as 'Ja' but it is 'ja'
   - 'simpson' was corrected as 'Simpson' but it is 'Simpsons'
 

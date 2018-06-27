@@ -70,7 +70,7 @@
 944694817019322368	Amo los regalos que me manda mi hna de Colombia 😍
 	hna 0 hermana
 944694821092020224	A MIII https://t.co/OlZsA1UAjQ
-	MIII 0 mi
+	MIII 0 MI
 944694837093289985	@Pontorieromel yo xq me tente peor q vos escuchandote reír jajajajajaja
 	xq 0 porque
 	tente 1 tenté
@@ -124,7 +124,7 @@
 944695009420435467	participando en todos los sorteos pq la esperanza es lo último que se pierde 😂
 	pq 0 porque
 944695022741573637	@flandivar Gracias Coca Cola!!! Jajajaja!!! Es el único dando un buen mensaje navideño. https://t.co/GMeNXtBXep
-	Jajajaja 0 ja
+	Jajajaja 0 Ja
 944695026537390080	@alwaysPicuelo @bara_cab @SebasAbrevaya @ceferinoreato Para que su twitt no aparezca cuando el nombre del periodista sea noticia y ésto que escribe Abrevaya sobre él, quede, algo así como "soslayado". Por detrás, digamos.
 	twitt 0 tweet
 	ésto 0 esto
@@ -391,7 +391,7 @@
 	llamo 1 llamó
 	atencion 0 atención
 944696145170915328	@JAVIERHFABRE @navarrojar Enserio el presidente del comité de radicales de Córdoba no tiene nada para contestar?
-	Enserio 0 En_serio
+	Enserio 1 En_serio
 944696168201834496	Mi pieza es lo más parecido a una cueva
 944696174967230464	Te abrazaría una eternidad.
 944696179060891649	En una hora aprox es la fiesta y sigo en toalla jiji
@@ -412,7 +412,7 @@
 944696249705467905	Aguante el invierno
 944696259834777601	Y ahora compras con mamá! 💪🏽
 944696279174696961	Perdón mamá...te decepcione 💔
-	decepcione 0 decepcioné
+	decepcione 1 decepcioné
 944696301224124418	Porque agarro el celular borracho porqueeeeeeeee
 	porqueeeeeeeee 0 porque
 944696301777772544	2 dias 🏝🏝🇧🇷🇧🇷

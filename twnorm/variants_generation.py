@@ -129,6 +129,11 @@ class PrimaryCandidates(object):
             return repetition pattern found if exists
             else return ''
         """
+        # exclusively for laughter
+        for vowel in 'aeiou':
+            if word.count('j' + vowel) > 2 or word.count(vowel + 'j') > 2:
+                return 'j' + vowel
+
         result = ''
         regex = r"(\b([a-z]{2,}?)\2+\b)"
         pattern = re.findall(regex, word, re.X | re.I)
