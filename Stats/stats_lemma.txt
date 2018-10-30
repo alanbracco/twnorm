@@ -5,21 +5,21 @@ SUMMARY
 =======
 #TweetsToCorrect: 743
 #TweetsCorrected vs. #TweetsToBeCorrected: 740
-#TweetsCorrected vs. #TweetsNotToBeCorrected: 129
+#TweetsCorrected vs. #TweetsNotToBeCorrected: 128
 #TweetsNotCorrected vs. #TweetsToBeCorrected: 3
 Missing corrections: 3
-Surplus corrections: 183
+Surplus corrections: 182
 
 WTA detecion
 ------------
-Accuracy: 97.36%
-Precision: 74.66%
+Accuracy: 97.38%
+Precision: 74.84%
 Recall: 98.07%
 
 WTA correction
 ------------
-Accuracy: 94.08%
-Precision: 43.03%
+Accuracy: 94.11%
+Precision: 43.13%
 Recall: 56.53%
 
 DETAILED INFO
@@ -77,8 +77,6 @@ TweetID: 944696779915845633
 TweetID: 944696920051732481
   - 'entoces' should not be detected as WTA.
   - 'posteame' should not be detected as WTA.
-TweetID: 944696983742308352
-  - 'papuda' should not be detected as WTA.
 TweetID: 944697159038984194
   - 'todita' should not be detected as WTA.
 TweetID: 944697193948119041
@@ -1313,7 +1311,6 @@ TweetID: 951665174108430336
 TweetID: 951665220790910976
   - 'twitter' was corrected as '-' but it is 'twitter'
 TweetID: 951665232207892480
-  Surplus words: ['siliconas']
   - 'hs' was corrected as 'ha' but it is 'horas'
 TweetID: 951665242597142530
   - 'album' was corrected as '-' but it is 'álbum'
@@ -1483,9 +1480,8 @@ TweetID: 951710849374281728
 TweetID: 951710883092119552
   - 'veni' was corrected as 'beni' but it is 'vení'
 TweetID: 951710924087484416
-  Surplus words: ['sanguche', 'vikingos']
+  Surplus words: ['sanguche']
 TweetID: 951710928193708032
-  Surplus words: ['copionas']
   - 'bue' was corrected as 'vue' but it is 'bueno'
   - 'xd' was corrected as 'de' but it is 'xd'
 TweetID: 951710972745535488
