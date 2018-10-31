@@ -45,7 +45,7 @@
 	anda 1 andá
 	hdp 0 HDP
 944694754524135425	@agusleonetti1 @JuuliNv hacian como 33 grados
-	hacian 1 hacían
+	hacian 0 hacían
 944694754792656896	Ya me veo mañana a las 22:00hs durmiendo por lo cansada que voy a estar xD JAJAJAJA ni comida, ni brindis ni nada wey. :)
 	JAJAJAJA 0 ja
 944694759888736256	Me duele todo, los dedos del pie cortados pero siempre atr 😂 jajajajajajajaj
@@ -352,7 +352,7 @@
 	q 0 que
 	ult 0 última
 944695964207640577	En este mes pase por todos los estados y emociones posibles, no doy mas
-	pase 0 pasé
+	pase 1 pasé
 	mas 1 más
 944695977625182209	@pernaespos q ser humano desagradable https://t.co/PsYoHYz3E4
 	q 0 que
@@ -782,7 +782,7 @@
 948131425651486720	@sebapedron @Gatosylvestre @lacorderoes @pabloladaga @DavidCufre1 @EugeKarall @gmartincastillo @EzequielLopezJA Buen día y Feliz Año equipazo!
 948131467586129920	Bueno, todo muy lindo... pero odio la impuntualidad.
 948131479523119104	cría cuervos y te sacaran lo ojos
-	sacaran 0 sacarán
+	sacaran 1 sacarán
 948131528952958976	Los 15 de mi nenita! 😍 #TerribleNoche https://t.co/Bj0bsWdRw5
 948131571646820352	8 dia consecutivo q duermo mal
 	dia 0 día
@@ -1129,7 +1129,7 @@
 948135269106176000	Lo mal que le hace Netflix a mi salud.......
 948135273048637440	No tengo ni ganas de ir a trabajar dormí todo el día ayer y tengo sueño
 948135306045329408	Imposible poder levantarse hoy... menos teniendo un bombón durmiendo al lado @Maarvellani ♥️ te amo bebe✨
-	bebe 0 bebé
+	bebe 1 bebé
 948135319194492928	#NoCambioNada @lajeantonio. Y aca nos quejamos de la inflacion!! Buen dia !
 	aca 0 acá
 	inflacion 0 inflación
@@ -1405,7 +1405,7 @@
 949060936161165312	Hay que reirse p9ara no llorar (?
 	p9ara 0 para
 949060951768264704	Como hacerles entender a mis  viejos que no fumen más?
-	Como 0 Cómo
+	Como 1 Cómo
 949060957849968640	a alguien + le pasa q cuando escucha no me arrepiento de este amor de attaque se le viene a la cabeza el VIDEASO de la orga??????😍😍💗💗
 	q 0 que
 	attaque 0 ataque
@@ -1466,7 +1466,7 @@
 	Ahita 0 Ahi_está
 	y 1 e
 949061286285004800	@camiguzman En realidad eso es un proyecto de ley, pero si, tened razón
-	tened 0 tenés
+	tened 1 tenés
 949061295525056514	mi mamá se enojo pq estuve todo el día en mi casa, después si salgo mucho se queja.. quien t entiend mujer, decidite
 	enojo 1 enojó
 	pq 0 porque
@@ -2172,7 +2172,7 @@
 950486819711397889	Otro día en el que no tengo un perro como mascota y debo pasar ratos intentando llamar la atención del gato.
 950486826011316224	todo bien pero me afectas la visual
 950486892298100736	@Bracesco A ver, dónde están los responsables. Se deben prohibir lis celulares en servicio. Que cosa no entienden?
-	lis 0 los
+	lis 1 los
 950486911382147072	@fraanco_gallo Nunca me dijiste de imprimir nada!
 950486914678784005	que lindo es compartir mi vida a tu lado ❤ https://t.co/DM2NakHuo9
 950486925248483339	@DaianaAbril12 la vida es corta,hacete torta,chissstee,todos giles,no se rescata ni unooo
@@ -2559,10 +2559,10 @@
 	q 0 que
 	decis 0 decís
 951695388175749120	Mi único héroe en este lió! https://t.co/z0KSMw6nmS
-	lió 0 lío
+	lió 1 lío
 951695413479923713	Me alegra tanto que a Lucas le valla bien! Ojalá siempre le valla así 😍❤
-	valla 0 vaya
-	valla 0 vaya
+	valla 1 vaya
+	valla 1 vaya
 951695418982912001	@merce_ascanio Ahh re bien, en la capital jaja
 	Ahh 0 Ah
 	jaja 0 ja
