@@ -203,7 +203,6 @@ class Evaluator(object):
         return wta_tuple, corr_tuple
 
     def write_detailed_info(self, gold_dict, gen_dict):
-
         set_gold_ids = set(gold_dict.keys())
         set_generated_ids = set(gen_dict.keys())
 
@@ -285,6 +284,7 @@ class Evaluator(object):
 
         if no_context_corrections:
             gold_dict = self.filter_existing_words(gold_dict)
+            gen_dict = self.filter_existing_words(gen_dict)
 
         if not case_sensitive:
             gold_dict = self.to_lower_case(gold_dict)
@@ -308,12 +308,11 @@ class Evaluator(object):
         return corr_dict
 
     def filter_existing_words(self, corr_dict):
-        classifier = WTAclassifier()
         filtered_dict = dict()
 
         for tid in corr_dict:
             filtered_words = [(o, t, c) for o, t, c in corr_dict[tid]
-                              if not classifier.check(o)]
+                              if t == "0"]
             if filtered_words:
                 filtered_dict[tid] = filtered_words
 

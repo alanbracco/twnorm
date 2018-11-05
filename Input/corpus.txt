@@ -52,7 +52,7 @@
 	atr 0 ATR
 	jajajajajajajaj 0 ja
 944694760626905088	Creo que le jodi los intestinos a mi vieja con mis mates pedorros
-	jodi 1 jodí
+	jodi 0 jodí
 944694767723732992	@Rex_Aluminio son unos cararrotas .cinicos todos .
 	cararrotas 0 cara_rotas
 	cinicos 0 cínicos
