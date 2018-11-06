@@ -21,7 +21,7 @@ def MainProcess(input_file, output_file, model_file,
         selector = BaselineSelector()
     else:
         classifier = WTAclassifier(lemma=lemma)
-        variants_generator = VariantsGenerator()
+        variants_generator = VariantsGenerator(lemma=lemma)
         selector = Selector(model_file)
 
     tokenized = splitter.get_analyzable_tokens()

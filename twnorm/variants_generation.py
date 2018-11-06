@@ -8,8 +8,8 @@ from twnorm.candidates_memory import CandidatesMemory
 
 class PrimaryCandidates(object):
 
-    def __init__(self, n=2):
-        self.cf = WTAclassifier()
+    def __init__(self, n=2, lemma=False):
+        self.cf = WTAclassifier(lemma=lemma)
         self.n_errors = n
 
     def upper_lower(self, word):
@@ -235,8 +235,8 @@ class PrimaryCandidates(object):
 
 
 class SecondaryCandidates(object):
-    def __init__(self):
-        self.helper = PrimaryCandidates(2)
+    def __init__(self, n=2, lemma=False):
+        self.helper = PrimaryCandidates(n=n, lemma=lemma)
 
     def edit_distance(self, word):
         candidates = set()
@@ -285,9 +285,9 @@ class SecondaryCandidates(object):
 
 
 class VariantsGenerator(object):
-    def __init__(self, n=2):
-        self.primary = PrimaryCandidates(n)
-        self.secondary = SecondaryCandidates()
+    def __init__(self, n=2, lemma=False):
+        self.primary = PrimaryCandidates(n=n, lemma=lemma)
+        self.secondary = SecondaryCandidates(n=n, lemma=lemma)
         self.memory = CandidatesMemory()
 
     def generate(self, word):
