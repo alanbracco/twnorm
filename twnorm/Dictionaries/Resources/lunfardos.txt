@@ -813,7 +813,6 @@ aburrido
 al tun tun
 aparcero
 atorniyar
-aca
 al uso nostro
 aparceru
 atorra
@@ -1536,8 +1535,7 @@ bruyir
 bajo
 belinun
 boleras
-bubon
-bajon
+bubón
 bellaco
 boleta
 buche
@@ -1545,7 +1543,7 @@ bajoneada
 bellaqueada
 boleteada
 buchon/na
-bajoneado/da
+bajoneado
 bellaquear
 boletear
 buco
@@ -1627,7 +1625,6 @@ bollo
 bufach
 balotear
 berrido
-bolo
 bufacho
 balumba
 berrinche
@@ -1755,7 +1752,7 @@ bombolo/la
 bulloniada
 bandola
 bichicome
-bombon
+bombón
 bulloniana
 bandoleon
 bicho
@@ -2954,7 +2951,7 @@ caldosa
 cateman
 chuparse
 corto/ta
-calefon
+calefón
 catengues
 chuparse los dedos
 cosa
@@ -2982,7 +2979,7 @@ calentarse al pedo
 catramina
 chupín
 cosiaco
-calenton
+calentón
 catre
 chupines
 cosimus
@@ -10332,6 +10329,10 @@ prendido/da
 panzada
 pelechada
 pionono
+prepaga
+prepago
+prepagos
+prepagas
 preparador
 panzer
 pelechar
@@ -10881,7 +10882,6 @@ parviar
 perreria
 plantera
 pulóver
-pas
 perrero
 plantificar
 pulpería

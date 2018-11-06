@@ -44,6 +44,7 @@ class Dicts(object):
 
     def is_valid(self, word):
         result = (self.is_in_lemario(word) or
+                  word in self.slang or
                   word in self.names or
                   word in self.norm.values())
         return result
