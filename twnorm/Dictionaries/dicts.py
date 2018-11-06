@@ -28,7 +28,10 @@ class Dicts(object):
         lemfile = open(os.path.join(resources_path, 'lemario.txt'), 'r')
         lines = lemfile.read().split('\n')
         lemfile.close()
-        self.lemario = {word for word in lines}
+        lemario_tmp = defaultdict(set)
+        for word in lines:
+            lemario_tmp[word[0]].add(word)
+        self.lemario = dict(lemario_tmp)
 
         # create set of argentine slang
         slangfile = open(os.path.join(resources_path, 'lunfardos.txt'), 'r')
@@ -36,8 +39,11 @@ class Dicts(object):
         slangfile.close()
         self.slang = {word for word in lines}
 
+    def is_in_lemario(self, word):
+        return word[0] in self.lemario.keys() and word in self.lemario[word[0]]
+
     def is_valid(self, word):
-        result = (word in self.lemario or
+        result = (self.is_in_lemario(word) or
                   word in self.names or
                   word in self.norm.values())
         return result
