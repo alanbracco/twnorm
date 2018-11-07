@@ -13,8 +13,8 @@ Options:
 
 import pickle
 from docopt import docopt
-from corpus.ancora import AncoraCorpusReader
-from languagemodeling.ngram import BackOffNGram
+from ancora import AncoraCorpusReader
+from twnorm.languagemodeling.ngram import BackOffNGram
 
 if __name__ == '__main__':
     opts = docopt(__doc__)
