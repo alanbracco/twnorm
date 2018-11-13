@@ -1,0 +1,1146 @@
+STATISTICS
+==========
+
+SUMMARY
+=======
+#TweetsToCorrect: 306
+#TweetsCorrected vs. #TweetsToBeCorrected: 304
+#TweetsCorrected vs. #TweetsNotToBeCorrected: 97
+#TweetsNotCorrected vs. #TweetsToBeCorrected: 2
+Missing corrections: 2
+Surplus corrections: 170
+
+WTA detecion
+------------
+Accuracy: 94.08%
+Precision: 55.64%
+Recall: 95.33%
+
+WTA correction
+------------
+Accuracy: 89.31%
+Precision: 18.29%
+Recall: 31.33%
+
+DETAILED INFO
+=============
+
+MISSING TWEETS
+--------------
+TweetID: 318512599467696128
+  - 'pa' was not detected as WTA.
+TweetID: 318654384772890624
+  - 'cola-cao' was not detected as WTA.
+
+SURPLUS TWEETS
+--------------
+TweetID: 318487164084187136
+  - 'k' should not be detected as WTA.
+TweetID: 318488322114723840
+  - 'q' should not be detected as WTA.
+  - 'q' should not be detected as WTA.
+  - 'toñi' should not be detected as WTA.
+TweetID: 318489371999367169
+  - 'q' should not be detected as WTA.
+TweetID: 318489386348052480
+  - 'mencioname' should not be detected as WTA.
+TweetID: 318496346061557760
+  - 'bbk' should not be detected as WTA.
+TweetID: 318496561569083392
+  - 'pa' should not be detected as WTA.
+TweetID: 318501358699417602
+  - 'apesar' should not be detected as WTA.
+TweetID: 318505573127700480
+  - 'dias' should not be detected as WTA.
+  - 'dia' should not be detected as WTA.
+TweetID: 318506739760771072
+  - 'temillas' should not be detected as WTA.
+TweetID: 318507931022802944
+  - 'gaona' should not be detected as WTA.
+TweetID: 318512038508888064
+  - 'jajaja' should not be detected as WTA.
+  - 'flipo' should not be detected as WTA.
+TweetID: 318527657086181376
+  - 'still' should not be detected as WTA.
+TweetID: 318535821772849152
+  - 'shine' should not be detected as WTA.
+  - 'acoustic' should not be detected as WTA.
+TweetID: 318536247930916865
+  - 'dia' should not be detected as WTA.
+  - 'jaja' should not be detected as WTA.
+TweetID: 318545757852540930
+  - 'trending' should not be detected as WTA.
+  - 'topics' should not be detected as WTA.
+  - 'hashtags' should not be detected as WTA.
+TweetID: 318551410109202433
+  - 'vigo' should not be detected as WTA.
+  - 'snif' should not be detected as WTA.
+TweetID: 318591163043028992
+  - 'agusto' should not be detected as WTA.
+TweetID: 318596947432841216
+  - 'siestón' should not be detected as WTA.
+TweetID: 318638890569310208
+  - 'afeitate' should not be detected as WTA.
+  - 'jajaja' should not be detected as WTA.
+TweetID: 318645519352225792
+  - 'duchita' should not be detected as WTA.
+TweetID: 318662579226554368
+  - 'zenia' should not be detected as WTA.
+  - 'z' should not be detected as WTA.
+  - 'zara' should not be detected as WTA.
+  - 'jajajajaja' should not be detected as WTA.
+TweetID: 318664893698015233
+  - 'cream' should not be detected as WTA.
+  - 'mandarine' should not be detected as WTA.
+  - 'moham' should not be detected as WTA.
+  - 'ram' should not be detected as WTA.
+TweetID: 318676223985336320
+  - 'batman' should not be detected as WTA.
+  - 'jdjejdkahflwkdjwpvqh' should not be detected as WTA.
+TweetID: 318678947573424128
+  - 'westfallenstadion' should not be detected as WTA.
+  - 'signal' should not be detected as WTA.
+  - 'iduna' should not be detected as WTA.
+  - 'park' should not be detected as WTA.
+TweetID: 318682622559666176
+  - 'twitter' should not be detected as WTA.
+TweetID: 318685273900843009
+  - 'death' should not be detected as WTA.
+TweetID: 318688224920891392
+  - 'bbqscreen' should not be detected as WTA.
+  - 'android' should not be detected as WTA.
+  - 'pc' should not be detected as WTA.
+TweetID: 318690506097963008
+  - 'tk' should not be detected as WTA.
+TweetID: 318697349071376386
+  - 'fifa' should not be detected as WTA.
+  - 'xbox' should not be detected as WTA.
+TweetID: 318699483020017664
+  - 'jajajaja' should not be detected as WTA.
+  - 'ok' should not be detected as WTA.
+  - 'ok' should not be detected as WTA.
+  - 'xd' should not be detected as WTA.
+TweetID: 318707548029083648
+  - 'jajaja' should not be detected as WTA.
+  - 'jajajaja' should not be detected as WTA.
+  - 'shm' should not be detected as WTA.
+  - 'jaja' should not be detected as WTA.
+TweetID: 318712863718010881
+  - 'ai' should not be detected as WTA.
+TweetID: 318721456571822081
+  - 'pobrecillos' should not be detected as WTA.
+TweetID: 318721870893551617
+  - 'oins' should not be detected as WTA.
+  - 'q' should not be detected as WTA.
+  - 'agustito' should not be detected as WTA.
+TweetID: 318728082812964865
+  - 'asdfggbjkkkl' should not be detected as WTA.
+TweetID: 318752014320427008
+  - 'concursal' should not be detected as WTA.
+  - 'master' should not be detected as WTA.
+  - 'pic' should not be detected as WTA.
+TweetID: 318760301266886656
+  - 'gabriela' should not be detected as WTA.
+TweetID: 318769930554208257
+  - 'jajaja' should not be detected as WTA.
+  - 'bubu' should not be detected as WTA.
+TweetID: 318772186380902401
+  - 'gym' should not be detected as WTA.
+  - 'subreal' should not be detected as WTA.
+TweetID: 318773689657196545
+  - 'dia' should not be detected as WTA.
+TweetID: 318790332122804224
+  - 'q' should not be detected as WTA.
+  - 'jajaja' should not be detected as WTA.
+TweetID: 318802432618545152
+  - 'jajajaja' should not be detected as WTA.
+TweetID: 318807932043137025
+  - 'aurori' should not be detected as WTA.
+TweetID: 318808390161793024
+  - 'jajajaja' should not be detected as WTA.
+TweetID: 318814597547175936
+  - 'jajajaja' should not be detected as WTA.
+TweetID: 318817076884156416
+  - 'flipo' should not be detected as WTA.
+  - 'ai' should not be detected as WTA.
+  - 'mai' should not be detected as WTA.
+TweetID: 318822727983169537
+  - 'at' should not be detected as WTA.
+  - 'getafe' should not be detected as WTA.
+TweetID: 318830696779104256
+  - 'ourense' should not be detected as WTA.
+  - 'rivas' should not be detected as WTA.
+  - 'vaciamadrid' should not be detected as WTA.
+TweetID: 318832009092939776
+  - 'yam' should not be detected as WTA.
+  - 'jajaja' should not be detected as WTA.
+  - 'xd' should not be detected as WTA.
+TweetID: 318835281417621504
+  - 'q' should not be detected as WTA.
+TweetID: 318837516377657344
+  - 'yeahhhhhh' should not be detected as WTA.
+TweetID: 318841905498693632
+  - 'dia' should not be detected as WTA.
+TweetID: 318844422701842434
+  - 'dl' should not be detected as WTA.
+  - 'twitter' should not be detected as WTA.
+  - 'q' should not be detected as WTA.
+TweetID: 318848163505135616
+  - 'k' should not be detected as WTA.
+TweetID: 318850084395708416
+  - 'londres' should not be detected as WTA.
+TweetID: 318850782101393408
+  - 'iva' should not be detected as WTA.
+  - 'jajaja' should not be detected as WTA.
+TweetID: 318860383605637122
+  - 'pa' should not be detected as WTA.
+TweetID: 318863353978175489
+  - 'x' should not be detected as WTA.
+  - 'xd' should not be detected as WTA.
+TweetID: 318869736261828609
+  - 'k' should not be detected as WTA.
+  - 'k' should not be detected as WTA.
+TweetID: 318879614569172992
+  - 'q' should not be detected as WTA.
+TweetID: 318892656744861696
+  - 'amoor' should not be detected as WTA.
+  - 'nesse' should not be detected as WTA.
+  - 'link' should not be detected as WTA.
+  - '3x' should not be detected as WTA.
+  - 'obg' should not be detected as WTA.
+TweetID: 318908559578509313
+  - 'jajajajajajaja' should not be detected as WTA.
+  - 'xddddd' should not be detected as WTA.
+TweetID: 318914346099032064
+  - 'tt' should not be detected as WTA.
+  - 'twd' should not be detected as WTA.
+TweetID: 318946783944400897
+  - 'j' should not be detected as WTA.
+TweetID: 318991831096492032
+  - 'dias' should not be detected as WTA.
+TweetID: 318993548911456256
+  - 'veraneamos' should not be detected as WTA.
+TweetID: 318994659986776064
+  - 'triana' should not be detected as WTA.
+  - 'pablo' should not be detected as WTA.
+TweetID: 319004225323548672
+  - 'triana' should not be detected as WTA.
+TweetID: 319007653797974016
+  - 'ok' should not be detected as WTA.
+TweetID: 319013015498391552
+  - 'laura' should not be detected as WTA.
+TweetID: 319021292764413952
+  - 'natu' should not be detected as WTA.
+TweetID: 319025265055510529
+  - 'dias' should not be detected as WTA.
+  - 'dia' should not be detected as WTA.
+  - 'dia' should not be detected as WTA.
+  - 'besazo' should not be detected as WTA.
+TweetID: 319029520608923650
+  - 'mourinho' should not be detected as WTA.
+  - 'madridismo' should not be detected as WTA.
+TweetID: 319030460745383936
+  - 'wordpress' should not be detected as WTA.
+  - 'i' should not be detected as WTA.
+TweetID: 319041557141528576
+  - 'derrick' should not be detected as WTA.
+  - 'gym' should not be detected as WTA.
+TweetID: 319049276330229760
+  - 'n' should not be detected as WTA.
+TweetID: 319051777263673344
+  - 'gear' should not be detected as WTA.
+  - 'solid' should not be detected as WTA.
+  - 'v' should not be detected as WTA.
+  - 'the' should not be detected as WTA.
+  - 'phantom' should not be detected as WTA.
+  - 'pain' should not be detected as WTA.
+TweetID: 319060514552561664
+  - 'by' should not be detected as WTA.
+TweetID: 319062038116712448
+  - 'indignante' should not be detected as WTA.
+TweetID: 319068200518184960
+  - 'twitter' should not be detected as WTA.
+TweetID: 319071747775266817
+  - 'mesecitos' should not be detected as WTA.
+TweetID: 319075279601549312
+  - 'q' should not be detected as WTA.
+  - 'q' should not be detected as WTA.
+TweetID: 319083306530521088
+  - 'tl' should not be detected as WTA.
+  - 'xd' should not be detected as WTA.
+TweetID: 319086455450382336
+  - 'b' should not be detected as WTA.
+TweetID: 319088373874712576
+  - 'jajaja' should not be detected as WTA.
+TweetID: 319089651971403776
+  - 'amol' should not be detected as WTA.
+TweetID: 319094452801126400
+  - 'xd' should not be detected as WTA.
+TweetID: 319095916046995456
+  - 'k' should not be detected as WTA.
+  - 'jaja' should not be detected as WTA.
+TweetID: 319100436940455938
+  - 'ruth' should not be detected as WTA.
+  - 'liam' should not be detected as WTA.
+TweetID: 319103335019978754
+  - 'jaja' should not be detected as WTA.
+TweetID: 319104304516571136
+  - 'c' should not be detected as WTA.
+TweetID: 319107011000295425
+  - 'new' should not be detected as WTA.
+  - 'cayenablanca' should not be detected as WTA.
+  - 'studio' should not be detected as WTA.
+TweetID: 319112642138632192
+  - 'ruleo' should not be detected as WTA.
+TweetID: 319117472148103168
+  - 'rt' should not be detected as WTA.
+  - 'twitter' should not be detected as WTA.
+TweetID: 319122114978381826
+  - 'corujas' should not be detected as WTA.
+TweetID: 319133149986705408
+  - 'cc.aa' should not be detected as WTA.
+TweetID: 319143466137436160
+  - 'xd' should not be detected as WTA.
+
+CONFLICTIVE TWEETS
+------------------
+TweetID: 318486376570032128
+  Surplus words: ['q']
+  - 'pesadosss' was corrected as 'pesados_ss' but it is 'pesados'
+  - 'wpp' was corrected as 'pp' but it is 'whatsapp'
+TweetID: 318486747468152832
+  Surplus words: ['asis']
+  - 'parker' was corrected as 'parecer' but it is 'parker'
+  - 'ptos' was corrected as 'otos' but it is 'puntos'
+  - 'rbts' was corrected as 'robots' but it is 'rebotes'
+  - 'tony' was corrected as 'ton' but it is 'tony'
+TweetID: 318487110074134529
+  Surplus words: ['tardeecita']
+  - 'bn' was corrected as 'en' but it is 'bien'
+  - 'contentaa' was corrected as 'contentas' but it is 'contenta'
+  - 'despuees' was corrected as 'despees' but it is 'después'
+  - 'enteraa' was corrected as 'enteras' but it is 'entera'
+  - 'poos' was corrected as 'poso' but it is 'pues'
+  - 'unaa' was corrected as 'anua' but it is 'una'
+  - 'voii' was corrected as 'voila' but it is 'voy'
+TweetID: 318487548475342848
+  - 'sageraaaá' was corrected as 'exagerará' but it is 'exagerada'
+TweetID: 318490941117829120
+  - 'peli' was corrected as 'pile' but it is 'película'
+TweetID: 318493945665552385
+  - 'nose' was corrected as 'nos' but it is 'no_sé'
+TweetID: 318495771706138624
+  - 'tuenti' was corrected as 'lentitud' but it is 'tuenti'
+TweetID: 318496387933282306
+  Surplus words: ['jaja']
+  - 'feaa' was corrected as 'feas' but it is 'fea'
+  - 'nadaa' was corrected as 'nadas' but it is 'nada'
+  - 'pasarmeloo' was corrected as 'pasarme_loo' but it is 'pasármelo'
+  - 'voi' was corrected as 'vio' but it is 'voy'
+TweetID: 318501835293986816
+  - 'graciiaaaaa' was corrected as 'agraciara' but it is 'gracia'
+TweetID: 318502333707321345
+  Missing words: ['isabel']
+  Surplus words: ['and', 'did', 'ferdinand']
+TweetID: 318503061016416257
+  Surplus words: ['jajaja']
+  - 'dicees' was corrected as 'dieces' but it is 'dices'
+TweetID: 318505870621286400
+  Surplus words: ['body']
+  - 'piemontese' was corrected as 'semoviente' but it is 'piamontesa'
+TweetID: 318507463093653505
+  - 'soi' was corrected as 'so' but it is 'soy'
+TweetID: 318508642448076800
+  - 'mia' was corrected as 'miá' but it is 'mía'
+TweetID: 318509498715222017
+  Surplus words: ['q']
+  - 'ns' was corrected as 'bs' but it is 'nos'
+TweetID: 318509880992477184
+  - 'tequieromucho' was corrected as 'mantequillero' but it is 'te_quiero_mucho'
+TweetID: 318511111701921792
+  - 'cuehtion' was corrected as 'cuestiona' but it is 'cuestión'
+  - 'eza' was corrected as 'ésa' but it is 'esa'
+TweetID: 318512163494965248
+  Surplus words: ['q']
+  - Corrections for 'pa' are ['para', 'para']
+    but you corrected as ['ap', 'ap']
+TweetID: 318512617771634690
+  - 'culpaa' was corrected as 'culpas' but it is 'culpa'
+TweetID: 318514191428382720
+  Surplus words: ['ciu', 'jajaja']
+  - 'envie' was corrected as 'envié' but it is 'envíe'
+  - 'whatsapp' was corrected as '-' but it is 'whatsapp'
+TweetID: 318514331773976578
+  Surplus words: ['jajaja']
+  - Corrections for 'queva' are ['qué_va', 'qué_va']
+    but you corrected as ['nueva', 'nueva']
+TweetID: 318518211677143042
+  - 'ortuella' was corrected as 'portezuela' but it is 'ortuella'
+TweetID: 318520669316972545
+  Surplus words: ['fliparás', 's']
+  - 'retuiteao' was corrected as 'moquitear' but it is 'retuiteado'
+TweetID: 318527291351257089
+  Surplus words: ['jejejejejejejejeje']
+  - 'retwitear' was corrected as 'repiquetear' but it is 'retwittear'
+TweetID: 318530585637310465
+  Surplus words: ['lauristas']
+  - 'cmun' was corrected as 'cm_un' but it is 'común'
+  - 'cn' was corrected as 'cm' but it is 'con'
+  - 'hems' was corrected as 'hes' but it is 'hemos'
+  - 'mcho' was corrected as 'cho' but it is 'mucho'
+  - 'myoria' was corrected as 'memoria' but it is 'mayoría'
+  - 'tneis' was corrected as 'tenis' but it is 'tenéis'
+TweetID: 318537197571674112
+  Surplus words: ['dia', 'face', 'q']
+  - 'cn' was corrected as 'cm' but it is 'con'
+  - 'mñana' was corrected as 'mana' but it is 'mañana'
+  - 'wapita' was corrected as 'apita' but it is 'guapita'
+TweetID: 318537666113187840
+  Surplus words: ['k']
+  - 'aki' was corrected as 'ali' but it is 'aquí'
+TweetID: 318541303099039744
+  Surplus words: ['q', 't']
+  - 'io' was corrected as 'o' but it is 'yo'
+  - 'tkmmmmmmm' was corrected as '-' but it is 'te_quiero_mucho'
+TweetID: 318552955261440001
+  - 'orda' was corrected as 'roda' but it is 'horda'
+TweetID: 318561208104017922
+  Surplus words: ['cojones', 'i', 'q']
+  - 'estoi' was corrected as 'esto' but it is 'estoy'
+TweetID: 318566795810336768
+  - 'aseh' was corrected as 'ase' but it is 'haces'
+  - 'ker' was corrected as 'ser' but it is 'qué_es'
+TweetID: 318597777674358784
+  Missing words: ['to']
+  Surplus words: ['k', 'ostia']
+TweetID: 318602358831599616
+  - 'dsd' was corrected as 'dad' but it is 'desde'
+  - 'jaaja' was corrected as 'jauja' but it is 'ja'
+TweetID: 318614028387770368
+  - 'cumpleee' was corrected as 'cumple' but it is 'cumpleaños'
+TweetID: 318624227441905664
+  - 'faltao' was corrected as 'falta' but it is 'faltado'
+  - 'pa' was corrected as 'ap' but it is 'para'
+TweetID: 318632036640387072
+  Surplus words: ['asi', 'aver']
+  - 'asik' was corrected as 'asir' but it is 'así_que'
+  - 'besitoo' was corrected as 'hesito' but it is 'besito'
+  - 'ktal' was corrected as 'tal' but it is 'qué_tal'
+  - 'sii' was corrected as 'si' but it is 'sí'
+  - 'vosotrs' was corrected as 'vosotras' but it is 'vosotros'
+TweetID: 318632503537713152
+  - 'laa' was corrected as 'ala' but it is 'la'
+  - 'roomeeriiia' was corrected as 'romeriega' but it is 'romería'
+TweetID: 318632879850663936
+  Surplus words: ['mou']
+  - 'iker' was corrected as 'bróker' but it is 'íker'
+  - 'valdés' was corrected as 'baldés' but it is 'valdés'
+TweetID: 318636545248747520
+  Surplus words: ['dia', 'dias.que']
+  - 'malisimos' was corrected as 'sialismos' but it is 'malísimos'
+TweetID: 318646979762724864
+  Surplus words: ['c0n', 'dias']
+  - 'pien' was corrected as 'píen' but it is 'pie'
+TweetID: 318651222083129344
+  Surplus words: ['phone', 'windows']
+  - 'firefoxos' was corrected as 'reformaos' but it is 'firefox_os'
+TweetID: 318662859682893824
+  Surplus words: ['dia']
+TweetID: 318663578402058240
+  - 'jajajaj' was corrected as 'alhaja' but it is 'ja'
+TweetID: 318672260078661632
+  Surplus words: ['ok']
+  - 'tambien' was corrected as 'cambien' but it is 'también'
+TweetID: 318675920804261888
+  Surplus words: ['q']
+TweetID: 318678733101871104
+  - 'naturá' was corrected as 'natura' but it is 'natural'
+TweetID: 318680129930944512
+  Surplus words: ['malita', 'me.hace']
+  - 'mami' was corrected as 'mima' but it is 'mamá'
+TweetID: 318680716386918401
+  - 'iraaaaaaa' was corrected as '-' but it is 'ira'
+  - 'jajajaa' was corrected as 'ajara' but it is 'ja'
+  - 'jejej' was corrected as 'eje' but it is 'je'
+TweetID: 318680771848187907
+  - 'whatsapp' was corrected as '-' but it is 'whatsapp'
+TweetID: 318682275229335552
+  Surplus words: ['charlita', 'jajaja', 'musica']
+  - 'jajajajajaj' was corrected as 'maltrabaja' but it is 'ja'
+TweetID: 318687428082810880
+  - 'alfin' was corrected as 'alfan' but it is 'al_fin'
+TweetID: 318691969280925696
+  Missing words: ['jajajaj']
+  Surplus words: ['jajajaja']
+  - 'adri' was corrected as 'adir' but it is 'adri'
+  - 'amoss' was corrected as 'amos' but it is 'vamos'
+  - 'unaaaaaaaaaaa' was corrected as '-' but it is 'una'
+TweetID: 318693056532578304
+  Surplus words: ['jajaja']
+TweetID: 318702582803623936
+  - 'ignasi' was corrected as 'asigna' but it is 'ignasi'
+TweetID: 318702802547400704
+  - 'asiquee' was corrected as 'asique' but it is 'así_que'
+  - 'hooy' was corrected as 'hoyo' but it is 'hoy'
+  - 'rubiaa' was corrected as 'rubias' but it is 'rubia'
+  - 'tocaa' was corrected as 'tocas' but it is 'toca'
+  - 'tuu' was corrected as 'tui' but it is 'tú'
+TweetID: 318704999339266051
+  - 'esq' was corrected as 'es' but it is 'es_que'
+  - 'jaajja' was corrected as 'jauja' but it is 'ja'
+TweetID: 318706998424252416
+  Missing words: ['mio']
+  Surplus words: ['xd', 'yuyu']
+TweetID: 318711790638862337
+  - 'pa' was corrected as 'ap' but it is 'la'
+TweetID: 318713551533510656
+  Surplus words: ['dia', 'jajaja']
+  - 'mii' was corrected as 'mio' but it is 'mí'
+  - 'tambiien' was corrected as 'ambienta' but it is 'también'
+TweetID: 318718107743031296
+  Surplus words: ['besazo', 'cuidarle', 'jaja']
+TweetID: 318718181239820289
+  - 'jajaa' was corrected as 'ajada' but it is 'ja'
+TweetID: 318718583339376641
+  Surplus words: ['desvio', 'jajajaja', 'x']
+TweetID: 318720027660546048
+  - 'pokitin' was corrected as 'ponentino' but it is 'poquitín'
+TweetID: 318722712044466176
+  Missing words: ['pos']
+  Surplus words: ['bebi', 'horita']
+  - 'miriendar' was corrected as 'merienda' but it is 'merendar'
+TweetID: 318722719531294720
+  Surplus words: ['jajajaja']
+  - 'asinque' was corrected as 'asique' but it is 'así_que'
+TweetID: 318723711643557889
+  Surplus words: ['da.igual']
+TweetID: 318724302407090177
+  Missing words: ['to']
+  Surplus words: ['de.to', 'mii.gordii', 'toloc']
+  - 'artica' was corrected as 'ártica' but it is 'hartica'
+  - 'comiita' was corrected as 'compita' but it is 'comidita'
+  - 'resiien' was corrected as 'resinen' but it is 'recién'
+TweetID: 318727039739912192
+  Surplus words: ['jaja']
+TweetID: 318728946764103680
+  Missing words: ['to']
+  Surplus words: ['jajaja', 'xq']
+  - 'pasao' was corrected as 'pasa' but it is 'pasado'
+  - 'porai' was corrected as 'porra' but it is 'por_ahí'
+TweetID: 318728991508951042
+  - 'cosaas' was corrected as 'casaos' but it is 'cosas'
+  - 'qe' was corrected as 'e' but it is 'que'
+TweetID: 318729597099335681
+  Surplus words: ['gaupasa', 'my', 'with']
+TweetID: 318730519816855552
+  - 'jajjajjajja' was corrected as '-' but it is 'ja'
+TweetID: 318730746598678529
+  - 'camara' was corrected as 'amara' but it is 'cámara'
+TweetID: 318732358830399489
+  - 'peli' was corrected as 'pile' but it is 'película'
+TweetID: 318734586018418688
+  Surplus words: ['estes']
+  - 'alvaero' was corrected as 'aeronaval' but it is 'alvaro'
+  - 'patri' was corrected as 'patria' but it is 'patri'
+  - 'siges' was corrected as 'gises' but it is 'sigues'
+TweetID: 318737048720793600
+  - 'betis' was corrected as 'bites' but it is 'betis'
+  - 'cuestaa' was corrected as 'cuestas' but it is 'cuesta'
+  - 'dspues' was corrected as 'puedes' but it is 'después'
+  - 'estaa' was corrected as 'estas' but it is 'esta'
+TweetID: 318737297392668674
+  Surplus words: ['abe', 'jajajaja']
+  - 'diita' was corrected as 'dita' but it is 'diíta'
+TweetID: 318739742562865154
+  Missing words: ['adioos', 'bateriaa', "biebeer's"]
+  Surplus words: ['adios', 'bateriaa.adioos', 'justin']
+  - 'aaa' was corrected as 'asa' but it is 'ah'
+  - 'mooovil' was corrected as 'moviliza' but it is 'móvil'
+  - 'twitteer' was corrected as 'titerero' but it is 'twitter'
+TweetID: 318739885588623361
+  - 'qe' was corrected as 'e' but it is 'que'
+TweetID: 318745192926703616
+  - 'jajaj' was corrected as 'aja' but it is 'ja'
+TweetID: 318747920759406592
+  Missing words: ['danes']
+  Surplus words: ['jaja', 'playita']
+TweetID: 318749874784980992
+  - 'abandonaa' was corrected as 'abandonas' but it is 'abandonada'
+TweetID: 318755269163233282
+  Surplus words: ['q']
+  - 'antoniojajaj' was corrected as 'antojaron' but it is 'antonio_ja'
+  - 'coxinooooo' was corrected as 'coordino' but it is 'cochino'
+TweetID: 318757581852114945
+  - 'largittaa' was corrected as 'litargirio' but it is 'larguita'
+TweetID: 318757838409310209
+  - 'xaaanadu' was corrected as 'aduana' but it is 'xanadú'
+TweetID: 318762309285707776
+  Surplus words: ['guti']
+  - 'pabliukas' was corrected as 'parabólicas' but it is 'pabliukas'
+TweetID: 318767307520372738
+  Missing words: ["rt's"]
+  Surplus words: ['justin']
+TweetID: 318767349241102336
+  Surplus words: ['jejeje']
+  - 'joe' was corrected as 'jo' but it is 'joder'
+TweetID: 318769189441642496
+  Surplus words: ['hahahahahaha', 'justin', 'omg']
+  - 'icon' was corrected as 'ion' but it is 'icono'
+TweetID: 318771041205882880
+  - 'priiimito' was corrected as 'primitivo' but it is 'primito'
+TweetID: 318775085169254401
+  - 'bueh' was corrected as 'buen' but it is 'bah'
+TweetID: 318776809267290113
+  Surplus words: ['paluegos']
+  - 'fanegol' was corrected as 'faneguero' but it is 'fanegol'
+  - 'jajajajajajajajajjajajajajajaja' was corrected as '-' but it is 'ja'
+  - 'meoooo' was corrected as 'metazoo' but it is 'meo'
+TweetID: 318778803419750401
+  Surplus words: ['13km', 'jaja']
+  - 'cn' was corrected as 'cm' but it is 'con'
+TweetID: 318779805191528448
+  Surplus words: ['dia', 'q']
+TweetID: 318781041621991425
+  - 'twitter' was corrected as 'titerero' but it is 'twitter'
+TweetID: 318784633514901505
+  Surplus words: ['dias']
+TweetID: 318784757745995776
+  Surplus words: ['dia']
+TweetID: 318786444791517184
+  Surplus words: ['jajajaja']
+TweetID: 318793551037222913
+  Surplus words: ['visitilla']
+  - 'dibujiito' was corrected as 'dibujo' but it is 'dibujito'
+TweetID: 318795147242508288
+  Surplus words: ['openmovil.imei@gmail.com', 'plis', 'rt']
+  - 'info' was corrected as 'indo' but it is 'información'
+  - 'iphone' was corrected as 'perchone' but it is 'iphone'
+  - 'movistar' was corrected as 'trovista' but it is 'movistar'
+TweetID: 318795898601762816
+  Surplus words: ['xdd']
+TweetID: 318797763750014976
+  - 'twitaaaah' was corrected as '-' but it is 'twitter'
+TweetID: 318800425866362880
+  - 'diiiiiiioooooooo' was corrected as '-' but it is 'dios'
+  - 'jajjajajajajajajajajajajajajajajajajajajajajaja' was corrected as '-' but it is 'ja'
+TweetID: 318802437609766912
+  - 'cuuxamee' was corrected as 'cultamente' but it is 'escúchame'
+  - 'eem' was corrected as 'eme' but it is 'eh'
+  - 'sii' was corrected as 'si' but it is 'sí'
+  - 'yaa' was corrected as 'aya' but it is 'ya'
+TweetID: 318803419966078976
+  Surplus words: ['q']
+TweetID: 318804255769247744
+  Missing words: ['pechá']
+  Surplus words: ['q']
+TweetID: 318806470168817667
+  - 'jajajajaj' was corrected as 'agasaja' but it is 'ja'
+TweetID: 318806604940181505
+  - 'donald' was corrected as 'donad' but it is 'donald'
+  - 'esquivocao' was corrected as 'esquivo_cao' but it is 'he_equivocado'
+  - 'piolin' was corrected as 'piolan' but it is 'piolín'
+TweetID: 318807773863362560
+  Surplus words: ['jajajajaja', 'k']
+TweetID: 318807973562560513
+  Surplus words: ['m', 'q']
+  - 'miiii' was corrected as '-' but it is 'mí'
+  - 'tuenti' was corrected as 'lentitud' but it is 'tuenti'
+TweetID: 318810133574586368
+  Surplus words: ['jajajaja']
+  - 'sepaaas' was corrected as 'separas' but it is 'sepas'
+TweetID: 318811195572383744
+  - 'alomejor' was corrected as 'almorejo' but it is 'a_lo_mejor'
+  - 'jajajajaaja' was corrected as '-' but it is 'ja'
+  - 'pillao' was corrected as 'pilla' but it is 'pillado'
+TweetID: 318811298567700481
+  - 'jajajajaajajaja' was corrected as '-' but it is 'ja'
+TweetID: 318812841702481920
+  Surplus words: ['jejejejeje']
+  - 'tuu' was corrected as 'tui' but it is 'tú'
+TweetID: 318815190957301761
+  - 'artando' was corrected as 'arando' but it is 'hartando'
+TweetID: 318815891024400384
+  Surplus words: ['jaja']
+TweetID: 318816900161363969
+  - 'ati' was corrected as 'ato' but it is 'a_ti'
+  - 'insti' was corrected as 'insto' but it is 'instituto'
+  - 'mñn' was corrected as 'man' but it is 'mañana'
+  - 'qe' was corrected as 'e' but it is 'que'
+  - 'tube' was corrected as 'tibe' but it is 'tuve'
+TweetID: 318818030949904384
+  Surplus words: ['jajaja', 'q']
+  - 'pa' was corrected as 'ap' but it is 'para'
+TweetID: 318818259438809088
+  - 'cenitaaaaa' was corrected as 'cenicienta' but it is 'cenita'
+TweetID: 318818329836019713
+  - 'gh' was corrected as 'ah' but it is 'gh'
+  - 'noxe' was corrected as 'nexo' but it is 'noche'
+TweetID: 318819189580263425
+  - 'dead' was corrected as 'edad' but it is 'dead'
+  - 'walking' was corrected as 'inguinal' but it is 'walking'
+TweetID: 318819365753602048
+  Surplus words: ['baby', 'jeje']
+  - 'jajajaa' was corrected as 'ajara' but it is 'ja'
+  - 'pd' was corrected as 'd' but it is 'p.d.'
+  - 'whatsapp' was corrected as '-' but it is 'whatsapp'
+TweetID: 318820837346140160
+  Missing words: ['lio']
+  Surplus words: ['k', 'ui']
+  - 'jujuuuuu' was corrected as 'jujuy' but it is 'ju'
+  - 'mui' was corrected as 'muí' but it is 'muy'
+  - 'uiii' was corrected as 'unguis' but it is 'uy'
+TweetID: 318821357683105792
+  - 'jajajaa' was corrected as 'ajara' but it is 'ja'
+TweetID: 318821404277612544
+  Surplus words: ['fallar.y', 'gente.que', 'me.va']
+  - 'peñalsordo' was corrected as 'peñaflor' but it is 'peñalsordo'
+TweetID: 318821560666423296
+  Surplus words: ['jajajajaja', 'l']
+  - 'tonnnntica' was corrected as 'sonántica' but it is 'tontica'
+TweetID: 318821941945450496
+  Surplus words: ['cateta.es']
+  - 'mila' was corrected as 'mali' but it is 'milá'
+TweetID: 318822210208944128
+  - 'cnoces' was corrected as 'coces' but it is 'conoces'
+  - 'colegui' was corrected as 'coligue' but it is 'colega'
+TweetID: 318823626931593216
+  Surplus words: ['q', 'reir', 'x']
+  - 'diaaa' was corrected as 'diana' but it is 'día'
+  - 'finnnn' was corrected as 'finan' but it is 'fin'
+  - 'podremosss' was corrected as 'podremos_ss' but it is 'podremos'
+  - 'vidaaa' was corrected as 'david' but it is 'vida'
+  - 'yoppp' was corrected as 'yopal' but it is 'yo'
+TweetID: 318824825864990721
+  Surplus words: ['dia', 'q']
+  - 'acer' was corrected as 'caer' but it is 'hacer'
+TweetID: 318825095369990145
+  Surplus words: ['jajajajajajaja']
+  - 'ajajajjaja' was corrected as 'ajamonara' but it is 'ja'
+  - 'sii' was corrected as 'sri' but it is 'sí'
+TweetID: 318827051945713664
+  - 'noooo' was corrected as 'noosfera' but it is 'no'
+TweetID: 318827236117577728
+  Surplus words: ['juancar']
+  - 'jooo' was corrected as 'jopo' but it is 'jo'
+TweetID: 318827241435959296
+  - 'deacuerdo' was corrected as 'descuerdo' but it is 'de_acuerdo'
+  - 'estoi' was corrected as 'esto' but it is 'estoy'
+TweetID: 318827345467285504
+  Surplus words: ['jaja', 'l']
+TweetID: 318828121228992515
+  - 'jajajjaja' was corrected as '-' but it is 'ja'
+TweetID: 318828402767441920
+  Surplus words: ['jaja', 'xd']
+  - 'jejejjej' was corrected as '-' but it is 'je'
+  - 'loquiii' was corrected as 'quilo' but it is 'loquita'
+  - 'mñna' was corrected as 'mana' but it is 'mañana'
+TweetID: 318828842666049536
+  Surplus words: ['mini']
+  - 'zodiac' was corrected as 'zodiaco' but it is 'zódiac'
+TweetID: 318831095078588416
+  - 'echoo' was corrected as 'echo' but it is 'hecho'
+  - 'jajajajajajajjaaj' was corrected as '-' but it is 'ja'
+  - 'kee' was corrected as 'lee' but it is 'qué'
+  - 'polvooooo' was corrected as 'polvoroso' but it is 'polvo'
+TweetID: 318831600295096320
+  - 'aajajajajajajajaj' was corrected as '-' but it is 'ja'
+  - 'aiiiii' was corrected as '-' but it is 'ay'
+  - 'inflaaa' was corrected as 'inflara' but it is 'inflada'
+  - 'joeee' was corrected as 'jopee' but it is 'joder'
+TweetID: 318831863256981505
+  Surplus words: ['chochete', 'jajaja', 'xd']
+  - 'daralika' was corrected as 'alindara' but it is 'daralika'
+TweetID: 318832040906719233
+  Missing words: ['dead']
+  Surplus words: ['dead.una', 'maestra.para']
+  - 'the' was corrected as 'te' but it is 'the'
+  - 'walking' was corrected as 'inguinal' but it is 'walking'
+TweetID: 318833357788155906
+  - 'teamo' was corrected as 'meato' but it is 'te_amo'
+TweetID: 318834682340982785
+  Surplus words: ['feote', 'igor', 'sorry']
+  - 'joo' was corrected as 'ojo' but it is 'jo'
+TweetID: 318834873416679424
+  - 'tss' was corrected as 'tas' but it is 'chis'
+TweetID: 318835449881849856
+  - 'finde' was corrected as 'funde' but it is 'fin_de_semana'
+  - 'quieeeeero' was corrected as 'acequiero' but it is 'quiero'
+TweetID: 318835592844697600
+  Surplus words: ['viida']
+  - 'asii' was corrected as 'asir' but it is 'así'
+TweetID: 318835757013929984
+  Surplus words: ['clary', 'nefilim']
+TweetID: 318836476399988737
+  Surplus words: ['orechio']
+  - Corrections for 'trayó' are ['tragó', 'tragó']
+    but you corrected as ['trató', 'trató']
+TweetID: 318837032908623872
+  - 'tendre' was corrected as 'cendre' but it is 'tendré'
+TweetID: 318837455560261632
+  - 'voi' was corrected as 'vio' but it is 'voy'
+TweetID: 318839478791831552
+  Surplus words: ['jajaja', 'piensalo']
+  - 'parti' was corrected as 'partí' but it is 'partir'
+  - 'qe' was corrected as 'e' but it is 'que'
+TweetID: 318840120847507457
+  Surplus words: ['logroño']
+  - 'lîa' was corrected as 'la' but it is 'lía'
+TweetID: 318842303303270402
+  Surplus words: ['jeje', 'perdidita', 'silvita']
+  - 'mia' was corrected as 'miá' but it is 'mía'
+TweetID: 318843407617380352
+  Surplus words: ['musica']
+  - 'em' was corrected as 'me' but it is 'eh'
+  - 'gravais' was corrected as 'graváis' but it is 'grabáis'
+  - 'mobil' was corrected as 'mocil' but it is 'móvil'
+TweetID: 318844091427340290
+  Surplus words: ['igor']
+TweetID: 318845043303653376
+  - 'buenaaas' was corrected as 'buenazas' but it is 'buenas'
+  - 'ncheees' was corrected as 'canchees' but it is 'noches'
+TweetID: 318845592648437760
+  - 'jajajajajjajaj' was corrected as '-' but it is 'ja'
+TweetID: 318846072099315713
+  - 'ija' was corrected as 'ja' but it is 'hija'
+  - 'jajaaa' was corrected as 'jambaje' but it is 'ja'
+TweetID: 318846585213693952
+  Missing words: ['rio']
+  Surplus words: ['ratópodo']
+TweetID: 318846697520373760
+  Surplus words: ['frak']
+  - 'remix' was corrected as 'remite' but it is 'remix'
+TweetID: 318847110504132610
+  - Corrections for 'jajajajaj' are ['ja', 'ja']
+    but you corrected as ['agasaja', 'agasaja']
+TweetID: 318847146549985280
+  Missing words: ['seguime']
+  Surplus words: ['x']
+TweetID: 318848246686556162
+  Surplus words: ['pajarete']
+  - 'pedrete' was corrected as 'perdete' but it is 'pedrete'
+  - 'pedrin' was corrected as 'pedrizo' but it is 'pedrín'
+TweetID: 318848333126975488
+  - 'nbeeeaaa' was corrected as '-' but it is 'no_veas'
+  - 'ojiyo' was corrected as 'ojito' but it is 'ojillo'
+TweetID: 318848679442259968
+  - 'muacks' was corrected as 'mustacos' but it is 'mua'
+TweetID: 318848840579026945
+  - 'mia' was corrected as 'miá' but it is 'mía'
+TweetID: 318848939635900416
+  - 'esque' was corrected as 'seque' but it is 'es_que'
+  - 'jajajajajes' was corrected as 'jambajes' but it is 'ja'
+  - 'tequieroo' was corrected as 'quintero' but it is 'te_quiero'
+TweetID: 318849222017437697
+  Surplus words: ['mirian', 'q', 'zorraica']
+  - 'po' was corrected as 'op' but it is 'por'
+TweetID: 318849653405777920
+  Surplus words: ['q']
+  - 'ps' was corrected as 'as' but it is 'pues'
+TweetID: 318850372955422720
+  - 'esq' was corrected as 'es' but it is 'es_que'
+  - 'jajajpero' was corrected as 'pajarero' but it is 'ja_pero'
+  - 'llamda' was corrected as 'llamad' but it is 'llamada'
+TweetID: 318851031964471296
+  Surplus words: ['ana']
+  - 'jajjajajaaj' was corrected as '-' but it is 'ja'
+TweetID: 318851225649049600
+  Surplus words: ['jajajaj', 'q']
+  - 'preparao' was corrected as 'prepara' but it is 'preparado'
+TweetID: 318852405175394304
+  Surplus words: ['richi']
+  - Corrections for 'má' are ['más', 'más']
+    but you corrected as ['amá', 'amá']
+TweetID: 318852442664083456
+  Surplus words: ['el.banco', 'q']
+  - 'lasombradelolivo' was corrected as 'bellasombra' but it is 'la_sombra_del_olivo'
+TweetID: 318856354842439680
+  Surplus words: ['cri']
+  - 'sara' was corrected as 'asar' but it is 'sara'
+TweetID: 318857601163071488
+  Surplus words: ['count', 'like', 'on', 'there', 'you']
+  - 'tod@s' was corrected as 'todas' but it is 'todos_y_todas'
+TweetID: 318859322811637760
+  Surplus words: ['tq']
+  - 'conver' was corrected as 'con_ver' but it is 'conversación'
+TweetID: 318859584754307072
+  Surplus words: ['asi']
+  - 'jajaj' was corrected as 'aja' but it is 'ja'
+TweetID: 318860193406545920
+  Surplus words: ['monísimo']
+  - 'esque' was corrected as 'seque' but it is 'es_que'
+TweetID: 318860425653547008
+  Surplus words: ['jajajajaja']
+TweetID: 318861835170353152
+  - 'diiia' was corrected as 'dimidia' but it is 'día'
+  - 'esperaa' was corrected as 'asperea' but it is 'espera'
+  - 'mañanaa' was corrected as 'mañanas' but it is 'mañana'
+  - 'yoo' was corrected as 'too' but it is 'yo'
+TweetID: 318862028271939584
+  Missing words: ['fono']
+  Surplus words: ['mami', 'q']
+  - 'gh' was corrected as 'ah' but it is 'gh'
+  - 'vo' was corrected as 'vi' but it is 'voy'
+TweetID: 318862896614473728
+  Surplus words: ['flipas']
+TweetID: 318865435149873152
+  Surplus words: ['q']
+  - 'grandullonaa' was corrected as 'grandullonas' but it is 'grandullona'
+  - 'jajajaj' was corrected as 'alhaja' but it is 'ja'
+  - 'jajajajajaj' was corrected as 'maltrabaja' but it is 'ja'
+  - 'quierooo' was corrected as 'quiebro' but it is 'quiero'
+  - 'tee' was corrected as 'ter' but it is 'te'
+  - 'tuu' was corrected as 'tui' but it is 'tú'
+TweetID: 318866219002388480
+  Surplus words: ['jajajaja']
+  - 'siii' was corrected as 'si' but it is 'sí'
+TweetID: 318866743097434112
+  Surplus words: ['link']
+  - 'pasaa' was corrected as 'pasas' but it is 'pasa'
+TweetID: 318869909914415104
+  - 'jajajja' was corrected as 'jambaje' but it is 'ja'
+  - 'yaaaa' was corrected as '-' but it is 'ya'
+TweetID: 318871577716473856
+  - 'cafe' was corrected as 'rafe' but it is 'café'
+TweetID: 318872348201734147
+  - 'miii' was corrected as 'mili' but it is 'mí'
+TweetID: 318872783239122944
+  - 'ñaves' was corrected as 'aves' but it is 'ñaves'
+TweetID: 318872965070606336
+  Surplus words: ['jajajajajajajajajajajajajajaja']
+  - 'pa' was corrected as 'ap' but it is 'para'
+TweetID: 318873235083108352
+  Surplus words: ['tintito']
+  - 'yaa' was corrected as 'aya' but it is 'ya'
+TweetID: 318876679546236929
+  - 'jajajajajaajaja' was corrected as '-' but it is 'ja'
+TweetID: 318877716130709504
+  Surplus words: ['afuu', 'jajajaja']
+  - 'aquii' was corrected as 'aquilea' but it is 'aquí'
+TweetID: 318882012486307840
+  Surplus words: ['dia']
+TweetID: 318883001675165696
+  - 'xq' was corrected as 'xi' but it is 'porque'
+TweetID: 318883372858474497
+  Surplus words: ['jajaja', 'sss']
+  - 'jajajajajjaja' was corrected as '-' but it is 'ja'
+  - 'pf' was corrected as 'pg' but it is 'puf'
+TweetID: 318885002723078144
+  - 'fuando' was corrected as 'guando' but it is 'cuando'
+  - 'peli' was corrected as 'pile' but it is 'película'
+TweetID: 318892064219738112
+  Missing words: ['to']
+  Surplus words: ['culete', 'nanit']
+  - 'pa' was corrected as 'ap' but it is 'para'
+TweetID: 318894790848688128
+  Surplus words: ['jajajajajajaja', 'q']
+TweetID: 318897569726078976
+  - 'nas' was corrected as 'san' but it is 'buenas'
+TweetID: 318916090522632192
+  - 'ajajajajajaa' was corrected as 'abarrajara' but it is 'ja'
+TweetID: 318918653091401729
+  Surplus words: ['amiga.me', 'jaja', 'k', 'se.lo']
+  - 'baaaajaa' was corrected as '-' but it is 'baja'
+  - 'dixo' was corrected as 'dix' but it is 'dicho'
+  - 'jajajj' was corrected as 'jambaje' but it is 'ja'
+TweetID: 318934650254929921
+  Surplus words: ['asi', 'l']
+  - 'muack' was corrected as 'mutua' but it is 'mua'
+TweetID: 318954900933464066
+  Missing words: ['máx.', 'mín.']
+  Surplus words: ['máx', 'mín', 'utc', 'ºc']
+TweetID: 318964775973445632
+  - 'mia' was corrected as 'miá' but it is 'mía'
+TweetID: 318971797666152449
+  - 'insti' was corrected as 'insto' but it is 'instituto'
+TweetID: 318973108121911296
+  Surplus words: ['dias']
+TweetID: 318979997534679041
+  Surplus words: ['q']
+  - 'caess' was corrected as 'cases' but it is 'caes'
+  - 'facturaaa' was corrected as 'facturara' but it is 'factura'
+  - 'santaa' was corrected as 'santas' but it is 'santa'
+  - 'tuu' was corrected as 'tui' but it is 'tú'
+TweetID: 318980426687447040
+  Surplus words: ['an', 'jajajajaha']
+  - 'diiios' was corrected as 'diosos' but it is 'dios'
+  - 'esk' was corrected as 'es' but it is 'es_que'
+  - 'jajajaj' was corrected as 'alhaja' but it is 'ja'
+  - 'kn' was corrected as 'km' but it is 'con'
+  - 'mioo' was corrected as 'mio' but it is 'mío'
+  - 'sentao' was corrected as 'sentaos' but it is 'sentado'
+  - 'sii' was corrected as 'si' but it is 'sí'
+TweetID: 318981993473904640
+  Surplus words: ['dias']
+  - 'joddeeeer' was corrected as '-' but it is 'joder'
+  - 'veeeeeeeen' was corrected as '-' but it is 'ven'
+TweetID: 318985414008520704
+  Surplus words: ['abu', 'q']
+  - 'aqi' was corrected as 'ali' but it is 'aquí'
+  - 'colacaito' was corrected as 'litocola' but it is 'colacaíto'
+TweetID: 318987919585067008
+  Surplus words: ['dias', 'jaja']
+  - 'feeaaa' was corrected as 'felpea' but it is 'fea'
+TweetID: 318999495801188352
+  Surplus words: ['dias', 'q', 'semanita']
+  - 'hechar' was corrected as 'hecha' but it is 'echar'
+TweetID: 319006566965723136
+  - 'compi' was corrected as 'compila' but it is 'compañero'
+  - 'tds' was corrected as 'tas' but it is 'todos'
+TweetID: 319011023124307968
+  Surplus words: ['x']
+TweetID: 319017918883049472
+  Surplus words: ['k']
+TweetID: 319020041901309952
+  Surplus words: ['aver', 'dias', 'jaja', 'xd']
+  - 'ke' was corrected as 'que' but it is 'qué'
+TweetID: 319026982086127616
+  Surplus words: ['peliculita']
+  - 'cn' was corrected as 'cm' but it is 'con'
+TweetID: 319028093010456576
+  - 'nenee' was corrected as 'menee' but it is 'nene'
+TweetID: 319028326989697024
+  Surplus words: ['aver', 'i', 't']
+  - 'muaxh' was corrected as 'mutua' but it is 'mua'
+  - 'ninia' was corrected as 'minia' but it is 'niña'
+TweetID: 319040937886113792
+  - 'piazon' was corrected as 'piaron' but it is 'piazón'
+TweetID: 319041175212417024
+  Surplus words: ['jajajajaja']
+  - 'nooo' was corrected as 'nono' but it is 'no'
+  - 'pr' was corrected as 'pe' but it is 'para'
+  - 'siii' was corrected as 'si' but it is 'sí'
+TweetID: 319041863577374721
+  Surplus words: ['musica', 'ticher']
+TweetID: 319050024317251585
+  - 'fyqqqq' was corrected as '-' but it is 'fin'
+  - 'pppff' was corrected as '-' but it is 'puf'
+TweetID: 319053101648711681
+  Surplus words: ['dia']
+TweetID: 319059271755112449
+  Surplus words: ['q', 'veranito']
+TweetID: 319060991902089217
+  - 'tamagochi' was corrected as 'tambocha' but it is 'tamagotchi'
+TweetID: 319062060430422016
+  Surplus words: ['jajaja', 'q']
+  - 'finde' was corrected as 'funde' but it is 'fin_de_semana'
+TweetID: 319062690339368960
+  Missing words: ['jaen']
+  Surplus words: ['del.40', 'en.el.paro.en.jaen.una.cifra']
+  - 'aggg' was corrected as 'agua' but it is 'ah'
+TweetID: 319065934323142656
+  Surplus words: ['pulseritas']
+  - 'ayayayayyay' was corrected as '-' but it is 'ay'
+  - 'jijiji' was corrected as 'fiji' but it is 'ji'
+TweetID: 319068927068102656
+  Surplus words: ['jajajajaja']
+TweetID: 319072321627365377
+  Surplus words: ['jajajaja']
+  - 'dspue' was corrected as 'despume' but it is 'después'
+  - 'tssss' was corrected as 'topless' but it is 'chis'
+TweetID: 319073414662983680
+  Surplus words: ['asi', 'k']
+  - 'segir' was corrected as 'segur' but it is 'seguir'
+  - 'xk' was corrected as 'xi' but it is 'porque'
+TweetID: 319074363133554689
+  Surplus words: ['dia']
+  - 'nosotrs' was corrected as 'nosotras' but it is 'nosotros'
+TweetID: 319076412189458436
+  Surplus words: ['jajajaja']
+  - 'laa' was corrected as 'ala' but it is 'la'
+TweetID: 319081130416549890
+  Surplus words: ['jajaja', 'q']
+  - 'nadaa' was corrected as 'nadas' but it is 'nada'
+  - 'siii' was corrected as 'si' but it is 'sí'
+TweetID: 319081819037368320
+  Surplus words: ['paseito']
+  - 'simba' was corrected as 'sima' but it is 'simba'
+TweetID: 319082802685571073
+  Surplus words: ['jajajajaja', 'jajajajajaja']
+TweetID: 319084307308244992
+  Surplus words: ['o.o']
+  - 'jajajajajajjajajaja' was corrected as '-' but it is 'ja'
+TweetID: 319085483739209728
+  - 'exoo' was corrected as 'oxeo' but it is 'echo'
+TweetID: 319090650874261505
+  Surplus words: ['juumpeee']
+  - 'otraa' was corrected as 'otras' but it is 'otra'
+TweetID: 319094081345167361
+  - 'huuuuyy' was corrected as '-' but it is 'uy'
+TweetID: 319095482037190656
+  - 'juum' was corrected as 'juma' but it is 'hum'
+TweetID: 319095785490878465
+  Surplus words: ['jajaja', 'jajajaja', 'solito']
+  - 'ooogggg' was corrected as '-' but it is 'oh'
+  - 'qe' was corrected as 'e' but it is 'que'
+  - 'tuu' was corrected as 'tui' but it is 'tú'
+TweetID: 319097386939076609
+  - 'ooooooooohhhhh' was corrected as '-' but it is 'oh'
+TweetID: 319100660744327168
+  - 'trompezar' was corrected as 'trompear' but it is 'tropezar'
+TweetID: 319100673201418240
+  - 'duxita' was corrected as 'durita' but it is 'duchita'
+TweetID: 319104523203379200
+  Surplus words: ['gh', 'q', 'rt']
+  - 'susargistas' was corrected as 'sufragistas' but it is 'susargistas'
+TweetID: 319107445651824640
+  Surplus words: ['jajajajaja']
+  - 'terroristahhh' was corrected as 'terrorista' but it is 'terroristas'
+TweetID: 319109764665733120
+  Surplus words: ['ains', 'q']
+  - 'miii' was corrected as 'mili' but it is 'mí'
+  - 'pùrpura' was corrected as 'purpura' but it is 'púrpura'
+TweetID: 319112383924670466
+  Surplus words: ['jajajaja', 'pseudopija']
+  - 'atleti' was corrected as 'atleta' but it is 'atleti'
+TweetID: 319114663755411456
+  Surplus words: ['malito']
+  - 'seño' was corrected as 'ceño' but it is 'señor'
+TweetID: 319114793036435457
+  Surplus words: ['xd']
+  - 'chillio' was corrected as 'chillo' but it is 'chillido'
+  - 'dioss' was corrected as 'diosa' but it is 'dios'
+  - 'justin' was corrected as 'justan' but it is 'justin'
+TweetID: 319115106892005377
+  Surplus words: ['jajaja']
+  - 'aaah' was corrected as 'ahaja' but it is 'ah'
+  - 'esqe' was corrected as 'ese' but it is 'es_que'
+  - 'pa' was corrected as 'ap' but it is 'para'
+  - 'qe' was corrected as 'e' but it is 'qué'
+TweetID: 319119037802115073
+  Missing words: ['nacho']
+  Surplus words: ['asi']
+TweetID: 319121806181142529
+  - 'tranquileo' was corrected as 'tranquile' but it is 'tranquilidad'
+TweetID: 319124080328589313
+  Surplus words: ['pelurroja']
+  - 'tii' was corrected as 'tui' but it is 'ti'
+TweetID: 319128112354967555
+  - 'hechoo' was corrected as 'hecho' but it is 'echo'
+  - 'mami' was corrected as 'mima' but it is 'mamá'
+TweetID: 319131127149371393
+  Surplus words: ['k']
+  - 'akabo' was corrected as 'alabo' but it is 'acabo'
+TweetID: 319132181987471360
+  - 'mongolitaa' was corrected as 'mongolia' but it is 'mongolita'
+TweetID: 319133297462616065
+  Surplus words: ['fans', 'hooligans']
+TweetID: 319138659175641089
+  - 'qiero' was corrected as 'fiero' but it is 'quiero'
+TweetID: 319139506999672832
+  - 'burna' was corrected as 'bruna' but it is 'buena'
+TweetID: 319140677017554944
+  Surplus words: ['lola']
+  - 'almeria' was corrected as 'mercurial' but it is 'almería'
+  - 'marideblasico' was corrected as 'marisabidilla' but it is 'mari_de_blasico'
+  - 'pa' was corrected as 'ap' but it is 'para'
+TweetID: 319144186228129792
+  Missing words: ['na']
+  - 'jajajjaja' was corrected as '-' but it is 'ja'
+TweetID: 319145415310192640
+  Missing words: ['to']
+  Surplus words: ['asi', 'tipico']
+  - 'amig@s' was corrected as 'amigas' but it is 'amigos'
+  - 'part' was corrected as 'par' but it is 'parte'
+  - 'pnsao' was corrected as 'posan' but it is 'pensado'
+  - 'tb' was corrected as 'ta' but it is 'también'
+
