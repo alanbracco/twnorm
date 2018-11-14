@@ -183,12 +183,21 @@ class Evaluator(object):
 
         return precision, recall
 
+    def get_f_score(self, precision, recall, beta=1):
+        pr = precision * recall
+        if pr == 0.0:
+            return 0.0
+        else:
+            beta2 = beta**2
+            return (1 + beta2) * (pr / ((beta2 * precision) + recall))
+
     def get_measures(self, gold_dict, gen_dict, all_tokens):
 
         # WTA detection metrics
         wta_precision, wta_recall = self.get_precision_and_recall(gold_dict,
                                                                   gen_dict)
         wta_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens)
+        wta_f1 = self.get_f_score(wta_precision, wta_recall, beta=1)
 
         # WTA correction metrics
         corr_precision, corr_recall = self.get_precision_and_recall(
@@ -196,9 +205,10 @@ class Evaluator(object):
                                         for_correction=True)
         corr_accuracy = self.get_accuracy(gold_dict, gen_dict, all_tokens,
                                           for_correction=True)
+        corr_f1 = self.get_f_score(corr_precision, corr_recall, beta=1)
 
-        wta_tuple = (wta_accuracy, wta_precision, wta_recall)
-        corr_tuple = (corr_accuracy, corr_precision, corr_recall)
+        wta_tuple = (wta_accuracy, wta_precision, wta_recall, wta_f1)
+        corr_tuple = (corr_accuracy, corr_precision, corr_recall, corr_f1)
 
         return wta_tuple, corr_tuple
 
@@ -249,10 +259,12 @@ class Evaluator(object):
         wta_accuracy = wta_tuple[0]
         wta_precision = wta_tuple[1]
         wta_recall = wta_tuple[2]
+        wta_f1 = wta_tuple[3]
 
         corr_accuracy = corr_tuple[0]
         corr_precision = corr_tuple[1]
         corr_recall = corr_tuple[2]
+        corr_f1 = corr_tuple[3]
 
         header = "SUMMARY"
         self.my_write(header, stdout=True)
@@ -272,12 +284,14 @@ class Evaluator(object):
         self.my_write("Accuracy:", to_str_perc(wta_accuracy), stdout=True)
         self.my_write("Precision:", to_str_perc(wta_precision), stdout=True)
         self.my_write("Recall:", to_str_perc(wta_recall), stdout=True)
+        self.my_write("F1:", to_str_perc(wta_f1), stdout=True)
         self.my_write(stdout=True)
         self.my_write("WTA correction", stdout=True)
         self.my_write("------------", stdout=True)
         self.my_write("Accuracy:", to_str_perc(corr_accuracy), stdout=True)
         self.my_write("Precision:", to_str_perc(corr_precision), stdout=True)
         self.my_write("Recall:", to_str_perc(corr_recall), stdout=True)
+        self.my_write("F1:", to_str_perc(corr_f1), stdout=True)
 
     def build_output_stats(self, gold_dict, gen_dict, all_tokens,
                            case_sensitive=True, no_context_corrections=False):

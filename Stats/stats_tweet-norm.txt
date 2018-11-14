@@ -15,12 +15,14 @@ WTA detecion
 Accuracy: 94.73%
 Precision: 59.52%
 Recall: 87.50%
+F1: 70.85%
 
 WTA correction
 ------------
 Accuracy: 92.33%
 Precision: 37.64%
 Recall: 55.33%
+F1: 44.80%
 
 DETAILED INFO
 =============
