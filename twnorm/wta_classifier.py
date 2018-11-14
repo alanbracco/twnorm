@@ -1,6 +1,7 @@
 import spacy
 import enchant
 from twnorm.Dictionaries.dicts import Dicts
+from nltk.stem.snowball import SpanishStemmer
 
 
 class Lemmatizer(object):
@@ -15,16 +16,19 @@ class Lemmatizer(object):
 
 class WTAclassifier(object):
 
-    def __init__(self, lemma=False):
+    def __init__(self, lemma=False, stem=False):
         self.extra_dicts = Dicts()
         self.english_dict = enchant.Dict("en_EN")
         self.spanish_dict = enchant.Dict("es_AR")
         self.lemma = lemma
+        self.stem = stem
         self.VARIANT_CLASS = 0
         self.SPANISH_CLASS = 1
         self.FOREIGN_CLASS = 2
         if lemma:
             self.lemmatizer = Lemmatizer()
+        if stem:
+            self.stemmer = SpanishStemmer()
 
     def check(self, word):
         result = self.spanish_dict.check(word)
@@ -33,6 +37,19 @@ class WTAclassifier(object):
         if self.lemma and not result:
             lemma = self.lemmatizer.lemmatize(word)
             result = self.extra_dicts.is_valid(lemma)
+        if self.stem and not result:
+            result = self.affix_check(word)
+        return result
+
+    def affix_check(self, word):
+        result = False
+        stem = self.stemmer.stem(word.lower())
+        n = len(stem)
+        # compare with first substring of length n of each word in lemario
+        if stem[0] in self.extra_dicts.lemario.keys():
+            for x in self.extra_dicts.lemario[stem[0]]:
+                if len(x) >= n and x[:n] == stem:
+                    return True
         return result
 
     def check_NoES(self, word):
